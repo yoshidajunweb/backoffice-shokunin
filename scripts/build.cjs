@@ -111,6 +111,17 @@ for (const it of items) {
 const cfgFile = path.join(ROOT, 'data', 'config.json');
 const CFG = fs.existsSync(cfgFile) ? JSON.parse(fs.readFileSync(cfgFile, 'utf8')) : {};
 const FEEDBACK_ENDPOINT = CFG.feedbackEndpoint || '';
+const SITE_URL = CFG.siteUrl || '';
+const X_URL = CFG.xUrl || '';
+// 「応援する」の受け口（config.json の support。URLが入っているものだけ出す）
+const SUPPORT_DEFS = [
+  { key: 'ofuse', label: 'OFUSE で応援', note: '手紙つきで少額から。匿名可' },
+  { key: 'buymeacoffee', label: 'Buy Me a Coffee', note: 'コーヒー1杯分から' },
+  { key: 'kofi', label: 'Ko-fi', note: '手数料なしの投げ銭' },
+  { key: 'amazon', label: 'Amazon ほしい物リスト', note: '物で応援' },
+  { key: 'note', label: 'note でサポート', note: '記事へのサポート機能' },
+];
+const SUPPORT_LINKS = SUPPORT_DEFS.filter((d) => (CFG.support || {})[d.key]).map((d) => ({ ...d, url: CFG.support[d.key] }));
 
 // ロゴ（site/assets/logo.png を data URI で埋め込む。1ファイルで配れるように）
 const logoFile = path.join(ROOT, 'site', 'assets', 'logo.png');
@@ -256,6 +267,16 @@ header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 /* ダークではロゴの紺が沈むので、白い板に載せる */
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) header h1.logo img{background:#fff;border-radius:10px;padding:6px 12px;box-sizing:content-box} }
 :root[data-theme="dark"] header h1.logo img{background:#fff;border-radius:10px;padding:6px 12px;box-sizing:content-box}
+.foot-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:40px}
+.sup-btn{appearance:none;border:2px solid var(--new);background:transparent;color:var(--new);border-radius:999px;padding:8px 16px;font:inherit;font-weight:900;cursor:pointer}
+.sup-btn:hover,.sup-btn:focus-visible{outline:none;background:var(--new);color:#fff}
+.foot-note{font-size:12px;color:var(--muted)}
+.sup-box{max-width:520px}
+.sup-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.sup-list a,.sup-link{display:flex;flex-direction:column;gap:2px;width:100%;text-align:left;border:2px solid var(--line);border-radius:10px;padding:10px 14px;background:var(--paper);color:var(--ink);text-decoration:none;font:inherit;cursor:pointer}
+.sup-list a:hover,.sup-link:hover,.sup-list a:focus-visible,.sup-link:focus-visible{outline:none;border-color:var(--accent);background:var(--accent-soft)}
+.sup-list b{font-weight:900}.sup-list span{font-size:12px;color:var(--muted)}
+.sup-soon{border:2px dashed var(--line);border-radius:10px;padding:10px 14px;color:var(--muted);display:flex;flex-direction:column;gap:2px}
 .fb-btn{appearance:none;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .fb-btn:hover,.fb-btn:focus-visible{outline:none;border-color:var(--accent)}
 .fb-box{max-width:560px;display:flex;flex-direction:column;gap:10px}
@@ -500,7 +521,26 @@ header .sub b{color:var(--ink);font-weight:700}
   </div>
 </div>
 
+<div class="foot-bar">
+  <button class="sup-btn" id="sup-btn" type="button" aria-haspopup="dialog">♡ このサイトを応援する</button>
+  <span class="foot-note">個人運営・無料。続けるための応援を受け付けています。</span>
+</div>
 <p class="foot">分類はタイトルのキーワードによる仮のものです。必ずリンク先の一次情報を確認してください。国の機関のページは政府標準利用規約（第2.0版）に基づき出典を明示して要約・リンクしています。<a href="about.html">運営者情報</a></p>
+
+<div class="modal" id="sup-modal" role="dialog" aria-modal="true" aria-labelledby="sup-title" hidden>
+  <div class="modal-box sup-box">
+    <h2 id="sup-title">応援の方法</h2>
+    <p>どれか1つで十分です。お金がかからない方法もあります。</p>
+    <ul class="sup-list">
+      ${X_URL ? `<li><a href="${esc(X_URL)}" target="_blank" rel="noopener"><b>Xでフォロー・リポスト</b><span>0円。いちばん助かります</span></a></li>` : ''}
+      <li><button type="button" class="sup-link" id="sup-share"><b>このサイトを同業の人に教える</b><span>0円。URLをコピーします</span></button></li>
+      <li><button type="button" class="sup-link" id="sup-feedback"><b>間違い・要望を送る</b><span>0円。サイトが良くなります</span></button></li>
+      ${SUPPORT_LINKS.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener"><b>${esc(s.label)}</b><span>${esc(s.note)}</span></a></li>`).join('')}
+      ${SUPPORT_LINKS.length ? '' : '<li class="sup-soon"><b>お金での応援</b><span>受け口を準備中です</span></li>'}
+    </ul>
+    <div class="modal-actions"><span class="fb-status" id="sup-status" aria-live="polite"></span><button type="button" class="pref-all" id="sup-close">閉じる</button></div>
+  </div>
+</div>
 </div>
 
 <script>
@@ -563,6 +603,23 @@ header .sub b{color:var(--ink);font-weight:700}
   if(!asked)openModal();   // 初回だけ開いた瞬間に聞く
   // 情報源の枠：広い画面では開いた状態、スマホでは畳んで一覧の下に
   if(window.innerWidth>860)document.getElementById('src-panel').open=true;
+
+  // ---- 応援モーダル ---------------------------------------------------
+  var supModal=document.getElementById('sup-modal'), supStatus=document.getElementById('sup-status');
+  function supOpen(){ supModal.hidden=false; supStatus.textContent=''; }
+  function supClose(){ supModal.hidden=true; }
+  document.getElementById('sup-btn').addEventListener('click',supOpen);
+  document.getElementById('sup-close').addEventListener('click',supClose);
+  supModal.addEventListener('click',function(e){ if(e.target===supModal)supClose(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!supModal.hidden)supClose(); });
+  document.getElementById('sup-share').addEventListener('click',function(){
+    var url=${JSON.stringify(SITE_URL)}||location.href.split('#')[0];
+    var text='福祉行政アップデート：国・厚生局・県の更新を、自分の県と種別だけ、見落とさずに '+url;
+    if(navigator.share){ navigator.share({title:'福祉行政アップデート',text:text,url:url}).catch(function(){}); return; }
+    (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(function(){ supStatus.textContent='URLをコピーしました'; supStatus.className='fb-status ok'; })
+      .catch(function(){ supStatus.textContent=url; supStatus.className='fb-status'; });
+  });
+  document.getElementById('sup-feedback').addEventListener('click',function(){ supClose(); fbOpen(); });
 
   // ---- ご意見モーダル -------------------------------------------------
   var FB_ENDPOINT=${JSON.stringify(FEEDBACK_ENDPOINT)};

@@ -2,5 +2,14 @@
   "_説明": "サイト全体の設定。feedbackEndpoint は feedback-gas をウェブアプリとしてデプロイした URL（…/exec）。空なら「ご意見」は送信できない旨を表示する。",
   "feedbackEndpoint": "",
   "siteUrl": "https://backoffice-shokunin.jp/update/",
+  "xUrl": "https://x.com/fukushi_update",
+  "support": {
+    "_説明": "「応援する」の受け口。URLが空のものはボタンに出ない。順番はここの並び",
+    "ofuse": "",
+    "buymeacoffee": "",
+    "kofi": "",
+    "amazon": "",
+    "note": ""
+  },
   "_siteUrl説明": "本番URL（2026-09-04 に GitHub Pages＋独自ドメインへ移行）。X投稿のルーティンはこれを使う"
 }
