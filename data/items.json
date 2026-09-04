@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T14:07:55.368Z",
+  "updated": "2026-09-04T15:22:53.011Z",
   "sources": [
     {
       "id": "wamnet",
@@ -225,8 +225,8 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 40,
-      "added": 0,
+      "count": 41,
+      "added": 1,
       "ok": true
     },
     {
@@ -310,7 +310,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -5976,6 +5976,22 @@
       ],
       "pref": null,
       "bureau": null
+    },
+    {
+      "title": "令和8年度介護職員等処遇改善加算について",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/8syogukaizen.html",
+      "date": "2026-06-15",
+      "desc": "令和8年度介護職員等処遇改善加算の内容",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [],
+      "firstSeen": "2026-09-04"
     },
     {
       "title": "第258回 社会保障審議会 介護給付費分科会（令和8年6月15日開催）",
