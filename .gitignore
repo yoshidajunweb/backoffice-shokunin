@@ -4,3 +4,7 @@ site/index.html
 site/private.html
 .env
 Thumbs.db
+site/n/
+site/cal/
+site/sitemap.xml
+site/robots.txt

@@ -42,6 +42,11 @@ jobs:
         env:
           TZ: Asia/Tokyo
 
+      - name: 1件1ページと sitemap を生成
+        run: node scripts/pages.cjs
+        env:
+          TZ: Asia/Tokyo
+
       - name: 取得したデータをリポジトリに残す（初出日を保つため）
         run: |
           git config user.name "github-actions[bot]"
@@ -61,6 +66,9 @@ jobs:
           cp index.html _site/
           cp -r chutaikyo gmail _site/
           cp site/index.html _site/update/index.html
+          cp -r site/n site/cal _site/update/
+          cp site/sitemap.xml site/robots.txt _site/update/
+          rm -f _site/update/private.html
           cp CNAME _site/
           touch _site/.nojekyll
           ls -R _site | head -30

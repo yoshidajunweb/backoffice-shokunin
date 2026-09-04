@@ -74,6 +74,8 @@ const JP_VIEWBOX = JP_MAP.viewBox;
 const COVERED_PREFS = [...new Set((data.sources || []).map((s) => s.pref).filter(Boolean))];
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+// 1件1ページ（scripts/pages.cjs が作る site/n/<id>.html）へのリンク用。id は pages.cjs と同じ計算
+const idOf = (link) => require('crypto').createHash('sha1').update(link).digest('hex').slice(0, 10);
 const jpDate = (iso) => {
   if (!iso) return '';
   const [y, m, d] = iso.split('-').map(Number);
@@ -159,6 +161,7 @@ const rows = [...byDate.entries()].map(([d, list]) => `
           ${judged ? `<p class="judge"><b>${esc(judged.v.j.summary)}</b>${judged.v.j.action ? ` — ${esc(judged.v.j.action)}` : ''}${judged.v.j.deadline ? ` <span class="deadline">期限 ${esc(judged.v.j.deadline)}</span>` : ''}</p>` : ''}
           <div class="meta">
             <span class="src">${esc(it.source)}${it.pref ? `・${esc(it.pref)}` : ''}</span>
+            <a class="more" href="n/${idOf(it.link)}.html">この更新のページ</a>
             ${tags.filter((t) => t !== '未分類').map((t) => `<span class="chip">${esc(t)}</span>`).join('')}
             ${vs.map((x) => `<span class="verdict ${verdictClass[x.v.level] || ''}" title="${x.v.llm ? esc(x.v.j.reason) : '語一致（仮）'}">${esc(x.p.label)}：${esc(x.v.level)}${x.v.llm ? '' : '?'}</span>`).join('')}
             ${it.firstSeen === new Date().toISOString().slice(0, 10) && it.date && sinceDays(it.date) <= 3 ? '<span class="new">新着</span>' : ''}
@@ -179,7 +182,7 @@ function eventCard(ev) {
         <div class="title-line">
           <span class="kind">${esc(ev.kind)}</span>
           ${ev.systems.map((s) => `<span class="sys sys-${esc(s)}">${esc(s)}</span>`).join('')}
-          <span class="ev-title">${esc(ev.title)}</span>
+          <a class="ev-title" href="cal/${esc(ev.id)}.html">${esc(ev.title)}</a>
         </div>
         ${ev.note ? `<p class="ev-note">${esc(ev.note)}</p>` : ''}
         <div class="meta">
@@ -287,7 +290,7 @@ header .sub b{color:var(--ink);font-weight:700}
 .ev{display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px;padding:10px 0;border-bottom:1px solid var(--line);border-left:4px solid var(--line);padding-left:10px;margin-left:-14px}
 .ev:last-child{border-bottom:0}
 .ev-when{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--ink);font-weight:500;line-height:1.5;padding-top:3px}
-.ev-title{font-weight:700}
+.ev-title{font-weight:700;text-decoration:none}.ev-title:hover{text-decoration:underline}
 .ev-note{margin:3px 0 0;font-size:13px;color:var(--muted)}
 .kind{font-size:11px;font-weight:900;letter-spacing:.06em;border-radius:4px;padding:1px 7px;color:#fff;background:var(--muted);white-space:nowrap}
 .k-submit{border-left-color:var(--new)} .k-submit .kind{background:var(--new)}
@@ -347,6 +350,8 @@ header .sub b{color:var(--ink);font-weight:700}
 .title:hover{text-decoration:underline;text-underline-offset:3px}
 .meta{display:flex;flex-wrap:wrap;gap:6px 10px;font-size:12px;color:var(--muted);margin-top:2px}
 .chip{border:1px solid var(--line);border-radius:6px;padding:0 6px}
+.more{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--line)}
+.more:hover{color:var(--ink);border-bottom-color:var(--ink)}
 .new{color:var(--new);font-weight:700}
 .title-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px}
 .sys{font-size:11px;font-weight:700;letter-spacing:.04em;border-radius:4px;padding:1px 6px;border:1px solid transparent;white-space:nowrap}
