@@ -1,0 +1,4 @@
+{
+  "_説明": "サイト全体の設定。feedbackEndpoint は feedback-gas をウェブアプリとしてデプロイした URL（…/exec）。空なら「ご意見」は送信できない旨を表示する。",
+  "feedbackEndpoint": ""
+}

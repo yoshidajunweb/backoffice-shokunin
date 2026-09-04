@@ -1,0 +1,50 @@
+{
+  "_説明": "公開サイト用の「要対応」フラグ。会社固有ではなく『この種別・この地域の事業所なら全部やることがある』もの。将来はLLM判定（judge_public）が同じ形で出す。会社名・人名は書かない。",
+  "flags": {
+    "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22694&ct=020060090&from=rss": {
+      "action": "要対応",
+      "for": ["訪問看護", "訪問介護"],
+      "systems": ["介護"],
+      "scope": "全国",
+      "summary": "介護職員等処遇改善加算の様式例（実績報告書 別紙様式）が一部差替",
+      "todo": "処遇改善加算を算定している事業所は、実績報告に使う様式が差替後のものか確認",
+      "deadline": "毎年7月（実績報告）"
+    },
+    "https://kouseikyoku.mhlw.go.jp/kantoshinetsu/gyomu/bu_ka/tokyo/index.html": {
+      "action": "要対応",
+      "for": ["訪問看護"],
+      "systems": ["医療"],
+      "scope": "関東信越",
+      "summary": "関東信越厚生局が「ベースアップ評価料等について」重要なお知らせを掲載",
+      "todo": "ベースアップ評価料を算定している訪問看護ステーションは内容を確認（報告・区分見直し・様式変更の可能性）",
+      "deadline": null
+    },
+    "https://www.pref.ibaraki.jp/hokenfukushi/shofuku/jiritsu/shofuku/e/01_jigyoushomuke/08_osirase.html#denshishinseioshirase250627": {
+      "action": "要対応",
+      "for": ["障害福祉"],
+      "systems": ["障害"],
+      "scope": "茨城県",
+      "summary": "障害福祉サービス事業所の変更届・休止・廃止・再開届が電子申請に",
+      "todo": "県指定の障害福祉サービス事業所は、次の変更届から電子申請（いばらき電子申請・届出サービス）を使う",
+      "deadline": null
+    },
+    "https://www.pref.ibaraki.jp/hokenfukushi/shofuku/jiritsu/shofuku/e/01_jigyoushomuke/08_osirase.html#R8housyuukaitei": {
+      "action": "要対応",
+      "for": ["障害福祉"],
+      "systems": ["障害"],
+      "scope": "茨城県",
+      "summary": "令和8年度 障害福祉サービス等報酬改定について（県からの案内）",
+      "todo": "新設・変更された加算の届出要否を確認。処遇改善の区分も併せて",
+      "deadline": null
+    },
+    "https://www.pref.ibaraki.jp/hokenfukushi/shofuku/jiritsu/shofuku/e/01_jigyoushomuke/08_osirase.html#R7bukkakoutou": {
+      "action": "要対応",
+      "for": ["訪問看護", "訪問介護", "障害福祉"],
+      "systems": ["医療", "介護", "障害"],
+      "scope": "茨城県",
+      "summary": "令和7年度 茨城県 医療機関・福祉施設等 物価高騰対策支援金の申請期間が延長",
+      "todo": "自分の事業種別が対象かと延長後の締切を県のページで確認。対象なら申請",
+      "deadline": null
+    }
+  }
+}

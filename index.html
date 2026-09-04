@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>バックオフィス職人｜AIを使わなくても、仕事は楽になる</title>
+<meta name="description" content="小さな事業所の事務・労務のための道具箱。福祉行政の更新を自分の県と種別だけ見る、中退共の掛金とスケジュールを出す、Gmailの添付を自動で保存する。インストール不要・ログイン不要。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
+<style>
+:root{
+  --paper:#F4F6F8; --surface:#FFFFFF; --ink:#1A2230; --muted:#66707E; --line:#D6DBE2; --line-strong:#1A2230;
+  --accent:#2A4D9B; --accent-ink:#FFFFFF; --accent-soft:#E4EBF8; --new:#C05621;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#12161C; --surface:#1A1F27; --ink:#E7EAEF; --muted:#98A2B0; --line:#2C333E; --line-strong:#E7EAEF;
+  --accent:#8EB0F2; --accent-ink:#0F1A33; --accent-soft:#22304D; --new:#F6AD55;
+}}
+*{box-sizing:border-box}
+html{color-scheme:light dark}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,-apple-system,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.7;font-size:16px}
+a{color:var(--accent)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{border-bottom:6px solid var(--line-strong);background:var(--surface)}
+header .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:18px 20px}
+.brand{font-weight:900;font-size:22px;letter-spacing:.02em;color:var(--ink);text-decoration:none}
+.brand small{display:block;font-weight:500;font-size:12px;color:var(--muted);letter-spacing:0}
+nav a{font-weight:700;font-size:14px;text-decoration:none;margin-left:16px}
+.hero{padding:56px 0 32px}
+.hero h1{font-size:clamp(28px,5vw,44px);font-weight:900;line-height:1.3;margin:0 0 14px}
+.hero p{font-size:17px;color:var(--muted);max-width:640px;margin:0}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0;padding:0;list-style:none}
+.facts li{border:2px solid var(--line-strong);border-radius:999px;padding:4px 14px;font-weight:700;font-size:14px}
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;padding:24px 0 48px}
+.card{display:block;background:var(--surface);border:2px solid var(--line);border-radius:12px;padding:22px 22px 20px;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--line-strong);transform:translateY(-2px)}
+.card.main{border:4px solid var(--line-strong)}
+.card .tag{display:inline-block;font-size:12px;font-weight:700;color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:2px 8px;margin-bottom:10px}
+.card h2{font-size:20px;font-weight:900;margin:0 0 8px;line-height:1.4}
+.card p{margin:0;color:var(--muted);font-size:14.5px}
+.card .go{display:block;margin-top:14px;font-weight:700;color:var(--accent);font-size:14px}
+.card .go::after{content:" →"}
+section.about{border-top:2px solid var(--line);padding:36px 0 44px}
+section.about h2{font-size:20px;font-weight:900;margin:0 0 10px}
+section.about p{margin:0 0 10px;max-width:680px}
+footer{border-top:4px solid var(--line-strong);padding:22px 0 40px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="/">バックオフィス職人<small>小さな事業所の、事務・労務の道具箱</small></a>
+    <nav><a href="/update/">福祉行政アップデート</a><a href="/chutaikyo/">中退共</a><a href="/gmail/">Gmail添付</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>AIを使わなくても、<br>仕事は楽になる。</h1>
+    <p>一人で経理も労務も届出も見ている人のために。ブラウザで開くだけで使える道具と、行政の更新を自分の分だけ見るためのページを置いています。</p>
+    <ul class="facts">
+      <li>インストール不要</li>
+      <li>ログイン不要</li>
+      <li>データは外に出ない</li>
+    </ul>
+  </div>
+
+  <div class="tools">
+    <a class="card main" href="/update/">
+      <span class="tag">毎日更新</span>
+      <h2>福祉行政アップデート</h2>
+      <p>国・地方厚生局・都道府県の更新を、自分の県と種別だけ、見落とさずに。訪問看護・訪問介護・障害福祉・グループホーム・障害児通所・労務。要対応と締切カレンダーつき。</p>
+      <span class="go">更新を見る</span>
+    </a>
+    <a class="card" href="/chutaikyo/">
+      <span class="tag">道具</span>
+      <h2>中退共スケジューラー</h2>
+      <p>給与ソフトの帳票を置くだけで、中退共の加入可否・掛金額・提出スケジュールを出します。ブラウザ内で完結し、給与データは送信しません。</p>
+      <span class="go">使ってみる</span>
+    </a>
+    <a class="card" href="/gmail/">
+      <span class="tag">手順書</span>
+      <h2>Gmail添付ファイル自動保存</h2>
+      <p>取引先から届く添付ファイルを、Googleドライブの決めたフォルダに自動で保存する仕組み。スプレッドシートをコピーして設定するだけ。</p>
+      <span class="go">手順を読む</span>
+    </a>
+  </div>
+
+  <section class="about">
+    <h2>このサイトについて</h2>
+    <p>福祉事業所で、管理者が経理・労務・届出まで見ている。そういう現場で「制度は手続きに変換されたときだけ読まれる」と実感して作っています。</p>
+    <p>掲載する情報はタイトル・要約・一次ソースへのリンクです。金額や締切は必ず出所のページで確認してください。</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>運営：バックオフィス職人</span>
+    <span>X：<a href="https://x.com/fukushi_update" rel="noopener">@fukushi_update</a>（福祉行政アップデート）</span>
+  </div>
+</footer>
+</body>
+</html>

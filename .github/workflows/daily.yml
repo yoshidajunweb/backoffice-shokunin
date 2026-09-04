@@ -1,0 +1,82 @@
+# 毎日2回（日本時間 7:00 / 16:00）行政の更新を取得してサイトを作り直し、GitHub Pages に公開する。
+# push したときと、Actions 画面の「Run workflow」でも動く。
+name: build-and-deploy
+
+on:
+  schedule:
+    - cron: '0 22 * * *'   # 07:00 JST
+    - cron: '0 7 * * *'    # 16:00 JST
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: 依存を入れる
+        run: npm install --no-audit --no-fund
+
+      - name: 行政の更新を取得（失敗した情報源はサイト上で赤く出る）
+        run: node scripts/fetch.cjs
+        env:
+          TZ: Asia/Tokyo
+
+      - name: サイトを生成
+        run: node scripts/build.cjs
+        env:
+          TZ: Asia/Tokyo
+
+      - name: 取得したデータをリポジトリに残す（初出日を保つため）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/items.json
+          if git diff --cached --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "data: $(TZ=Asia/Tokyo date +%Y-%m-%d\ %H:%M) 自動取得"
+            git push
+          fi
+
+      - name: 公開フォルダを組み立てる
+        run: |
+          rm -rf _site
+          mkdir -p _site/update
+          cp index.html _site/
+          cp -r chutaikyo gmail _site/
+          cp site/index.html _site/update/index.html
+          cp CNAME _site/
+          touch _site/.nojekyll
+          ls -R _site | head -30
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

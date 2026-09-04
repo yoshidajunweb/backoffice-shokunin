@@ -1,0 +1,3465 @@
+<title>中退共スケジューラー</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap">
+
+<style>
+:root {
+  --ground: #F4F6F7;
+  --surface: #FFFFFF;
+  --surface-2: #EBF0F2;
+  --line: #D5DEE2;
+  --line-strong: #B8C6CC;
+  --ink: #16242C;
+  --ink-muted: #5A6C76;
+  --accent: #1D4E6B;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #E2ECF2;
+  --good: #1F6B4A;
+  --good-soft: #E0F0E7;
+  --bad: #9E3A2F;
+  --bad-soft: #F7E5E2;
+  --warn: #8A5A12;
+  --warn-soft: #F7EDD9;
+  --shadow: 0 1px 2px rgba(22, 36, 44, .06), 0 8px 24px rgba(22, 36, 44, .05);
+
+  /* 枠：最重要ほど太くする。黒縁は地の色に合わせて反転させる */
+  --frame: #10191E;
+  --w-xl: 6px;    /* 最重要：最初の2択・判定結果 */
+  --w-l: 4px;     /* 重要：取り込み枠・ポップアップ */
+  --w-m: 2px;     /* 通常：パネル・入力欄・ボタン */
+  --r-xl: 16px;
+  --r-l: 12px;
+  --r-m: 8px;
+
+  --font-display: "Zen Kaku Gothic New", "Yu Gothic", "Hiragino Sans", system-ui, sans-serif;
+  --font-body: "Zen Kaku Gothic New", "Yu Gothic", "Hiragino Sans", system-ui, sans-serif;
+  --font-data: "Roboto Mono", ui-monospace, "SFMono-Regular", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #101A1F;
+    --surface: #17242B;
+    --surface-2: #1E2F38;
+    --line: #2C414C;
+    --line-strong: #3D5764;
+    --ink: #E6EEF2;
+    --ink-muted: #94A8B2;
+    --accent: #7FBBDB;
+    --accent-ink: #0C1519;
+    --accent-soft: #1B333F;
+    --good: #6CC49A;
+    --good-soft: #16302A;
+    --bad: #E59386;
+    --bad-soft: #35211E;
+    --warn: #D9AB63;
+    --warn-soft: #322818;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+    --frame: #E6EEF2;
+  }
+}
+
+:root[data-theme="dark"] {
+  --ground: #101A1F;
+  --surface: #17242B;
+  --surface-2: #1E2F38;
+  --line: #2C414C;
+  --line-strong: #3D5764;
+  --ink: #E6EEF2;
+  --ink-muted: #94A8B2;
+  --accent: #7FBBDB;
+  --accent-ink: #0C1519;
+  --accent-soft: #1B333F;
+  --good: #6CC49A;
+  --good-soft: #16302A;
+  --bad: #E59386;
+  --bad-soft: #35211E;
+  --warn: #D9AB63;
+  --warn-soft: #322818;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+  --frame: #E6EEF2;
+}
+
+* { box-sizing: border-box; }
+
+/* display を指定した要素は hidden 属性だけでは隠れないため、明示的に打ち消す */
+[hidden] { display: none !important; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 28px 22px 72px;
+}
+
+/* ---- header ---- */
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 16px;
+  padding-bottom: 20px;
+  border-bottom: var(--w-m) solid var(--frame);
+  margin-bottom: 32px;
+}
+.masthead h1 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(24px, 3.4vw, 32px);
+  letter-spacing: .04em;
+  margin: 0;
+  line-height: 1.25;
+}
+.masthead .sub {
+  color: var(--ink-muted);
+  font-size: 13px;
+  letter-spacing: .02em;
+}
+.masthead .btn { margin-left: auto; }
+.masthead .ver {
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: .12em;
+  color: var(--ink-muted);
+  border: 1px solid var(--line-strong);
+  border-radius: 2px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+/* ---- 最初の画面 ---- */
+.landing { padding: 56px 0 32px; }
+.landing .lead {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.6vw, 25px);
+  font-weight: 900;
+  margin: 0 0 22px;
+  text-align: center;
+}
+.bigchoices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  max-width: 840px;
+  margin: 0 auto;
+}
+@media (max-width: 620px) { .bigchoices { grid-template-columns: minmax(0, 1fr); } }
+
+.bigchoice {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+  font-family: var(--font-body);
+  padding: 34px 30px;
+  border: var(--w-xl) solid var(--frame);
+  border-radius: var(--r-xl);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+.bigchoice:hover { background: var(--accent-soft); }
+.bigchoice b {
+  font-family: var(--font-display);
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: .04em;
+  line-height: 1.4;
+}
+.bigchoice small { font-size: 13px; color: var(--ink-muted); line-height: 1.9; }
+
+.landing-foot { text-align: center; margin-top: 20px; }
+.linkbtn {
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  color: var(--ink-muted);
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line-strong);
+  padding: 2px 1px;
+  cursor: pointer;
+}
+.linkbtn:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ---- モード切り替え ---- */
+.modeswitch {
+  margin-left: auto;
+  display: flex;
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.mode {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .03em;
+  padding: 6px 13px;
+  border: 0;
+  background: transparent;
+  color: var(--ink-muted);
+  cursor: pointer;
+}
+.mode + .mode { border-left: 1px solid var(--line-strong); }
+.mode:hover { color: var(--ink); }
+.mode[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+
+/* ---- layout ---- */
+.cols {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .cols { grid-template-columns: minmax(0, 1fr); }
+}
+.stack { display: flex; flex-direction: column; gap: 26px; }
+
+/* ---- panel ---- */
+.panel {
+  background: var(--surface);
+  border: 2px solid var(--frame);
+  border-radius: var(--r-m);
+  overflow: hidden;
+}
+.panel > header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 16px 22px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface-2);
+}
+.panel > header h2 {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  margin: 0;
+}
+.panel > header .note {
+  font-size: 11.5px;
+  color: var(--ink-muted);
+  letter-spacing: .02em;
+}
+.panel > header .chip { margin-left: auto; flex: none; }
+#ruleSummary { font-family: var(--font-data); }
+.panel .body { padding: 26px 24px; display: flex; flex-direction: column; gap: 24px; }
+
+/* ---- fields ---- */
+.field { display: flex; flex-direction: column; gap: 10px; }
+.field > label,
+.legend {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--ink-muted);
+}
+.field .hint { font-size: 11.5px; color: var(--ink-muted); line-height: 1.55; }
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  font-family: var(--font-data);
+  font-size: 18px;
+  color: var(--ink);
+  background: var(--surface);
+  border: 2px solid var(--line-strong);
+  border-radius: var(--r-m);
+  padding: 13px 15px;
+  width: 100%;
+  min-width: 0;
+}
+input[type="text"] { font-family: var(--font-body); }
+select {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--ink);
+  background: var(--surface);
+  border: 2px solid var(--line-strong);
+  border-radius: var(--r-m);
+  padding: 12px 13px;
+  width: 100%;
+  min-width: 0;
+}
+/* 枠を持つ要素は、外にもう1本足すと二重に見える。枠自体の色で示す。 */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+button:focus-visible,
+.chip:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+textarea {
+  font-family: var(--font-data);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--surface);
+  border: 2px solid var(--line-strong);
+  border-radius: var(--r-m);
+  padding: 12px 14px;
+  width: 100%;
+  min-width: 0;
+  resize: vertical;
+}
+
+.row2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+@media (max-width: 480px) { .row2 { grid-template-columns: minmax(0, 1fr); } }
+
+.inline { display: flex; align-items: center; gap: 8px; }
+.inline .unit { font-size: 12.5px; color: var(--ink-muted); white-space: nowrap; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  font-family: var(--font-data);
+  font-size: 11.5px;
+  padding: 3px 9px;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--ink-muted);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.chip:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ---- tabs ---- */
+.tabs { display: flex; gap: 0; border-bottom: 1px solid var(--line); }
+.tab {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  padding: 8px 14px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--ink-muted);
+  cursor: pointer;
+}
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.tabpanel[hidden] { display: none; }
+.tabpanel { padding-top: 15px; display: flex; flex-direction: column; gap: 14px; }
+
+/* ---- file drop ---- */
+.drop {
+  border: 2px dashed var(--line-strong);
+  border-radius: var(--r-m);
+  padding: 28px 18px;
+  text-align: center;
+  background: var(--surface-2);
+}
+.drop.over { border-color: var(--accent); background: var(--accent-soft); }
+.drop p { margin: 0 0 10px; font-size: 12.5px; color: var(--ink-muted); }
+
+button.btn {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  padding: 13px 26px;
+  border-radius: var(--r-m);
+  border: 2px solid var(--frame);
+  background: var(--accent);
+  color: var(--accent-ink);
+  cursor: pointer;
+}
+button.btn.ghost { background: var(--surface); color: var(--ink); }
+button.btn:hover { filter: brightness(1.08); }
+
+.filemeta {
+  font-size: 12px;
+  color: var(--ink-muted);
+  font-family: var(--font-data);
+  word-break: break-all;
+}
+.parse-err {
+  white-space: pre-line;
+  font-size: 12.5px;
+  color: var(--bad);
+  background: var(--bad-soft);
+  border-left: 3px solid var(--bad);
+  padding: 8px 11px;
+  border-radius: 0 3px 3px 0;
+}
+.quote {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  padding: 8px 11px;
+  border-radius: 0 3px 3px 0;
+}
+.quote b { color: var(--ink); font-weight: 700; }
+
+/* ---- verdict ---- */
+.verdict { padding: 32px 28px; display: flex; flex-direction: column; gap: 10px; }
+.verdict.ok { background: var(--good-soft); border-bottom: 1px solid var(--line); }
+.verdict.ng { background: var(--bad-soft); border-bottom: 1px solid var(--line); }
+.verdict.idle { background: var(--surface-2); border-bottom: 1px solid var(--line); }
+
+.badge {
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+.verdict.ok .badge { background: var(--good); color: var(--surface); }
+.verdict.ng .badge { background: var(--bad); color: var(--surface); }
+.verdict.idle .badge { background: var(--line-strong); color: var(--surface); }
+
+.amount {
+  font-family: var(--font-data);
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(30px, 6vw, 44px);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+  margin-top: 4px;
+}
+.verdict.ok .amount { color: var(--good); }
+.verdict.ng .amount { color: var(--bad); font-size: clamp(20px, 3.6vw, 26px); }
+.verdict.idle .amount { color: var(--ink-muted); font-size: clamp(18px, 3vw, 22px); }
+.amount .yen { font-size: .48em; margin-left: 4px; letter-spacing: .04em; }
+.verdict .why { font-size: 12.5px; color: var(--ink-muted); line-height: 1.6; }
+
+/* ---- tables ---- */
+.tablewrap { overflow-x: auto; }
+table.calc { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.calc th,
+table.calc td { padding: 8px 18px; border-bottom: 1px solid var(--line); text-align: left; }
+table.calc th { font-weight: 500; color: var(--ink-muted); white-space: nowrap; }
+table.calc td {
+  font-family: var(--font-data);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+table.calc tr.total td,
+table.calc tr.total th { font-weight: 700; color: var(--ink); }
+table.calc tr:last-child th,
+table.calc tr:last-child td { border-bottom: 0; }
+
+/* ---- schedule ---- */
+.sched { display: flex; flex-direction: column; }
+.sched-item {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--line);
+}
+.sched-item:last-child { border-bottom: 0; }
+.sched-date {
+  font-family: var(--font-data);
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+}
+.sched-what { font-size: 13px; line-height: 1.5; }
+.sched-what small { display: block; color: var(--ink-muted); font-size: 11.5px; }
+.gcal {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .03em;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--ink-muted);
+  cursor: pointer;
+  text-decoration: none;
+}
+.gcal:hover { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 480px) {
+  .sched-item { grid-template-columns: minmax(0, 1fr); }
+  .gcal { justify-self: start; }
+}
+
+/* ---- todo ---- */
+ol.todo { margin: 0; padding: 4px 18px 18px 36px; display: flex; flex-direction: column; gap: 9px; }
+ol.todo li { font-size: 13px; line-height: 1.6; }
+ol.todo li small { display: block; color: var(--ink-muted); font-size: 11.5px; }
+ol.todo li.attn::marker { color: var(--warn); }
+.flag {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  padding: 1px 6px;
+  border-radius: 2px;
+  background: var(--warn-soft);
+  color: var(--warn);
+  margin-right: 6px;
+  vertical-align: 1px;
+}
+
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; padding: 0 18px 18px; }
+.check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--ink);
+  cursor: pointer;
+}
+.check input { width: 17px; height: 17px; accent-color: var(--accent); cursor: pointer; }
+
+.footnote {
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 11.5px;
+  color: var(--ink-muted);
+  line-height: 1.75;
+}
+.footnote strong { color: var(--ink); font-weight: 700; }
+.footnote ul { margin: 6px 0 0; padding-left: 18px; }
+
+.todo-month { border-color: var(--good); }
+.todo-month > header { background: var(--good-soft); border-bottom-color: var(--good); }
+.todo-month > header h2 { color: var(--good); }
+.todo-month.quiet { border-color: var(--line-strong); }
+.todo-month.quiet > header { background: var(--surface-2); border-bottom-color: var(--line); }
+.todo-month.quiet > header h2 { color: var(--ink-muted); }
+.none {
+  padding: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-muted);
+  border-bottom: 1px solid var(--line);
+}
+.month-who { font-weight: 700; }
+.month-kind {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-right: 8px;
+  vertical-align: 1px;
+}
+.month-kind.check { background: var(--warn-soft); color: var(--warn); }
+.month-kind.submit { background: var(--good); color: var(--surface); }
+
+/* ---- 足りないときの警告 ---- */
+#bulkWarn, #oneWarn { display: flex; flex-direction: column; gap: 14px; }
+
+.info-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  border: 3px solid var(--accent);
+  border-radius: var(--r-l);
+  background: var(--accent-soft);
+  padding: 20px 22px;
+}
+.info-banner .mark {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 34px;
+  text-align: center;
+}
+.info-banner b {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1.5;
+  text-wrap: balance;
+}
+.info-banner small {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--ink);
+  line-height: 1.8;
+}
+#bulkWarn .warn-banner,
+#oneWarn .warn-banner {
+  border: 1px dashed var(--bad);
+  border-radius: var(--r-m);
+  background: transparent;
+  padding: 18px 20px;
+}
+
+.warn-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  border: 5px solid var(--bad);
+  border-radius: var(--r-l);
+  background: var(--bad-soft);
+  padding: 24px 26px;
+}
+.warn-banner .mark {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bad);
+  color: var(--surface);
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 40px;
+  text-align: center;
+}
+.warn-banner b {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.8vw, 27px);
+  font-weight: 900;
+  color: var(--bad);
+  line-height: 1.45;
+  letter-spacing: .01em;
+  text-wrap: balance;
+}
+.warn-banner small {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--ink);
+  line-height: 1.8;
+}
+table.grid td.short {
+  color: var(--bad);
+  font-weight: 700;
+}
+
+/* ---- 取り込み枠 ---- */
+.slots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+@media (max-width: 760px) { .slots { grid-template-columns: minmax(0, 1fr); } }
+
+.slot {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border: var(--w-l) solid var(--frame);
+  border-radius: var(--r-l);
+  padding: 24px 22px;
+  background: var(--surface);
+}
+.slot.done { background: var(--good-soft); }
+
+.slot-head { display: flex; align-items: flex-start; gap: 10px; }
+.slot-head .num {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-family: var(--font-data);
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+}
+.slot.done .slot-head .num { background: var(--good); color: var(--surface); }
+.slot-head b { display: block; font-size: 13.5px; font-weight: 700; }
+.slot-head small { display: block; font-size: 11.5px; color: var(--ink-muted); line-height: 1.55; }
+.slot-head .opt {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  margin-left: 7px;
+  padding: 1px 6px;
+  border-radius: 2px;
+  background: var(--surface-2);
+  color: var(--ink-muted);
+  vertical-align: 1px;
+}
+.slot-head .state {
+  flex: none;
+  margin-left: auto;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  color: var(--ink-muted);
+}
+.slot.done .slot-head .state { border-color: var(--good); background: var(--good); color: var(--surface); }
+.slot .drop { padding: 24px 16px; }
+.slot .drop p { margin: 0 0 8px; }
+
+.months { display: flex; flex-wrap: wrap; gap: 6px; }
+.month-chip {
+  font-family: var(--font-data);
+  font-size: 11.5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  color: var(--ink-muted);
+  background: var(--surface);
+}
+.month-chip.on { border-color: var(--good); background: var(--good); color: var(--surface); }
+
+/* ---- 全員まとめて ---- */
+.bulk { margin-top: 24px; }
+.bulk .body { gap: 14px; }
+
+table.grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  white-space: nowrap;
+}
+table.grid th,
+table.grid td {
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+table.grid thead th {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--ink-muted);
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--line-strong);
+  position: sticky;
+  top: 0;
+}
+table.grid td.n {
+  font-family: var(--font-data);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+table.grid td.premium { font-weight: 700; color: var(--good); }
+table.grid td.up { color: var(--good); font-weight: 700; }
+table.grid td.down { color: var(--bad); font-weight: 700; }
+table.grid tr.changed { background: var(--warn-soft); }
+table.grid tr.changed:hover { background: var(--warn-soft); }
+table.grid tr.ng td { color: var(--ink-muted); }
+table.grid tr.gone td { color: var(--ink-muted); }
+table.grid tr.gone td.premium { color: var(--ink-muted); font-weight: 400; }
+table.grid tr.notyet td { color: var(--ink-muted); }
+table.grid tr.notyet td.premium { color: var(--ink-muted); font-weight: 400; }
+table.grid tr.quit td { opacity: .55; text-decoration: line-through; }
+table.grid tr.quit td:last-child { opacity: 1; text-decoration: none; }
+table.grid tr.ng td.premium { color: var(--bad); font-weight: 400; }
+table.grid tbody tr:hover { background: var(--accent-soft); }
+table.grid tr.due { background: var(--good-soft); }
+table.grid tr.due td { font-weight: 700; }
+table.grid tr.due:hover { background: var(--good-soft); }
+
+.pill {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--warn-soft);
+  color: var(--warn);
+}
+.pill.plain { background: var(--surface-2); color: var(--ink-muted); }
+
+/* ---- 設定の保存 ---- */
+.saverow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding-top: 4px;
+  border-top: 1px solid var(--line);
+}
+.savemsg { font-size: 11.5px; color: var(--ink-muted); }
+.savemsg.ok { color: var(--good); }
+.savemsg.ng { color: var(--bad); }
+
+/* ---- 一問一答 ---- */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(8, 16, 20, .55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.modal[hidden] { display: none; }
+.sheet {
+  background: var(--surface);
+  border: var(--w-l) solid var(--frame);
+  border-radius: var(--r-l);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .32);
+  width: min(620px, 100%);
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.sheet-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 22px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface-2);
+}
+.dots { display: flex; gap: 5px; }
+.dot {
+  width: 26px;
+  height: 5px;
+  border-radius: 2px;
+  background: var(--line-strong);
+}
+.dot.on { background: var(--accent); }
+.sheet-head .x {
+  margin-left: auto;
+  border: 0;
+  background: transparent;
+  color: var(--ink-muted);
+  font-family: var(--font-body);
+  font-size: 12px;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+.sheet-head .x:hover { color: var(--ink); }
+
+.sheet-body { padding: 36px 30px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
+.qnum {
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: .14em;
+  color: var(--ink-muted);
+}
+.sheet-body h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.4;
+  margin: 0;
+  text-wrap: balance;
+}
+.qhint { font-size: 13px; color: var(--ink-muted); line-height: 1.95; margin-bottom: 22px; }
+#qSlot > .field > label,
+#qSlot > .field > .hint:first-of-type { display: none; }
+#qSlot .legend { display: none; }
+/* 判定結果をポップアップの中に出すときは、枠を重ねない */
+#qSlot #resultBlock .panel:first-child { border-width: var(--w-xl); border-radius: var(--r-xl); }
+#qSlot #resultBlock .verdict { padding: 18px 16px; }
+
+.sheet-foot {
+  display: flex;
+  gap: 10px;
+  padding: 20px 22px;
+  border-top: 1px solid var(--line);
+  background: var(--surface-2);
+}
+.sheet-foot .btn:last-child { margin-left: auto; }
+
+.choices { display: flex; flex-direction: column; gap: 10px; }
+.choice {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-align: left;
+  font-family: var(--font-body);
+  padding: 14px 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+.choice:hover { border-color: var(--accent); background: var(--accent-soft); }
+.choice b { font-size: 15px; font-weight: 700; }
+.choice small { font-size: 12px; color: var(--ink-muted); line-height: 1.55; }
+
+.rulesummary {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--ink-muted);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+.rulesummary b { color: var(--ink); font-family: var(--font-data); font-weight: 500; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+</style>
+
+<div class="wrap">
+
+  <div class="masthead">
+    <h1>中退共スケジューラー</h1>
+    <span class="sub">加入可否・掛金額・提出スケジュールを一度に出す</span>
+    <div class="modeswitch" id="modeSwitch" hidden>
+      <button class="mode" type="button" id="modeOne">一人だけ確認</button>
+      <button class="mode" type="button" id="modeAll">全員まとめて確認</button>
+    </div>
+    <span class="ver">VER.0</span>
+  </div>
+
+  <!-- ============ 最初の画面：どちらをするか ============ -->
+  <div class="landing" id="landing">
+    <p class="lead">何をしますか？</p>
+    <div class="bigchoices">
+      <button class="bigchoice" type="button" id="goOne">
+        <b>一人だけ確認</b>
+        <small>1問ずつ聞いていきます。<br>加入できるか、掛金はいくらか、いつ何を出せばいいかまで出します。</small>
+      </button>
+      <button class="bigchoice" type="button" id="goAll">
+        <b>全員まとめて確認</b>
+        <small>CSVを入れるだけ。<br>全員の掛金と、今月が加入月の人を一覧で出します。</small>
+      </button>
+    </div>
+    <div class="landing-foot">
+      <button class="linkbtn" type="button" id="openRules">基本の設定を変更する</button>
+    </div>
+  </div>
+
+  <div id="rulesHost" hidden></div>
+
+  <div class="cols" id="oneView" hidden>
+
+    <!-- ============ 左：入力 ============ -->
+    <div class="stack">
+
+      <section class="panel" id="rulesPanel">
+        <header>
+          <h2>会社ルール</h2>
+          <span class="note" id="ruleSummary"></span>
+          <button class="chip" type="button" id="editRules">基本の設定を変更する</button>
+        </header>
+        <div class="body" id="rulesBody" hidden>
+
+          <div class="row2">
+            <div class="field" id="field-months">
+              <label for="ruleMonths">平均する期間</label>
+              <div class="hint">※ 直近何か月分の給与で平均を出すか。引き継ぎ書は12か月、現行スプシは時給者6か月です。</div>
+              <div class="inline">
+                <input type="number" id="ruleMonths" value="12" min="1" max="24" step="1">
+                <span class="unit">か月</span>
+              </div>
+              <div class="chips">
+                <button class="chip" type="button" data-set="ruleMonths" data-val="6">6か月</button>
+                <button class="chip" type="button" data-set="ruleMonths" data-val="12">12か月</button>
+              </div>
+            </div>
+
+            <div class="field" id="field-rate">
+              <label for="ruleRate">掛金率</label>
+              <div class="hint">※ 月平均額の何％までを掛金の上限にするか。就業規則は「平均基本給月額の7％以下」です。</div>
+              <div class="inline">
+                <input type="number" id="ruleRate" value="7" min="0.1" max="100" step="0.1">
+                <span class="unit">％</span>
+              </div>
+              <div class="chips">
+                <button class="chip" type="button" data-set="ruleRate" data-val="7">7％</button>
+                <button class="chip" type="button" data-set="ruleRate" data-val="10">10％</button>
+                <button class="chip" type="button" data-set="ruleRate" data-val="5">5％</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row2">
+            <div class="field" id="field-adjust">
+              <label for="ruleAdjust">調整係数</label>
+              <div class="hint">※ 上限をさらに何％まで圧縮するか。100％なら圧縮なし。処遇改善加算などを考慮して70％に抑える運用があります。</div>
+              <div class="inline">
+                <input type="number" id="ruleAdjust" value="100" min="1" max="100" step="1">
+                <span class="unit">％</span>
+              </div>
+              <div class="chips">
+                <button class="chip" type="button" data-set="ruleAdjust" data-val="100">なし</button>
+                <button class="chip" type="button" data-set="ruleAdjust" data-val="70">処遇考慮 70％</button>
+              </div>
+            </div>
+
+            <div class="field" id="field-qualify">
+              <label for="ruleQualify">加入タイミング</label>
+              <div class="hint">※ 就業規則が「採用後1年を経過した翌月から」なら12か月。中退共の制度上は入社日から加入することもできます。</div>
+              <div class="inline">
+                <span class="unit">入社から</span>
+                <input type="number" id="ruleQualify" value="12" min="0" max="60" step="1">
+                <span class="unit">か月後の翌月</span>
+              </div>
+              <div class="chips">
+                <button class="chip" type="button" data-set="ruleQualify" data-val="12">1年後の翌月</button>
+                <button class="chip" type="button" data-set="ruleQualify" data-val="0">即時</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="field" id="field-lead">
+            <label for="ruleLead">事前確認を何日前にするか</label>
+            <div class="hint">※ 提出月に入る前に、掛金の再計算と申込書・添付書類の準備をする日です。</div>
+            <div class="inline">
+              <input type="number" id="ruleLead" value="30" min="0" max="180" step="1">
+              <span class="unit">日前</span>
+            </div>
+          </div>
+
+          <div class="saverow">
+            <button class="btn ghost" type="button" id="saveRules">この設定を保存</button>
+            <button class="chip" type="button" id="resetRules">初期値に戻す</button>
+            <span class="savemsg" id="saveMsg"></span>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="panel">
+        <header>
+          <h2>対象者</h2>
+        </header>
+        <div class="body">
+
+          <div class="row2">
+            <div class="field" id="field-name">
+              <label for="empName">氏名</label>
+              <input type="text" id="empName" placeholder="山田 太郎">
+            </div>
+            <div class="field" id="field-hire">
+              <label for="hireDate">入社日</label>
+              <input type="date" id="hireDate">
+            </div>
+          </div>
+
+          <div class="field" id="field-hours">
+            <label for="weekHours">週の所定労働時間</label>
+            <div class="hint">※ 30時間未満なら、短時間労働者の特例掛金（2,000／3,000／4,000円）が使えます。ここは実績ではなく<strong>契約上の所定労働時間</strong>で判定します。</div>
+            <div class="inline">
+              <input type="number" id="weekHours" value="40" min="0" max="80" step="0.5">
+              <span class="unit">時間</span>
+            </div>
+            <div class="chips">
+              <button class="chip" type="button" id="pickContract">雇用契約書（.docx）から読み取る</button>
+              <input type="file" id="contractFile" accept=".docx" hidden>
+            </div>
+            <div class="filemeta" id="contractmeta"></div>
+            <div class="quote" id="contractquote" hidden></div>
+            <div class="parse-err" id="contracterr" hidden></div>
+          </div>
+
+          <div id="field-pay">
+            <div class="legend" style="margin-bottom:8px;">基本給相当の月平均額</div>
+            <div class="tabs" role="tablist">
+              <button class="tab" id="tab-manual" role="tab" aria-selected="true" aria-controls="pane-manual">手入力</button>
+              <button class="tab" id="tab-csv" role="tab" aria-selected="false" aria-controls="pane-csv">CSVインポート</button>
+            </div>
+
+            <div class="tabpanel" id="pane-manual" role="tabpanel" aria-labelledby="tab-manual">
+              <div class="field">
+                <div class="inline">
+                  <input type="number" id="manualAvg" placeholder="54000" min="0" step="1">
+                  <span class="unit">円 / 月</span>
+                </div>
+                <div class="hint">雇用契約書の想定ではなく、<strong>実績ベース</strong>で見積もるのが原則です。</div>
+              </div>
+            </div>
+
+            <div class="tabpanel" id="pane-csv" role="tabpanel" aria-labelledby="tab-csv" hidden>
+              <div class="drop" id="drop">
+                <p>賃金台帳・支給控除一覧表・従業員情報をここへ<br>
+                  <small>賃金台帳はZIPのままでOK</small></p>
+                <button class="btn ghost" type="button" id="pick">ファイルを選ぶ</button>
+                <input type="file" id="file" accept=".csv,.zip" multiple hidden>
+              </div>
+              <div class="filemeta" id="filemeta"></div>
+              <div class="parse-err" id="parseerr" hidden></div>
+
+              <div class="field" id="rosterWrap" hidden>
+                <label for="rosterPick">対象者を選ぶ</label>
+                <select id="rosterPick"></select>
+                <div class="hint" id="rosterHint"></div>
+              </div>
+
+              <div class="field" id="staffWrap" hidden>
+                <label for="staffPick">従業員情報から選ぶ</label>
+                <select id="staffPick"></select>
+                <div class="quote" id="staffFilled" hidden></div>
+                <div class="hint">
+                  ※ 従業員情報には<strong>給与の金額が入っていません</strong>。
+                  氏名・入社日・週の所定労働時間だけ自動で埋めるので、金額は「手入力」タブか、
+                  賃金台帳／支給控除一覧表をもう1つ読み込んで入れてください。
+                </div>
+              </div>
+
+              <div class="hint" id="csvHint">
+                ファイルはブラウザの中だけで処理され、どこにも送信されません。
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ============ 右：結果 ============ -->
+    <div class="stack">
+     <div class="stack" id="resultBlock">
+
+      <div class="warn-banner" id="oneWarn" hidden></div>
+
+      <section class="panel">
+        <div class="verdict idle" id="verdict">
+          <span class="badge" id="badge">未判定</span>
+          <div class="amount" id="amount">入社日と金額を入れてください</div>
+          <div class="why" id="why"></div>
+        </div>
+
+        <div class="tablewrap">
+          <table class="calc">
+            <tbody id="calcbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel" id="schedPanel" hidden>
+        <header>
+          <h2>スケジュール</h2>
+          <span class="note" id="schedNote"></span>
+        </header>
+        <div class="sched" id="sched"></div>
+      </section>
+
+      <section class="panel" id="todoPanel" hidden>
+        <header>
+          <h2>担当者がやること</h2>
+        </header>
+        <ol class="todo" id="todo"></ol>
+        <div class="actions">
+          <button class="btn" type="button" id="copy">結果をコピー</button>
+        </div>
+      </section>
+
+     </div>
+
+    </div>
+  </div>
+
+  <section class="panel bulk" id="allView" hidden>
+    <header>
+      <h2>全員まとめて判定</h2>
+      <span class="note">毎月の掛金見直し用。上の「会社ルール」の設定をそのまま使います</span>
+    </header>
+    <div class="body">
+      <div class="slots">
+
+        <div class="slot" id="paySlot">
+          <div class="slot-head">
+            <span class="num">1</span>
+            <div>
+              <b>賃金台帳</b>
+              <small>ZIPのままでOK。freeeは従業員データ1枚で足ります</small>
+            </div>
+            <span class="state" id="payState">未</span>
+          </div>
+          <div class="drop" id="payDrop">
+            <p>ここにZIPかCSVをドロップ（複数まとめて可）</p>
+            <button class="btn ghost" type="button" id="payPick">ファイルを選ぶ</button>
+            <input type="file" id="payFile" accept=".csv,.zip" multiple hidden>
+          </div>
+          <div class="filemeta" id="payMeta"></div>
+          <div class="months" id="payMonths" hidden></div>
+          <div class="parse-err" id="payErr" hidden></div>
+        </div>
+
+        <div class="slot" id="stfSlot">
+          <div class="slot-head">
+            <span class="num">2</span>
+            <div>
+              <b>従業員情報<span class="opt">任意</span></b>
+              <small>入社日と所定労働時間が加わります</small>
+            </div>
+            <span class="state" id="stfState">未</span>
+          </div>
+          <div class="drop" id="stfDrop">
+            <p>ここにCSVをドロップ</p>
+            <button class="btn ghost" type="button" id="stfPick">ファイルを選ぶ</button>
+            <input type="file" id="stfFile" accept=".csv" hidden>
+          </div>
+          <div class="filemeta" id="stfMeta"></div>
+          <div class="parse-err" id="stfErr" hidden></div>
+        </div>
+
+      </div>
+
+      <div class="field" id="currentWrap">
+        <label for="currentPaste">いまの掛金（任意）</label>
+        <div class="hint">
+          Excelやスプレッドシートから<strong>「従業員番号または氏名」と「掛金」の2列</strong>をコピーして貼り付けると、
+          増額・減額が必要な人が分かります。
+        </div>
+        <textarea id="currentPaste" rows="3" placeholder="1206&#9;28000&#10;1271&#9;24000"></textarea>
+        <div class="filemeta" id="currentMeta"></div>
+      </div>
+
+      <div class="warn-banner" id="bulkWarn" hidden></div>
+
+      <section class="panel todo-month" id="monthPanel" hidden>
+        <header>
+          <h2>今月やること</h2>
+          <span class="note" id="monthNote"></span>
+        </header>
+        <div class="sched" id="monthList"></div>
+        <div class="actions">
+          <button class="btn" type="button" id="monthCopy">この予定をコピー</button>
+        </div>
+      </section>
+
+      <div id="bulkResult" hidden>
+        <div class="tablewrap">
+          <table class="grid" id="bulkTable"></table>
+        </div>
+        <div class="actions" style="padding:14px 0 0;">
+          <label class="check"><input type="checkbox" id="hideGone"> 従業員情報に無い人を隠す</label>
+          <button class="btn" type="button" id="bulkCopy">表をコピー（Excelに貼れます）</button>
+        </div>
+        <div class="hint" id="bulkNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="modal" hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="qTitle">
+      <div class="sheet-head">
+        <div class="dots" id="dots"></div>
+        <button class="x" type="button" id="closeWiz">閉じる</button>
+      </div>
+      <div class="sheet-body">
+        <div class="qnum" id="qnum"></div>
+        <h3 id="qTitle"></h3>
+        <div class="qhint" id="qHint"></div>
+        <div id="qSlot"></div>
+      </div>
+      <div class="sheet-foot">
+        <button class="btn ghost" type="button" id="wizBack">戻る</button>
+        <button class="btn" type="button" id="wizNext">次へ</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footnote" id="footnote" hidden>
+    <strong>このツールが前提にしていること</strong>
+    <ul>
+      <li>掛金は一般16段階（5,000〜30,000円）と、短時間労働者の特例3段階（2,000／3,000／4,000円）から自動で選びます。上限以下で最大の額です。</li>
+      <li>加入日は指定できません。<strong>金融機関の窓口受付日＝契約成立日</strong>で、その月分から掛金が請求されます。加入したい月に入ってから提出してください。</li>
+      <li>平均額は「データのある月」だけで割ります。設定した期間より月数が少ない場合は、実際にある月数が分母になります。</li>
+      <li>役員は加入できません。勤続1年未満も対象外です。</li>
+    </ul>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var GENERAL = [5000, 6000, 7000, 8000, 9000, 10000, 12000, 14000, 16000, 18000, 20000, 22000, 24000, 26000, 28000, 30000];
+  var SHORT_TIME = [2000, 3000, 4000];
+
+  var $ = function (id) { return document.getElementById(id); };
+  var state = { csv: null };
+
+  /* ---------- helpers ---------- */
+  function yen(n) { return Number(n).toLocaleString("ja-JP"); }
+
+  function fmtDate(d) {
+    if (!d) return "—";
+    return d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
+  }
+  function fmtDateLong(d) {
+    if (!d) return "—";
+    return d.getFullYear() + "年" + (d.getMonth() + 1) + "月" + d.getDate() + "日";
+  }
+  function gcalStamp(d) {
+    var m = ("0" + (d.getMonth() + 1)).slice(-2);
+    var day = ("0" + d.getDate()).slice(-2);
+    return "" + d.getFullYear() + m + day;
+  }
+  function addDays(d, n) {
+    var x = new Date(d.getTime());
+    x.setDate(x.getDate() + n);
+    return x;
+  }
+  // 入社日 + n か月（月末は繰り上げずクランプ）
+  function addMonths(d, n) {
+    var y = d.getFullYear(), m = d.getMonth(), day = d.getDate();
+    var last = new Date(y, m + n + 1, 0).getDate();
+    return new Date(y, m + n, Math.min(day, last));
+  }
+  function firstOfNextMonth(d) {
+    return new Date(d.getFullYear(), d.getMonth() + 1, 1);
+  }
+  function num(el, fallback) {
+    var v = parseFloat(el.value);
+    return isFinite(v) ? v : fallback;
+  }
+
+  /* ---------- CSV ---------- */
+  function parseCSV(text) {
+    var rows = [], row = [], cell = "", q = false, i, c;
+    for (i = 0; i < text.length; i++) {
+      c = text.charAt(i);
+      if (q) {
+        if (c === '"') {
+          if (text.charAt(i + 1) === '"') { cell += '"'; i++; }
+          else { q = false; }
+        } else { cell += c; }
+      } else if (c === '"') {
+        q = true;
+      } else if (c === ",") {
+        row.push(cell); cell = "";
+      } else if (c === "\n") {
+        row.push(cell); rows.push(row); row = []; cell = "";
+      } else if (c !== "\r") {
+        cell += c;
+      }
+    }
+    row.push(cell);
+    if (row.length > 1 || row[0] !== "") rows.push(row);
+    return rows;
+  }
+
+  function normLabel(s) {
+    return String(s || "")
+      .replace(/[（）]/g, function (m) { return m === "（" ? "(" : ")"; })
+      .replace(/\s+/g, "")
+      .trim();
+  }
+  function toNum(s) {
+    var t = String(s || "").replace(/[,\s円]/g, "");
+    if (t === "" || t === "-") return null;
+    var v = parseFloat(t);
+    return isFinite(v) ? v : null;
+  }
+  function findRow(rows, label) {
+    for (var i = 0; i < rows.length; i++) {
+      if (normLabel(rows[i][0]) === label) return rows[i];
+    }
+    return null;
+  }
+
+  function readLedger(text, fileName) {
+    var rows = parseCSV(text);
+
+    // 月度ヘッダ行を探す（1列目が空で、以降に「月度」を含む）
+    var hdr = null, hi = -1;
+    for (var i = 0; i < rows.length; i++) {
+      if (normLabel(rows[i][0]) === "" && rows[i].slice(1).some(function (c) { return String(c).indexOf("月度") >= 0; })) {
+        hdr = rows[i]; hi = i; break;
+      }
+    }
+    if (!hdr) throw new Error("月度の見出し行が見つかりません。MFクラウド給与の賃金台帳CSVか確認してください。");
+
+    // 基本給の行があればそれが正確。無ければ「課税支給合計 − 時間外手当」で近似する。
+    var basePay = findRow(rows, "基本給(支給)");
+    var taxable = findRow(rows, "課税支給合計");
+    if (!basePay && !taxable) throw new Error("「基本給(支給)」も「課税支給合計」も見つかりません。");
+    var overtime = findRow(rows, "時間外手当(支給)");
+    var workHours = findRow(rows, "総労働時間");
+    var basis = basePay ? "賃金台帳の「基本給」の行" : "課税支給合計 − 時間外手当";
+
+    // 末尾の「合計」列は除く
+    var end = hdr.length;
+    if (normLabel(hdr[end - 1]) === "合計") end -= 1;
+
+    var months = [];
+    for (var c = 1; c < end; c++) {
+      var label = String(hdr[c] || "").split("\n")[0].trim();
+      var b, t = taxable ? toNum(taxable[c]) : null;
+      var o = overtime ? (toNum(overtime[c]) || 0) : 0;
+
+      if (basePay) {
+        b = toNum(basePay[c]);
+        if (b === null || b === 0) continue;
+      } else {
+        if (t === null || t === 0) continue;
+        b = t - o;
+      }
+      months.push({
+        label: label,
+        taxable: t === null ? 0 : t,
+        overtime: o,
+        base: b,
+        hours: workHours ? toNum(workHours[c]) : null
+      });
+    }
+    if (!months.length) throw new Error("支給実績のある月が1つもありません。");
+
+    var name = "";
+    var nameRow = findRow(rows, "氏名");
+    if (nameRow) name = String(nameRow[1] || "").trim();
+
+    // 従業員番号はファイル名に入っている（賃金台帳_1004_沼尻明美_…）
+    var code = "";
+    var cm = String(fileName || "").match(/賃金台帳[_\s]+([0-9]+)[_\s]/);
+    if (cm) code = cm[1];
+
+    return { months: months, name: name, code: code, basis: basis };
+  }
+
+  // 支給控除一覧表：1か月分、全員が1行ずつ。「基本給(支給)」の列をそのまま使う。
+  function readRoster(rows, fileName) {
+    var hi = findHeaderRow(rows, "従業員番号");
+    if (hi < 0) throw new Error("「従業員番号」の見出しが見つかりません。");
+
+    var hdr = rows[hi].map(normLabel);
+    var col = function (name) { return hdr.indexOf(name); };
+    var cBase = col("基本給(支給)");
+    if (cBase < 0) throw new Error("「基本給(支給)」の列がありません。"
+      + "支給控除一覧表の表示パターンで「基本給」にチェックを入れて出し直してください。");
+
+    var cCode = col("従業員番号"), cName = col("従業員"), cType = col("契約種別");
+    var cFixed = col("固定賃金合計"), cTaxable = col("課税支給合計");
+    var cHours = col("総労働時間");
+
+    var people = [], i;
+    for (i = hi + 1; i < rows.length; i++) {
+      var r = rows[i];
+      if (!r) continue;
+      var code = String(r[cCode] || "").trim();
+      // 部門計・全社計の行を落とす（合計行は従業員番号が空か「-」、または【】付きの見出しになる）
+      if (!code || code === "-" || code.charAt(0) === "【") continue;
+      if (String(r[0] || "").trim().charAt(0) === "【") continue;
+      var base = toNum(r[cBase]);
+      people.push({
+        code: code,
+        name: String(r[cName] || "").trim(),
+        type: cType >= 0 ? String(r[cType] || "").trim() : "",
+        base: base === null ? 0 : base,
+        fixed: cFixed >= 0 ? (toNum(r[cFixed]) || 0) : 0,
+        taxable: cTaxable >= 0 ? (toNum(r[cTaxable]) || 0) : 0,
+        hours: cHours >= 0 ? toNum(r[cHours]) : null
+      });
+    }
+    if (!people.length) throw new Error("従業員の行が読み取れませんでした。");
+
+    var m = String(fileName || "").match(/(\d{4})年(\d{2})月(\d{2})日/);
+    var label = m ? (m[1] + "年" + Number(m[2]) + "月") : "";
+    var sort = m ? (Number(m[1]) * 100 + Number(m[2])) : 0;
+
+    var byCode = {};
+    for (var k = 0; k < people.length; k++) byCode[people[k].code] = people[k];
+
+    return { people: people, label: label, sort: sort, byCode: byCode, file: fileName };
+  }
+
+  // 従業員情報：全員分の入社日と所定労働時間。金額は入っていない。
+  // 見出しは1行目だが「従業員番号」は先頭列ではない（Version, 従業員識別子 が前にある）。
+  // 見出し行は先頭行とは限らない（Version行などが前に来る）。指定した見出しを含む行を探す。
+  function findHeaderRow(rows, label) {
+    for (var i = 0; i < Math.min(rows.length, 12); i++) {
+      if (!rows[i]) continue;
+      if (rows[i].map(normLabel).indexOf(label) >= 0) return i;
+    }
+    return -1;
+  }
+
+  // freeeの列名には「[必須]」が付くことがあるので外して比べる
+  function freeeLabel(x) {
+    return normLabel(x).replace(/^\[必須\]/, "");
+  }
+
+  function freeeHeaderRow(rows) {
+    for (var i = 0; i < Math.min(rows.length, 12); i++) {
+      if (!rows[i]) continue;
+      var h = rows[i].map(freeeLabel);
+      if (h.indexOf("社員番号") >= 0 && h.indexOf("基本給") >= 0 && h.indexOf("入社日") >= 0) return i;
+    }
+    return -1;
+  }
+
+  // "7:30" → 7.5 のように、時:分の表記を時間に直す
+  function hoursFrom(text) {
+    var t = String(text || "").trim();
+    if (!t) return null;
+    var m = t.match(/^(\d+):(\d+)$/);
+    if (m) return Number(m[1]) + Number(m[2]) / 60;
+    var v = toNum(t);
+    return v === null ? null : v;
+  }
+
+  // freeeは従業員データ1つに、基本給も入社日も所定労働時間も入っている。
+  // ただし基本給は「現在の額」で、給与形態によって単位が違う（月給＝月額／時給＝時間単価／日給＝日額）。
+  function readFreee(rows, hi) {
+    var hdr = rows[hi].map(freeeLabel);
+    var c = function (name) { return hdr.indexOf(name); };
+    var cCode = c("社員番号"), cSei = c("姓"), cMei = c("名"), cForm = c("給与形態"),
+        cBase = c("基本給"), cHire = c("入社日"), cQuit = c("退職日"),
+        cDayH = c("1日の所定労働時間"), cWeekD = c("週の所定労働日数"), cAvgD = c("平均所定労働日数");
+
+    var people = [], staff = [], i;
+    for (i = hi + 1; i < rows.length; i++) {
+      var r = rows[i];
+      if (!r) continue;
+      var code = String(r[cCode] || "").trim();
+      if (!code) continue;
+
+      var form = cForm >= 0 ? String(r[cForm] || "").trim() : "";
+      var raw = toNum(r[cBase]);
+      var dayH = cDayH >= 0 ? hoursFrom(r[cDayH]) : null;
+      var weekD = cWeekD >= 0 ? toNum(r[cWeekD]) : null;
+      var avgD = cAvgD >= 0 ? toNum(r[cAvgD]) : null;
+
+      // 月額に揃える。時給・日給は所定労働の日数・時間から月額を組み立てる。
+      var monthly = null, note = "";
+      if (raw !== null) {
+        if (form.indexOf("月給") >= 0) {
+          monthly = raw;
+        } else if (form.indexOf("時給") >= 0 && dayH !== null && avgD !== null) {
+          monthly = Math.round(raw * dayH * avgD);
+          note = "時給" + raw + "円 × " + dayH + "時間 × " + avgD + "日";
+        } else if (form.indexOf("日給") >= 0 && avgD !== null) {
+          monthly = Math.round(raw * avgD);
+          note = "日給" + raw + "円 × " + avgD + "日";
+        }
+      }
+
+      var week = (dayH !== null && weekD !== null) ? Math.round(dayH * weekD * 2) / 2 : null;
+      var name = [String(r[cSei] || "").trim(), String(r[cMei] || "").trim()].filter(Boolean).join(" ");
+      var quit = cQuit >= 0 ? String(r[cQuit] || "").trim() : "";
+
+      people.push({
+        code: code, name: name, type: form,
+        base: monthly === null ? 0 : monthly,
+        months: monthly === null ? 0 : 1,
+        monthHours: null,
+        note: note,
+        needsHours: monthly === null && raw !== null
+      });
+      staff.push({
+        code: code, name: name, type: form,
+        hire: String(r[cHire] || "").trim().replace(/\//g, "-"),
+        quit: quit,
+        monthHours: null,
+        weekHours: week
+      });
+    }
+    if (!people.length) throw new Error("従業員の行が読み取れませんでした。");
+
+    var byCode = {};
+    for (var k = 0; k < staff.length; k++) byCode[staff[k].code] = staff[k];
+
+    return {
+      people: people,
+      staff: { people: staff, byCode: byCode },
+      basis: "freeeの従業員データ（現在の基本給）",
+      source: "freee"
+    };
+  }
+
+  // 賃金台帳は「月度」の見出し行を持つ（1列目が空で、右に 1月度・2月度… が並ぶ）
+  function ledgerHeaderRow(rows) {
+    for (var i = 0; i < Math.min(rows.length, 20); i++) {
+      if (!rows[i]) continue;
+      if (normLabel(rows[i][0]) !== "") continue;
+      for (var j = 1; j < rows[i].length; j++) {
+        if (String(rows[i][j]).indexOf("月度") >= 0) return i;
+      }
+    }
+    return -1;
+  }
+
+  // CSVの種類を1か所で判定する。
+  //   staff  … 従業員情報（入社年月日がある）
+  //   roster … 支給控除一覧表（従業員番号の見出し行がある。1人1行）
+  //   ledger … 賃金台帳（月度の見出し行がある。1人1ファイル・複数月）
+  function csvKind(rows) {
+    if (freeeHeaderRow(rows) >= 0) return "freee";
+    if (looksLikeStaff(rows) >= 0) return "staff";
+    if (ledgerHeaderRow(rows) >= 0) return "ledger";
+    if (findHeaderRow(rows, "従業員番号") >= 0) return "roster";
+    return "unknown";
+  }
+
+  // 従業員情報かどうかは「入社年月日があって、基本給(支給)が無い」で見分ける。
+  // 支給控除一覧表にも入社年月日を足せてしまうため、基本給の有無で優先を決める。
+  function looksLikeStaff(rows) {
+    var i = findHeaderRow(rows, "入社年月日");
+    if (i < 0) return -1;
+    var hdr = rows[i].map(normLabel);
+    if (hdr.indexOf("基本給(支給)") >= 0) return -1;
+    if (hdr.indexOf("従業員番号") < 0) return -1;
+    return i;
+  }
+
+  function readStaff(rows, hi) {
+    var hdr = rows[hi].map(normLabel);
+    var c = function (n) { return hdr.indexOf(n); };
+    var cCode = c("従業員番号"), cSei = c("姓"), cMei = c("名"), cType = c("契約種別"),
+        cHire = c("入社年月日"), cQuit = c("退職年月日"), cHMon = c("所定労働時間(月平均)"),
+        cHDay = c("1日の所定労働時間"), cDMon = c("所定労働日数(月平均)"),
+        cFull = c("氏名");
+
+    if (cCode < 0 || cHire < 0) throw new Error("「従業員番号」と「入社年月日」の列が必要です。エクスポートの項目に加えてください。");
+
+    var people = [];
+    for (var i = hi + 1; i < rows.length; i++) {
+      var r = rows[i];
+      if (!r) continue;
+      var code = String(r[cCode] || "").trim();
+      if (!code) continue;
+
+      var name = cFull >= 0
+        ? String(r[cFull] || "").trim()
+        : [String(r[cSei] || "").trim(), String(r[cMei] || "").trim()].filter(Boolean).join(" ");
+
+      // 月平均の所定労働時間から週あたりを出す（1か月 ≒ 4.33週）
+      var hMon = cHMon >= 0 ? toNum(r[cHMon]) : null;
+      if (hMon === null && cHDay >= 0 && cDMon >= 0) {
+        var hd = toNum(r[cHDay]), dm = toNum(r[cDMon]);
+        if (hd !== null && dm !== null) hMon = hd * dm;
+      }
+      var week = (hMon !== null && hMon > 0) ? Math.round((hMon / 4.33) * 2) / 2 : null;
+
+      people.push({
+        code: code,
+        name: name,
+        type: cType >= 0 ? String(r[cType] || "").trim() : "",
+        hire: String(r[cHire] || "").trim().replace(/\//g, "-"),
+        quit: cQuit >= 0 ? String(r[cQuit] || "").trim() : "",
+        monthHours: hMon,
+        weekHours: week
+      });
+    }
+    if (!people.length) throw new Error("従業員の行が読み取れませんでした。");
+
+    var byCode = {};
+    for (var k = 0; k < people.length; k++) byCode[people[k].code] = people[k];
+    return { people: people, byCode: byCode };
+  }
+
+  function fillStaff() {
+    var sel = $("staffPick"), s = state.staff;
+    var html = "";
+    for (var i = 0; i < s.people.length; i++) {
+      var p = s.people[i];
+      html += '<option value="' + i + '">'
+        + p.name + "（" + p.code + "）"
+        + (p.type ? "／" + p.type : "")
+        + "　入社 " + (p.hire || "不明")
+        + (p.weekHours !== null ? "／週" + p.weekHours + "時間" : "")
+        + (p.quit ? "　※退職 " + p.quit : "")
+        + "</option>";
+    }
+    sel.innerHTML = html;
+    $("staffWrap").hidden = false;
+    applyStaff();
+  }
+
+  // 選ばれた人の氏名・入社日・週の所定労働時間を入力欄へ入れる
+  function applyStaff() {
+    var p = state.staff && state.staff.people[parseInt($("staffPick").value, 10) || 0];
+    if (!p) return;
+    var filled = [];
+    if (p.name) { $("empName").value = p.name; filled.push("氏名"); }
+    if (p.hire) { $("hireDate").value = p.hire; filled.push("入社日 " + p.hire); }
+    if (p.weekHours !== null) {
+      $("weekHours").value = p.weekHours;
+      filled.push("週の所定労働時間 " + p.weekHours + "時間"
+        + (p.monthHours ? "（月" + p.monthHours + "時間から換算）" : ""));
+    }
+    var box = $("staffFilled");
+    if (filled.length) {
+      box.hidden = false;
+      box.innerHTML = "<b>" + filled.join(" ／ ") + "</b> を入れました。"
+        + (p.weekHours === null
+          ? "<br>この人は<b>所定労働時間が登録されていません</b>。"
+            + "いまは <b>週" + $("weekHours").value + "時間</b> のままなので、正しい時間に直してください。"
+          : "");
+    } else {
+      box.hidden = true;
+    }
+    render();
+  }
+
+  // 平均する期間が変わったら、まとめ直して選択リストも作り直す
+  function refreshRoster(force) {
+    var hasLedger = state.ledgers && Object.keys(state.ledgers).length;
+    var hasFreee = !!state.freee;
+    if (!hasLedger && !hasFreee && (!state.payMonths || !state.payMonths.length)) return;
+    var limit = Math.max(1, Math.round(num($("ruleMonths"), 12)));
+    if (!force && state.rosterLimit === limit) return;
+
+    var keep = state.roster && state.roster.people[parseInt($("rosterPick").value, 10)];
+    state.roster = mergedPeople(limit);
+    state.rosterLimit = limit;
+    fillRoster();
+
+    if (keep) {
+      for (var i = 0; i < state.roster.people.length; i++) {
+        if (state.roster.people[i].code === keep.code) { $("rosterPick").value = i; break; }
+      }
+    }
+    var p0 = state.roster.people[parseInt($("rosterPick").value, 10) || 0];
+    if (p0) {
+      if (p0.name && !$("empName").value.trim()) $("empName").value = p0.name;
+      syncPerson(p0.code, "roster");
+    }
+
+    var loaded = state.payMonths ? state.payMonths.length : 0;
+    var pick = state.roster.people[parseInt($("rosterPick").value, 10) || 0];
+    var got = pick ? pick.months : 0;
+
+    if (hasFreee) {
+      $("rosterHint").innerHTML = "※ freeeの従業員データから <strong>" + state.roster.people.length
+        + "名分</strong> を読み込みました。"
+        + "<br>これは<strong>現在の基本給</strong>です。月ごとの平均で決めているなら、"
+        + "給与明細一覧表を月数ぶん出して入れてください。";
+    } else if (hasLedger) {
+      $("rosterHint").innerHTML = "※ 賃金台帳から <strong>" + state.roster.people.length
+        + "名分</strong> を読み込みました。設定した <strong>" + limit + "か月</strong> ぶんで平均します"
+        + (state.roster.label ? "（" + state.roster.label + "）" : "") + "。"
+        + (state.roster.basis ? "<br>基本給は <strong>" + state.roster.basis + "</strong> から取っています。" : "");
+    } else if (loaded > 1) {
+      $("rosterHint").innerHTML = "※ 読み込んだ " + loaded + "か月のうち、設定した <strong>"
+        + limit + "か月</strong> ぶんで平均します（" + state.roster.label + "）。";
+    } else {
+      $("rosterHint").innerHTML = "※ いまは1か月分だけです。<strong>直近月の基本給</strong>をそのまま使います。"
+        + "月ごとの平均で決めているなら、<strong>その月数ぶんのCSVをまとめて入れてください。</strong>";
+    }
+  }
+
+  var syncing = false;
+  function selectByCode(pickId, list, code) {
+    if (!list) return false;
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].code === code) { $(pickId).value = i; return true; }
+    }
+    return false;
+  }
+  function syncPerson(code, from) {
+    if (syncing) return;
+    syncing = true;
+    if (from !== "staff" && state.staff) {
+      if (selectByCode("staffPick", state.staff.people, code)) applyStaff();
+    }
+    if (from !== "roster" && state.roster) {
+      if (selectByCode("rosterPick", state.roster.people, code)) {
+        state.rosterCode = code;
+      }
+    }
+    syncing = false;
+  }
+
+  function fillRoster() {
+    var sel = $("rosterPick"), r = state.roster;
+    var html = "";
+    for (var i = 0; i < r.people.length; i++) {
+      var p = r.people[i];
+      var st = state.staff && state.staff.byCode[p.code];
+      var nm = p.name || (st && st.name) || "（氏名なし）";
+      html += '<option value="' + i + '">'
+        + nm + "（" + p.code + "）"
+        + (p.type ? "／" + p.type : "")
+        + "　基本給 " + yen(p.base) + "円"
+        + (p.months > 1 ? "（" + p.months + "か月平均）" : "")
+        + "</option>";
+    }
+    sel.innerHTML = html;
+    $("rosterWrap").hidden = false;
+  }
+
+  /* ---------- 判定 ---------- */
+  function pickPremium(cap, isShortTime) {
+    var pool = isShortTime ? SHORT_TIME.concat(GENERAL) : GENERAL.slice();
+    var best = null;
+    for (var i = 0; i < pool.length; i++) {
+      if (pool[i] <= cap && (best === null || pool[i] > best)) best = pool[i];
+    }
+    return best;
+  }
+
+  function compute() {
+    var months = Math.max(1, Math.round(num($("ruleMonths"), 12)));
+    var rate = num($("ruleRate"), 7);
+    var adjust = num($("ruleAdjust"), 100);
+    var qualify = Math.max(0, Math.round(num($("ruleQualify"), 12)));
+    var lead = Math.max(0, Math.round(num($("ruleLead"), 30)));
+
+    var weekHours = num($("weekHours"), 40);
+    var isShortTime = weekHours < 30;
+
+    var name = $("empName").value.trim();
+    var hireStr = $("hireDate").value;
+    var hire = hireStr ? new Date(hireStr + "T00:00:00") : null;
+
+    var avg = null, used = [], source = "手入力", person = null;
+    var onCsv = $("tab-csv").getAttribute("aria-selected") === "true";
+
+    if (onCsv && state.roster) {
+      person = state.roster.people[parseInt($("rosterPick").value, 10) || 0];
+      if (person) {
+        avg = person.base;
+        source = "一覧表";
+        if (!name && person.name) name = person.name;
+      }
+    } else if (onCsv && state.csv) {
+      used = state.csv.months.slice(-months);
+      var sum = used.reduce(function (a, m) { return a + m.base; }, 0);
+      avg = Math.round(sum / used.length);
+      source = "台帳";
+      if (!name && state.csv.name) { name = state.csv.name; }
+    } else {
+      var v = parseFloat($("manualAvg").value);
+      if (isFinite(v) && v > 0) avg = Math.round(v);
+    }
+
+    var cap = avg === null ? null : Math.floor(avg * (rate / 100) * (adjust / 100));
+    var premium = cap === null ? null : pickPremium(cap, isShortTime);
+
+    var qualifyDate = hire ? addMonths(hire, qualify) : null;      // 勤続◯か月に到達する日
+    var joinDate = qualifyDate ? firstOfNextMonth(qualifyDate) : null; // 加入月の1日＝提出解禁日
+    var checkDate = joinDate ? addDays(joinDate, -lead) : null;
+
+    return {
+      name: name, hire: hire, weekHours: weekHours, isShortTime: isShortTime,
+      months: months, rate: rate, adjust: adjust, lead: lead,
+      avg: avg, cap: cap, premium: premium, used: used, source: source, person: person,
+      qualifyDate: qualifyDate, joinDate: joinDate, checkDate: checkDate
+    };
+  }
+
+  /* ---------- 描画 ---------- */
+  function render() {
+    $("ruleSummary").textContent = ruleSummaryText();
+    refreshRoster(false);
+    renderBulk();   // ルールを変えたら一括の表も追随させる（この関数は途中でreturnする分岐がある）
+    var r = compute();
+    var verdict = $("verdict"), badge = $("badge"), amount = $("amount"), why = $("why");
+
+    verdict.className = "verdict idle";
+
+    if (r.avg === null) {
+      $("oneWarn").innerHTML = "";
+      $("oneWarn").hidden = true;
+      badge.textContent = "未判定";
+      amount.textContent = "基本給相当の月平均額を入れてください";
+      why.textContent = "";
+      $("calcbody").innerHTML = "";
+      $("schedPanel").hidden = true;
+      $("todoPanel").hidden = true;
+      return;
+    }
+
+    var floorAmt = r.isShortTime ? 2000 : 5000;
+
+    if (r.premium === null) {
+      verdict.className = "verdict ng";
+      badge.textContent = "加入不可";
+      amount.textContent = "掛金の下限に届きません";
+      why.textContent = "上限 " + yen(r.cap) + "円 が、"
+        + (r.isShortTime ? "短時間労働者の特例の最低額 2,000円" : "一般の最低額 5,000円")
+        + " を下回っています。"
+        + (!r.isShortTime && r.cap >= 2000 ? "　※週30時間未満なら特例で加入できる可能性があります。" : "");
+    } else {
+      verdict.className = "verdict ok";
+      badge.textContent = r.premium < 5000 ? "加入可（短時間労働者の特例）" : "加入可";
+      amount.innerHTML = yen(r.premium) + '<span class="yen">円 / 月</span>';
+      why.textContent = "上限 " + yen(r.cap) + "円 以下で最大の掛金額です。";
+    }
+
+    // 設定した月数ぶん揃っているか（1人ずつの画面）
+    var wantMonths = Math.max(1, Math.round(num($("ruleMonths"), 12)));
+    var haveMonths = null;
+    if (r.source === "一覧表" && r.person) haveMonths = r.person.months;
+    else if (r.source === "台帳" && r.used) haveMonths = r.used.length;
+
+    var w1 = "";
+    if (haveMonths !== null && haveMonths > 0 && haveMonths < wantMonths) {
+      w1 += warnBlock(
+        wantMonths + "か月で平均する設定ですが、" + haveMonths + "か月分のデータしかありません。",
+        "このまま進めると掛金がずれます。データを " + wantMonths + "か月分そろえるか、"
+        + "「基本の設定」の平均する期間を <strong>" + haveMonths + "か月</strong> に合わせてください。");
+    }
+    // 選んでいる人が従業員情報にいないと、入社日も加入月も出せない
+    if (r.person && state.staff && !state.staff.byCode[r.person.code]) {
+      w1 += warnBlock(
+        "この人が従業員情報に見つかりません。",
+        "従業員番号 <strong>" + r.person.code + "</strong> が従業員情報の中にありません。"
+        + "<br>別の事業所のファイルが混ざっていないか確かめてください。入社日は手で入れる必要があります。");
+    }
+    $("oneWarn").innerHTML = w1;
+    $("oneWarn").hidden = !w1;
+
+    // 計算の内訳
+    var rows = [];
+    if (r.source === "一覧表") {
+      var mn = r.person ? r.person.months : 0;
+      rows.push([mn > 1 ? "基本給の平均" : "基本給（直近月）", yen(r.avg) + " 円"]);
+      if (mn > 1) rows.push(["　使用した月", mn + "か月（" + state.roster.label + "）"]);
+      else if (state.roster && state.roster.label) rows.push(["　出典", state.roster.label + " の支給控除一覧表"]);
+      if (r.person && r.person.type) rows.push(["　契約種別", r.person.type]);
+    } else {
+      rows.push(["基本給相当の月平均", yen(r.avg) + " 円"]);
+      if (r.source === "台帳" && r.used.length) {
+        rows.push(["　使用した月", r.used.length + "か月（" + r.used[0].label + "〜" + r.used[r.used.length - 1].label + "）"]);
+        if (state.csv && state.csv.basis) rows.push(["　計算の元", state.csv.basis]);
+      }
+    }
+    rows.push(["掛金率", r.rate + " ％"]);
+    if (r.adjust !== 100) rows.push(["調整係数", r.adjust + " ％"]);
+    rows.push(["掛金の上限", yen(r.cap) + " 円"]);
+    rows.push(["適用する下限", yen(floorAmt) + " 円" + (r.isShortTime ? "（特例）" : "（一般）")]);
+    rows.push(["週の所定労働時間", r.weekHours + " 時間" + (r.isShortTime ? "（30時間未満）" : "")]);
+
+    var html = "";
+    for (var i = 0; i < rows.length; i++) {
+      html += "<tr><th>" + rows[i][0] + "</th><td>" + rows[i][1] + "</td></tr>";
+    }
+    if (r.premium !== null) {
+      html += '<tr class="total"><th>採用する掛金月額</th><td>' + yen(r.premium) + " 円</td></tr>";
+    }
+    $("calcbody").innerHTML = html;
+
+    // スケジュール
+    if (!r.hire) {
+      $("schedPanel").hidden = true;
+      $("todoPanel").hidden = true;
+      return;
+    }
+    $("schedPanel").hidden = false;
+    $("schedNote").textContent = "入社 " + fmtDate(r.hire);
+
+    var who = r.name || "対象者";
+    var items = [
+      {
+        date: r.checkDate,
+        title: "中退共 事前確認：" + who,
+        what: "事前確認",
+        sub: "掛金額の再計算と、申込書・添付書類の準備"
+      },
+      {
+        date: r.joinDate,
+        title: "中退共 申込書を窓口へ提出：" + who + "（掛金 " + (r.premium ? yen(r.premium) + "円" : "未定") + "）",
+        what: "申込書を金融機関の窓口へ提出",
+        sub: "この日以降に提出。受付日＝契約成立日、その月分から掛金請求"
+      }
+    ];
+
+    var s = "";
+    for (var j = 0; j < items.length; j++) {
+      var it = items[j];
+      var url = "https://calendar.google.com/calendar/render?action=TEMPLATE"
+        + "&text=" + encodeURIComponent(it.title)
+        + "&dates=" + gcalStamp(it.date) + "/" + gcalStamp(addDays(it.date, 1))
+        + "&details=" + encodeURIComponent(it.sub);
+      s += '<div class="sched-item">'
+        + '<div class="sched-date">' + fmtDate(it.date) + "</div>"
+        + '<div class="sched-what">' + it.what + "<small>" + it.sub + "</small></div>"
+        + '<a class="gcal" target="_blank" rel="noopener" href="' + url + '">カレンダーに追加</a>'
+        + "</div>";
+    }
+    $("sched").innerHTML = s;
+
+    // やること
+    if (r.premium === null) {
+      $("todoPanel").hidden = true;
+      return;
+    }
+    $("todoPanel").hidden = false;
+    var todo = [
+      ["「追加退職金共済契約申込書」を用意する", "各会社事務所に在庫あり。なければ金融機関か中退共HPから入手"],
+      ["掛金月額 " + yen(r.premium) + "円 を記入する", "上限 " + yen(r.cap) + "円 以下で最大の額"],
+      ["" + fmtDateLong(r.joinDate) + " 以降に、最寄りの金融機関の窓口へ提出する", "受付日が契約成立日。前月に出すと前月分から請求されます"],
+      ["約1か月後に届く退職金共済手帳をファイリングする", "2枚目は退職時に使うので保管、3枚目は退職者に渡す"]
+    ];
+    var attn = null;
+    if (r.isShortTime) {
+      attn = ["労働条件通知書 兼 労働契約書の写し（記名押印済）を添付する", "短時間労働者の特例で加入するため必須です"];
+    }
+    var t = "";
+    for (var k = 0; k < todo.length; k++) {
+      if (k === 1 && attn) {
+        t += '<li class="attn"><span class="flag">必須</span>' + attn[0] + "<small>" + attn[1] + "</small></li>";
+      }
+      t += "<li>" + todo[k][0] + "<small>" + todo[k][1] + "</small></li>";
+    }
+    $("todo").innerHTML = t;
+
+    state.last = r;
+  }
+
+  /* ---------- コピー ---------- */
+  function copyText() {
+    var r = state.last;
+    if (!r) return;
+    var lines = [
+      "【中退共 加入判定】" + (r.name || ""),
+      "入社日：" + fmtDateLong(r.hire),
+      "週の所定労働時間：" + r.weekHours + "時間" + (r.isShortTime ? "（30時間未満・特例対象）" : ""),
+      (r.source === "一覧表"
+        ? (r.person && r.person.months > 1 ? "基本給の平均：" : "基本給（直近月）：") + yen(r.avg) + "円"
+          + (state.roster && state.roster.label ? "（" + state.roster.label + "）" : "")
+        : "基本給相当の月平均：" + yen(r.avg) + "円"
+          + (r.source === "台帳" && r.used.length ? "（" + r.used.length + "か月平均／" + r.used[0].label + "〜" + r.used[r.used.length - 1].label + "）" : "")),
+      "掛金率：" + r.rate + "％" + (r.adjust !== 100 ? "／調整係数 " + r.adjust + "％" : ""),
+      "掛金の上限：" + yen(r.cap) + "円",
+      "判定：" + (r.premium === null ? "加入不可（下限に届かず）" : "加入可　掛金月額 " + yen(r.premium) + "円"),
+      "",
+      "事前確認：" + fmtDateLong(r.checkDate),
+      "申込書提出：" + fmtDateLong(r.joinDate) + " 以降（窓口受付日＝契約成立日、その月分から掛金請求）"
+    ];
+    var text = lines.join("\n");
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { flash("コピーしました"); }, function () { fallbackCopy(text); });
+    } else { fallbackCopy(text); }
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); flash("コピーしました"); } catch (e) { flash("コピーできませんでした"); }
+    document.body.removeChild(ta);
+  }
+  function flash(msg) {
+    var b = $("copy"), old = b.textContent;
+    b.textContent = msg;
+    setTimeout(function () { b.textContent = old; }, 1600);
+  }
+
+  /* ---------- ファイル ---------- */
+  function loadFile(file) {
+    var err = $("parseerr");
+    err.hidden = true;
+    $("filemeta").textContent = file.name;
+
+    if (/\.zip$/i.test(file.name)) {
+      var zr2 = new FileReader();
+      zr2.onload = function () {
+        readZipCsvs(zr2.result).then(function (items) {
+          var ok = 0;
+          items.forEach(function (it) {
+            try {
+              var led = readLedger(it.text, it.name);
+              addLedger(led.code, led, it.name);
+              ok++;
+            } catch (e6) { /* 賃金台帳でないファイルは飛ばす */ }
+          });
+          if (!ok) {
+            err.hidden = false;
+            err.textContent = "ZIPの中に賃金台帳が見つかりませんでした。\n"
+            + "MFクラウド給与の［賃金台帳］から、期間を指定して一括ダウンロードしたZIPを入れてください。";
+            return;
+          }
+          refreshRoster(true);
+          $("filemeta").textContent = file.name + "　（" + ok + "名分の賃金台帳）";
+          renderBulk();
+        }, function (e7) {
+          err.hidden = false;
+          err.textContent = e7.message;
+        });
+      };
+      zr2.readAsArrayBuffer(file);
+      return;
+    }
+    var reader = new FileReader();
+    reader.onload = function () {
+      var text = decodeCsv(reader.result);
+      state.csv = null;
+      $("rosterWrap").hidden = true;
+
+      try {
+        var rows = parseCSV(text);
+        var staffAt = looksLikeStaff(rows);
+        var kind1 = csvKind(rows);
+        var isRoster = kind1 === "roster";
+
+        if (kind1 === "freee") {
+          var fr1 = readFreee(rows, freeeHeaderRow(rows));
+          state.freee = fr1;
+          state.staff = fr1.staff;
+          fillStaff();
+          refreshRoster(true);
+          $("filemeta").textContent = file.name + "　（freee " + fr1.people.length + "名）";
+          renderBulk();
+          render();
+          return;
+        }
+
+        if (kind1 === "unknown") {
+          throw new Error("このCSVの種類が分かりませんでした。"
+            + "賃金台帳なら「月度」の見出し、支給控除一覧表なら「従業員番号」の列、"
+            + "従業員情報なら「入社年月日」の列が必要です。ダウンロードし直してみてください。");
+        }
+
+        if (staffAt >= 0) {
+          state.staff = readStaff(rows, staffAt);
+          fillStaff();
+          $("filemeta").textContent = file.name + "　（従業員情報 " + state.staff.people.length + "名）";
+          renderBulk();
+        } else if (isRoster) {
+          addPayMonth(readRoster(rows, file.name));
+          refreshRoster(true);
+          $("filemeta").textContent = state.payMonths.length + "か月分を読み込みました（"
+            + state.roster.label + "）";
+        } else {
+          var led2 = readLedger(text, file.name);
+          state.csv = led2;
+          addLedger(led2.code, led2, file.name);
+          refreshRoster(true);
+          $("filemeta").textContent = file.name + "　（" + led2.months.length + "か月分／"
+            + led2.basis + "）";
+          if (led2.name && !$("empName").value.trim()) $("empName").value = led2.name;
+        }
+        render();
+      } catch (e) {
+        state.csv = null;
+        err.hidden = false;
+        err.textContent = e.message;
+        render();
+      }
+    };
+    reader.readAsArrayBuffer(file);
+  }
+
+  /* ---------- 雇用契約書(.docx)から週の所定労働時間を読む ---------- */
+  // .docx は ZIP。外部ライブラリを使わず、ZIPの目録から word/document.xml だけ取り出す。
+  // ZIPの目録を読み、入っているファイルを全部返す
+  function unzipList(buf) {
+    var dv = new DataView(buf), u8 = new Uint8Array(buf), i;
+
+    var eocd = -1;
+    for (i = u8.length - 22; i >= 0 && i > u8.length - 66000; i--) {
+      if (dv.getUint32(i, true) === 0x06054b50) { eocd = i; break; }
+    }
+    if (eocd < 0) throw new Error("ZIPとして読めませんでした。");
+
+    var count = dv.getUint16(eocd + 10, true);
+    var cdOff = dv.getUint32(eocd + 16, true);
+    var q = cdOff, dec = new TextDecoder("utf-8"), sj = null;
+    try { sj = new TextDecoder("shift_jis"); } catch (e) { sj = null; }
+    var out = [];
+
+    for (i = 0; i < count; i++) {
+      if (dv.getUint32(q, true) !== 0x02014b50) break;
+      var flags = dv.getUint16(q + 8, true);
+      var method = dv.getUint16(q + 10, true);
+      var compSize = dv.getUint32(q + 20, true);
+      var nameLen = dv.getUint16(q + 28, true);
+      var extraLen = dv.getUint16(q + 30, true);
+      var cmtLen = dv.getUint16(q + 32, true);
+      var localOff = dv.getUint32(q + 42, true);
+      var nameBytes = u8.subarray(q + 46, q + 46 + nameLen);
+      // 日本語のファイル名はUTF-8フラグが立っていなければCP932で入っている
+      var name = (flags & 0x800) || !sj ? dec.decode(nameBytes) : sj.decode(nameBytes);
+
+      var lNameLen = dv.getUint16(localOff + 26, true);
+      var lExtraLen = dv.getUint16(localOff + 28, true);
+      var start = localOff + 30 + lNameLen + lExtraLen;
+      out.push({ name: name, method: method, data: u8.subarray(start, start + compSize) });
+
+      q += 46 + nameLen + extraLen + cmtLen;
+    }
+    return out;
+  }
+
+  function unzipEntry(buf, wantName) {
+    var dv = new DataView(buf), u8 = new Uint8Array(buf), i;
+
+    // 末尾から End of Central Directory (0x06054b50) を探す
+    var eocd = -1;
+    for (i = u8.length - 22; i >= 0 && i > u8.length - 66000; i--) {
+      if (dv.getUint32(i, true) === 0x06054b50) { eocd = i; break; }
+    }
+    if (eocd < 0) throw new Error("Wordファイルとして読めませんでした。");
+
+    var count = dv.getUint16(eocd + 10, true);
+    var cdOff = dv.getUint32(eocd + 16, true);
+    var p = cdOff, dec = new TextDecoder("utf-8");
+
+    for (i = 0; i < count; i++) {
+      if (dv.getUint32(p, true) !== 0x02014b50) break;
+      var method = dv.getUint16(p + 10, true);
+      var compSize = dv.getUint32(p + 20, true);
+      var nameLen = dv.getUint16(p + 28, true);
+      var extraLen = dv.getUint16(p + 30, true);
+      var cmtLen = dv.getUint16(p + 32, true);
+      var localOff = dv.getUint32(p + 42, true);
+      var name = dec.decode(u8.subarray(p + 46, p + 46 + nameLen));
+
+      if (name === wantName) {
+        var lNameLen = dv.getUint16(localOff + 26, true);
+        var lExtraLen = dv.getUint16(localOff + 28, true);
+        var start = localOff + 30 + lNameLen + lExtraLen;
+        var data = u8.subarray(start, start + compSize);
+        return { method: method, data: data };
+      }
+      p += 46 + nameLen + extraLen + cmtLen;
+    }
+    throw new Error("Wordファイルの中身が見つかりませんでした。");
+  }
+
+  function inflate(entry) {
+    if (entry.method === 0) return Promise.resolve(entry.data);
+    if (typeof DecompressionStream === "undefined") {
+      return Promise.reject(new Error("このブラウザではWordファイルを開けません。数字を直接入力してください。"));
+    }
+    var ds = new DecompressionStream("deflate-raw");
+    var blob = new Blob([entry.data]);
+    return new Response(blob.stream().pipeThrough(ds)).arrayBuffer().then(function (b) {
+      return new Uint8Array(b);
+    });
+  }
+
+  function xmlToText(xml) {
+    return xml
+      .replace(/<\/w:p>/g, "\n")
+      .replace(/<w:tab\b[^>]*\/?>/g, "\t")
+      .replace(/<[^>]+>/g, "")
+      .replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+      .replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+  }
+
+  function toHalfWidth(s) {
+    return s.replace(/[０-９．]/g, function (c) {
+      return c === "．" ? "." : String.fromCharCode(c.charCodeAt(0) - 0xFEE0);
+    });
+  }
+
+  // 契約書の文面から週の所定労働時間を拾う
+  function findWeekHours(text) {
+    var t = toHalfWidth(text).replace(/[ 　]/g, "");
+    var pats = [
+      { re: /1?週間?の?所定労働時間[^0-9]{0,12}([0-9]+(?:\.[0-9]+)?)時間/, kind: "week" },
+      { re: /所定労働時間[^0-9]{0,12}週([0-9]+(?:\.[0-9]+)?)時間/, kind: "week" },
+      { re: /週([0-9]+(?:\.[0-9]+)?)時間/, kind: "week" },
+      { re: /月間?([0-9]+(?:\.[0-9]+)?)時間/, kind: "month" }
+    ];
+    for (var i = 0; i < pats.length; i++) {
+      var m = t.match(pats[i].re);
+      if (!m) continue;
+      var v = parseFloat(m[1]);
+      if (!isFinite(v) || v <= 0) continue;
+
+      // 根拠として、その一文をそのまま見せる
+      var line = "";
+      var lines = toHalfWidth(text).split("\n");
+      for (var j = 0; j < lines.length; j++) {
+        if (lines[j].replace(/[ 　]/g, "").indexOf(m[0]) >= 0) {
+          line = lines[j].trim().slice(0, 120);
+          break;
+        }
+      }
+      if (pats[i].kind === "month") {
+        return { hours: Math.round((v / 4.33) * 2) / 2, kind: "month", raw: v, line: line };
+      }
+      return { hours: v, kind: "week", raw: v, line: line };
+    }
+    return null;
+  }
+
+  function loadContract(file) {
+    var meta = $("contractmeta"), err = $("contracterr"), quote = $("contractquote");
+    err.hidden = true; quote.hidden = true;
+    meta.textContent = file.name + "　読み取り中…";
+
+    var reader = new FileReader();
+    reader.onload = function () {
+      var entry;
+      try {
+        entry = unzipEntry(reader.result, "word/document.xml");
+      } catch (e) {
+        meta.textContent = file.name;
+        err.hidden = false;
+        err.textContent = e.message + " 週の所定労働時間は直接入力してください。";
+        return;
+      }
+      inflate(entry).then(function (bytes) {
+        var text = xmlToText(new TextDecoder("utf-8").decode(bytes));
+        var hit = findWeekHours(text);
+        meta.textContent = file.name;
+        if (!hit) {
+          err.hidden = false;
+          err.textContent = "週の所定労働時間が見つかりませんでした。直接入力してください。";
+          return;
+        }
+        $("weekHours").value = hit.hours;
+        quote.hidden = false;
+        quote.innerHTML = (hit.kind === "month"
+          ? "月" + hit.raw + "時間 から <b>週" + hit.hours + "時間</b> と換算しました（÷4.33）。"
+          : "契約書から <b>週" + hit.raw + "時間</b> を読み取りました。")
+          + (hit.line ? "<br>「" + hit.line.replace(/</g, "&lt;") + "」" : "")
+          + "<br>数字が違う場合は上の欄で直してください。";
+        render();
+      }, function (e) {
+        meta.textContent = file.name;
+        err.hidden = false;
+        err.textContent = e.message;
+      });
+    };
+    reader.readAsArrayBuffer(file);
+  }
+
+  /* ---------- ZIPの取り込み ---------- */
+  function decodeCsv(buf) {
+    var text;
+    try {
+      text = new TextDecoder("shift_jis").decode(buf);
+      if (text.indexOf("賃金台帳") < 0 && text.indexOf("従業員番号") < 0 && text.indexOf("課税支給合計") < 0) {
+        text = new TextDecoder("utf-8").decode(buf);
+      }
+    } catch (e) {
+      text = new TextDecoder("utf-8").decode(buf);
+    }
+    return text;
+  }
+
+  // ZIPの中のCSVを順に取り出す。戻り値は [{name, text}]
+  function readZipCsvs(buf) {
+    var list;
+    try {
+      list = unzipList(buf).filter(function (e) {
+        return /\.csv$/i.test(e.name) && e.name.indexOf("__MACOSX") < 0;
+      });
+    } catch (e) {
+      return Promise.reject(new Error(
+        "ZIPとして読めませんでした。\n"
+        + "拡張子が .zip でも中身が壊れていることがあります。ダウンロードし直してみてください。"));
+    }
+    if (!list.length) {
+      return Promise.reject(new Error(
+        "ZIPの中にCSVが見つかりませんでした。\n"
+        + "MFクラウド給与の［賃金台帳］から、期間を指定して一括ダウンロードしたZIPを入れてください。"));
+    }
+
+    return list.reduce(function (chain, e) {
+      return chain.then(function (acc) {
+        return inflate(e).then(function (bytes) {
+          var ab = bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength);
+          acc.push({ name: e.name.split("/").pop(), text: decodeCsv(ab) });
+          return acc;
+        });
+      });
+    }, Promise.resolve([]));
+  }
+
+  /* ---------- 賃金台帳をためる ---------- */
+  // 賃金台帳は「1人1ファイル・複数月」。ZIPで全員分を一度に取れるので、こちらが本命。
+  function addLedger(code, led, fileName) {
+    if (!state.ledgers) state.ledgers = {};
+    var key = code || led.name || fileName;
+    state.ledgers[key] = {
+      code: code || "",
+      name: led.name || "",
+      months: led.months,
+      basis: led.basis,
+      file: fileName
+    };
+  }
+
+  function ledgerPeople(limit) {
+    var keys = Object.keys(state.ledgers || {});
+    if (!keys.length) return null;
+
+    var people = keys.map(function (k) {
+      var L = state.ledgers[k];
+      var used = L.months.slice(-Math.max(1, limit));
+      var vals = used.filter(function (m) { return m.base > 0; });
+      var sum = vals.reduce(function (a, m) { return a + m.base; }, 0);
+      var hrs = used.filter(function (m) { return m.hours; });
+      return {
+        code: L.code,
+        name: L.name,
+        type: "",
+        base: vals.length ? Math.round(sum / vals.length) : 0,
+        months: vals.length,
+        monthHours: hrs.length
+          ? hrs.reduce(function (a, m) { return a + m.hours; }, 0) / hrs.length
+          : null,
+        span: used.length
+          ? (used[0].label + " 〜 " + used[used.length - 1].label)
+          : ""
+      };
+    });
+
+    var any = people[0];
+    var kinds = [];
+    keys.forEach(function (k) {
+      var b = state.ledgers[k].basis;
+      if (b && kinds.indexOf(b) < 0) kinds.push(b);
+    });
+    return {
+      people: people,
+      label: any && any.span ? any.span : "",
+      basis: kinds.length > 1 ? kinds.join(" と ") + "（人によって違います）" : kinds[0],
+      source: "台帳"
+    };
+  }
+
+  // 賃金台帳が入っていればそちらを優先。無ければ支給控除一覧表を使う。
+  function freeePeople() {
+    if (!state.freee) return null;
+    return {
+      people: state.freee.people,
+      label: "現在の基本給",
+      basis: state.freee.basis,
+      source: "freee"
+    };
+  }
+
+  function mergedPeople(limit) {
+    return ledgerPeople(limit) || freeePeople() || mergePayMonths(limit);
+  }
+
+  /* ---------- 支給控除一覧表を月ごとにためる ---------- */
+  // 12か月平均で掛金を決める運用の場合。支給控除一覧表は1か月分しか出ないので、
+  // 何枚でも受け取って従業員番号で突き合わせ、月ごとの基本給を積み上げる。
+  function addPayMonth(month) {
+    if (!state.payMonths) state.payMonths = [];
+    // 同じ支給月をもう一度入れたら差し替える
+    var i, found = -1;
+    for (i = 0; i < state.payMonths.length; i++) {
+      var same = month.label ? state.payMonths[i].label === month.label
+                             : state.payMonths[i].file === month.file;
+      if (same) { found = i; break; }
+    }
+    if (found >= 0) state.payMonths[found] = month;
+    else state.payMonths.push(month);
+
+    // 支給月の古い順に並べる（ファイル名に日付が無いものは読み込んだ順のまま後ろへ）
+    state.payMonths.sort(function (a, b) { return (a.sort || 0) - (b.sort || 0); });
+  }
+
+  // 使う月を絞り、人ごとに基本給を平均する
+  function mergePayMonths(limit) {
+    var months = state.payMonths || [];
+    if (!months.length) return null;
+    var used = months.slice(-Math.max(1, limit));
+
+    var order = [], seen = {};
+    for (var i = 0; i < used.length; i++) {
+      for (var j = 0; j < used[i].people.length; j++) {
+        var c = used[i].people[j].code;
+        if (!seen[c]) { seen[c] = true; order.push(c); }
+      }
+    }
+
+    var people = order.map(function (code) {
+      var vals = [], last = null, hours = [];
+      for (var k = 0; k < used.length; k++) {
+        var rec = used[k].byCode[code];
+        if (!rec) continue;
+        last = rec;
+        if (rec.base > 0) vals.push(rec.base);          // 支給の無い月は平均に入れない
+        if (rec.hours !== null && rec.hours > 0) hours.push(rec.hours);
+      }
+      var sum = vals.reduce(function (a, b) { return a + b; }, 0);
+      var avgHours = hours.length
+        ? hours.reduce(function (a, b) { return a + b; }, 0) / hours.length
+        : null;
+      return {
+        code: code,
+        name: last ? last.name : "",
+        type: last ? last.type : "",
+        base: vals.length ? Math.round(sum / vals.length) : 0,
+        months: vals.length,
+        monthHours: avgHours
+      };
+    });
+
+    return {
+      people: people,
+      used: used,
+      label: used.length === 1
+        ? (used[0].label || used[0].file)
+        : (used[0].label || "?") + " 〜 " + (used[used.length - 1].label || "?")
+    };
+  }
+
+  /* ---------- いまの掛金の貼り付け ---------- */
+  // Excelからコピーするとタブ区切りになる。氏名でも従業員番号でも引けるようにする。
+  function parseCurrent(text) {
+    var byCode = {}, byName = {}, count = 0;
+    String(text || "").split(/\r?\n/).forEach(function (line) {
+      if (!line.trim()) return;
+      var cols = line.split(/\t|,|\s{2,}/).map(function (c) { return c.trim(); }).filter(function (c) { return c !== ""; });
+      if (cols.length < 2) return;
+      var amount = toNum(cols[cols.length - 1]);
+      if (amount === null) return;
+      var key = cols[0];
+      if (/^[0-9]+$/.test(key)) byCode[key] = amount;
+      else byName[key.replace(/[\s　]/g, "")] = amount;
+      count++;
+    });
+    return { byCode: byCode, byName: byName, count: count };
+  }
+
+  function currentFor(person) {
+    var c = state.current;
+    if (!c) return null;
+    if (person.code && c.byCode[person.code] !== undefined) return c.byCode[person.code];
+    var nm = String(person.name || "").replace(/[\s　]/g, "");
+    if (nm && c.byName[nm] !== undefined) return c.byName[nm];
+    return null;
+  }
+
+  /* ---------- 今月やること ---------- */
+  // 加入月が今月なら「申込書の提出」、事前確認日が今月なら「事前確認」。
+  // 提出は加入したい月に入ってからでないと、前月分から掛金を取られてしまう。
+  function buildMonthTasks(people, staff) {
+    if (!staff) { $("monthPanel").hidden = true; return; }
+
+    var qualify = Math.max(0, Math.round(num($("ruleQualify"), 12)));
+    var lead = Math.max(0, Math.round(num($("ruleLead"), 30)));
+    var today = new Date();
+    var thisMonth = today.getFullYear() * 12 + today.getMonth();
+    var tasks = [];
+
+    people.forEach(function (p) {
+      var st = staff.byCode[p.code];
+      if (!st || !st.hire || st.quit) return;
+      var hd = new Date(st.hire + "T00:00:00");
+      if (isNaN(hd.getTime())) return;
+
+      var join = firstOfNextMonth(addMonths(hd, qualify));
+      var check = addDays(join, -lead);
+      var jm = join.getFullYear() * 12 + join.getMonth();
+      var cm = check.getFullYear() * 12 + check.getMonth();
+
+      if (jm === thisMonth) {
+        tasks.push({ kind: "submit", date: join, person: p, amount: p.premium, join: join });
+      } else if (cm === thisMonth && jm > thisMonth) {
+        tasks.push({ kind: "check", date: check, person: p, amount: p.premiumRaw, join: join, forecast: true });
+      }
+    });
+
+    tasks.sort(function (a, b) { return a.date - b.date; });
+
+    if (!tasks.length) {
+      // 先の予定を拾って、いつ何があるかだけでも見せる
+      var future = [];
+      people.forEach(function (p2) {
+        var st2 = staff.byCode[p2.code];
+        if (!st2 || !st2.hire || st2.quit) return;
+        var hd2 = new Date(st2.hire + "T00:00:00");
+        if (isNaN(hd2.getTime())) return;
+        var j2 = firstOfNextMonth(addMonths(hd2, qualify));
+        var jm2 = j2.getFullYear() * 12 + j2.getMonth();
+        if (jm2 > thisMonth) future.push({ p: p2, join: j2, check: addDays(j2, -lead) });
+      });
+      future.sort(function (a, b) { return a.join - b.join; });
+
+      var fh = "";
+      future.slice(0, 4).forEach(function (f) {
+        var who = f.p.name || f.p.code;
+        var amt = f.p.premiumRaw ? yen(f.p.premiumRaw) + "円（見込み）" : "要確認";
+        fh += '<div class="sched-item">'
+          + '<div class="sched-date">' + f.join.getFullYear() + "/" + (f.join.getMonth() + 1) + "</div>"
+          + '<div class="sched-what"><span class="month-who">' + who + "</span>　掛金 " + amt
+          + "<small>事前確認 " + fmtDate(f.check) + "／提出は " + fmtDateLong(f.join) + " 以降</small></div>"
+          + "</div>";
+      });
+
+      $("monthList").innerHTML = fh
+        ? '<div class="none">今月は提出も事前確認もありません。</div>' + fh
+        : '<div class="none">今月は提出も事前確認もありません。この先に加入予定の人もいません。</div>';
+      $("monthNote").textContent = today.getFullYear() + "年" + (today.getMonth() + 1) + "月　該当なし"
+        + (future.length ? "／この先の予定 " + future.length + "件" : "");
+      $("monthPanel").hidden = false;
+      $("monthPanel").classList.add("quiet");
+      $("monthCopy").hidden = true;
+      state.monthTasks = null;
+      return;
+    }
+    $("monthPanel").classList.remove("quiet");
+    $("monthCopy").hidden = false;
+
+    var html = "";
+    tasks.forEach(function (t) {
+      var who = t.person.name || t.person.code;
+      var amt = t.amount ? yen(t.amount) + "円" + (t.forecast ? "（見込み）" : "") : "要確認";
+      var title = t.kind === "submit"
+        ? "中退共 申込書を金融機関へ提出：" + who + "（掛金 " + amt + "）"
+        : "中退共 事前確認：" + who + "（" + (t.join.getMonth() + 1) + "月加入予定）";
+      var detail = t.kind === "submit"
+        ? fmtDateLong(t.join) + " 以降に提出。受付日＝契約成立日で、その月分から掛金請求。掛金 " + amt
+        : "掛金の再計算と、申込書・添付書類の準備。加入月は " + t.join.getFullYear() + "年" + (t.join.getMonth() + 1) + "月";
+      var url = "https://calendar.google.com/calendar/render?action=TEMPLATE"
+        + "&text=" + encodeURIComponent(title)
+        + "&dates=" + gcalStamp(t.date) + "/" + gcalStamp(addDays(t.date, 1))
+        + "&details=" + encodeURIComponent(detail);
+
+      html += '<div class="sched-item">'
+        + '<div class="sched-date">' + fmtDate(t.date) + "</div>"
+        + '<div class="sched-what">'
+        + '<span class="month-kind ' + t.kind + '">' + (t.kind === "submit" ? "提出" : "事前確認") + "</span>"
+        + '<span class="month-who">' + who + "</span>　掛金 " + amt
+        + "<small>" + detail + "</small></div>"
+        + '<a class="gcal" target="_blank" rel="noopener" href="' + url + '">カレンダーに追加</a>'
+        + "</div>";
+    });
+
+    $("monthList").innerHTML = html;
+    $("monthNote").textContent = today.getFullYear() + "年" + (today.getMonth() + 1) + "月　"
+      + tasks.filter(function (t) { return t.kind === "submit"; }).length + "件の提出／"
+      + tasks.filter(function (t) { return t.kind === "check"; }).length + "件の事前確認";
+    $("monthPanel").hidden = false;
+    state.monthTasks = tasks;
+  }
+
+  function copyMonth() {
+    if (!state.monthTasks) return;
+    var lines = ["【中退共 今月やること】"];
+    state.monthTasks.forEach(function (t) {
+      var who = t.person.name || t.person.code;
+      lines.push(fmtDateLong(t.date) + "　" + (t.kind === "submit" ? "申込書を提出" : "事前確認")
+        + "　" + who + "　掛金 " + (t.amount ? yen(t.amount) + "円" : "要確認")
+        + (t.kind === "submit" ? "　※この日以降に窓口へ。受付日＝契約成立日" : ""));
+    });
+    var text = lines.join("\n");
+    var done = function () {
+      var b = $("monthCopy"), old = b.textContent;
+      b.textContent = "コピーしました";
+      setTimeout(function () { b.textContent = old; }, 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text); });
+    } else { fallbackCopy(text); }
+  }
+
+  /* ---------- 警告の組み立て ---------- */
+  function infoBlock(title, detail) {
+    return '<div class="info-banner"><span class="mark">?</span><div>'
+      + "<b>" + title + "</b>"
+      + (detail ? "<small>" + detail + "</small>" : "")
+      + "</div></div>";
+  }
+
+  function warnBlock(title, detail) {
+    return '<div class="warn-banner"><span class="mark">!</span><div>'
+      + "<b>" + title + "</b>"
+      + (detail ? "<small>" + detail + "</small>" : "")
+      + "</div></div>";
+  }
+
+  // 賃金台帳と従業員情報が、同じ事業所・同じ時期のものか確かめる
+  function matchWarning(people) {
+    if (!state.staff || !people || !people.length) return "";
+    var matched = 0, missing = [];
+    for (var i = 0; i < people.length; i++) {
+      if (state.staff.byCode[people[i].code]) matched++;
+      else if (missing.length < 8) missing.push(people[i].name || people[i].code);
+    }
+    var total = people.length;
+
+    if (matched === 0) {
+      return warnBlock(
+        "従業員番号が1件も一致しません。別の事業所のファイルではありませんか？",
+        "賃金台帳は <strong>" + total + "名</strong>、従業員情報は <strong>"
+        + state.staff.people.length + "名</strong> ですが、共通する従業員番号がありません。"
+        + "<br>入社日と加入月が出せないので、同じ事業所のファイルをそろえてください。");
+    }
+    if (matched < total) {
+      return warnBlock(
+        (total - matched) + "名が従業員情報に見つかりません。",
+        "賃金台帳の " + total + "名のうち、照合できたのは <strong>" + matched + "名</strong> です。"
+        + "見つからないのは " + missing.join("、") + (total - matched > missing.length ? " ほか" : "") + "。"
+        + "<br>退職者なら問題ありませんが、<strong>事業所や期間が違うファイル</strong>の可能性もあります。"
+        + "この人たちは入社日と加入月が空欄になります。");
+    }
+    return "";
+  }
+
+  /* ---------- 全員まとめて判定 ---------- */
+  // 支給控除一覧表は1か月分・全員分。掛金の見直し（上限チェック）に使う。
+  // 入社日と週の所定労働時間はこのCSVに入っていないので、加入時期は1人ずつの画面で確認する。
+  function renderBulk() {
+    var merged = mergedPeople(Math.max(1, Math.round(num($("ruleMonths"), 12))));
+    if (!merged) return;
+    state.bulk = merged;
+    var rate = num($("ruleRate"), 7);
+    var adjust = num($("ruleAdjust"), 100);
+
+    var qualify = Math.max(0, Math.round(num($("ruleQualify"), 12)));
+    var staff = state.staff;                       // 従業員情報が読み込まれていれば結合する
+    var multi = merged.source === "台帳" ? true : (merged.used && merged.used.length > 1);
+
+    // どの月を使ったかを見せる（設定した月数より多く入れた場合は古い分が外れる）
+    var mc = "";
+    var pm = merged.source === "台帳" ? [] : (state.payMonths || []);
+    for (var q = 0; q < pm.length; q++) {
+      var mm = pm[q];
+      var inUse = merged.used && merged.used.indexOf(mm) >= 0;
+      mc += '<span class="month-chip' + (inUse ? " on" : "") + '">'
+        + (mm.label || mm.file) + "</span>";
+    }
+    $("payMonths").innerHTML = mc;
+    $("payMonths").hidden = !mc;
+    var today = new Date();
+    var thisMonth = today.getFullYear() * 12 + today.getMonth();
+
+    var head = "<thead><tr>"
+      + "<th>従業員番号</th><th>氏名</th><th>契約種別</th>"
+      + (staff ? "<th>入社日</th><th style='text-align:right'>週時間</th><th>加入月</th>" : "")
+      + (multi ? "<th style='text-align:right'>月数</th>" : "")
+      + "<th style='text-align:right'>" + (multi ? "基本給の平均" : "基本給") + "</th>"
+      + "<th style='text-align:right'>上限</th>"
+      + "<th style='text-align:right'>" + (state.current ? "あるべき掛金" : "掛金") + "</th>"
+      + (state.current ? "<th style='text-align:right'>いまの掛金</th><th style='text-align:right'>差</th>" : "")
+      + "<th>備考</th></tr></thead>";
+
+    var body = "", rows = [], ok = 0, ng = 0, check = 0, due = 0, up = 0, down = 0, same = 0, notYetCount = 0, goneCount = 0, hidden = 0;
+    var shortList = [];
+
+    for (var i = 0; i < state.bulk.people.length; i++) {
+      var p = state.bulk.people[i];
+      var st = staff ? staff.byCode[p.code] : null;
+      var name = p.name || (st && st.name) || "—";
+      var type = p.type || (st && st.type) || "—";
+
+      // 週の所定労働時間が分かれば特例も候補に入れる。分からなければ一般の16段階だけで判定する。
+      // 週の所定労働時間は従業員情報が最優先。無ければ支給控除一覧表の総労働時間から概算する。
+      var week = (st && st.weekHours !== null) ? st.weekHours
+        : (p.monthHours ? Math.round((p.monthHours / 4.33) * 2) / 2 : null);
+      var weekFromHours = !(st && st.weekHours !== null) && week !== null;
+      var known = week !== null;
+      var isShort = known && week < 30;
+      var cap = Math.floor(p.base * (rate / 100) * (adjust / 100));
+      var prem = pickPremium(cap, isShort);
+
+      // 加入月＝入社から所定の月数が経った、その翌月
+      var joinLabel = "—", joinCls = "", notYet = false;
+      if (st && st.hire) {
+        var hd = new Date(st.hire + "T00:00:00");
+        if (!isNaN(hd.getTime())) {
+          var jd = firstOfNextMonth(addMonths(hd, qualify));
+          var jm = jd.getFullYear() * 12 + jd.getMonth();
+          joinLabel = jd.getFullYear() + "/" + (jd.getMonth() + 1);
+          if (jm === thisMonth) { joinLabel += "　今月"; joinCls = "due"; due++; }
+          else if (jm < thisMonth) { joinLabel += "　済"; }
+          else { notYet = true; }        // 加入月がまだ先＝勤続が足りていない
+        }
+      }
+
+      // 在籍者だけをエクスポートしている場合、ここに居ない人は退職済みとみられる
+      var gone = !!(staff && !st);
+      if (gone && $("hideGone") && $("hideGone").checked) { hidden++; continue; }
+
+      var note = "", cls = joinCls;
+      if (gone) {
+        cls = (cls ? cls + " " : "") + "gone";
+        goneCount++;
+        note = '<span class="pill">従業員情報に無し（退職者の可能性）</span>';
+      } else if (notYet) {
+        cls = (cls ? cls + " " : "") + "notyet";
+        notYetCount++;
+        note = '<span class="pill plain">まだ対象外（' + joinLabel + " から"
+          + (prem === null ? "" : "・いまの数字なら " + yen(prem) + "円") + "）</span>";
+      } else if (prem === null) {
+        cls = (cls ? cls + " " : "") + "ng";
+        ng++;
+
+        if (p.needsHours) {
+          note = '<span class="pill">時給から月額を出せません（所定労働時間が未登録）</span>';
+          check++;
+        } else if (p.base === 0) {
+          note = '<span class="pill plain">支給なし</span>';
+        } else if (cap >= 2000 && !known) {
+          note = '<span class="pill">週30時間未満なら ' + yen(pickPremium(cap, true)) + "円 で加入可</span>";
+          check++;
+        } else if (cap >= 2000 && !isShort) {
+          note = '<span class="pill plain">週30時間以上のため特例は使えません</span>';
+        } else {
+          note = '<span class="pill plain">下限に届かず</span>';
+        }
+      } else {
+        ok++;
+        if (prem < 5000) {
+          note = '<span class="pill plain">短時間労働者の特例</span>';
+        } else if (!known && type !== "—" && type.indexOf("正社員") < 0) {
+          note = '<span class="pill">週30時間未満か要確認</span>';
+          check++;
+        }
+      }
+
+      // いまの掛金と比べて、増額・減額が要る人を出す
+      var curCells = "", cur = state.current ? currentFor(p) : null;
+      if (state.current) {
+        if (cur === null) {
+          curCells = '<td class="n">—</td><td class="n">—</td>';
+        } else if (prem === null || notYet || gone) {
+          curCells = '<td class="n">' + yen(cur) + '</td><td class="n">—</td>';
+        } else {
+          var diff = prem - cur;
+          if (diff !== 0) {
+            cls = (cls ? cls + " " : "") + "changed";
+            if (diff > 0) up++; else down++;
+          } else same++;
+          curCells = '<td class="n">' + yen(cur) + "</td>"
+            + '<td class="n ' + (diff > 0 ? "up" : diff < 0 ? "down" : "") + '">'
+            + (diff === 0 ? "—" : (diff > 0 ? "+" : "") + yen(diff)) + "</td>";
+        }
+      }
+
+      if (!gone && !notYet && st && st.hire && p.months > 0 && p.months < Math.max(1, Math.round(num($("ruleMonths"), 12)))) {
+        shortList.push(name === "—" ? p.code : name);
+      }
+
+      if (st && st.quit) {
+        cls = (cls ? cls + " " : "") + "quit";
+        note = '<span class="pill">退職済（' + st.quit + "）</span>" + note;
+      }
+
+      body += '<tr class="' + cls + '">'
+        + "<td>" + p.code + "</td>"
+        + "<td>" + name + "</td>"
+        + "<td>" + type + "</td>"
+        + (staff
+          ? "<td>" + (st && st.hire ? st.hire : "—") + "</td>"
+            + '<td class="n">' + (known ? week + (weekFromHours ? "*" : "") : "—") + "</td>"
+            + "<td>" + joinLabel + "</td>"
+          : "")
+        + (multi ? '<td class="n' + (p.months < Math.max(1, Math.round(num($("ruleMonths"), 12))) ? " short" : "") + '">' + p.months + "</td>" : "")
+        + '<td class="n">' + yen(p.base) + "</td>"
+        + '<td class="n">' + yen(cap) + "</td>"
+        + '<td class="n premium">' + ((notYet || gone) ? "—" : (prem === null ? "加入不可" : yen(prem))) + "</td>"
+        + (state.current ? curCells : "")
+        + "<td>" + note + "</td>"
+        + "</tr>";
+
+      var row = [p.code, name === "—" ? "" : name, type === "—" ? "" : type];
+      if (staff) row = row.concat([st && st.hire ? st.hire : "", known ? week : "", joinLabel.replace("　", " ")]);
+      if (multi) row.push(p.months);
+      row = row.concat([p.base, cap, gone ? "従業員情報に無し" : notYet ? "まだ対象外" : (prem === null ? "加入不可" : prem)]);
+      if (state.current) row = row.concat([cur === null ? "" : cur, (cur === null || prem === null) ? "" : prem - cur]);
+      p.premium = (notYet || gone) ? null : prem;
+      p.premiumRaw = gone ? null : prem;      // 加入前でも計算はできるので、見込み額として持たせる
+      rows.push(row);
+    }
+
+    buildMonthTasks(merged.people, staff);
+
+    // 設定した月数ぶんのデータが揃っているか
+    var months = Math.max(1, Math.round(num($("ruleMonths"), 12)));
+    var have = 0;
+    for (var z = 0; z < merged.people.length; z++) {
+      if (merged.people[z].months > have) have = merged.people[z].months;
+    }
+    var warns = "";
+    // 途中入社でまだ対象でない人は、月数が少なくて当たり前なので別扱いにする
+    if (shortList.length) {
+      warns += warnBlock(
+        shortList.length + "名は、勤続1年以上なのにデータが足りません。",
+        "該当は " + shortList.slice(0, 8).join("、") + (shortList.length > 8 ? " ほか" : "") + "。"
+        + "<br>休職や産休なら問題ありませんが、<strong>期間の指定漏れ</strong>の可能性もあります。"
+        + "設定した " + months + "か月ぶんそろっているか確かめてください。");
+    }
+    if (merged.source === "freee" && months > 1) {
+      warns += warnBlock(
+        "freeeの従業員データは「現在の基本給」1時点だけです。",
+        months + "か月の平均で決めているなら、この数字は使えません。"
+        + "<br>freeeの<strong>給与明細一覧表</strong>を月数ぶん出して入れるか、"
+        + "「基本の設定」の平均する期間を <strong>1か月</strong> にしてください。");
+    } else if (have && have < months) {
+      warns += warnBlock(
+        months + "か月で平均する設定ですが、" + have + "か月分のデータしかありません。",
+        "足りないまま平均すると掛金がずれます。"
+        + "賃金台帳を <strong>" + months + "か月分の期間で出し直す</strong>か、"
+        + "「基本の設定」の平均する期間を <strong>" + have + "か月</strong> に合わせてください。"
+        + "<br>赤い月数の人は、その人だけデータが少ない状態です（途中入社・休職など心当たりがなければ確認してください）。");
+    }
+    if (!staff) {
+      warns += infoBlock(
+        "従業員情報を入れると、加入月と「まだ対象外の人」が出ます。",
+        "いまは入社日が分からないため、<strong>入社したばかりの人にも掛金が出ています</strong>。"
+        + "右の枠（2）にクラウド給与の<strong>従業員情報</strong>のCSVを入れてください。"
+        + "契約種別・所定労働時間も埋まります。");
+    }
+    warns += matchWarning(merged.people);
+    if (state.current && down > 0) {
+      warns += warnBlock(
+        down + "名は減額が必要です。本人の同意を取ってください。",
+        "掛金を下げると将来の退職金が減るため、<strong>労働条件の不利益変更</strong>にあたります。"
+        + "一方的には下げられません。書面かメールで同意を取り、申込書の「減額同意確認」欄に記入してください。");
+    }
+
+    $("bulkWarn").innerHTML = warns;
+    $("bulkWarn").hidden = !warns;
+
+    $("bulkTable").innerHTML = head + "<tbody>" + body + "</tbody>";
+    state.bulkRows = rows;
+    state.bulkHead = ["従業員番号", "氏名", "契約種別"]
+      .concat(staff ? ["入社日", "週時間", "加入月"] : [])
+      .concat(multi ? ["月数"] : [])
+      .concat([multi ? "基本給の平均" : "基本給", "上限", state.current ? "あるべき掛金" : "掛金"])
+      .concat(state.current ? ["いまの掛金", "差"] : []);
+    $("bulkResult").hidden = false;
+
+    $("bulkNote").innerHTML =
+      "掛金が出た人 <strong>" + ok + "名</strong>／加入不可 <strong>" + ng + "名</strong>"
+      + (check ? "／要確認 <strong>" + check + "名</strong>" : "")
+      + (notYetCount ? "／まだ対象外 " + notYetCount + "名" : "")
+      + (goneCount ? "／従業員情報に無し " + goneCount + "名" : "")
+      + (hidden ? "／非表示 " + hidden + "名" : "")
+      + (staff ? "／<strong>今月が加入月の人 " + due + "名</strong>" : "")
+      + (state.current
+        ? "<br><strong>増額 " + up + "名</strong>／<strong>減額 " + down + "名</strong>／変更なし " + same + "名"
+        : "")
+      + "　（掛金率 " + rate + "％"
+      + (adjust !== 100 ? "・調整係数 " + adjust + "％" : "") + "）<br>"
+      + (merged.basis ? "※ 基本給は<strong>" + merged.basis + "</strong>から取っています。<br>" : "")
+      + (staff
+        ? "※ 週の時間は「所定労働時間(月平均)」を4.33で割った概算です。登録が無い人は「—」になります。"
+          + "<strong>*</strong> が付いた人は、所定ではなく<strong>実績の総労働時間</strong>から概算しています。<br>"
+        : "※ 支給控除一覧表には<strong>入社日と週の所定労働時間が入っていません</strong>。"
+          + "<strong>従業員情報のCSVも一緒にドロップ</strong>すると、加入月と特例の判定まで出せます。<br>")
+      + "※ <strong>契約変更の直後は基本給が実態と合いません。</strong>減額する場合は本人の同意が必要です。";
+  }
+
+  function copyBulk() {
+    if (!state.bulkRows) return;
+    var lines = [(state.bulkHead || []).join("\t")];
+    for (var i = 0; i < state.bulkRows.length; i++) lines.push(state.bulkRows[i].join("\t"));
+    var text = lines.join("\n");
+    var done = function () {
+      var b = $("bulkCopy"), old = b.textContent;
+      b.textContent = "コピーしました";
+      setTimeout(function () { b.textContent = old; }, 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text); });
+    } else { fallbackCopy(text); }
+  }
+
+  // 取り込み枠は2つ。入れ違えたら、正しい枠を名指しで案内する。
+  var SLOT = {
+    pay:   { name: "支給控除一覧表", slot: "paySlot", state: "payState", meta: "payMeta", err: "payErr", no: "1", side: "左" },
+    staff: { name: "従業員情報",     slot: "stfSlot", state: "stfState", meta: "stfMeta", err: "stfErr", no: "2", side: "右" }
+  };
+
+  function slotDone(which, text) {
+    var c = SLOT[which];
+    $(c.slot).classList.add("done");
+    $(c.state).textContent = "読込済";
+    $(c.meta).textContent = text;
+    $(c.err).hidden = true;
+  }
+
+  function slotFail(which, file, message) {
+    var c = SLOT[which];
+    $(c.slot).classList.remove("done");
+    $(c.state).textContent = "未";
+    $(c.meta).textContent = file ? file.name : "";
+    $(c.err).hidden = false;
+    $(c.err).textContent = message;
+  }
+
+  function loadBulkFile(file, expect) {
+    var c = SLOT[expect];
+    $(c.err).hidden = true;
+    $(c.meta).textContent = file.name + "　読み込み中…";
+
+    if (/\.zip$/i.test(file.name)) {
+      if (expect !== "pay") { slotFail(expect, file, "ZIPは左の枠（1）に入れてください。"); return; }
+      var zr = new FileReader();
+      zr.onload = function () {
+        readZipCsvs(zr.result).then(function (items) {
+          var ok = 0, ng = 0;
+          items.forEach(function (it) {
+            try {
+              var led = readLedger(it.text, it.name);
+              addLedger(led.code, led, it.name);
+              ok++;
+            } catch (e2) { ng++; }
+          });
+          if (!ok) { slotFail("pay", file, "ZIPの中に賃金台帳が見つかりませんでした。\n"
+            + "MFクラウド給与の［賃金台帳］から、期間を指定して一括ダウンロードしたZIPを入れてください。"); return; }
+          slotDone("pay", file.name + "　（" + ok + "名分の賃金台帳"
+            + (ng ? "／読めなかったファイル " + ng + "件" : "") + "）");
+          renderBulk();
+        }, function (e3) { slotFail("pay", file, e3.message); });
+      };
+      zr.readAsArrayBuffer(file);
+      return;
+    }
+
+    var reader = new FileReader();
+    reader.onload = function () {
+      var text = decodeCsv(reader.result);
+
+      var rows, staffAt, kind;
+      try {
+        rows = parseCSV(text);
+        staffAt = looksLikeStaff(rows);
+        kind = csvKind(rows);
+      } catch (e5) {
+        slotFail(expect, file, "CSVとして読めませんでした。ファイルが壊れていないか、CSV形式でダウンロードされているか確認してください。");
+        return;
+      }
+
+      if (kind === "unknown") {
+        slotFail(expect, file,
+          "このCSVの種類が分かりませんでした。\n"
+          + "賃金台帳なら「月度」の見出し、支給控除一覧表なら「従業員番号」の列、"
+          + "従業員情報なら「入社年月日」の列が必要です。ダウンロードし直してみてください。");
+        return;
+      }
+
+      // freeeの従業員データは1枚で両方まかなえるので、どちらの枠でも受ける
+      if (kind === "freee") {
+        try {
+          var fr = readFreee(rows, freeeHeaderRow(rows));
+          state.freee = fr;
+          state.staff = fr.staff;
+          slotDone("pay", file.name + "　（freee " + fr.people.length + "名）");
+          slotDone("staff", "同じファイルから読み込みました");
+          renderBulk();
+          return;
+        } catch (ef) {
+          slotFail(expect, file, ef.message);
+          return;
+        }
+      }
+
+      // 枠1は賃金台帳と支給控除一覧表の両方を受ける
+      if (expect === "pay" && kind === "ledger") {
+        try {
+          var led1 = readLedger(text, file.name);
+          addLedger(led1.code, led1, file.name);
+          slotDone("pay", Object.keys(state.ledgers).length + "名分の賃金台帳を読み込みました");
+          renderBulk();
+          return;
+        } catch (e4) {
+          slotFail("pay", file, e4.message);
+          return;
+        }
+      }
+
+      var want = expect === "pay" ? ["roster", "ledger", "freee"] : ["staff", "freee"];
+      if (want.indexOf(kind) < 0) {
+        var right = SLOT[kind === "staff" ? "staff" : "pay"];
+        slotFail(expect, file,
+          "これは「" + (kind === "staff" ? "従業員情報" : "賃金台帳・支給控除一覧表") + "」のようです。"
+          + right.side + "の枠（" + right.no + "）に入れてください。");
+        return;
+      }
+
+      try {
+        if (expect === "staff") {
+          state.staff = readStaff(rows, staffAt);
+          slotDone("staff", file.name + "　（" + state.staff.people.length + "名）");
+        } else {
+          addPayMonth(readRoster(rows, file.name));
+          var cnt = state.payMonths.length;
+          slotDone("pay", cnt + "か月分を読み込みました");
+        }
+        renderBulk();
+      } catch (e) {
+        slotFail(expect, file, e.message);
+      }
+    };
+    reader.readAsArrayBuffer(file);
+  }
+
+  /* ---------- 会社ルールの保存 ---------- */
+  var RULE_IDS = ["ruleMonths", "ruleRate", "ruleAdjust", "ruleQualify", "ruleLead"];
+  var RULE_DEFAULTS = { ruleMonths: "12", ruleRate: "7", ruleAdjust: "100", ruleQualify: "12", ruleLead: "30" };
+  var STORE_KEY = "chutaikyo.rules.v1";
+
+  function saveMsg(text, cls) {
+    var el = $("saveMsg");
+    el.textContent = text;
+    el.className = "savemsg" + (cls ? " " + cls : "");
+  }
+
+  function saveRules() {
+    var data = {};
+    RULE_IDS.forEach(function (id) { data[id] = $(id).value; });
+    try {
+      window.localStorage.setItem(STORE_KEY, JSON.stringify(data));
+      saveMsg("保存しました。次に開いたときもこの設定になります。", "ok");
+    } catch (e) {
+      saveMsg("このブラウザでは設定を保存できませんでした。", "ng");
+    }
+  }
+
+  function restoreRules() {
+    var raw;
+    try { raw = window.localStorage.getItem(STORE_KEY); } catch (e) { return; }
+    if (!raw) return;
+    var data;
+    try { data = JSON.parse(raw); } catch (e) { return; }
+    RULE_IDS.forEach(function (id) {
+      if (data[id] !== undefined && data[id] !== "") $(id).value = data[id];
+    });
+    saveMsg("保存した設定を読み込みました。", "");
+  }
+
+  function resetRules() {
+    RULE_IDS.forEach(function (id) { $(id).value = RULE_DEFAULTS[id]; });
+    try { window.localStorage.removeItem(STORE_KEY); } catch (e) { /* 保存がなくても初期値には戻る */ }
+    saveMsg("初期値に戻しました。", "");
+    render();
+  }
+
+  /* ---------- 会社ルールの要約 ---------- */
+  function ruleSummaryText() {
+    var months = Math.max(1, Math.round(num($("ruleMonths"), 12)));
+    var rate = num($("ruleRate"), 7);
+    var adjust = num($("ruleAdjust"), 100);
+    var qualify = Math.max(0, Math.round(num($("ruleQualify"), 12)));
+    return [
+      "平均 " + months + "か月",
+      "掛金率 " + rate + "％",
+      adjust === 100 ? "調整なし" : "調整 " + adjust + "％",
+      qualify === 0 ? "入社時に加入" : "入社 " + qualify + "か月後の翌月"
+    ].join("　／　");
+  }
+
+  function setRulesOpen(open) {
+    $("rulesBody").hidden = !open;
+  }
+
+  /* ---------- 表示モード ---------- */
+  // 最初は選択肢だけを見せる。選ばれた側だけを出す。
+  // 「会社ルール」はどちらのモードでも要るので、開始時に共通の置き場へ移しておく。
+  function setMode(mode) {
+    var landing = mode === "landing";
+    $("landing").hidden = !landing;
+    $("modeSwitch").hidden = landing;
+    $("rulesHost").hidden = landing;
+    setRulesOpen(false);
+    $("footnote").hidden = landing;
+    $("oneView").hidden = mode !== "one";
+    $("allView").hidden = mode !== "all";
+    $("modeOne").setAttribute("aria-pressed", mode === "one" ? "true" : "false");
+    $("modeAll").setAttribute("aria-pressed", mode === "all" ? "true" : "false");
+    state.mode = mode;
+    if (mode !== "landing") render();
+    $("ruleSummary").textContent = ruleSummaryText();
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }
+
+  /* ---------- 一問一答 ---------- */
+  // 入力欄は複製せず、既存のものをモーダルへ移動して使う（値もイベントもそのまま）
+  var STEPS = [
+    {
+      el: "field-name",
+      title: "対象者のお名前は？",
+      hint: "空欄でも進めます。カレンダーの予定名とコピーする文面に使います。"
+    },
+    {
+      el: "field-hire",
+      title: "入社日はいつですか？",
+      hint: "雇用契約書か、給与システムの入社年月日を見てください。ここから加入月を計算します。"
+    },
+    {
+      el: "field-hours",
+      title: "週の所定労働時間は？",
+      hint: "30時間未満なら、掛金2,000円から加入できる短時間労働者の特例が使えます。雇用契約書のWordファイルから読み取ることもできます。"
+    },
+    {
+      el: "field-pay",
+      title: "基本給相当の月平均額は？",
+      hint: "賃金台帳のCSVを入れれば自動で計算します。分かっていれば手入力でも構いません。"
+    },
+    {
+      el: "resultBlock",
+      title: "判定結果",
+      hint: "数字を直したいときは「戻る」で前の質問に戻れます。",
+      last: true
+    }
+  ];
+
+  var RULE_STEPS = [
+    {
+      el: "field-months",
+      title: "給与の平均は、何か月分で出しますか？",
+      hint: "掛金の上限は「基本給の平均 × 掛金率」で決まります。その平均を何か月分でとるかです。引き継ぎ書は12か月、現行のスプレッドシートは時給者6か月でした。"
+    },
+    {
+      el: "field-rate",
+      title: "掛金は、平均額の何％までにしますか？",
+      hint: "就業規則は「平均基本給月額の7％以下」です。会社によって別の率で運用していることもあります。"
+    },
+    {
+      el: "field-adjust",
+      title: "上限をさらに圧縮しますか？",
+      hint: "そのままでよければ100％のままにしてください。処遇改善加算などを考慮して70％に抑える運用もあります。"
+    },
+    {
+      el: "field-qualify",
+      title: "入社から何か月で加入しますか？",
+      hint: "就業規則が「採用後1年を経過した翌月から」なら12か月です。中退共の制度上は入社日から加入することもできます。"
+    },
+    {
+      el: "field-lead",
+      title: "事前確認は何日前にしますか？",
+      hint: "申込書を出す月に入る前に、掛金を計算し直して書類をそろえる日です。カレンダーに登録されます。",
+      last: true
+    }
+  ];
+
+  var wiz = { step: 0, home: {}, flow: STEPS, kind: "person", after: null };
+
+  function stashHome(id) {
+    if (wiz.home[id]) return;
+    var el = $(id);
+    wiz.home[id] = { parent: el.parentNode, next: el.nextSibling };
+  }
+  function returnAll() {
+    Object.keys(wiz.home).forEach(function (id) {
+      var h = wiz.home[id];
+      h.parent.insertBefore($(id), h.next);
+    });
+  }
+
+  // 最初に「1人ずつ」か「全員まとめて」かを聞く。一括をやりたい人が閉じる手間をなくすため。
+    function showStep(i) {
+    wiz.step = i;
+    var flow = wiz.flow, st = flow[i];
+    returnAll();
+    $("qSlot").innerHTML = "";      // はじめの選択画面が残っていたら消す
+    $("wizNext").style.display = "";
+    stashHome(st.el);
+    $("qSlot").appendChild($(st.el));
+
+    $("qnum").textContent = (i + 1) + " / " + flow.length;
+    $("qTitle").textContent = st.title;
+    $("qHint").textContent = st.hint;
+
+    var dots = "";
+    for (var k = 0; k < flow.length; k++) {
+      dots += '<span class="dot' + (k <= i ? " on" : "") + '"></span>';
+    }
+    $("dots").innerHTML = dots;
+
+    $("wizBack").disabled = false;
+    $("wizBack").style.visibility = i === 0 ? "hidden" : "visible";
+    $("wizNext").textContent = st.last
+      ? (wiz.kind === "rules" ? "この設定で始める" : "閉じる")
+      : (flow[i + 1] && flow[i + 1].last && wiz.kind === "person" ? "結果を見る" : "次へ");
+
+    var focusable = $(st.el).querySelector("input:not([type=file])");
+    if (focusable) setTimeout(function () { focusable.focus(); }, 30);
+  }
+
+  function openWiz() {
+    wiz.flow = STEPS;
+    wiz.kind = "person";
+    $("modal").hidden = false;
+    showStep(0);
+  }
+
+  // 基本の設定を一問ずつ聞く。終わったら保存して、続きの動作へ進む。
+  function openRulesWiz(after) {
+    wiz.flow = RULE_STEPS;
+    wiz.kind = "rules";
+    wiz.after = after || null;
+    $("modal").hidden = false;
+    showStep(0);
+  }
+
+  function rulesSaved() {
+    try { return !!window.localStorage.getItem(STORE_KEY); } catch (e) { return false; }
+  }
+  function closeWiz() {
+    var kind = wiz.kind, after = wiz.after;
+    returnAll();
+    wiz.home = {};
+    wiz.after = null;
+    $("modal").hidden = true;
+    render();
+
+    if (kind === "rules") {
+      saveRules();                      // 次に開いたときも同じ設定で始められるようにする
+      if (after === "one") openWiz();
+      return;
+    }
+    // 「一人だけ確認」はポップアップの中で完結するので、閉じたら最初の選択肢へ戻す
+    if (state.mode === "one") setMode("landing");
+  }
+
+  // 初めて開いた人は、いきなり一覧を見せられても迷う。最初の1回だけ自動で開く。
+    /* ---------- イベント ---------- */
+  document.addEventListener("input", function (e) {
+    if (e.target.matches("input")) render();
+  });
+
+  document.querySelectorAll(".chip[data-set]").forEach(function (c) {
+    c.addEventListener("click", function () {
+      $(c.dataset.set).value = c.dataset.val;
+      render();
+    });
+  });
+
+  $("pickContract").addEventListener("click", function () { $("contractFile").click(); });
+  $("contractFile").addEventListener("change", function () {
+    if (this.files && this.files[0]) loadContract(this.files[0]);
+    this.value = "";
+  });
+
+  function selectTab(which) {
+    var manual = which === "manual";
+    $("tab-manual").setAttribute("aria-selected", manual ? "true" : "false");
+    $("tab-csv").setAttribute("aria-selected", manual ? "false" : "true");
+    $("pane-manual").hidden = !manual;
+    $("pane-csv").hidden = manual;
+    render();
+  }
+  $("tab-manual").addEventListener("click", function () { selectTab("manual"); });
+  $("tab-csv").addEventListener("click", function () { selectTab("csv"); });
+
+  $("pick").addEventListener("click", function () { $("file").click(); });
+  $("file").addEventListener("change", function () {
+    var list = Array.prototype.slice.call(this.files || []);
+    list.forEach(function (f) { loadFile(f); });
+    this.value = "";
+  });
+
+  var drop = $("drop");
+  ["dragenter", "dragover"].forEach(function (ev) {
+    drop.addEventListener(ev, function (e) { e.preventDefault(); drop.classList.add("over"); });
+  });
+  ["dragleave", "drop"].forEach(function (ev) {
+    drop.addEventListener(ev, function (e) { e.preventDefault(); drop.classList.remove("over"); });
+  });
+  drop.addEventListener("drop", function (e) {
+    var list = Array.prototype.slice.call(e.dataTransfer.files || []);
+    list.forEach(function (f) { loadFile(f); });
+  });
+
+  $("rosterPick").addEventListener("change", function () {
+    var p = state.roster && state.roster.people[parseInt(this.value, 10)];
+    if (!p) return;
+    if (p.name) $("empName").value = p.name;
+    syncPerson(p.code, "roster");
+    render();
+  });
+
+  // 従業員情報側で人を変えたときの反応（以前の編集で外れていたので入れ直す）
+  $("staffPick").addEventListener("change", function () {
+    applyStaff();
+    var sp = state.staff && state.staff.people[parseInt(this.value, 10)];
+    if (sp) syncPerson(sp.code, "staff");
+    render();                       // 合わせたあとの人で計算し直す
+  });
+
+  $("copy").addEventListener("click", copyText);
+  $("bulkCopy").addEventListener("click", copyBulk);
+  $("hideGone").addEventListener("change", renderBulk);
+  $("monthCopy").addEventListener("click", copyMonth);
+
+  $("currentPaste").addEventListener("input", function () {
+    var t = this.value.trim();
+    if (!t) {
+      state.current = null;
+      $("currentMeta").textContent = "";
+    } else {
+      var c = parseCurrent(t);
+      state.current = c.count ? c : null;
+      $("currentMeta").textContent = c.count
+        ? c.count + "件を読み取りました"
+        : "「番号または氏名」と「金額」の2列で貼り付けてください。";
+    }
+    renderBulk();
+  });
+
+  ["pay", "staff"].forEach(function (which) {
+    var pre = which === "pay" ? "pay" : "stf";
+    var input = $(pre + "File"), zone = $(pre + "Drop");
+    $(pre + "Pick").addEventListener("click", function () { input.click(); });
+    input.addEventListener("change", function () {
+      var list = Array.prototype.slice.call(this.files || []);
+      list.forEach(function (f) { loadBulkFile(f, which); });
+      this.value = "";
+    });
+    ["dragenter", "dragover"].forEach(function (ev) {
+      zone.addEventListener(ev, function (e) { e.preventDefault(); zone.classList.add("over"); });
+    });
+    ["dragleave", "drop"].forEach(function (ev) {
+      zone.addEventListener(ev, function (e) { e.preventDefault(); zone.classList.remove("over"); });
+    });
+    zone.addEventListener("drop", function (e) {
+      var list = Array.prototype.slice.call(e.dataTransfer.files || []);
+      list.forEach(function (f) { loadBulkFile(f, which); });
+    });
+  });
+
+  $("saveRules").addEventListener("click", saveRules);
+  $("resetRules").addEventListener("click", resetRules);
+
+  $("closeWiz").addEventListener("click", closeWiz);
+  $("wizBack").addEventListener("click", function () {
+    if (wiz.step > 0) showStep(wiz.step - 1);
+    else closeWiz();
+  });
+  $("wizNext").addEventListener("click", function () {
+    if (wiz.step < STEPS.length - 1) { showStep(wiz.step + 1); return; }
+    closeWiz();
+  });
+  $("modal").addEventListener("click", function (e) {
+    if (e.target === $("modal")) closeWiz();
+  });
+  document.addEventListener("keydown", function (e) {
+    if ($("modal").hidden) return;
+    if (e.key === "Escape") { closeWiz(); return; }
+    // ファイル選択やテキスト入力の途中でEnterが暴発しないよう、入力欄の中だけ許可する
+    if (e.key === "Enter" && wiz.step >= 0 && e.target.tagName === "INPUT" && e.target.type !== "file") {
+      e.preventDefault();
+      $("wizNext").click();
+    }
+  });
+
+  $("rulesHost").appendChild($("rulesPanel"));   // どちらのモードでも見えるようにする
+
+  // まだ一度も設定していなければ、先に基本の設定を聞く
+  function choose(mode) {
+    setMode(mode);
+    if (!rulesSaved()) { openRulesWiz(mode); return; }
+    if (mode === "one") openWiz();
+  }
+  $("goOne").addEventListener("click", function () { choose("one"); });
+  $("goAll").addEventListener("click", function () { choose("all"); });
+  $("modeOne").addEventListener("click", function () { choose("one"); });
+  $("modeAll").addEventListener("click", function () { choose("all"); });
+  $("openRules").addEventListener("click", function () { openRulesWiz(null); });
+  $("editRules").addEventListener("click", function () { openRulesWiz(null); });
+
+  restoreRules();
+  setMode("landing");
+})();
+</script>

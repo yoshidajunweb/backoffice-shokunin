@@ -1,0 +1,351 @@
+<title>添付ファイル自動保存の始め方</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+
+<style>
+  :root {
+    --ground:      #f7f9fc;
+    --surface:     #ffffff;
+    --surface-alt: #eef3fa;
+    --ink:         #17222f;
+    --ink-soft:    #55657a;
+    --line:        #dce4ef;
+    --line-strong: #c3d0e2;
+    --accent:      #2f6bb0;
+    --accent-deep: #1f4c83;
+    --accent-soft: #e8f0fe;
+    --shadow:      0 1px 2px rgba(23, 34, 47, .05), 0 8px 24px -16px rgba(23, 34, 47, .28);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:      #12181f;
+      --surface:     #1a222c;
+      --surface-alt: #212c39;
+      --ink:         #e7edf5;
+      --ink-soft:    #a9b8ca;
+      --line:        #2c3846;
+      --line-strong: #3d4c5d;
+      --accent:      #7fb0e8;
+      --accent-deep: #a8cbf3;
+      --accent-soft: #1e2c3d;
+      --shadow:      0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -16px rgba(0, 0, 0, .8);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:      #12181f;
+    --surface:     #1a222c;
+    --surface-alt: #212c39;
+    --ink:         #e7edf5;
+    --ink-soft:    #a9b8ca;
+    --line:        #2c3846;
+    --line-strong: #3d4c5d;
+    --accent:      #7fb0e8;
+    --accent-deep: #a8cbf3;
+    --accent-soft: #1e2c3d;
+    --shadow:      0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -16px rgba(0, 0, 0, .8);
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.25rem 5rem;
+  }
+
+  /* ---------- 見出し ---------- */
+
+  h1 {
+    font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
+    font-size: clamp(1.8rem, 5.5vw, 2.4rem);
+    font-weight: 700;
+    line-height: 1.35;
+    text-wrap: balance;
+    margin: 0 0 .7rem;
+  }
+
+  .lede {
+    font-size: 1.02rem;
+    color: var(--ink-soft);
+    margin: 0 0 3rem;
+  }
+
+  /* ---------- 手順（主役） ---------- */
+
+  .steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+
+  .step {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.6rem 1.75rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: 2.6rem 1fr;
+    column-gap: 1.1rem;
+    row-gap: .5rem;
+  }
+
+  .num {
+    grid-row: span 2;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent-deep);
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-variant-numeric: tabular-nums;
+    display: grid;
+    place-items: center;
+  }
+
+  .step h2 {
+    font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.45;
+    margin: 0;
+    align-self: center;
+  }
+
+  .step-body { grid-column: 2; }
+
+  .do {
+    font-size: 1.05rem;
+    margin: 0;
+    line-height: 1.9;
+  }
+
+  .aside {
+    margin: .7rem 0 0;
+    font-size: .9rem;
+    color: var(--ink-soft);
+  }
+
+  .path {
+    font-weight: 700;
+    background: var(--surface-alt);
+    border-radius: 5px;
+    padding: .12em .5em;
+    white-space: nowrap;
+  }
+
+  .done {
+    margin: 1.6rem 0 0;
+    text-align: center;
+    font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--accent);
+  }
+
+  /* ---------- 区切り ---------- */
+
+  .divider {
+    margin: 4.5rem 0 2.5rem;
+    border: 0;
+    border-top: 1px solid var(--line-strong);
+  }
+
+  .ref-head {
+    font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 .4rem;
+  }
+
+  .ref-note {
+    font-size: .9rem;
+    color: var(--ink-soft);
+    margin: 0 0 2.25rem;
+  }
+
+  /* ---------- 補足（脇役） ---------- */
+
+  .ref { display: flex; flex-direction: column; gap: 2rem; }
+
+  .ref section { display: flex; flex-direction: column; gap: .6rem; }
+
+  .ref h3 {
+    font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif;
+    font-size: .95rem;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: .4rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .ref p, .ref li { font-size: .93rem; line-height: 1.8; color: var(--ink-soft); margin: 0; }
+  .ref strong { color: var(--ink); font-weight: 700; }
+
+  .ref ul { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: .3rem; }
+  .ref li::marker { color: var(--accent); }
+
+  .qa { display: flex; flex-direction: column; }
+
+  .qa-row {
+    display: grid;
+    grid-template-columns: 1.4rem 1fr;
+    gap: .05rem .6rem;
+    padding: .7rem 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .qa-row:first-child { padding-top: .2rem; }
+  .qa-row:last-child { border-bottom: 0; padding-bottom: 0; }
+
+  .qa-n {
+    grid-row: span 2;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 700;
+    font-size: .9rem;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .qa-q { font-weight: 700; color: var(--ink) !important; font-size: .93rem; }
+
+  @media (max-width: 480px) {
+    .wrap { padding-top: 2.5rem; }
+    .lede { margin-bottom: 2.25rem; }
+    .step { padding: 1.3rem 1.2rem; grid-template-columns: 2.2rem 1fr; column-gap: .85rem; }
+    .num { width: 2.2rem; height: 2.2rem; font-size: 1.05rem; }
+    .step h2 { font-size: 1.15rem; }
+  }
+</style>
+
+<div class="wrap">
+
+  <h1>添付ファイル自動保存の始め方</h1>
+  <p class="lede">やることは3つだけです。5分ほどで終わります。</p>
+
+  <ol class="steps">
+
+    <li class="step">
+      <span class="num">1</span>
+      <h2>コピーを作る</h2>
+      <div class="step-body">
+        <p class="do"><span class="path">ファイル</span> → <span class="path">コピーを作成</span></p>
+        <p class="aside">新しいタブで開いた、コピーした方で以降の操作をします。</p>
+        <p class="aside"><strong>「同じユーザーと共有する」にはチェックを入れないでください。</strong>入れると、あなたの保存記録が共有相手から見えてしまいます。</p>
+      </div>
+    </li>
+
+    <li class="step">
+      <span class="num">2</span>
+      <h2>初期設定をする</h2>
+      <div class="step-body">
+        <p class="do"><span class="path">📬 添付自動保存</span> → <span class="path">初期設定</span></p>
+        <p class="aside">あとは出てくる質問に答えるだけです。<strong>すべて空欄のままOKを押しても構いません。</strong></p>
+      </div>
+    </li>
+
+    <li class="step">
+      <span class="num">3</span>
+      <h2>試してみる</h2>
+      <div class="step-body">
+        <p class="do"><span class="path">📬 添付自動保存</span> → <span class="path">今すぐ保存を実行</span></p>
+        <p class="aside">フォルダに添付ファイルが入っていれば成功です。</p>
+      </div>
+    </li>
+
+  </ol>
+
+  <p class="done">これで完了です。あとは15分ごとに自動で保存されます。</p>
+
+  <hr class="divider">
+
+  <p class="ref-head">以下は読まなくて大丈夫です</p>
+  <p class="ref-note">つまずいたときだけ、該当するところを見てください。</p>
+
+  <div class="ref">
+
+    <section>
+      <h3>必要なもの</h3>
+      <ul>
+        <li>Gmailを使っているGoogleアカウント</li>
+        <li>パソコン（スマホでは設定できません）</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>「確認されていません」という警告が出た</h3>
+      <p>手順2の途中で出ます。故障ではありません。個人で作ったツールにはすべて同じ警告が出ます。</p>
+      <p><span class="path">詳細</span> → <span class="path">（安全ではないページ）に移動</span> → <span class="path">許可</span> と進んでください。</p>
+      <p><strong>許可されるのは、ご自身のGmailとドライブに対してだけです。</strong>他の人がデータを見ることはできません。</p>
+    </section>
+
+    <section>
+      <h3>質問の意味を知りたい</h3>
+      <div class="qa">
+        <div class="qa-row">
+          <span class="qa-n">1</span>
+          <p class="qa-q">保存先のフォルダ</p>
+          <p>使いたいフォルダをドライブで開き、URLを貼り付けます。空欄なら新しく作られます。</p>
+        </div>
+        <div class="qa-row">
+          <span class="qa-n">2</span>
+          <p class="qa-q">対象にするメール</p>
+          <p>空欄なら、添付ファイル付きのメールすべてです。</p>
+        </div>
+        <div class="qa-row">
+          <span class="qa-n">3</span>
+          <p class="qa-q">さかのぼる日数</p>
+          <p>空欄なら30日前まで。初回はその分がまとめて保存されます。少しだけ試すなら「1」。</p>
+        </div>
+        <div class="qa-row">
+          <span class="qa-n">4</span>
+          <p class="qa-q">フォルダにしまうまでの日数</p>
+          <p>この日数が過ぎると「2026.09」のような月フォルダへ移動します。空欄なら10日。</p>
+        </div>
+        <div class="qa-row">
+          <span class="qa-n">5</span>
+          <p class="qa-q">ファイル名の付け方</p>
+          <p>空欄なら「日付＋元のファイル名」になります。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>メニューに「📬 添付自動保存」が出てこない</h3>
+      <p>コピーではなく、元のファイルを開いている可能性があります。手順1をやり直してください。</p>
+      <p>それでも出ない場合は、ページを再読み込みして10秒ほど待ちます。</p>
+    </section>
+
+    <section>
+      <h3>1件も保存されない</h3>
+      <p>対象の期間に添付ファイル付きのメールが届いていない可能性があります。初期設定をやり直し、質問3で「30」と入れてみてください。</p>
+    </section>
+
+    <section>
+      <h3>同じ名前のファイルが2つある</h3>
+      <p>故障ではありません。別のメールに同じ名前の添付が付いていた場合、上書きで消えないよう末尾に連番を付けて両方残しています。</p>
+    </section>
+
+    <section>
+      <h3>その他</h3>
+      <p><strong>保存ログの並べ替えはしないでください。</strong>月ごとの区切り行の位置が崩れます。絞り込みは問題ありません。</p>
+      <p>自分が送ったメールの添付は、意図的に保存対象外にしています。転送すると同じファイルが2回保存されてしまうためです。</p>
+    </section>
+
+  </div>
+
+</div>
