@@ -65,7 +65,9 @@ h2.sec{font-size:15px;font-weight:900;margin:26px 0 8px;padding-bottom:4px;borde
 ul.rel{list-style:none;margin:0;padding:0}ul.rel li{padding:8px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px}
 ul.rel li:last-child{border-bottom:0}.when{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--muted);padding-top:3px;white-space:nowrap}
 ul.rel a{text-decoration:none;font-weight:500}ul.rel a:hover{text-decoration:underline}
-.foot{margin-top:40px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+.foot{font-size:12px;color:var(--muted);margin:8px 0 0}
+.site-foot{margin-top:48px;padding-top:18px;border-top:6px solid color-mix(in srgb,var(--line-strong) 20%,transparent);border-radius:3px 3px 0 0}
+.sf-nav{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;margin-bottom:10px}.sf-nav a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}.sf-nav a:hover{border-bottom-color:var(--ink)}
 .src{font-size:13px;color:var(--muted)}
 .lead{font-size:15px;line-height:1.75;margin:0 0 16px;padding:10px 14px;border-left:4px solid var(--accent);background:var(--surface);border-radius:0 8px 8px 0}
 </style>
@@ -74,7 +76,15 @@ ul.rel a{text-decoration:none;font-weight:500}ul.rel a:hover{text-decoration:und
 <div class="wrap">
 <div class="top"><a href="${SITE_URL || '../'}">${SITE_NAME}</a><span class="crumb">${esc(breadcrumb)}</span></div>
 ${body}
-<p class="foot">このページは行政機関の公開情報を要約・整理したものです。必ずリンク先の一次情報を確認してください。国の機関のページは政府標準利用規約（第2.0版）に基づき、出典を明示して要約・リンクしています。<a href="${SITE_URL || '../'}about.html">運営者情報</a></p>
+<footer class="site-foot">
+  <nav class="sf-nav" aria-label="フッター">
+    <a href="${SITE_URL || '../'}">更新一覧</a>
+    <a href="${SITE_URL || '../'}about.html">運営者情報</a>
+    ${CFG.xUrl ? `<a href="${esc(CFG.xUrl)}" target="_blank" rel="noopener">X @fukushi_update</a>` : ''}
+  </nav>
+  <p class="foot">このページは行政機関の公開情報を要約・整理したものです。必ずリンク先の一次情報を確認してください。国の機関のページは政府標準利用規約（第2.0版）に基づき、出典を明示して要約・リンクしています。</p>
+  <p class="foot">© ${new Date().getFullYear()} バックオフィス職人</p>
+</footer>
 </div>
 </body>
 </html>`;

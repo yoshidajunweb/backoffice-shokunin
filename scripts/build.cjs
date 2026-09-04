@@ -267,6 +267,14 @@ header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 /* ダークではロゴの紺が沈むので、白い板に載せる */
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) header h1.logo img{background:#fff;border-radius:10px;padding:6px 12px;box-sizing:content-box} }
 :root[data-theme="dark"] header h1.logo img{background:#fff;border-radius:10px;padding:6px 12px;box-sizing:content-box}
+.site-foot{margin-top:56px;padding-top:22px;border-top:6px solid color-mix(in srgb,var(--line-strong) 20%,transparent);border-radius:3px 3px 0 0}
+.sf-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:16px 24px;margin-bottom:16px}
+.sf-brand{display:flex;flex-direction:column;gap:2px}.sf-brand b{font-size:16px;font-weight:900}.sf-brand span{font-size:13px;color:var(--muted)}
+.sf-support{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.sf-nav{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;margin-bottom:14px}
+.sf-nav a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}.sf-nav a:hover{border-bottom-color:var(--ink)}
+.sf-copy{font-size:12px;color:var(--muted);margin:10px 0 0}
+.site-foot .foot{margin-top:0;border-top:0;padding-top:0}
 .foot-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:40px}
 .sup-btn{appearance:none;border:2px solid var(--new);background:transparent;color:var(--new);border-radius:999px;padding:8px 16px;font:inherit;font-weight:900;cursor:pointer}
 .sup-btn:hover,.sup-btn:focus-visible{outline:none;background:var(--new);color:#fff}
@@ -521,11 +529,28 @@ header .sub b{color:var(--ink);font-weight:700}
   </div>
 </div>
 
-<div class="foot-bar">
-  <button class="sup-btn" id="sup-btn" type="button" aria-haspopup="dialog">♡ このサイトを応援する</button>
-  <span class="foot-note">個人運営・無料。続けるための応援を受け付けています。</span>
-</div>
-<p class="foot">分類はタイトルのキーワードによる仮のものです。必ずリンク先の一次情報を確認してください。国の機関のページは政府標準利用規約（第2.0版）に基づき出典を明示して要約・リンクしています。<a href="about.html">運営者情報</a></p>
+<footer class="site-foot">
+  <div class="sf-top">
+    <div class="sf-brand">
+      <b>福祉行政アップデート</b>
+      <span>国・地方厚生局・都道府県の更新を、自分の県と種別だけ、見落とさずに。</span>
+    </div>
+    <div class="sf-support">
+      <button class="sup-btn" id="sup-btn" type="button" aria-haspopup="dialog">♡ このサイトを応援する</button>
+      <span class="foot-note">個人運営・無料。続けるための応援を受け付けています。</span>
+    </div>
+  </div>
+  <nav class="sf-nav" aria-label="フッター">
+    <a href="./">更新一覧</a>
+    <a href="#" id="sf-cal">年間カレンダー</a>
+    <a href="about.html">運営者情報</a>
+    ${X_URL ? `<a href="${esc(X_URL)}" target="_blank" rel="noopener">X @fukushi_update</a>` : ''}
+    <a href="#" id="sf-fb">ご意見・間違いの指摘</a>
+    <a href="sitemap.xml">サイトマップ</a>
+  </nav>
+  <p class="foot">分類はタイトルのキーワードによる仮のものです。必ずリンク先の一次情報を確認してください。国の機関のページは政府標準利用規約（第2.0版）に基づき出典を明示して要約・リンクしています。</p>
+  <p class="sf-copy">© ${NOW.getFullYear()} バックオフィス職人</p>
+</footer>
 
 <div class="modal" id="sup-modal" role="dialog" aria-modal="true" aria-labelledby="sup-title" hidden>
   <div class="modal-box sup-box">
@@ -620,6 +645,8 @@ header .sub b{color:var(--ink);font-weight:700}
       .catch(function(){ supStatus.textContent=url; supStatus.className='fb-status'; });
   });
   document.getElementById('sup-feedback').addEventListener('click',function(){ supClose(); fbOpen(); });
+  document.getElementById('sf-fb').addEventListener('click',function(e){ e.preventDefault(); fbOpen(); });
+  document.getElementById('sf-cal').addEventListener('click',function(e){ e.preventDefault(); view='cal'; try{localStorage.setItem('fukushi-view','cal');}catch(err){} apply(); window.scrollTo({top:0,behavior:'smooth'}); });
 
   // ---- ご意見モーダル -------------------------------------------------
   var FB_ENDPOINT=${JSON.stringify(FEEDBACK_ENDPOINT)};
