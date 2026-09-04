@@ -29,7 +29,7 @@ for (const it of items) { it.id = idOf(it.link); it.flag = FLAGS[it.link] || nul
 const events = CAL.events.map((ev) => ({ ...ev, pageId: ev.id }));
 
 // ---- 共通の枠 -----------------------------------------------------------
-function shell({ title, description, canonical, body, breadcrumb }) {
+function shell({ title, description, canonical, body, breadcrumb, jsonld }) {
   return `<!doctype html>
 <html lang="ja">
 <head>
@@ -38,6 +38,7 @@ function shell({ title, description, canonical, body, breadcrumb }) {
 <title>${esc(title)}｜${SITE_NAME}</title>
 <meta name="description" content="${esc(description)}">
 ${canonical ? `<link rel="canonical" href="${esc(canonical)}">` : ''}
+${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>` : ''}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -66,13 +67,14 @@ ul.rel li:last-child{border-bottom:0}.when{font-family:"IBM Plex Mono",ui-monosp
 ul.rel a{text-decoration:none;font-weight:500}ul.rel a:hover{text-decoration:underline}
 .foot{margin-top:40px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
 .src{font-size:13px;color:var(--muted)}
+.lead{font-size:15px;line-height:1.75;margin:0 0 16px;padding:10px 14px;border-left:4px solid var(--accent);background:var(--surface);border-radius:0 8px 8px 0}
 </style>
 </head>
 <body>
 <div class="wrap">
 <div class="top"><a href="${SITE_URL || '../'}">${SITE_NAME}</a><span class="crumb">${esc(breadcrumb)}</span></div>
 ${body}
-<p class="foot">このページは行政機関の公開情報を要約・整理したものです。必ずリンク先の一次情報を確認してください。国の機関のページは政府標準利用規約（第2.0版）に基づき、出典を明示して要約・リンクしています。</p>
+<p class="foot">このページは行政機関の公開情報を要約・整理したものです。必ずリンク先の一次情報を確認してください。国の機関のページは政府標準利用規約（第2.0版）に基づき、出典を明示して要約・リンクしています。<a href="${SITE_URL || '../'}about.html">運営者情報</a></p>
 </div>
 </body>
 </html>`;
@@ -90,12 +92,26 @@ let nItems = 0;
 for (const it of items) {
   const url = SITE_URL ? `${SITE_URL}n/${it.id}.html` : '';
   const desc = it.flag ? `${it.flag.summary}。${it.flag.todo}` : `${jpDate(it.date)}に${it.source}が公開した「${it.title}」。${it.tabs.filter((t) => t !== '未分類').join('・') || '福祉'}の事業所向け。`;
+  const who = it.tabs.filter((t) => t !== '未分類').join('・') || '福祉';
+  // AI・検索が最初に読む「答え」の1文：何が・いつ・誰向け（・やること）
+  const lead = it.flag
+    ? `${jpDate(it.date)}、${it.source}が「${it.title}」を公開。${it.flag.for.join('・')}の事業所（${it.flag.scope}）は${it.flag.todo}${it.flag.deadline ? `（期限：${it.flag.deadline}）` : ''}。`
+    : `${jpDate(it.date)}、${it.source}が「${it.title}」を公開。${who}の事業所向けの${it.region === '国' ? '国' : it.region === '厚生局' ? '地方厚生局' : it.pref || '都道府県'}の情報。`;
+  const jsonld = {
+    '@context': 'https://schema.org', '@type': 'Article',
+    headline: it.title, datePublished: it.date || undefined, inLanguage: 'ja',
+    description: lead, about: it.tabs.filter((t) => t !== '未分類'),
+    isBasedOn: it.link, publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL || undefined },
+    sourceOrganization: { '@type': 'GovernmentOrganization', name: it.source },
+    ...(url ? { mainEntityOfPage: url } : {}),
+  };
   const body = `
 <h1>${esc(it.title)}</h1>
 <div class="meta">
   <span>${esc(jpDate(it.date))}</span><span>${esc(it.source)}${it.pref ? '・' + esc(it.pref) : ''}</span>
   ${sysChips(it.systems)}${tagChips(it.tabs)}
 </div>
+<p class="lead"><b>${esc(lead)}</b></p>
 ${it.flag ? `<div class="box act"><h2><span class="kicker">要対応</span>${esc(it.flag.summary)}</h2>
   <p>${esc(it.flag.todo)}${it.flag.deadline ? ` <span class="deadline">期限：${esc(it.flag.deadline)}</span>` : ''}</p>
   <p class="src">対象：${esc(it.flag.for.join('・'))}／${esc(it.flag.scope)}</p></div>` : ''}
@@ -103,7 +119,7 @@ ${it.desc ? `<p>${esc(it.desc.replace(/…全文を読む$/, ''))}</p>` : ''}
 <p><a class="btn" href="${esc(it.link)}" target="_blank" rel="noopener">一次情報を見る（${esc(it.source)}）</a></p>
 ${relatedEvents(it.tabs).length ? `<h2 class="sec">関係する締切・義務</h2><ul class="rel">${relatedEvents(it.tabs).map((ev) => `<li><span class="when">${esc(ev.when.slice(0, 14))}</span><a href="../cal/${esc(ev.pageId)}.html">${esc(ev.title)}</a></li>`).join('')}</ul>` : ''}
 ${relatedItems(it.tabs, it.id).length ? `<h2 class="sec">同じ種別の最近の更新</h2><ul class="rel">${relatedItems(it.tabs, it.id).map((r) => `<li><span class="when">${esc(r.date)}</span><a href="${esc(r.id)}.html">${esc(r.title)}</a></li>`).join('')}</ul>` : ''}`;
-  fs.writeFileSync(path.join(SITE, 'n', `${it.id}.html`), shell({ title: it.title, description: desc.slice(0, 150), canonical: url, body, breadcrumb: it.tabs.filter((t) => t !== '未分類')[0] || '更新' }));
+  fs.writeFileSync(path.join(SITE, 'n', `${it.id}.html`), shell({ title: it.title, description: lead.slice(0, 150), canonical: url, body, breadcrumb: it.tabs.filter((t) => t !== '未分類')[0] || '更新', jsonld }));
   nItems++;
 }
 
@@ -113,19 +129,68 @@ for (const ev of events) {
   const label = ev.month === 99 ? '年1回・数年に1回' : MONTH[ev.month];
   const desc = `${ev.title}：${ev.when}。${ev.for.join('・')}の事業所向け。${ev.note || ''}`;
   const rel = items.filter((it) => it.tabs.some((t) => ev.for.includes(t))).slice(0, 6);
+  const lead = `${ev.title}は${ev.when}${ev.to ? `、${ev.to}へ${ev.kind}` : ''}。対象は${ev.for.join('・')}の事業所${ev.scope !== '全国' ? `（${ev.scope}）` : ''}。${ev.note ? ev.note + '。' : ''}出所：${ev.source.name}。`;
+  const jsonld = {
+    '@context': 'https://schema.org', '@type': 'Article',
+    headline: ev.title, inLanguage: 'ja', description: lead, about: ev.for,
+    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL || undefined },
+    citation: { '@type': 'CreativeWork', name: ev.source.name, url: ev.source.url },
+    dateModified: CAL.asof, ...(url ? { mainEntityOfPage: url } : {}),
+  };
   const body = `
 <h1>${esc(ev.title)}</h1>
+<p class="lead"><b>${esc(lead)}</b></p>
 <div class="meta"><span class="chip">${esc(ev.kind)}</span><span>${esc(label)}</span>${sysChips(ev.systems)}${tagChips(ev.for)}${ev.scope !== '全国' ? `<span class="chip">${esc(ev.scope)}</span>` : ''}</div>
 <div class="box"><h2>いつ</h2><p><b>${esc(ev.when)}</b>${ev.to ? `　提出先：${esc(ev.to)}` : ''}</p>${ev.note ? `<p>${esc(ev.note)}</p>` : ''}
 <p class="src">出所：<a href="${esc(ev.source.url)}" target="_blank" rel="noopener">${esc(ev.source.name)}</a>（${esc(CAL.asof)}時点）</p></div>
 ${rel.length ? `<h2 class="sec">関係する最近の更新</h2><ul class="rel">${rel.map((r) => `<li><span class="when">${esc(r.date)}</span><a href="../n/${esc(r.id)}.html">${esc(r.title)}</a></li>`).join('')}</ul>` : ''}`;
-  fs.writeFileSync(path.join(SITE, 'cal', `${ev.pageId}.html`), shell({ title: ev.title, description: desc.slice(0, 150), canonical: url, body, breadcrumb: '年間カレンダー' }));
+  fs.writeFileSync(path.join(SITE, 'cal', `${ev.pageId}.html`), shell({ title: ev.title, description: lead.slice(0, 150), canonical: url, body, breadcrumb: '年間カレンダー', jsonld }));
+}
+
+// ---- 運営者情報 / llms.txt -------------------------------------------------
+const aboutBody = `
+<h1>運営者情報</h1>
+<p class="lead"><b>${SITE_NAME}は、国・地方厚生局・都道府県が出す福祉事業所向けの更新を集め、種別と都道府県で絞って「要対応」と「締切」に変えて見せる個人運営のサイトです。</b></p>
+<div class="box"><h2>誰が</h2><p>運営：バックオフィス職人（現役の福祉事業所の事務担当）。訪問看護・訪問介護・障害福祉の事業所で、届出・請求・労務を実際に回している立場から作っています。</p></div>
+<div class="box"><h2>何を、どう集めているか</h2>
+<p>厚生労働省・WAM NET・こども家庭庁・地方厚生局・都道府県が公開しているRSSとページを、毎日2回（7時・16時）自動で取得しています。記事の本文は転載せず、題名・要約・一次情報へのリンクだけを載せます。</p>
+<p>「要対応」は、その種別・地域の事業所なら共通してやることがある更新に付けています。「年間カレンダー」の日付は公的機関の記載だけを使い、各項目に出所を付けています。</p></div>
+<div class="box"><h2>載せないもの</h2><p>特定の事業所の情報、利用者・職員の個人情報、広告。会社名を出しての事例紹介もしません。</p></div>
+<div class="box"><h2>正確さについて</h2><p>自動取得と分類には誤りが混ざります。手続きの前に必ずリンク先の一次情報を確認してください。間違いに気づいたら、サイト右上の「ご意見」から匿名で知らせてください。直します。</p></div>
+<div class="box"><h2>利用条件・出典</h2><p>国の機関のコンテンツは政府標準利用規約（第2.0版）に従い、出典を明示して要約・リンクしています。都道府県のページはリンクと題名の引用にとどめています。このサイトの文章は自由に引用・転載して構いません（出典としてこのサイトのURLを示してください）。</p></div>
+<p><a class="btn" href="${SITE_URL || '../'}">更新一覧へ</a></p>`;
+fs.writeFileSync(path.join(SITE, 'about.html'), shell({
+  title: '運営者情報', description: `${SITE_NAME}の運営者・情報源・正確さについての方針。`, canonical: SITE_URL ? `${SITE_URL}about.html` : '',
+  body: aboutBody, breadcrumb: '運営者情報',
+  jsonld: { '@context': 'https://schema.org', '@type': 'AboutPage', name: '運営者情報', publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL || undefined } },
+}));
+
+if (SITE_URL) {
+  const llms = `# ${SITE_NAME}
+
+> 国・地方厚生局・都道府県が出す福祉事業所向けの更新を、種別（訪問看護／訪問介護／障害福祉／グループホーム／障害児通所／労務・社保）と都道府県で絞り、「要対応」と「年間カレンダー（締切）」に整理した日本語サイト。個人運営。毎日2回自動更新。
+
+## 使い方の目安
+- 「○○（制度名）はいつまでに何をする？」→ 締切ページ（/cal/）に「いつ・誰が・どこへ・出所」が1文で書いてある
+- 「○○の通知は出た？」→ 更新ページ（/n/）に「日付・発信元・対象種別・一次情報リンク」がある
+- 本文は転載していない。必ず一次情報リンクを参照すること
+- 会社名・個人名は載せていない
+
+## 主要ページ
+- 更新一覧: ${SITE_URL}
+- 運営者情報: ${SITE_URL}about.html
+- サイトマップ: ${SITE_URL}sitemap.xml
+
+## 締切・義務（年間カレンダー）
+${events.map((ev) => `- [${ev.title}](${SITE_URL}cal/${ev.pageId}.html): ${ev.when}（${ev.for.join('・')}）`).join('\n')}
+`;
+  fs.writeFileSync(path.join(SITE, 'llms.txt'), llms);
 }
 
 // ---- sitemap / robots ---------------------------------------------------
 if (SITE_URL) {
   const today = new Date().toISOString().slice(0, 10);
-  const urls = [`${SITE_URL}`, ...items.map((it) => `${SITE_URL}n/${it.id}.html`), ...events.map((ev) => `${SITE_URL}cal/${ev.pageId}.html`)];
+  const urls = [`${SITE_URL}`, `${SITE_URL}about.html`, ...items.map((it) => `${SITE_URL}n/${it.id}.html`), ...events.map((ev) => `${SITE_URL}cal/${ev.pageId}.html`)];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${esc(u)}</loc><lastmod>${today}</lastmod></url>`).join('\n')}\n</urlset>\n`;
   fs.writeFileSync(path.join(SITE, 'sitemap.xml'), xml);
   fs.writeFileSync(path.join(SITE, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}sitemap.xml\n`);
