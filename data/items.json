@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04T15:22:53.011Z",
+  "updated": "2026-09-04T15:25:06.711Z",
   "sources": [
     {
       "id": "wamnet",
@@ -226,7 +226,7 @@
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
       "count": 41,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
