@@ -276,8 +276,9 @@ header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 .sf-copy{font-size:12px;color:var(--muted);margin:10px 0 0}
 .site-foot .foot{margin-top:0;border-top:0;padding-top:0}
 .foot-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:40px}
-.sup-btn{appearance:none;border:2px solid var(--new);background:transparent;color:var(--new);border-radius:999px;padding:8px 16px;font:inherit;font-weight:900;cursor:pointer}
-.sup-btn:hover,.sup-btn:focus-visible{outline:none;background:var(--new);color:#fff}
+/* ロゴの矢印と同じ 青→緑 の塗り。角丸10px */
+.sup-btn{appearance:none;border:0;background:linear-gradient(90deg,#3A6FA8 0%,#5B9BD5 45%,#7BC48A 100%);color:#fff;border-radius:10px;padding:10px 18px;font:inherit;font-weight:900;letter-spacing:.02em;cursor:pointer;box-shadow:0 2px 6px rgba(26,34,48,.15)}
+.sup-btn:hover,.sup-btn:focus-visible{outline:none;filter:brightness(1.07);box-shadow:0 3px 10px rgba(26,34,48,.22)}
 .foot-note{font-size:12px;color:var(--muted)}
 .sup-box{max-width:520px}
 .sup-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
