@@ -161,7 +161,7 @@ const rows = [...byDate.entries()].map(([d, list]) => `
             <span class="src">${esc(it.source)}${it.pref ? `・${esc(it.pref)}` : ''}</span>
             ${tags.filter((t) => t !== '未分類').map((t) => `<span class="chip">${esc(t)}</span>`).join('')}
             ${vs.map((x) => `<span class="verdict ${verdictClass[x.v.level] || ''}" title="${x.v.llm ? esc(x.v.j.reason) : '語一致（仮）'}">${esc(x.p.label)}：${esc(x.v.level)}${x.v.llm ? '' : '?'}</span>`).join('')}
-            ${it.firstSeen === new Date().toISOString().slice(0, 10) ? '<span class="new">今日拾った</span>' : ''}
+            ${it.firstSeen === new Date().toISOString().slice(0, 10) && it.date && sinceDays(it.date) <= 3 ? '<span class="new">新着</span>' : ''}
           </div>
         </div>
       </li>`; }).join('')}
@@ -244,7 +244,9 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Kaku Got
 [hidden]{display:none!important}
 a{color:inherit}
 .wrap{max-width:1180px;margin:0 auto;padding:20px 20px 80px}
-header{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 20px;border-bottom:6px solid var(--line-strong);padding-bottom:12px;margin-bottom:16px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 20px;position:relative;padding-bottom:18px;margin-bottom:16px}
+/* 見出し下の帯。真っ黒の直線だと重いので、薄く（20%）・角丸に */
+header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;border-radius:3px;background:color-mix(in srgb,var(--line-strong) 20%,transparent)}
 header h1{font-size:28px;font-weight:900;margin:0;letter-spacing:.01em}
 header h1.logo{margin:0;line-height:0;display:flex;align-items:center;gap:10px}
 header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
