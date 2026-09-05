@@ -1,0 +1,94 @@
+{
+  "_説明": "手順ガイド。読者が選んだ都道府県と種別に応じて、確定していること（提出先・様式・期限・電話番号）をそのまま出す。調べさせない。",
+  "id": "07-shogu-jisseki",
+  "calendarId": "07-shogu-jisseki",
+  "title": "処遇改善加算の実績報告（前年度分）",
+  "lead": "前年度に処遇改善加算を算定した事業所は、実績報告を出します。出さないと加算の返還を求められることがあります。",
+  "for": ["訪問看護", "訪問介護", "障害福祉", "グループホーム", "障害児通所"],
+  "systems": ["介護", "障害"],
+  "freeSteps": 3,
+  "asof": "2026-09-05",
+
+  "prepare": [
+    "前年度の賃金台帳（4月〜翌3月）",
+    "国保連から届いた「処遇改善加算等総額のお知らせ」",
+    "前年度に出した計画書の控え",
+    "事業所番号"
+  ],
+
+  "_prefs説明": "県ごとに確定している情報。ここに無い県は『あなたの県はまだ未収録です』と正直に出す。",
+  "prefs": {
+    "茨城県": {
+      "介護": {
+        "label": "介護保険（訪問看護・訪問介護・グループホーム等）",
+        "deadline": "国保連からの最終の加算支払があった月の翌々月末日まで（令和8年5月が最終入金なら令和8年7月31日）",
+        "method": "いばらき電子申請・届出サービスから提出",
+        "submitUrl": "https://apply.e-tumo.jp/pref-ibaraki-u/offer/offerList_detail?tempSeq=89458",
+        "submitLabel": "いばらき電子申請の提出フォームを開く",
+        "forms": [
+          { "name": "令和7年度 実績報告書（別紙様式3）", "url": "https://www.pref.ibaraki.jp/hokenfukushi/chofuku/jigyo/kaigo/jigyosha/h24santeitodokede/documents/r7shogu_besshiyoushiki3_v3.xlsx", "size": "xlsx 252KB" },
+          { "name": "記載例（同じ様式に記入済み）", "url": "https://www.pref.ibaraki.jp/hokenfukushi/chofuku/jigyo/kaigo/jigyosha/h24santeitodokede/documents/r7shogu_besshiyoushiki3_v3_example.xlsx", "size": "xlsx 257KB" }
+        ],
+        "sourcePage": "https://www.pref.ibaraki.jp/hokenfukushi/chofuku/jigyo/kaigo/jigyosha/h24santeitodokede/syoguukaizen-jisseki.html",
+        "contact": { "name": "茨城県 福祉部 長寿福祉課 介護保険指導・監査", "tel": "029-301-3343 / 029-301-3281", "fax": "029-301-3348" },
+        "notes": [
+          "水戸市は中核市のため、水戸市内の事業所は水戸市へ提出します。",
+          "県以外の市町村が指定権者の場合は、その市町村にも提出が必要です。"
+        ]
+      },
+      "障害": {
+        "label": "障害福祉（居宅介護・重度訪問介護・共同生活援助・放課後等デイ等）",
+        "deadline": "国保連からの最終の加算支払があった月の翌々月末日まで（令和8年5月が最終入金なら令和8年7月31日）",
+        "method": "メールで提出（Excelのまま。PDFにしない）",
+        "submitUrl": "mailto:shougaikasan1@pref.ibaraki.lg.jp?subject=R7%E5%87%A6%E9%81%87%E6%94%B9%E5%96%84%E5%8A%A0%E7%AE%97%E5%AE%9F%E7%B8%BE%E5%A0%B1%E5%91%8A%E6%9B%B8",
+        "submitLabel": "提出先メールを開く（件名入り）",
+        "mailTo": "shougaikasan1@pref.ibaraki.lg.jp",
+        "fileNameRule": "ファイル名は「R7処遇改善加算実績報告書・法人名」にします",
+        "forms": [
+          { "name": "令和7年度 実績報告書", "url": "https://www.pref.ibaraki.jp/hokenfukushi/shofuku/jiritsu/shofuku/e/01_jigyoushomuke/documents/r7syoguujiltusekihoukoku.xlsx", "size": "xlsx" },
+          { "name": "記入例", "url": "https://www.pref.ibaraki.jp/hokenfukushi/shofuku/jiritsu/shofuku/e/01_jigyoushomuke/documents/r7syoguujiltusekihoukokukinyuurei.xlsx", "size": "xlsx" }
+        ],
+        "sourcePage": "https://www.pref.ibaraki.jp/hokenfukushi/shofuku/jiritsu/shofuku/e/01_jigyoushomuke/05_shoguukaizenn.html",
+        "contact": { "name": "茨城県 障害福祉課", "tel": "029-301-5398（平日9:00〜17:00）", "note": "記入方法は厚生労働省コールセンター 050-3733-0230（9:00〜18:00・土日も可）" },
+        "notes": [
+          "Excel形式のまま送ります。PDFにすると受け付けられません。",
+          "茨城県以外の市町村・他都道府県が指定権者の分は、その自治体にも提出が必要です。"
+        ]
+      }
+    }
+  },
+
+  "_steps説明": "freeSteps 件目までが無料。以降は有料。",
+  "steps": [
+    {
+      "n": 1,
+      "title": "様式をダウンロードする",
+      "body": "下のボタンから、あなたの県の今年度の様式が落ちます。記載例も一緒に落としてください。記載例が一番役に立ちます。",
+      "showForms": true
+    },
+    {
+      "n": 2,
+      "title": "加算の総額を確認する",
+      "body": "国保連から届く「介護職員処遇改善加算等総額のお知らせ」を用意します（例年6月頃）。ここに書かれた加算総額が、報告書の「受け取った額」です。自分で計算し直さないでください。国保連の数字が正です。\n\nこの書類は提出しません。事業所で保管します。見当たらない場合は国保連に再発行を依頼してください（数日かかります）。"
+    },
+    {
+      "n": 3,
+      "title": "提出先が自分の県で合っているか確認する",
+      "body": "下に出ている提出先が、あなたの事業所の指定権者かを確認します。政令市・中核市・権限移譲を受けた市町村にある事業所は、県ではなくその市町村に出します。",
+      "showNotes": true
+    },
+    { "n": 4, "title": "賃金改善額を出す（どの手当が対象で、どれが対象外か）" },
+    { "n": 5, "title": "様式の記入（上から順に、どの欄に何を入れるか）" },
+    { "n": 6, "title": "職員数と平均賃金の出し方" },
+    { "n": 7, "title": "加算額 ＞ 賃金改善額 になってしまったときの対処" },
+    { "n": 8, "title": "提出（ファイル名の付け方、送信後の控えの取り方）" },
+    { "n": 9, "title": "提出後にやること（保管する書類と保管年数）" },
+    { "n": 10, "title": "よくある差戻しと、その直し方" }
+  ],
+
+  "troubles": [
+    { "q": "前年度に加算を取っていたか分からない", "a": "国保連から「総額のお知らせ」が届いていれば取っています。届いていなければ、前年度の請求明細で加算コードを確認します。" },
+    { "q": "年度の途中で事業所を廃止した", "a": "廃止した事業所も提出義務があります。算定していた期間だけを報告します。" },
+    { "q": "複数の事業所がある", "a": "事業所ごとに出すのか法人でまとめるのかは自治体によって違います。下の問い合わせ先で確認してください。" }
+  ]
+}

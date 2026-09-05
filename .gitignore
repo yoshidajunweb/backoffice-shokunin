@@ -1,6 +1,7 @@
 node_modules/
 _site/
 site/index.html
+site/guide/
 site/private.html
 .env
 Thumbs.db
