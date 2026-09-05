@@ -262,6 +262,9 @@ header{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 20px;position:re
 /* 見出し下の帯。真っ黒の直線だと重いので、薄く（20%）・角丸に */
 header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;border-radius:3px;background:color-mix(in srgb,var(--line-strong) 20%,transparent)}
 header h1{font-size:28px;font-weight:900;margin:0;letter-spacing:.01em}
+header .brand{display:flex;flex-direction:column;gap:6px}
+header .tagline{margin:0;font-size:13px;font-weight:500;color:var(--muted);line-height:1.4}
+@media (max-width:600px){header .tagline{font-size:11.5px}}
 header h1.logo{margin:0;line-height:0;display:flex;align-items:center;gap:10px}
 header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 /* ダークではロゴの紺が沈むので、白い板に載せる */
@@ -439,8 +442,11 @@ header .sub b{color:var(--ink);font-weight:700}
 
 <div class="wrap">
 <header>
+  <div class="brand">
   ${LOGO ? `<h1 class="logo"><img src="${LOGO}" alt="福祉行政アップデート" width="1200" height="199">${PRIVATE ? '<span class="private-tag">自分用</span>' : ''}</h1>`
          : `<h1>福祉行政アップデート${PRIVATE ? '（自分用）' : ''}</h1>`}
+  <p class="tagline">国・地方厚生局・都道府県の更新を、自分の県と事業の種類だけ、見落とさない。</p>
+  </div>
   <span class="sub"><b>直近30日 ${items.length}件</b></span>
   <span class="updated">${updatedText}</span>
   <button class="fb-btn" id="fb-btn" type="button" aria-haspopup="dialog">ご意見</button>
