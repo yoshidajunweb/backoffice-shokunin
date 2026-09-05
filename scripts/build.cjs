@@ -439,7 +439,7 @@ header .sub b{color:var(--ink);font-weight:700}
 
 <div class="wrap">
 <header>
-  ${LOGO ? `<h1 class="logo"><img src="${LOGO}" alt="福祉行政アップデート" width="1200" height="259">${PRIVATE ? '<span class="private-tag">自分用</span>' : ''}</h1>`
+  ${LOGO ? `<h1 class="logo"><img src="${LOGO}" alt="福祉行政アップデート" width="1200" height="199">${PRIVATE ? '<span class="private-tag">自分用</span>' : ''}</h1>`
          : `<h1>福祉行政アップデート${PRIVATE ? '（自分用）' : ''}</h1>`}
   <span class="sub"><b>直近30日 ${items.length}件</b></span>
   <span class="updated">${updatedText}</span>
