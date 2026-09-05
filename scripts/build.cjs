@@ -115,7 +115,7 @@ const SITE_URL = CFG.siteUrl || '';
 const X_URL = CFG.xUrl || '';
 // 「応援する」の受け口（config.json の support。URLが入っているものだけ出す）
 const SUPPORT_DEFS = [
-  { key: 'ofuse', label: 'OFUSE で応援', note: '手紙つきで少額から。匿名可' },
+  { key: 'ofuse', label: 'OFUSE で応援', note: '100円から。匿名でも送れます' },
   { key: 'buymeacoffee', label: 'Buy Me a Coffee', note: 'コーヒー1杯分から' },
   { key: 'kofi', label: 'Ko-fi', note: '手数料なしの投げ銭' },
   { key: 'amazon', label: 'Amazon ほしい物リスト', note: '物で応援' },
