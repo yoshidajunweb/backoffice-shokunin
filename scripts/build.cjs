@@ -668,7 +668,8 @@ header .sub b{color:var(--ink);font-weight:700}
     if(!FB_ENDPOINT){ fbStatus.textContent='送信先の準備中です。もう少しお待ちください'; fbStatus.className='fb-status ng'; return; }
     fd.append('page', location.href.split('#')[0].slice(0,200)); fd.append('pref', prefs.join('・')); fd.append('tab', state.tab||'');
     fbSend.disabled=true; fbStatus.textContent='送信中…'; fbStatus.className='fb-status';
-    fetch(FB_ENDPOINT,{method:'POST',mode:'no-cors',body:fd}).then(function(){
+    // GAS は multipart/form-data を e.parameter に入れてくれないので、URLSearchParams（＝application/x-www-form-urlencoded）で送る
+    fetch(FB_ENDPOINT,{method:'POST',mode:'no-cors',body:new URLSearchParams(fd)}).then(function(){
       try{ localStorage.setItem('fukushi-fb-last',String(Date.now())); }catch(err){}
       fbStatus.textContent='届きました。ありがとうございます'; fbStatus.className='fb-status ok';
       fbForm.reset(); setTimeout(fbClose,1500);
