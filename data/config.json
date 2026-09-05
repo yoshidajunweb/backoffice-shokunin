@@ -11,5 +11,7 @@
     "amazon": "",
     "note": ""
   },
-  "_siteUrl説明": "本番URL（2026-09-04 に GitHub Pages＋独自ドメインへ移行）。X投稿のルーティンはこれを使う"
+  "_siteUrl説明": "本番URL（2026-09-04 に GitHub Pages＋独自ドメインへ移行）。X投稿のルーティンはこれを使う",
+  "noteUrl": "https://note.com/fukushi_update",
+  "_noteUrl説明": "noteのクリエイターページ。フッターと応援モーダルに「note」リンクとして出る（2026-09-05）"
 }

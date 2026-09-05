@@ -113,6 +113,7 @@ const CFG = fs.existsSync(cfgFile) ? JSON.parse(fs.readFileSync(cfgFile, 'utf8')
 const FEEDBACK_ENDPOINT = CFG.feedbackEndpoint || '';
 const SITE_URL = CFG.siteUrl || '';
 const X_URL = CFG.xUrl || '';
+const NOTE_URL = CFG.noteUrl || '';
 // 「応援する」の受け口（config.json の support。URLが入っているものだけ出す）
 const SUPPORT_DEFS = [
   { key: 'ofuse', label: 'OFUSE で応援', note: '100円から。会員登録なし・匿名OK／カード・Apple Payで送れます' },
@@ -568,6 +569,7 @@ header .sub b{color:var(--ink);font-weight:700}
     <a href="#" id="sf-cal">年間カレンダー</a>
     <a href="about.html">運営者情報</a>
     ${X_URL ? `<a href="${esc(X_URL)}" target="_blank" rel="noopener">X @fukushi_update</a>` : ''}
+    ${NOTE_URL ? `<a href="${esc(NOTE_URL)}" target="_blank" rel="noopener">note の解説記事</a>` : ''}
     <a href="#" id="sf-fb">ご意見・間違いの指摘</a>
     <a href="sitemap.xml">サイトマップ</a>
   </nav>
@@ -581,6 +583,7 @@ header .sub b{color:var(--ink);font-weight:700}
     <p>どれか1つで十分です。お金がかからない方法もあります。</p>
     <ul class="sup-list">
       ${X_URL ? `<li><a href="${esc(X_URL)}" target="_blank" rel="noopener"><b>Xでフォロー・リポスト</b><span>0円。いちばん助かります</span></a></li>` : ''}
+      ${NOTE_URL ? `<li><a href="${esc(NOTE_URL)}" target="_blank" rel="noopener"><b>note の記事を読む・スキを付ける</b><span>0円。作った経緯や使い方を書いています</span></a></li>` : ''}
       <li><button type="button" class="sup-link" id="sup-share"><b>このサイトを同業の人に教える</b><span>0円。URLをコピーします</span></button></li>
       <li><button type="button" class="sup-link" id="sup-feedback"><b>間違い・要望を送る</b><span>0円。サイトが良くなります</span></button></li>
       ${SUPPORT_LINKS.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener"><b>${esc(s.label)}</b><span>${esc(s.note)}</span></a></li>`).join('')}
