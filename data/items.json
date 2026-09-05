@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T04:08:26.481Z",
+  "updated": "2026-09-05T05:05:59.572Z",
   "sources": [
     {
       "id": "wamnet",
@@ -273,9 +273,10 @@
       "bureau": null,
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
-      "count": 10,
+      "count": 0,
       "added": 0,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "careplan",
