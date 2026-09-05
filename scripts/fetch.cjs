@@ -9,8 +9,14 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const DATA = path.join(ROOT, 'data', 'items.json');
 
-// 全庁RSSから福祉の話だけ残すための語（県ごとの部署パスが無いときに使う）
-const FUKUSHI_WORDS = /介護|障害|障がい|福祉|高齢|訪問看護|訪問介護|事業所|事業者|指定|報酬|処遇改善|加算|運営指導|集団指導|グループホーム|共同生活援助|放課後等デイ|児童発達|受給者|支援金|補助金|助成金|虐待|身体拘束|BCP|感染症/;
+// 全庁RSSから福祉の話だけ残すための語（県ごとの部署パスが無いときに使う）。
+// ※ 2026-09-05 修正：以前は「補助金」「事業者」「指定」なども入れていたため、
+//   太陽光発電の補助金や観光の事業者支援まで拾ってしまっていた。
+//   福祉に固有の語（CORE）が1つも無いものは残さない。
+const FUKUSHI_WORDS = /介護|障害|障がい|福祉|高齢|訪問看護|訪問介護|居宅|グループホーム|共同生活援助|放課後等デイ|児童発達|保育所等訪問|受給者証|処遇改善|運営指導|集団指導|実地指導|身体拘束|虐待|ケアマネ|地域包括|要介護|要支援|生活保護|自立支援|精神保健|医療的ケア|喀痰吸引|補装具|地域生活支援/;
+// 福祉の語が入っていても、明らかに事業所向けでないものは落とす
+const PREF_NG = /知事|議会|議員|選挙|職員採用|任期付|入札|落札|指名停止|表彰|コンクール|イベント|観光|農業|漁業|林業|道路|河川|下水|太陽光|蓄電池|脱炭素|移住|物産|スポーツ|文化財|美術館|図書館|統計|世論調査/;
+const keepFukushi = (title) => FUKUSHI_WORDS.test(title) && !PREF_NG.test(title);
 
 // ---- 情報源 -------------------------------------------------------------
 // region: 国 / 厚生局 / 県 / 市
@@ -41,13 +47,13 @@ const SOURCES = [
   // 東京都福祉局：RSSは「再配布・サイト構築に使うな」、サイトポリシーは「トップ以外へのリンクは事前許可」「非商用のみ」と明記（2026-09-04 確認）。
   // → 許可を取るまで取らない。東京の読者には「未登録」と出る
   { id: 'kanagawa', name: '神奈川県', region: '県', pref: '神奈川県', type: 'rss', url: 'https://www.pref.kanagawa.jp/prs/list.xml',
-    keep: (it) => FUKUSHI_WORDS.test(it.title) },
+    keep: (it) => keepFukushi(it.title) },
   { id: 'osaka', name: '大阪府', region: '県', pref: '大阪府', type: 'rss', url: 'https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml',
-    keep: (it) => /\/o090/.test(it.link) || FUKUSHI_WORDS.test(it.title) },   // o090xxx＝福祉部
+    keep: (it) => (/\/o090/.test(it.link) || FUKUSHI_WORDS.test(it.title)) && !PREF_NG.test(it.title) },   // o090xxx＝福祉部
   { id: 'aichi', name: '愛知県', region: '県', pref: '愛知県', type: 'rss', url: 'https://www.pref.aichi.jp/rss/10/list1.xml',
     keep: (it) => /\/soshiki\/(korei|shogai|chiikifukushi|chiikihoukatu|iryofukushi|fukushi)/.test(it.link) },
   { id: 'fukuoka', name: '福岡県（健康・福祉・子育て）', region: '県', pref: '福岡県', type: 'rss', url: 'https://www.pref.fukuoka.lg.jp/rss/10/life3.xml',
-    keep: (it) => FUKUSHI_WORDS.test(it.title) },
+    keep: (it) => keepFukushi(it.title) },
   { id: 'hokkaido', name: '北海道（保健福祉部）', region: '県', pref: '北海道', type: 'rss', url: 'https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml',
     keep: (it) => /\/hf\/(khf|shf)\//.test(it.link) },   // khf＝高齢者保健福祉課、shf＝障がい者保健福祉課
 
