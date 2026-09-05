@@ -73,6 +73,8 @@ jobs:
           cp site/index.html _site/update/index.html
           cp -r site/n site/cal _site/update/
           cp site/sitemap.xml site/robots.txt site/about.html site/llms.txt _site/update/
+          mkdir -p _site/update/assets
+          cp site/assets/ogp.png _site/update/assets/   # 共有カードの画像
           cp site/recent.txt _site/update/
           rm -f _site/update/private.html
           cp CNAME _site/

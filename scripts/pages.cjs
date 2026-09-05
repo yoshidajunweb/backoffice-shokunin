@@ -38,6 +38,17 @@ function shell({ title, description, canonical, body, breadcrumb, jsonld }) {
 <title>${esc(title)}｜${SITE_NAME}</title>
 <meta name="description" content="${esc(description)}">
 ${canonical ? `<link rel="canonical" href="${esc(canonical)}">` : ''}
+${SITE_URL ? `<meta property="og:type" content="article">
+<meta property="og:site_name" content="${SITE_NAME}">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(description)}">
+${canonical ? `<meta property="og:url" content="${esc(canonical)}">` : ''}
+<meta property="og:image" content="${esc(SITE_URL)}assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+${CFG.xUrl ? `<meta name="twitter:site" content="@${esc(String(CFG.xUrl).split('/').pop())}">` : ''}` : ''}
 ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>` : ''}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap">

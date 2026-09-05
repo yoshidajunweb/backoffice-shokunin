@@ -230,7 +230,23 @@ const sourcesPanel = (data.sources || []).map((s) => `
     <span class="stype">${s.type === 'rss' ? 'RSS' : 'ページ'}</span>
   </li>`).join('');
 
-const html = `<title>福祉行政アップデート${PRIVATE ? '（自分用）' : ''}</title>
+// OGP（XやLINEで共有したときのカード）。画像は site/assets/ogp.png を絶対URLで指す
+const OGP_DESC = '国・地方厚生局・都道府県の更新を、自分の県と種別だけ、見落とさずに。訪問看護／訪問介護／障害福祉／グループホーム／障害児通所／労務の要対応と締切カレンダー。';
+const ogpTags = SITE_URL ? `
+<meta name="description" content="${esc(OGP_DESC)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="福祉行政アップデート">
+<meta property="og:title" content="福祉行政アップデート">
+<meta property="og:description" content="${esc(OGP_DESC)}">
+<meta property="og:url" content="${esc(SITE_URL)}">
+<meta property="og:image" content="${esc(SITE_URL)}assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+${X_URL ? `<meta name="twitter:site" content="@${esc(X_URL.split('/').pop())}">` : ''}` : '';
+
+const html = `<title>福祉行政アップデート${PRIVATE ? '（自分用）' : ''}</title>${PRIVATE ? '' : ogpTags}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
