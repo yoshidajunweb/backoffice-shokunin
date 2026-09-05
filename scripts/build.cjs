@@ -534,7 +534,7 @@ header .sub b{color:var(--ink);font-weight:700}
   <div class="sf-top">
     <div class="sf-brand">
       <b>福祉行政アップデート</b>
-      <span>国・地方厚生局・都道府県の更新を、自分の県と種別だけ、見落とさずに。</span>
+      <span>国・地方厚生局・都道府県の更新を、自分の県と事業の種類だけ、見落とさない。</span>
     </div>
     <div class="sf-support">
       <button class="sup-btn" id="sup-btn" type="button" aria-haspopup="dialog">♡ このサイトを応援する</button>
@@ -640,7 +640,7 @@ header .sub b{color:var(--ink);font-weight:700}
   document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&!supModal.hidden)supClose(); });
   document.getElementById('sup-share').addEventListener('click',function(){
     var url=${JSON.stringify(SITE_URL)}||location.href.split('#')[0];
-    var text='福祉行政アップデート：国・厚生局・県の更新を、自分の県と種別だけ、見落とさずに '+url;
+    var text='福祉行政アップデート：国・厚生局・県の更新を、自分の県と事業の種類だけ、見落とさない '+url;
     if(navigator.share){ navigator.share({title:'福祉行政アップデート',text:text,url:url}).catch(function(){}); return; }
     (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(function(){ supStatus.textContent='URLをコピーしました'; supStatus.className='fb-status ok'; })
       .catch(function(){ supStatus.textContent=url; supStatus.className='fb-status'; });
