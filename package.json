@@ -6,7 +6,7 @@
   "scripts": {
     "fetch": "node scripts/fetch.cjs",
     "build": "node scripts/build.cjs",
-    "daily": "node scripts/fetch.cjs && node scripts/build.cjs && node scripts/pages.cjs",
+    "daily": "node scripts/fetch.cjs && node scripts/build.cjs && node scripts/pages.cjs && node scripts/recent.cjs",
     "pages": "node scripts/pages.cjs"
   },
   "dependencies": {

@@ -47,6 +47,11 @@ jobs:
         env:
           TZ: Asia/Tokyo
 
+      - name: 直近7日の更新テキスト（AI・ルーティン向け）を生成
+        run: node scripts/recent.cjs
+        env:
+          TZ: Asia/Tokyo
+
       - name: 取得したデータをリポジトリに残す（初出日を保つため）
         run: |
           git config user.name "github-actions[bot]"
@@ -68,6 +73,7 @@ jobs:
           cp site/index.html _site/update/index.html
           cp -r site/n site/cal _site/update/
           cp site/sitemap.xml site/robots.txt site/about.html site/llms.txt _site/update/
+          cp site/recent.txt _site/update/
           rm -f _site/update/private.html
           cp CNAME _site/
           touch _site/.nojekyll
