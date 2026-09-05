@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T05:05:59.572Z",
+  "updated": "2026-09-05T06:03:51.125Z",
   "sources": [
     {
       "id": "wamnet",
@@ -237,9 +237,10 @@
       "bureau": null,
       "url": "https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml",
       "type": "rss",
-      "count": 4,
+      "count": 0,
       "added": 0,
-      "ok": true
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "chiba-koufuku",
@@ -273,10 +274,9 @@
       "bureau": null,
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
-      "count": 0,
+      "count": 10,
       "added": 0,
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true
     },
     {
       "id": "careplan",
@@ -311,7 +311,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
