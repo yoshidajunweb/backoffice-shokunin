@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T07:37:03.850Z",
+  "updated": "2026-09-05T07:39:54.941Z",
   "sources": [
     {
       "id": "wamnet",
@@ -226,7 +226,7 @@
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
       "count": 41,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -310,7 +310,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
