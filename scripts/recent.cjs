@@ -1,7 +1,7 @@
 // 直近7日の更新を、AI（WebFetch）やスクリプトが読みやすい素のテキストにする。
 // 使い方: node scripts/recent.cjs   （fetch.cjs のあと。build.cjs / pages.cjs とは独立）
 // 出力: site/recent.txt   → 公開先 https://backoffice-shokunin.jp/update/recent.txt
-// 用途: 社内のルーティン（kotonoha-news-watch 等）が毎朝これ1本を読めば、国・厚生局・県の新着を把握できる。
+// 用途: 毎朝の情報チェック（人でもAIのルーティンでも）がこれ1本を読めば、国・厚生局・県の新着を把握できる。
 // 会社名・判定（match/judge）は一切出さない。
 
 const fs = require('fs');
@@ -13,12 +13,14 @@ const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'items.json'), '
 const CFG = (() => { const f = path.join(ROOT, 'data', 'config.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}; })();
 const SITE_URL = (CFG.siteUrl || 'https://backoffice-shokunin.jp/update/').replace(/\/?$/, '/');
 const DAYS = Number(process.argv[2]) || 7;
+const MAX = 300; // 初回取得直後など件数が多いときの上限（新しい順）
 const idOf = (link) => crypto.createHash('sha1').update(link).digest('hex').slice(0, 10);
 
 const cutoff = new Date(Date.now() - DAYS * 86400000).toISOString().slice(0, 10);
 const items = data.items
   .filter((it) => (it.firstSeen || it.date || '') >= cutoff)
-  .sort((a, b) => (b.firstSeen || b.date || '').localeCompare(a.firstSeen || a.date || '') || (b.date || '').localeCompare(a.date || ''));
+  .sort((a, b) => (b.firstSeen || b.date || '').localeCompare(a.firstSeen || a.date || '') || (b.date || '').localeCompare(a.date || ''))
+  .slice(0, MAX);
 
 const where = (it) => it.region === '県' && it.pref ? `県｜${it.pref}` : it.region === '厚生局' && it.bureau ? `厚生局｜${it.bureau}` : it.region || '';
 const tagsOf = (it) => [...(it.systems || []), ...(it.tags || [])].filter(Boolean).join('・') || '未分類';
