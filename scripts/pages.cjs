@@ -22,10 +22,17 @@ const jpDate = (iso) => { if (!iso) return ''; const [y, m, d] = iso.split('-').
 const MONTH = ['毎月・随時', '1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
 const TABS = ['訪問看護', '訪問介護', '障害福祉', 'グループホーム', '障害児通所', '労務・社保'];
 
-// 直近1年の更新だけページにする（古すぎるものは検索に出しても迷惑）
+// 直近1年の更新をページにする。ただし **種別が付いたものだけ**。
+// ※ 2026-09-05：全件ページ化していたため「薬事審議会 血液事業部会 議事録」のような
+//   福祉事業所に関係ない記事まで個別ページ＋サイトマップに載っていた。
+//   中身の薄いページが大量にあると検索評価が下がり、選別していないサイトに見える。
+//   一覧（index.html）の「未分類」タブには今までどおり出るので、取りこぼしにはならない。
+//   要対応フラグが付いているものは、種別が無くてもページを作る（分類漏れの保険）。
 const cutoff = new Date(Date.now() - 365 * 86400000).toISOString().slice(0, 10);
-const items = data.items.filter((it) => (it.date || it.firstSeen) >= cutoff);
-for (const it of items) { it.id = idOf(it.link); it.flag = FLAGS[it.link] || null; it.tabs = it.flag ? [...new Set([...it.tags, ...it.flag.for])] : it.tags; }
+const all = data.items.filter((it) => (it.date || it.firstSeen) >= cutoff);
+for (const it of all) { it.id = idOf(it.link); it.flag = FLAGS[it.link] || null; it.tabs = it.flag ? [...new Set([...it.tags, ...it.flag.for])] : it.tags; }
+const skipped = all.filter((it) => !it.flag && !it.tabs.some((t) => TABS.includes(t)));
+const items = all.filter((it) => it.flag || it.tabs.some((t) => TABS.includes(t)));
 const events = CAL.events.map((ev) => ({ ...ev, pageId: ev.id }));
 
 // ---- 共通の枠 -----------------------------------------------------------
@@ -217,3 +224,4 @@ if (SITE_URL) {
   fs.writeFileSync(path.join(SITE, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}sitemap.xml\n`);
 }
 console.log(`更新ページ ${nItems} 件、締切ページ ${events.length} 件${SITE_URL ? '、sitemap.xml' : '（siteUrl 未設定なので sitemap は作らない）'} → site/n, site/cal`);
+console.log(`※ 種別が付かない ${skipped.length} 件はページを作らない（一覧の「未分類」タブには出る）`);

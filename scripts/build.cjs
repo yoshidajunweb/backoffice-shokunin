@@ -172,7 +172,7 @@ const rows = [...byDate.entries()].map(([d, list]) => `
           ${judged ? `<p class="judge"><b>${esc(judged.v.j.summary)}</b>${judged.v.j.action ? ` — ${esc(judged.v.j.action)}` : ''}${judged.v.j.deadline ? ` <span class="deadline">期限 ${esc(judged.v.j.deadline)}</span>` : ''}</p>` : ''}
           <div class="meta">
             <span class="src">${esc(it.source)}${it.pref ? `・${esc(it.pref)}` : ''}</span>
-            <a class="more" href="n/${idOf(it.link)}.html">この更新のページ</a>
+            ${(flag || tags.some((t) => t !== '未分類')) ? `<a class="more" href="n/${idOf(it.link)}.html">この更新のページ</a>` : ''}
             ${tags.filter((t) => t !== '未分類').map((t) => `<span class="chip">${esc(t)}</span>`).join('')}
             ${vs.map((x) => `<span class="verdict ${verdictClass[x.v.level] || ''}" title="${x.v.llm ? esc(x.v.j.reason) : '語一致（仮）'}">${esc(x.p.label)}：${esc(x.v.level)}${x.v.llm ? '' : '?'}</span>`).join('')}
             ${it.firstSeen === new Date().toISOString().slice(0, 10) && it.date && sinceDays(it.date) <= 3 ? '<span class="new">新着</span>' : ''}
