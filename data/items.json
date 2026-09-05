@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T06:03:51.125Z",
+  "updated": "2026-09-05T07:37:03.850Z",
   "sources": [
     {
       "id": "wamnet",
@@ -226,7 +226,7 @@
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
       "count": 41,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -237,10 +237,9 @@
       "bureau": null,
       "url": "https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml",
       "type": "rss",
-      "count": 0,
+      "count": 4,
       "added": 0,
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true
     },
     {
       "id": "chiba-koufuku",
@@ -311,7 +310,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -818,6 +817,22 @@
       "tags": [],
       "systems": [
         "労務"
+      ],
+      "firstSeen": "2026-09-05"
+    },
+    {
+      "title": "令和８年度福岡県届出保育施設におけるＩＣＴ導入支援費補助金についてのお知らせ",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/ictshinsei.html",
+      "date": "2026-09-04",
+      "desc": "福岡県内の届出保育施設に対するＩＣＴ導入に係る支援事業",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
       ],
       "firstSeen": "2026-09-05"
     },
