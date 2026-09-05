@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T01:24:29.123Z",
+  "updated": "2026-09-05T01:28:06.231Z",
   "sources": [
     {
       "id": "wamnet",
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 18,
-      "added": 11,
+      "added": 0,
       "ok": true
     },
     {
@@ -310,7 +310,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
