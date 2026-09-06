@@ -311,8 +311,11 @@ header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 .ico-heart{width:20px;height:20px;flex:none}
 .sup-btn:hover,.sup-btn:focus-visible{outline:none;filter:brightness(1.07);box-shadow:0 3px 10px rgba(26,34,48,.22)}
 .foot-note{font-size:12px;color:var(--muted)}
-.sup-box{max-width:520px}
-.sup-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+/* .modal-box が後ろで max-width:720px を指定するので、詳細度を上げて勝たせる */
+.modal-box.sup-box{max-width:560px;padding:28px 30px 24px}
+.sup-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.sup-box>p{margin:0 0 18px}
+.sup-box .modal-actions{margin-top:18px}
 .sup-list a,.sup-link,.sup-soon{display:flex;align-items:center;gap:12px;width:100%;text-align:left;border:2px solid var(--line);border-radius:10px;padding:13px 16px;background:var(--paper);color:var(--ink);text-decoration:none;font:inherit;cursor:pointer}
 .sup-list svg{width:22px;height:22px;flex:none;color:var(--accent)}
 .sup-txt{display:flex;flex-direction:column;gap:2px;min-width:0}
@@ -326,7 +329,7 @@ header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 .sup-soon svg{color:var(--muted)}
 .fb-btn{appearance:none;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .fb-btn:hover,.fb-btn:focus-visible{outline:none;border-color:var(--accent)}
-.fb-box{max-width:560px;display:flex;flex-direction:column;gap:10px}
+.modal-box.fb-box{max-width:560px;padding:28px 30px 24px;display:flex;flex-direction:column;gap:12px}
 .fb-box p{margin:0}
 .fb-kinds{display:flex;gap:14px;flex-wrap:wrap;font-size:14px}
 .fb-kinds label{display:flex;align-items:center;gap:5px;cursor:pointer}
@@ -445,7 +448,8 @@ header .sub b{color:var(--ink);font-weight:700}
 .pref-btn .caret{font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px}
 .pref-btn:hover,.pref-btn:focus-visible{outline:none;border-color:var(--accent)}
 .pref-note{font-size:12px;color:var(--new);font-weight:700}
-.modal{position:fixed;inset:0;z-index:50;background:rgba(10,14,20,.55);display:flex;align-items:center;justify-content:center;padding:20px}
+.modal{position:fixed;inset:0;z-index:50;background:rgba(10,14,20,.55);display:flex;align-items:center;justify-content:center;padding:32px 24px}
+@media (max-width:600px){.modal{padding:16px 12px}}
 .modal-box{background:var(--surface);color:var(--ink);border:6px solid var(--line-strong);border-radius:16px;padding:22px 24px;max-width:720px;width:100%;max-height:90vh;overflow:auto}
 .modal-box h2{margin:0 0 6px;font-size:20px;font-weight:900;text-wrap:balance}
 .modal-box p{margin:0 0 14px;font-size:13px;color:var(--muted)}
