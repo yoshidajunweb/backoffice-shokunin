@@ -12,23 +12,25 @@ const OUT = path.join(ROOT, 'site', process.argv.includes('--private') ? 'privat
 const TABS = ['訪問看護', '訪問介護', '障害福祉', 'グループホーム', '障害児通所', '労務・社保', '未分類'];
 const REGIONS = ['国', '厚生局', '県', '市'];
 
-// タブ先頭のアイコン（ピクトグラム風の塗りシルエット。currentColor なので選択時・ダークでも崩れない）
-const ico = (d) => `<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">${d}</svg>`;
+// アイコンは Lucide（ISCライセンス。帰属表示も不要）から読み込む。
+// 線画で統一され、currentColor なので選択時・ダークでも崩れない。
+// 使うものだけHTMLに埋め込むので、読み込みの待ち時間もゼロ。
+const LUCIDE_DIR = path.join(ROOT, 'node_modules', 'lucide-static', 'icons');
+function lucide(name, cls = '') {
+  const f = path.join(LUCIDE_DIR, `${name}.svg`);
+  if (!fs.existsSync(f)) { console.warn(`※ Lucideに ${name} が無い`); return ''; }
+  const inner = fs.readFileSync(f, 'utf8')
+    .replace(/[\s\S]*?<svg[^>]*>/, '').replace(/<\/svg>[\s\S]*/, '').replace(/\n\s*/g, '');
+  return `<svg${cls ? ` class="${cls}"` : ''} viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${inner}</svg>`;
+}
 const TAB_ICONS = {
-  // 家＋十字（医療）
-  '訪問看護': ico('<path fill-rule="evenodd" d="M12 3 2 11h3v10h14V11h3L12 3zm-1 7h2v2.5h2.5v2H13V17h-2v-2.5H8.5v-2H11V10z"/>'),
-  // ハート（ケア）
-  '訪問介護': ico('<path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/>'),
-  // 人（腕を広げた案内用図記号）
-  '障害福祉': ico('<circle cx="12" cy="4.6" r="2.6"/><path d="M3.5 9h17v2.3h-5.6V21h-2.3v-5.2h-1.2V21H9.1v-9.7H3.5z"/>'),
-  // 家＋扉（住まい）
-  'グループホーム': ico('<path fill-rule="evenodd" d="M12 3 2 11h3v10h14V11h3L12 3zm-2 10h4v8h-4v-8z"/>'),
-  // 星（こども）
-  '障害児通所': ico('<path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/>'),
-  // かばん（労務）
-  '労務・社保': ico('<path fill-rule="evenodd" d="M9 4h6a1 1 0 0 1 1 1v2h5v13H3V7h5V5a1 1 0 0 1 1-1zm1 3h4V6h-4v1z"/>'),
-  // 丸に？
-  '未分類': ico('<path fill-rule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 4.5a3.5 3.5 0 0 0-3.5 3.5h2a1.5 1.5 0 1 1 2.3 1.3c-.9.5-1.8 1.2-1.8 2.7v.5h2v-.4c0-.7.4-1 1.1-1.5A3.5 3.5 0 0 0 12 6.5zM11 16h2v2h-2z"/>'),
+  '訪問看護': lucide('stethoscope'),        // 聴診器
+  '訪問介護': lucide('hand-heart'),         // 手のひらの上のハート
+  '障害福祉': lucide('accessibility'),      // 案内用図記号の人
+  'グループホーム': lucide('house'),         // 家
+  '障害児通所': lucide('baby'),             // こども
+  '労務・社保': lucide('briefcase'),         // かばん
+  '未分類': lucide('circle-question-mark'), // 丸に？
 };
 
 // 「要対応」フラグ（会社固有ではない。この種別・地域の事業所なら全部やることがあるもの）
@@ -119,7 +121,7 @@ const SUPPORT_DEFS = [
   { key: 'ofuse', label: 'OFUSE で応援', note: '100円から。会員登録なし・匿名OK／カード・Apple Payで送れます' },
   { key: 'buymeacoffee', label: 'Buy Me a Coffee', note: 'コーヒー1杯分から' },
   { key: 'kofi', label: 'Ko-fi', note: '手数料なしの投げ銭' },
-  { key: 'amazon', label: 'Amazon ほしい物リスト', note: '物で応援' },
+  { key: 'amazon', label: 'Amazon ほしい物リスト', note: '運営に使う物で応援。日本のメーカーのものを選んでいます' },
   { key: 'note', label: 'note でサポート', note: '記事へのサポート機能' },
 ];
 const SUPPORT_LINKS = SUPPORT_DEFS.filter((d) => (CFG.support || {})[d.key]).map((d) => ({ ...d, url: CFG.support[d.key] }));
@@ -299,7 +301,8 @@ header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 .site-foot .foot{margin-top:0;border-top:0;padding-top:0}
 .foot-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:40px}
 /* ロゴの矢印と同じ 青→緑 の塗り。角丸10px */
-.sup-btn{appearance:none;border:0;background:linear-gradient(90deg,#3A6FA8 0%,#5B9BD5 45%,#7BC48A 100%);color:#fff;border-radius:10px;padding:10px 18px;font:inherit;font-weight:900;letter-spacing:.02em;cursor:pointer;box-shadow:0 2px 6px rgba(26,34,48,.15)}
+.sup-btn{appearance:none;border:0;background:linear-gradient(90deg,#3A6FA8 0%,#5B9BD5 45%,#7BC48A 100%);color:#fff;border-radius:10px;padding:10px 18px;font:inherit;font-weight:900;letter-spacing:.02em;cursor:pointer;box-shadow:0 2px 6px rgba(26,34,48,.15);display:inline-flex;align-items:center;gap:8px}
+.ico-heart{width:18px;height:18px;flex:none}
 .sup-btn:hover,.sup-btn:focus-visible{outline:none;filter:brightness(1.07);box-shadow:0 3px 10px rgba(26,34,48,.22)}
 .foot-note{font-size:12px;color:var(--muted)}
 .sup-box{max-width:520px}
@@ -357,8 +360,8 @@ header .sub b{color:var(--ink);font-weight:700}
 .tabs{position:sticky;top:0;z-index:5;background:var(--paper);display:flex;gap:6px;flex-wrap:wrap;padding:8px 0;border-bottom:2px solid var(--line)}
 .tab{appearance:none;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:8px 14px;font:inherit;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px}
 .tab .n{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--muted);font-weight:500}
-.tab svg{width:17px;height:17px;flex:none;opacity:.85}
-.tab[aria-selected="true"] svg{opacity:1}
+.tab svg{width:17px;height:17px;flex:none;opacity:.8;stroke-width:2.1}
+.tab[aria-selected="true"] svg{opacity:1;stroke-width:2.4}
 .tab[aria-selected="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 .tab[aria-selected="true"] .n{color:var(--accent-ink);opacity:.8}
 .tab:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
@@ -568,7 +571,7 @@ header .sub b{color:var(--ink);font-weight:700}
       <span>国・地方厚生局・都道府県の更新を、自分の県と事業の種類だけ、見落とさない。</span>
     </div>
     <div class="sf-support">
-      <button class="sup-btn" id="sup-btn" type="button" aria-haspopup="dialog">♡ このサイトを応援する</button>
+      <button class="sup-btn" id="sup-btn" type="button" aria-haspopup="dialog">${lucide('heart', 'ico-heart')}このサイトを応援する</button>
       <span class="foot-note">個人運営・無料。続けるための応援を受け付けています。</span>
     </div>
   </div>
@@ -577,7 +580,7 @@ header .sub b{color:var(--ink);font-weight:700}
     <a href="#" id="sf-cal">年間カレンダー</a>
     <a href="about.html">運営者情報</a>
     ${X_URL ? `<a href="${esc(X_URL)}" target="_blank" rel="noopener">X @fukushi_update</a>` : ''}
-    ${NOTE_URL ? `<a href="${esc(NOTE_URL)}" target="_blank" rel="noopener">note の解説記事</a>` : ''}
+    ${NOTE_URL ? `<a href="${esc(NOTE_URL)}" target="_blank" rel="noopener">note記事</a>` : ''}
     <a href="#" id="sf-fb">ご意見・間違いの指摘</a>
     <a href="sitemap.xml">サイトマップ</a>
   </nav>

@@ -99,7 +99,7 @@ ${body}
     <a href="${SITE_URL || '../'}">更新一覧</a>
     <a href="${SITE_URL || '../'}about.html">運営者情報</a>
     ${CFG.xUrl ? `<a href="${esc(CFG.xUrl)}" target="_blank" rel="noopener">X @fukushi_update</a>` : ''}
-    ${CFG.noteUrl ? `<a href="${esc(CFG.noteUrl)}" target="_blank" rel="noopener">note の解説記事</a>` : ''}
+    ${CFG.noteUrl ? `<a href="${esc(CFG.noteUrl)}" target="_blank" rel="noopener">note記事</a>` : ''}
   </nav>
   <p class="foot">このページは行政機関の公開情報を要約・整理したものです。必ずリンク先の一次情報を確認してください。国の機関のページは政府標準利用規約（第2.0版）に基づき、出典を明示して要約・リンクしています。</p>
   <p class="foot">© ${new Date().getFullYear()} バックオフィス職人</p>
