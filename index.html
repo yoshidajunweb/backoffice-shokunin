@@ -46,13 +46,22 @@ section.about p{margin:0 0 10px;max-width:680px}
 footer{border-top:4px solid var(--line-strong);padding:22px 0 40px;font-size:13px;color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
 footer a{color:var(--muted)}
+.card.soon{border-style:dashed;opacity:.85}
+.card.soon .go::after{content:""}
+.card.soon .go{color:var(--muted)}
+.soon-modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(20,26,36,.45);padding:20px;z-index:50}
+.soon-modal[open]{display:flex}
+.soon-box{background:var(--surface);color:var(--ink);border:4px solid var(--line-strong);border-radius:14px;max-width:420px;width:100%;padding:26px 24px 22px;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.soon-box h3{margin:0 0 8px;font-size:20px;font-weight:900}
+.soon-box p{margin:0 0 16px;color:var(--muted);font-size:14.5px}
+.soon-box button{font:inherit;font-weight:700;background:var(--accent);color:var(--accent-ink);border:0;border-radius:8px;padding:10px 18px;cursor:pointer}
 </style>
 </head>
 <body>
 <header>
   <div class="wrap">
     <a class="brand" href="/">バックオフィス職人<small>小さな事業所の、事務・労務の道具箱</small></a>
-    <nav><a href="/update/">福祉行政アップデート</a><a href="/chutaikyo/">中退共</a><a href="/gmail/">Gmail添付</a></nav>
+    <nav><a href="/update/">福祉行政アップデート</a><a href="#" data-soon="中退共スケジューラー">中退共</a><a href="#" data-soon="Gmail添付ファイル自動保存">Gmail添付</a></nav>
   </div>
 </header>
 
@@ -74,17 +83,17 @@ footer a{color:var(--muted)}
       <p>国・地方厚生局・都道府県の更新を、自分の県と事業の種類だけ、見落とさない。訪問看護・訪問介護・障害福祉・グループホーム・障害児通所・労務。要対応と締切カレンダーつき。</p>
       <span class="go">更新を見る</span>
     </a>
-    <a class="card" href="/chutaikyo/">
-      <span class="tag">道具</span>
+    <a class="card soon" href="#" data-soon="中退共スケジューラー">
+      <span class="tag">道具・近日公開</span>
       <h2>中退共スケジューラー</h2>
       <p>給与ソフトの帳票を置くだけで、中退共の加入可否・掛金額・提出スケジュールを出します。ブラウザ内で完結し、給与データは送信しません。</p>
-      <span class="go">使ってみる</span>
+      <span class="go">準備中</span>
     </a>
-    <a class="card" href="/gmail/">
-      <span class="tag">手順書</span>
+    <a class="card soon" href="#" data-soon="Gmail添付ファイル自動保存">
+      <span class="tag">手順書・近日公開</span>
       <h2>Gmail添付ファイル自動保存</h2>
       <p>取引先から届く添付ファイルを、Googleドライブの決めたフォルダに自動で保存する仕組み。スプレッドシートをコピーして設定するだけ。</p>
-      <span class="go">手順を読む</span>
+      <span class="go">準備中</span>
     </a>
   </div>
 
@@ -101,5 +110,24 @@ footer a{color:var(--muted)}
     <span>X：<a href="https://x.com/fukushi_update" rel="noopener">@fukushi_update</a>（福祉行政アップデート）</span>
   </div>
 </footer>
+
+<div class="soon-modal" id="soon" role="dialog" aria-modal="true" aria-labelledby="soon-title">
+  <div class="soon-box">
+    <h3 id="soon-title">Coming soon</h3>
+    <p id="soon-text">この道具は準備中です。公開したら X（@fukushi_update）でお知らせします。</p>
+    <button type="button" id="soon-close">閉じる</button>
+  </div>
+</div>
+<script>
+(function(){
+  var m=document.getElementById("soon"),t=document.getElementById("soon-text"),c=document.getElementById("soon-close");
+  function open(name){t.textContent="「"+name+"」は準備中です。公開したら X（@fukushi_update）でお知らせします。";m.setAttribute("open","");c.focus();}
+  function close(){m.removeAttribute("open");}
+  document.querySelectorAll("[data-soon]").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();open(a.getAttribute("data-soon"));});});
+  c.addEventListener("click",close);
+  m.addEventListener("click",function(e){if(e.target===m)close();});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")close();});
+})();
+</script>
 </body>
 </html>
