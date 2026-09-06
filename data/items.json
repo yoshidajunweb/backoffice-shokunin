@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T23:30:54.915Z",
+  "updated": "2026-09-06T07:23:42.744Z",
   "sources": [
     {
       "id": "wamnet",
@@ -310,7 +310,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
