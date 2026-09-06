@@ -168,6 +168,16 @@ h2.sec{font-size:15px;font-weight:900;margin:28px 0 10px;padding-bottom:4px;bord
 .to-top:hover,.to-top:focus-visible{outline:none;border-color:var(--accent);color:var(--accent)}
 @media (max-width:600px){.to-top{right:12px;bottom:12px;width:44px;height:44px}}
 @media print{.to-top{display:none}}
+/* 動き。「動きを減らす」設定の人には一切かけない */
+@media (prefers-reduced-motion:no-preference){
+  a,.btn,.btn-dl,.btn-go,.to-top,.picker select{transition:background-color .18s ease,border-color .18s ease,color .18s ease,box-shadow .18s ease,transform .12s ease}
+  .btn-dl:active,.btn-go:active,.to-top:active{transform:scale(.97)}
+  .to-top{transition:opacity .2s ease,transform .2s ease,border-color .18s ease,color .18s ease}
+  ul.rel li{transition:background-color .15s ease}
+  ul.rel li:hover{background:color-mix(in srgb,var(--accent) 4%,transparent)}
+}
+.to-top{opacity:0;transform:translateY(10px);pointer-events:none}
+.to-top.is-on{opacity:1;transform:none;pointer-events:auto}
 </style>
 </head>
 <body>
@@ -194,7 +204,7 @@ ${body}
 })();
 </script>
 <button class="to-top" id="to-top" type="button" aria-label="ページの先頭に戻る" title="先頭に戻る" hidden>${lucide("arrow-up")}</button>
-<script>(function(){var b=document.getElementById("to-top");function t(){b.hidden=(window.scrollY||document.documentElement.scrollTop)<400;}window.addEventListener("scroll",t,{passive:true});b.addEventListener("click",function(){var r=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;window.scrollTo({top:0,behavior:r?"auto":"smooth"});});t();})();</script>
+<script>(function(){var b=document.getElementById("to-top");function t(){var s=(window.scrollY||document.documentElement.scrollTop)>=400;b.hidden=false;b.classList.toggle("is-on",s);}window.addEventListener("scroll",t,{passive:true});b.addEventListener("click",function(){var r=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;window.scrollTo({top:0,behavior:r?"auto":"smooth"});});t();})();</script>
 </body>
 </html>`;
   fs.writeFileSync(path.join(SITE, 'guide', `${g.id}.html`), html);

@@ -305,7 +305,9 @@ header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 .sf-nav a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}.sf-nav a:hover{border-bottom-color:var(--ink)}
 .sf-copy{font-size:12px;color:var(--muted);margin:10px 0 0}
 /* 先頭に戻るボタン。少しスクロールしたら右下に出る */
-.to-top{position:fixed;right:18px;bottom:18px;z-index:20;width:46px;height:46px;border-radius:50%;border:2px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(26,34,48,.18)}
+.to-top{position:fixed;right:18px;bottom:18px;z-index:20;width:46px;height:46px;border-radius:50%;border:2px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(26,34,48,.18);opacity:0;transform:translateY(10px);pointer-events:none}
+.to-top.is-on{opacity:1;transform:none;pointer-events:auto}
+@media (prefers-reduced-motion:no-preference){.to-top{transition:opacity .2s ease,transform .2s ease,border-color .18s ease,color .18s ease}}
 .to-top svg{width:22px;height:22px}
 .to-top:hover,.to-top:focus-visible{outline:none;border-color:var(--accent);color:var(--accent)}
 @media (max-width:600px){.to-top{right:12px;bottom:12px;width:44px;height:44px}}
@@ -475,8 +477,24 @@ header .sub b{color:var(--ink);font-weight:700}
 .modal-actions{display:flex;justify-content:flex-end;margin-top:6px}
 .pref-all{appearance:none;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:8px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
 .pref-all:hover,.pref-all:focus-visible{outline:none;color:var(--ink);border-color:var(--line-strong)}
-@media (prefers-reduced-motion:no-preference){.modal-box{animation:pop .18s ease-out}}
-@keyframes pop{from{transform:translateY(8px);opacity:0}to{transform:none;opacity:1}}
+/* ── 動き。「動きを減らす」設定の人には一切かけない ────────────── */
+@media (prefers-reduced-motion:no-preference){
+  .modal{animation:fade .16s ease-out}
+  .modal-box{animation:pop .22s cubic-bezier(.2,.8,.3,1)}
+  /* 押せるものはゆっくり色が変わる */
+  .tab,.f,.pref-btn,.pref-opt,.sup-btn,.fb-btn,.sup-list a,.sup-link,.btn-dl,.btn-go,.to-top,.view,.panel summary{
+    transition:background-color .18s ease,border-color .18s ease,color .18s ease,box-shadow .18s ease,transform .12s ease}
+  .sup-list a:active,.sup-link:active,.to-top:active,.sup-btn:active{transform:scale(.97)}
+  /* 情報源の枠を開いたとき、中身がふわっと出る */
+  .panel[open]>*:not(summary){animation:slide .22s ease-out}
+  .panel summary::after{transition:background-color .18s ease,color .18s ease}
+  /* 一覧の各行 */
+  .row,.ev{transition:background-color .15s ease}
+  .row:hover,.ev:hover{background:color-mix(in srgb,var(--accent) 4%,transparent)}
+}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{transform:translateY(10px) scale(.985);opacity:0}to{transform:none;opacity:1}}
+@keyframes slide{from{transform:translateY(-6px);opacity:0}to{transform:none;opacity:1}}
 .verdict{border-radius:6px;padding:0 7px;font-weight:700;color:var(--accent-ink);background:var(--muted)}
 .v-act{background:var(--new)} .v-rel{background:var(--accent)} .v-chk{background:var(--r-ken)} .v-ref{background:var(--muted)}
 
@@ -714,7 +732,12 @@ header .sub b{color:var(--ink);font-weight:700}
 
   // ---- 先頭に戻る -----------------------------------------------------
   var toTop=document.getElementById('to-top');
-  function toggleTop(){ toTop.hidden = (window.scrollY||document.documentElement.scrollTop) < 400; }
+  // hidden の付け外しだと一瞬で消えるので、クラスで薄く／浮かせて出入りさせる
+  function toggleTop(){
+    var show=(window.scrollY||document.documentElement.scrollTop)>=400;
+    toTop.hidden=false;
+    toTop.classList.toggle('is-on',show);
+  }
   window.addEventListener('scroll',toggleTop,{passive:true});
   toTop.addEventListener('click',function(){
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
