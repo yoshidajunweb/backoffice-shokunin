@@ -310,8 +310,12 @@ header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 .sup-list a,.sup-link,.sup-soon{display:flex;align-items:center;gap:12px;width:100%;text-align:left;border:2px solid var(--line);border-radius:10px;padding:13px 16px;background:var(--paper);color:var(--ink);text-decoration:none;font:inherit;cursor:pointer}
 .sup-list svg{width:22px;height:22px;flex:none;color:var(--accent)}
 .sup-txt{display:flex;flex-direction:column;gap:2px;min-width:0}
-.sup-list a:hover,.sup-link:hover,.sup-list a:focus-visible,.sup-link:focus-visible{outline:none;border-color:var(--accent);background:var(--accent-soft)}
-.sup-list b{font-weight:900}.sup-list span{font-size:12px;color:var(--muted)}
+/* 選択中・ホバー時は見出し「応援の方法」と同じ濃さの文字色にする */
+.sup-list a:hover,.sup-link:hover,.sup-list a:focus-visible,.sup-link:focus-visible{outline:none;border-color:var(--accent);background:var(--accent-soft);color:var(--ink)}
+.sup-list a:hover b,.sup-link:hover b,.sup-list a:focus-visible b,.sup-link:focus-visible b{color:var(--ink)}
+.sup-list a:hover .sup-txt>span,.sup-link:hover .sup-txt>span,.sup-list a:focus-visible .sup-txt>span,.sup-link:focus-visible .sup-txt>span{color:var(--ink)}
+.sup-list b{font-weight:900;font-size:15px;line-height:1.5}
+.sup-list .sup-txt>span{font-size:13px;color:var(--muted);line-height:1.55}
 .sup-soon{border-style:dashed;color:var(--muted);cursor:default}
 .sup-soon svg{color:var(--muted)}
 .fb-btn{appearance:none;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
