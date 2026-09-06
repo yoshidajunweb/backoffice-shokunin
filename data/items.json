@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T11:34:51.925Z",
+  "updated": "2026-09-06T23:26:50.459Z",
   "sources": [
     {
       "id": "wamnet",
@@ -166,7 +166,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/shikoku/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -365,6 +365,24 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-09-04"
+    },
+    {
+      "title": "令和8年度第1回 四国地方社会保険医療協議会総会（開催案内）",
+      "link": "https://kouseikyoku.mhlw.go.jp/shikoku/newpage_00681.html",
+      "date": "2026-09-06",
+      "desc": "",
+      "source": "四国厚生支局",
+      "sourceId": "kk-shikoku",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "四国",
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-06"
     },
     {
       "title": "第36回労働政策審議会勤労者生活分科会 議事録",
