@@ -274,6 +274,12 @@ const html = `<meta name="viewport" content="width=device-width,initial-scale=1"
   --r-kuni:#A0AEC0; --r-kouseikyoku:#4FD1C5; --r-ken:#F6C453; --r-shi:#68D391; --new:#F6AD55;
   --s-iryo:#F98080; --s-kaigo:#8EB0F2; --s-shogai:#B794F4; --s-roumu:#A0AEC0;
 }
+/* スクロールバー：細く、色はサイトの線色に合わせる。
+   標準プロパティのみ（Chrome/Safari/Firefox/Edge すべて対応）。
+   軌道を transparent にすると背景に馴染む。ダークは変数で自動的に切り替わる */
+html{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+/* 中でスクロールする箱（モーダル・情報源の枠・横スクロールする表）も同じ見た目に */
+.modal-box,.slist,.list,.panel,pre,table{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic UI",system-ui,sans-serif;font-size:15px;line-height:1.6}
 [hidden]{display:none!important}

@@ -121,6 +121,12 @@ ${url ? `<link rel="canonical" href="${esc(url)}">
 :root{--paper:#F4F6F8;--surface:#FFFFFF;--ink:#1A2230;--muted:#66707E;--line:#D6DBE2;--line-strong:#1A2230;--accent:#2A4D9B;--accent-ink:#fff;--accent-soft:#E4EBF8;--new:#C05621;--ok:#2F855A}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#12161C;--surface:#1A1F27;--ink:#E7EAEF;--muted:#98A2B0;--line:#2C333E;--line-strong:#E7EAEF;--accent:#8EB0F2;--accent-ink:#0F1A33;--accent-soft:#22304D;--new:#F6AD55;--ok:#68D391}}
 :root[data-theme="dark"]{--paper:#12161C;--surface:#1A1F27;--ink:#E7EAEF;--muted:#98A2B0;--line:#2C333E;--line-strong:#E7EAEF;--accent:#8EB0F2;--accent-ink:#0F1A33;--accent-soft:#22304D;--new:#F6AD55;--ok:#68D391}
+/* スクロールバー：細く、色はサイトの線色に合わせる。
+   標準プロパティのみ（Chrome/Safari/Firefox/Edge すべて対応）。
+   軌道を transparent にすると背景に馴染む。ダークは変数で自動的に切り替わる */
+html{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+/* 中でスクロールする箱（モーダル・情報源の枠・横スクロールする表）も同じ見た目に */
+.modal-box,.slist,.list,.panel,pre,table{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic UI",system-ui,sans-serif;font-size:15px;line-height:1.75}
 a{color:inherit}.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
 .top{font-size:13px;color:var(--muted);margin-bottom:18px}.top a{font-weight:900;color:var(--ink);text-decoration:none}
