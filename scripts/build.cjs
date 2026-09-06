@@ -312,7 +312,9 @@ header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 .sup-btn:hover,.sup-btn:focus-visible{outline:none;filter:brightness(1.07);box-shadow:0 3px 10px rgba(26,34,48,.22)}
 .foot-note{font-size:12px;color:var(--muted)}
 /* .modal-box が後ろで max-width:720px を指定するので、詳細度を上げて勝たせる */
-.modal-box.sup-box{max-width:560px;padding:28px 30px 24px}
+/* 枠と中身の間に余白をとる。項目の幅は保ちたいので、余白の分だけ全体を広げる */
+.modal-box.sup-box{max-width:620px;padding:32px 40px 28px}
+@media (max-width:600px){.modal-box.sup-box{padding:22px 18px 18px}}
 .sup-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
 .sup-box>p{margin:0 0 18px}
 .sup-box .modal-actions{margin-top:18px}
@@ -329,7 +331,8 @@ header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 .sup-soon svg{color:var(--muted)}
 .fb-btn{appearance:none;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .fb-btn:hover,.fb-btn:focus-visible{outline:none;border-color:var(--accent)}
-.modal-box.fb-box{max-width:560px;padding:28px 30px 24px;display:flex;flex-direction:column;gap:12px}
+.modal-box.fb-box{max-width:620px;padding:32px 40px 28px;display:flex;flex-direction:column;gap:12px}
+@media (max-width:600px){.modal-box.fb-box{padding:22px 18px 18px}}
 .fb-box p{margin:0}
 .fb-kinds{display:flex;gap:14px;flex-wrap:wrap;font-size:14px}
 .fb-kinds label{display:flex;align-items:center;gap:5px;cursor:pointer}
@@ -451,7 +454,7 @@ header .sub b{color:var(--ink);font-weight:700}
 .modal{position:fixed;inset:0;z-index:50;background:rgba(10,14,20,.55);display:flex;align-items:center;justify-content:center;padding:32px 24px}
 @media (max-width:600px){.modal{padding:16px 12px}}
 .modal-box{background:var(--surface);color:var(--ink);border:6px solid var(--line-strong);border-radius:16px;padding:22px 24px;max-width:720px;width:100%;max-height:90vh;overflow:auto}
-.modal-box h2{margin:0 0 6px;font-size:20px;font-weight:900;text-wrap:balance}
+.modal-box h2{margin:0 0 8px;font-size:20px;font-weight:900;text-wrap:balance;line-height:1.45}
 .modal-box p{margin:0 0 14px;font-size:13px;color:var(--muted)}
 .pref-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:6px}
 .pref-opt{appearance:none;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;padding:8px 4px;font:inherit;font-size:14px;cursor:pointer}
