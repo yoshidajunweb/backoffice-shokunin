@@ -118,11 +118,11 @@ const X_URL = CFG.xUrl || '';
 const NOTE_URL = CFG.noteUrl || '';
 // 「応援する」の受け口（config.json の support。URLが入っているものだけ出す）
 const SUPPORT_DEFS = [
-  { key: 'ofuse', label: 'OFUSE で応援', note: '100円から。会員登録なし・匿名OK／カード・Apple Payで送れます' },
-  { key: 'buymeacoffee', label: 'Buy Me a Coffee', note: 'コーヒー1杯分から' },
-  { key: 'kofi', label: 'Ko-fi', note: '手数料なしの投げ銭' },
-  { key: 'amazon', label: 'Amazon ほしい物リスト', note: '運営に使う物で応援。日本のメーカーのものを選んでいます' },
-  { key: 'note', label: 'note でサポート', note: '記事へのサポート機能' },
+  { key: 'ofuse', icon: 'hand-coins', label: 'OFUSE で応援', note: '100円から。会員登録なし・匿名OK／カード・Apple Payで送れます' },
+  { key: 'buymeacoffee', icon: 'coffee', label: 'Buy Me a Coffee', note: 'コーヒー1杯分から' },
+  { key: 'kofi', icon: 'coffee', label: 'Ko-fi', note: '手数料なしの投げ銭' },
+  { key: 'amazon', icon: 'gift', label: 'Amazon ほしい物リスト', note: '運営に使う物で応援。日本のメーカーのものを選んでいます' },
+  { key: 'note', icon: 'notebook-pen', label: 'note でサポート', note: '記事へのサポート機能' },
 ];
 const SUPPORT_LINKS = SUPPORT_DEFS.filter((d) => (CFG.support || {})[d.key]).map((d) => ({ ...d, url: CFG.support[d.key] }));
 
@@ -301,16 +301,19 @@ header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 .site-foot .foot{margin-top:0;border-top:0;padding-top:0}
 .foot-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:40px}
 /* ロゴの矢印と同じ 青→緑 の塗り。角丸10px */
-.sup-btn{appearance:none;border:0;background:linear-gradient(90deg,#3A6FA8 0%,#5B9BD5 45%,#7BC48A 100%);color:#fff;border-radius:10px;padding:10px 18px;font:inherit;font-weight:900;letter-spacing:.02em;cursor:pointer;box-shadow:0 2px 6px rgba(26,34,48,.15);display:inline-flex;align-items:center;gap:8px}
-.ico-heart{width:18px;height:18px;flex:none}
+.sup-btn{appearance:none;border:0;background:linear-gradient(90deg,#3A6FA8 0%,#5B9BD5 45%,#7BC48A 100%);color:#fff;border-radius:12px;padding:15px 24px;font:inherit;font-size:15px;font-weight:900;letter-spacing:.02em;cursor:pointer;box-shadow:0 2px 8px rgba(26,34,48,.18);display:inline-flex;align-items:center;gap:10px}
+.ico-heart{width:20px;height:20px;flex:none}
 .sup-btn:hover,.sup-btn:focus-visible{outline:none;filter:brightness(1.07);box-shadow:0 3px 10px rgba(26,34,48,.22)}
 .foot-note{font-size:12px;color:var(--muted)}
 .sup-box{max-width:520px}
 .sup-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
-.sup-list a,.sup-link{display:flex;flex-direction:column;gap:2px;width:100%;text-align:left;border:2px solid var(--line);border-radius:10px;padding:10px 14px;background:var(--paper);color:var(--ink);text-decoration:none;font:inherit;cursor:pointer}
+.sup-list a,.sup-link,.sup-soon{display:flex;align-items:center;gap:12px;width:100%;text-align:left;border:2px solid var(--line);border-radius:10px;padding:13px 16px;background:var(--paper);color:var(--ink);text-decoration:none;font:inherit;cursor:pointer}
+.sup-list svg{width:22px;height:22px;flex:none;color:var(--accent)}
+.sup-txt{display:flex;flex-direction:column;gap:2px;min-width:0}
 .sup-list a:hover,.sup-link:hover,.sup-list a:focus-visible,.sup-link:focus-visible{outline:none;border-color:var(--accent);background:var(--accent-soft)}
 .sup-list b{font-weight:900}.sup-list span{font-size:12px;color:var(--muted)}
-.sup-soon{border:2px dashed var(--line);border-radius:10px;padding:10px 14px;color:var(--muted);display:flex;flex-direction:column;gap:2px}
+.sup-soon{border-style:dashed;color:var(--muted);cursor:default}
+.sup-soon svg{color:var(--muted)}
 .fb-btn{appearance:none;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .fb-btn:hover,.fb-btn:focus-visible{outline:none;border-color:var(--accent)}
 .fb-box{max-width:560px;display:flex;flex-direction:column;gap:10px}
@@ -593,12 +596,12 @@ header .sub b{color:var(--ink);font-weight:700}
     <h2 id="sup-title">応援の方法</h2>
     <p>どれか1つで十分です。お金がかからない方法もあります。</p>
     <ul class="sup-list">
-      ${X_URL ? `<li><a href="${esc(X_URL)}" target="_blank" rel="noopener"><b>Xでフォロー・リポスト</b><span>0円。いちばん助かります</span></a></li>` : ''}
-      ${NOTE_URL ? `<li><a href="${esc(NOTE_URL)}" target="_blank" rel="noopener"><b>note の記事を読む・スキを付ける</b><span>0円。作った経緯や使い方を書いています</span></a></li>` : ''}
-      <li><button type="button" class="sup-link" id="sup-share"><b>このサイトを同業の人に教える</b><span>0円。URLをコピーします</span></button></li>
-      <li><button type="button" class="sup-link" id="sup-feedback"><b>間違い・要望を送る</b><span>0円。サイトが良くなります</span></button></li>
-      ${SUPPORT_LINKS.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener"><b>${esc(s.label)}</b><span>${esc(s.note)}</span></a></li>`).join('')}
-      ${SUPPORT_LINKS.length ? '' : '<li class="sup-soon"><b>お金での応援</b><span>受け口を準備中です</span></li>'}
+      ${X_URL ? `<li><a href="${esc(X_URL)}" target="_blank" rel="noopener">${lucide('megaphone')}<span class="sup-txt"><b>Xでフォロー・リポスト</b><span>0円。いちばん助かります</span></span></a></li>` : ''}
+      ${NOTE_URL ? `<li><a href="${esc(NOTE_URL)}" target="_blank" rel="noopener">${lucide('notebook-pen')}<span class="sup-txt"><b>note の記事を読む・スキを付ける</b><span>0円。作った経緯や使い方を書いています</span></span></a></li>` : ''}
+      <li><button type="button" class="sup-link" id="sup-share">${lucide('share-2')}<span class="sup-txt"><b>このサイトを同業の人に教える</b><span>0円。URLをコピーします</span></span></button></li>
+      <li><button type="button" class="sup-link" id="sup-feedback">${lucide('message-square-warning')}<span class="sup-txt"><b>間違い・要望を送る</b><span>0円。サイトが良くなります</span></span></button></li>
+      ${SUPPORT_LINKS.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${lucide(s.icon || 'heart')}<span class="sup-txt"><b>${esc(s.label)}</b><span>${esc(s.note)}</span></span></a></li>`).join('')}
+      ${SUPPORT_LINKS.length ? '' : `<li class="sup-soon">${lucide('hand-coins')}<span class="sup-txt"><b>お金での応援</b><span>受け口を準備中です</span></span></li>`}
     </ul>
     <div class="modal-actions"><span class="fb-status" id="sup-status" aria-live="polite"></span><button type="button" class="pref-all" id="sup-close">閉じる</button></div>
   </div>
