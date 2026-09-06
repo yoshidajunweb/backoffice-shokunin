@@ -119,10 +119,14 @@ ul.rel a{text-decoration:none;font-weight:500}ul.rel a:hover{text-decoration:und
 }
 .to-top{opacity:0;transform:translateY(10px);pointer-events:none}
 .to-top.is-on{opacity:1;transform:none;pointer-events:auto}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--accent);color:var(--accent-ink);padding:10px 18px;border-radius:0 0 10px 10px;font-weight:900;text-decoration:none}
+.skip:focus{top:0}
+#main:focus{outline:none}
 </style>
 </head>
 <body>
-<div class="wrap">
+<a class="skip" href="#main">本文へ移動</a>
+<div class="wrap" id="main" tabindex="-1">
 <div class="top"><a href="${SITE_URL || '../'}">${SITE_NAME}</a><span class="crumb">${esc(breadcrumb)}</span></div>
 ${body}
 <footer class="site-foot">

@@ -250,6 +250,7 @@ const ogpTags = SITE_URL ? `
 ${X_URL ? `<meta name="twitter:site" content="@${esc(X_URL.split('/').pop())}">` : ''}` : '';
 
 // viewport が無いと iPhone が PC 幅（980px）で描画して字が小さくなる。必ず入れる（2026-09-06 修正）
+// build.cjs が出すのは <head> の中身から。lang は生成後に <html lang="ja"> として付ける（下の wrapHtml）
 const html = `<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>福祉行政アップデート${PRIVATE ? '（自分用）' : ''}</title>${PRIVATE ? '' : ogpTags}
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -280,6 +281,10 @@ const html = `<meta name="viewport" content="width=device-width,initial-scale=1"
 html{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
 /* 中でスクロールする箱（モーダル・情報源の枠・横スクロールする表）も同じ見た目に */
 .modal-box,.slist,.list,.panel,pre,table{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+/* キーボードで使う人向け。Tabを1回押すと現れ、押すと一覧まで飛べる */
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--accent);color:var(--accent-ink);padding:10px 18px;border-radius:0 0 10px 10px;font-weight:900;text-decoration:none}
+.skip:focus{top:0}
+#main:focus{outline:none}
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic UI",system-ui,sans-serif;font-size:15px;line-height:1.6}
 [hidden]{display:none!important}
@@ -511,6 +516,9 @@ header .sub b{color:var(--ink);font-weight:700}
 .empty{color:var(--muted);padding:30px 0;text-align:center}
 .foot{margin-top:40px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;max-width:65ch}
 </style>
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
 
 <div class="wrap">
 <header>
@@ -574,7 +582,7 @@ header .sub b{color:var(--ink);font-weight:700}
 </div>
 
 <div class="grid">
-  <main>
+  <main id="main" tabindex="-1">
     <div id="view-list">
     ${rows}
     <p class="empty" hidden>この条件に当てはまる更新はありません。</p>
@@ -872,8 +880,17 @@ header .sub b{color:var(--ink);font-weight:700}
   apply();
 })();
 </script>
+</body>
 `;
 
-fs.writeFileSync(OUT, html);
+// 断片のままだと <html lang="ja"> が無く、読み上げソフトが日本語と認識できない。
+// GitHub Pages では素のファイルがそのまま配信されるので、ここで正しい文書の形に包む。
+const doc = `<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+${html.replace(/^<meta name="viewport"[^>]*>\n/, '<meta name="viewport" content="width=device-width,initial-scale=1">\n')}
+</html>`;
+fs.writeFileSync(OUT, doc);
 console.log(`${items.length} 件（直近30日）→ ${path.relative(ROOT, OUT)}`);
 console.log('タブ別:', JSON.stringify(counts), '／ 発信元別:', JSON.stringify(regionCounts));
