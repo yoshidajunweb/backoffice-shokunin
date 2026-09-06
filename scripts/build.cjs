@@ -298,6 +298,12 @@ header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 .sf-nav{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;margin-bottom:14px}
 .sf-nav a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}.sf-nav a:hover{border-bottom-color:var(--ink)}
 .sf-copy{font-size:12px;color:var(--muted);margin:10px 0 0}
+/* 先頭に戻るボタン。少しスクロールしたら右下に出る */
+.to-top{position:fixed;right:18px;bottom:18px;z-index:20;width:46px;height:46px;border-radius:50%;border:2px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(26,34,48,.18)}
+.to-top svg{width:22px;height:22px}
+.to-top:hover,.to-top:focus-visible{outline:none;border-color:var(--accent);color:var(--accent)}
+@media (max-width:600px){.to-top{right:12px;bottom:12px;width:44px;height:44px}}
+@media print{.to-top{display:none}}
 .site-foot .foot{margin-top:0;border-top:0;padding-top:0}
 .foot-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:40px}
 /* ロゴの矢印と同じ 青→緑 の塗り。角丸10px */
@@ -595,6 +601,8 @@ header .sub b{color:var(--ink);font-weight:700}
   <p class="sf-copy">© ${NOW.getFullYear()} バックオフィス職人</p>
 </footer>
 
+<button class="to-top" id="to-top" type="button" aria-label="ページの先頭に戻る" title="先頭に戻る" hidden>${lucide('arrow-up')}</button>
+
 <div class="modal" id="sup-modal" role="dialog" aria-modal="true" aria-labelledby="sup-title" hidden>
   <div class="modal-box sup-box">
     <h2 id="sup-title">応援の方法</h2>
@@ -690,6 +698,16 @@ header .sub b{color:var(--ink);font-weight:700}
   });
   document.getElementById('sup-feedback').addEventListener('click',function(){ supClose(); fbOpen(); });
   document.getElementById('sf-fb').addEventListener('click',function(e){ e.preventDefault(); fbOpen(); });
+
+  // ---- 先頭に戻る -----------------------------------------------------
+  var toTop=document.getElementById('to-top');
+  function toggleTop(){ toTop.hidden = (window.scrollY||document.documentElement.scrollTop) < 400; }
+  window.addEventListener('scroll',toggleTop,{passive:true});
+  toTop.addEventListener('click',function(){
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
+  });
+  toggleTop();
   document.getElementById('sf-cal').addEventListener('click',function(e){ e.preventDefault(); view='cal'; try{localStorage.setItem('fukushi-view','cal');}catch(err){} apply(); window.scrollTo({top:0,behavior:'smooth'}); });
 
   // ---- ご意見モーダル -------------------------------------------------

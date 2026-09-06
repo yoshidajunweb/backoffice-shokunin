@@ -16,6 +16,16 @@ const CFG = (() => { const f = path.join(ROOT, 'data', 'config.json'); return fs
 const SITE_URL = (CFG.siteUrl || '').replace(/\/?$/, '/');   // 例 https://backoffice-shokunin.jp/update/
 const SITE_NAME = '福祉行政アップデート';
 
+// Lucideアイコン（ISC）。使うものだけ埋め込む
+const LUCIDE_DIR = path.join(ROOT, 'node_modules', 'lucide-static', 'icons');
+function lucide(name, cls = '') {
+  const f = path.join(LUCIDE_DIR, name + '.svg');
+  if (!fs.existsSync(f)) return '';
+  const inner = fs.readFileSync(f, 'utf8')
+    .replace(/[\s\S]*?<svg[^>]*>/, '').replace(/<\/svg>[\s\S]*/, '').replace(/\n\s*/g, '');
+  return '<svg' + (cls ? ' class="' + cls + '"' : '') + ' viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' + inner + '</svg>';
+}
+
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const idOf = (link) => crypto.createHash('sha1').update(link).digest('hex').slice(0, 10);
 const jpDate = (iso) => { if (!iso) return ''; const [y, m, d] = iso.split('-').map(Number); return `${y}年${m}月${d}日`; };
@@ -88,6 +98,11 @@ ul.rel a{text-decoration:none;font-weight:500}ul.rel a:hover{text-decoration:und
 .sf-nav{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;margin-bottom:10px}.sf-nav a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}.sf-nav a:hover{border-bottom-color:var(--ink)}
 .src{font-size:13px;color:var(--muted)}
 .lead{font-size:15px;line-height:1.75;margin:0 0 16px;padding:10px 14px;border-left:4px solid var(--accent);background:var(--surface);border-radius:0 8px 8px 0}
+.to-top{position:fixed;right:18px;bottom:18px;z-index:20;width:46px;height:46px;border-radius:50%;border:2px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(26,34,48,.18)}
+.to-top svg{width:22px;height:22px}
+.to-top:hover,.to-top:focus-visible{outline:none;border-color:var(--accent);color:var(--accent)}
+@media (max-width:600px){.to-top{right:12px;bottom:12px;width:44px;height:44px}}
+@media print{.to-top{display:none}}
 </style>
 </head>
 <body>
@@ -105,6 +120,8 @@ ${body}
   <p class="foot">© ${new Date().getFullYear()} バックオフィス職人</p>
 </footer>
 </div>
+<button class="to-top" id="to-top" type="button" aria-label="ページの先頭に戻る" title="先頭に戻る" hidden>${lucide("arrow-up")}</button>
+<script>(function(){var b=document.getElementById("to-top");function t(){b.hidden=(window.scrollY||document.documentElement.scrollTop)<400;}window.addEventListener("scroll",t,{passive:true});b.addEventListener("click",function(){var r=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;window.scrollTo({top:0,behavior:r?"auto":"smooth"});});t();})();</script>
 </body>
 </html>`;
 }
