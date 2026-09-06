@@ -515,7 +515,7 @@ header .sub b{color:var(--ink);font-weight:700}
   <div class="filters" aria-label="発信元で絞る">
     <span class="f-label">発信元</span>
     <button class="f f-issuer" data-region="" aria-pressed="true">すべて <span class="n">${items.length}</span></button>
-    ${REGIONS.filter((r) => regionCounts[r] > 0).map((r) => `<button class="f f-issuer" data-region="${r}" aria-pressed="false">${r} <span class="n">${regionCounts[r]}</span></button>`).join('')}
+    ${REGIONS.filter((r) => regionCounts[r] > 0).map((r) => `<button class="f f-issuer" data-region="${r}" aria-pressed="false" hidden>${r} <span class="n">${regionCounts[r]}</span></button>`).join('')}
     <span class="f-label">しぼる</span>
     <button class="f f-flag" data-flag="1" aria-pressed="false">要対応だけ <span class="n">${items.filter((it) => FLAGS[it.link]).length}</span></button>
     <button class="f f-money" data-money="1" aria-pressed="false">補助金だけ <span class="n">${items.filter((it) => (it.systems || []).includes('補助金') || (FLAGS[it.link] && FLAGS[it.link].systems.includes('補助金'))).length}</span></button>
@@ -744,6 +744,28 @@ header .sub b{color:var(--ink);font-weight:700}
       r.hidden=!ok; if(ok)shown++;
     });
     flagBtn.querySelector('.n').textContent=nFlag; moneyBtn.querySelector('.n').textContent=nMoney;
+    // タブと発信元の件数も、いま効いている絞り込み（都道府県・検索・しぼる）を反映して数え直す。
+    // ※ 2026-09-06 修正：ビルド時の固定値を出していたため「茨城県を選んでも数が減らない」状態だった。
+    //   各ボタンは「それを押したら何件になるか」を示す。自分自身の条件は外して数える。
+    (function(){
+      var tabN={}, regN={'':0};
+      rows.forEach(function(r){
+        if(!inMyArea(r))return;
+        if(state.q && r.dataset.text.indexOf(state.q)<0)return;
+        if(flagOnly && r.dataset.flag!=='1')return;
+        if(moneyOnly && r.dataset.systems.split('|').indexOf('補助金')<0)return;
+        // タブの件数：発信元は今の選択を効かせる（タブ自身の条件だけ外す）
+        if(!state.region || r.dataset.region===state.region)
+          r.dataset.tags.split('|').forEach(function(t){ if(t) tabN[t]=(tabN[t]||0)+1; });
+        // 発信元の件数：タブは今の選択を効かせる（発信元自身の条件だけ外す）
+        var inTab = profileOn ? r.dataset.profiles.split('|').indexOf(profileOn)>=0
+          : (r.dataset.tags.split('|').indexOf(state.tab)>=0 || (r.dataset.generic==='1' && state.tab!=='未分類'));
+        if(inTab){ regN['']++; regN[r.dataset.region]=(regN[r.dataset.region]||0)+1; }
+      });
+      tabs.forEach(function(t){ var e=t.querySelector('.n'); if(e) e.textContent=tabN[t.dataset.tab]||0; });
+      fs.forEach(function(b){ var e=b.querySelector('.n'); if(e) e.textContent=regN[b.dataset.region]||0;
+        b.hidden = b.dataset.region!=='' && !regN[b.dataset.region]; });
+    })();
     days.forEach(function(d){
       var n=d.querySelectorAll('.row:not([hidden])').length;
       d.hidden=n===0; d.querySelector('.day-n').textContent=n+'件';
