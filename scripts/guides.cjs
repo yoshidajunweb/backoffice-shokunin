@@ -119,7 +119,8 @@ h1{font-size:24px;font-weight:900;line-height:1.35;margin:0 0 12px;text-wrap:bal
 h2.sec{font-size:15px;font-weight:900;margin:28px 0 10px;padding-bottom:4px;border-bottom:2px solid var(--line-strong)}
 .picker{display:flex;flex-wrap:wrap;gap:14px;padding:14px;background:var(--accent-soft);border-radius:10px}
 .picker label{display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:700;color:var(--muted)}
-.picker select{border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:8px 10px;font:inherit;font-size:15px;font-weight:700}
+.picker select{border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:8px 10px;font:inherit;font-size:16px;font-weight:700}
+@media (max-width:600px){.wrap{padding:14px 14px 60px}.picker{flex-direction:column;gap:10px}.picker label,.picker select{width:100%}}
 .notyet{background:var(--surface);border:2px dashed var(--line);border-radius:10px;padding:12px 14px;font-size:14px}
 .prep{margin:0;padding-left:1.2em}.prep li{margin:2px 0}
 .panel{border:4px solid var(--line-strong);border-radius:12px;background:var(--surface);padding:16px 18px;margin:18px 0}

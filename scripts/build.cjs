@@ -247,7 +247,9 @@ const ogpTags = SITE_URL ? `
 <meta name="twitter:card" content="summary_large_image">
 ${X_URL ? `<meta name="twitter:site" content="@${esc(X_URL.split('/').pop())}">` : ''}` : '';
 
-const html = `<title>福祉行政アップデート${PRIVATE ? '（自分用）' : ''}</title>${PRIVATE ? '' : ogpTags}
+// viewport が無いと iPhone が PC 幅（980px）で描画して字が小さくなる。必ず入れる（2026-09-06 修正）
+const html = `<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>福祉行政アップデート${PRIVATE ? '（自分用）' : ''}</title>${PRIVATE ? '' : ogpTags}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -374,6 +376,12 @@ header .sub b{color:var(--ink);font-weight:700}
 .f-flag[aria-pressed="true"] .n,.f-money[aria-pressed="true"] .n{color:var(--paper);opacity:.8}
 .f:focus-visible{outline:none;border-color:var(--accent)}
 .search{margin-left:auto;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 10px;font:inherit;min-width:220px}
+/* スマホ：検索は1行使い切る。iOSは font-size 16px 未満だと入力時に勝手に拡大するので16pxにする */
+@media (max-width:600px){
+  .search{margin-left:0;width:100%;min-width:0;font-size:16px}
+  .tabs{gap:5px}.tab{padding:7px 11px}
+  .wrap{padding:14px 14px 60px}
+}
 .search:focus{outline:none;border-color:var(--accent)}
 
 .grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;align-items:start}
