@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08T12:03:07.293Z",
+  "updated": "2026-09-08T23:48:27.448Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 131,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 7,
-      "added": 5,
+      "added": 0,
       "ok": true
     },
     {
@@ -82,7 +82,7 @@
       "url": "https://www.pref.ibaraki.jp/hokenfukushi/shofuku/jiritsu/shofuku/e/01_jigyoushomuke/08_osirase.html",
       "type": "page-list",
       "count": 32,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -214,7 +214,7 @@
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
       "count": 3,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -226,7 +226,7 @@
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
       "count": 37,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -274,7 +274,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -310,7 +310,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -451,6 +451,22 @@
       "pref": null,
       "bureau": null,
       "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-08"
+    },
+    {
+      "title": "令和8年度障害支援区分認定調査員（現任者向け）研修について",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/2shienkubungennin.html",
+      "date": "2026-09-08",
+      "desc": "",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
       "systems": [],
       "firstSeen": "2026-09-08"
     },
