@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09T12:14:04.474Z",
+  "updated": "2026-09-09T23:47:41.563Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 134,
-      "added": 10,
+      "added": 0,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 11,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -58,7 +58,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/kantoshinetsu/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -106,7 +106,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/hokkaido/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -214,7 +214,7 @@
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
       "count": 4,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -274,7 +274,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -310,7 +310,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -541,6 +541,24 @@
       "tags": [],
       "systems": [
         "補助金"
+      ],
+      "firstSeen": "2026-09-09"
+    },
+    {
+      "title": "保険医療機関・保険薬局等の管内指定状況等について",
+      "link": "https://kouseikyoku.mhlw.go.jp/hokkaido/iryo_shido/hoken-kikan.html",
+      "date": "2026-09-09",
+      "desc": "",
+      "source": "北海道厚生局",
+      "sourceId": "kk-hokkaido",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "北海道",
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [
+        "医療"
       ],
       "firstSeen": "2026-09-09"
     },
