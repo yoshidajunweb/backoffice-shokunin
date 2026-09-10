@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10T12:07:49.348Z",
+  "updated": "2026-09-10T23:39:15.331Z",
   "sources": [
     {
       "id": "wamnet",
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 137,
-      "added": 9,
+      "added": 0,
       "ok": true
     },
     {
@@ -82,7 +82,7 @@
       "url": "https://www.pref.ibaraki.jp/hokenfukushi/shofuku/jiritsu/shofuku/e/01_jigyoushomuke/08_osirase.html",
       "type": "page-list",
       "count": 34,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -274,7 +274,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
