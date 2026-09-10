@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09T23:47:41.563Z",
+  "updated": "2026-09-10T02:33:20.270Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 4,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 134,
-      "added": 0,
+      "count": 128,
+      "added": 1,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 11,
-      "added": 0,
+      "count": 17,
+      "added": 10,
       "ok": true
     },
     {
@@ -106,7 +106,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/hokkaido/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -274,7 +274,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -310,7 +310,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -352,6 +352,34 @@
     }
   ],
   "items": [
+    {
+      "title": "採用情報（期間業務職員（医政局）募集情報）",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/hijoukin/hj-iseikyoku.html",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "令和8年度全国児童福祉主管課長・児童相談所長会議",
+      "link": "https://www.cfa.go.jp/councils/jisou-kaigi/r08",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
     {
       "title": "第２回 令和８年度医師の働き方改革の推進等に関する検討会：資料",
       "link": "https://www.mhlw.go.jp/stf/newpage_76089.html",
@@ -563,6 +591,84 @@
       "firstSeen": "2026-09-09"
     },
     {
+      "title": "第265回 社会保障審議会 介護給付費分科会（令和8年9月10日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22851&ct=010010020&from=rss",
+      "date": "2026-09-09",
+      "desc": "●主な議題令和９年度介護報酬改定に向けて・関係団体等意見交換会①※詳細は以下のリンクからご参照ください。（会議資料）：第...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "成年後見制度利用促進専門家会議 第3回成年後見制度の適切な運用に係るワーキング・グループ（令和8年9月10日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22854&ct=100100170&from=rss",
+      "date": "2026-09-09",
+      "desc": "●主な議題（１）成年後見制度の見直しの周知・広報のあり方（２）不正防止の徹底と利用しやすさ（後見事務の円滑化を含む）の調...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "第21回 高齢者の保健事業のあり方検討ワーキンググループ（令和8年9月10日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22853&ct=020060385&from=rss",
+      "date": "2026-09-09",
+      "desc": "●主な議題高齢者の保健事業と介護予防の一体的実施の進捗等についてその他※詳細は以下のリンクからご参照ください。（会議資料...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "第215回 社会保障審議会 医療保険部会の開催について（令和8年9月11日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22852&ct=070010030&from=rss",
+      "date": "2026-09-09",
+      "desc": "●主な議題類似薬の保険給付の見直しの実施について医療保険制度改革について※詳細は以下のリンクからご参照ください。第回社会...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "公営住宅法施行令の一部を改正する政令案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260721&Mode=0",
+      "date": "2026-09-09",
+      "desc": "案の公示日：2026/09/10受付締切日時：2026/10/10 00:00カテゴリー：建築、住宅問合せ先（所管省庁・部局名等）：国土交通省 住宅局住宅総合整備課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
       "title": "「人口動態統計月報（概数）」令和８（2026）年４月分",
       "link": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/geppo/m2026/04.html",
       "date": "2026-09-08",
@@ -743,6 +849,134 @@
       ],
       "systems": [],
       "firstSeen": "2026-09-09"
+    },
+    {
+      "title": "Escherichia coli K-12 DH1 MDO MAP1001h株を利用して生産された２’-フコシルラクトースに係る食品健康影響評価に関する審議結果（案）についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=095260810&Mode=0",
+      "date": "2026-09-08",
+      "desc": "案の公示日：2026/09/09受付締切日時：2026/10/08 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：【本件連絡先】 内閣府食品安全委員会事務局 評価第二課 飯塚、渡邉、山川 電話：03-6234-1108、1104又は1105",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "H-ELP株を利用して生産されたα-アミラーゼに係る食品健康影響評価に関する審議結果（案）についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=095260820&Mode=0",
+      "date": "2026-09-08",
+      "desc": "案の公示日：2026/09/09受付締切日時：2026/10/08 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：【本件連絡先】 内閣府食品安全委員会事務局 評価第二課 飯塚、渡邉、山川 電話：03-6234-1108、1104又は1105",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "JPAN013株を利用して生産されたα-ガラクトシダーゼに係る食品健康影響評価に関する審議結果（案）についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=095260830&Mode=0",
+      "date": "2026-09-08",
+      "desc": "案の公示日：2026/09/09受付締切日時：2026/10/08 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：【本件連絡先】 内閣府食品安全委員会事務局 評価第二課 飯塚、渡邉、山川 電話：03-6234-1108、1104又は1105",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "ブロマシルに係る食品健康影響評価に関する審議結果（案）についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=095260840&Mode=0",
+      "date": "2026-09-08",
+      "desc": "案の公示日：2026/09/09受付締切日時：2026/10/08 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：【本件連絡先】 内閣府食品安全委員会事務局 評価第一課農薬評価室 櫻井、山口 電話：03(6234)1193又は1147",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "メタミトロンに係る食品健康影響評価に関する審議結果（案）についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=095260850&Mode=0",
+      "date": "2026-09-08",
+      "desc": "案の公示日：2026/09/09受付締切日時：2026/10/08 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：【本件連絡先】 内閣府食品安全委員会事務局 評価第一課農薬評価室 塩澤、鈴木 電話：03(6234)1187又は1165",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "「「飼料添加物の動物試験の実施に関する基準について」、「飼料添加物の動物試験の実施に関する基準に基づく査察実施要領の制定について」及び「飼料添加物の評価基準の制定について」の一部改正案」についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004403&Mode=0",
+      "date": "2026-09-08",
+      "desc": "案の公示日：2026/09/09受付締切日時：2026/10/08 23:59カテゴリー：農業問合せ先（所管省庁・部局名等）：農林水産省消費・安全局畜水産安全管理課 電話：03-3502-8111（内線4546）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "「医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律第三十六条の七第一項第一号及び第二号の規定に基づき厚生労働大臣が指定する第一類医薬品及び第二類医薬品の一部を改正する件（案）及び医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律施行規則第一条の二第三項第五号の規定に基づき特別の注意を要するものとして厚生労働大臣が指定する第二類医薬品の一部を改正する件（案）」に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260181&Mode=0",
+      "date": "2026-09-08",
+      "desc": "案の公示日：2026/09/09受付締切日時：2026/10/09 00:00カテゴリー：厚生問合せ先（所管省庁・部局名等）：医薬局医薬安全対策課 03-5253-1111 03-3595-2435（直通）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "産業競争力強化法第百四十条の二第三項ただし書の経済産業省令・農林水産省令・国土交通省令で定める軽微な変更を定める省令（案）等に対する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320027&Mode=0",
+      "date": "2026-09-08",
+      "desc": "案の公示日：2026/09/09受付締切日時：2026/10/08 23:59カテゴリー：経済財政政策問合せ先（所管省庁・部局名等）：経済産業省経済産業政策局生活維持物品役務需要減等対策室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "「国土交通大臣が認める登録基幹技能者講習を定める件」の一部改正案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260311&Mode=0",
+      "date": "2026-09-08",
+      "desc": "案の公示日：2026/09/09受付締切日時：2026/10/09 23:55カテゴリー：建築、住宅問合せ先（所管省庁・部局名等）：国土交通省不動産・建設経済局建設業課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
     },
     {
       "title": "薬事審議会血液事業部会令和８年度第１回適正使用調査会議事録",
