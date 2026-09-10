@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10T02:33:20.270Z",
+  "updated": "2026-09-10T12:07:49.348Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 128,
-      "added": 1,
+      "count": 137,
+      "added": 9,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 17,
-      "added": 10,
+      "added": 0,
       "ok": true
     },
     {
@@ -81,8 +81,8 @@
       "bureau": null,
       "url": "https://www.pref.ibaraki.jp/hokenfukushi/shofuku/jiritsu/shofuku/e/01_jigyoushomuke/08_osirase.html",
       "type": "page-list",
-      "count": 32,
-      "added": 0,
+      "count": 34,
+      "added": 2,
       "ok": true
     },
     {
@@ -213,7 +213,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 4,
+      "count": 3,
       "added": 0,
       "ok": true
     },
@@ -369,6 +369,193 @@
     {
       "title": "令和8年度全国児童福祉主管課長・児童相談所長会議",
       "link": "https://www.cfa.go.jp/councils/jisou-kaigi/r08",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "第27回臓器移植推進国民大会が開催されます",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76084.html",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "10月は「臓器移植普及推進月間」です",
+      "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/zouki_ishoku/kaigi_00001.html",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "令和８年パートタイム・有期雇用労働者総合実態調査にご協力ください",
+      "link": "https://www.mhlw.go.jp/toukei/oshirase/kozo_partR08.html",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "指定薬物を含有する危険ドラッグの発見について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76130.html",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "労働者派遣法違反に係る告発について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76067.html",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "製品安全誓約（日本国）の対象に「労働安全衛生法」が加わります",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76064.html",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "消費者参加型イベントにおける食品安全に関するブース出展について",
+      "link": "https://www.mhlw.go.jp/stf/houdou/1111212865_00044.html",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "薬事審議会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76025.html",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "第36回厚生科学審議会予防接種・ワクチン分科会予防接種基本方針部会ワクチン評価に関する小委員会の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_75659.html",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "【回答期限：令和8年10月2日（金曜日）】令和9年度安全安心対策事業補助金について",
+      "link": "https://www.pref.ibaraki.jp/hokenfukushi/shofuku/jiritsu/shofuku/e/01_jigyoushomuke/08_osirase.html#R9anzenanshintaisaku",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "茨城県 障害福祉課 お知らせ",
+      "sourceId": "ibaraki-shofuku",
+      "region": "県",
+      "pref": "茨城県",
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "【回答期限：令和8年10月2日（金曜日）】令和9年度地域障害児支援体制充実のためのICT化推進事業補助金について",
+      "link": "https://www.pref.ibaraki.jp/hokenfukushi/shofuku/jiritsu/shofuku/e/01_jigyoushomuke/08_osirase.html#R9ji_ict",
+      "date": "2026-09-10",
+      "desc": "",
+      "source": "茨城県 障害福祉課 お知らせ",
+      "sourceId": "ibaraki-shofuku",
+      "region": "県",
+      "pref": "茨城県",
+      "bureau": null,
+      "tags": [
+        "障害児通所"
+      ],
+      "systems": [
+        "障害",
+        "補助金"
+      ],
+      "firstSeen": "2026-09-10"
+    },
+    {
+      "title": "第15回 子ども・子育て支援等分科会の議事録",
+      "link": "https://www.cfa.go.jp/councils/shingikai/kodomo_kosodate/7e5f6ec9",
       "date": "2026-09-10",
       "desc": "",
       "source": "こども家庭庁 新着・更新",
