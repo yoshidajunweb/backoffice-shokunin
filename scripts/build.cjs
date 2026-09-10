@@ -661,6 +661,9 @@ header .sub b{color:var(--ink);font-weight:700}
 
 <script>
 (function(){
+  var TABS=${JSON.stringify(TABS)};
+  // 「この行はこのタブに出るか」の唯一の判定。表示と件数はこれを共有する（食い違わせない）
+  function matchTab(tagList,generic,tab){ return tagList.indexOf(tab)>=0 || (generic==='1' && tab!=='未分類'); }
   var tabs=[].slice.call(document.querySelectorAll('.tab'));
   var fs=[].slice.call(document.querySelectorAll('.f:not(.f-profile):not(.f-flag):not(.f-money)'));
   var pfs=[].slice.call(document.querySelectorAll('.f-profile'));
@@ -805,7 +808,7 @@ header .sub b{color:var(--ink);font-weight:700}
     var nFlag=0, nMoney=0;
     rows.forEach(function(r){
       var tabOk = profileOn ? r.dataset.profiles.split('|').indexOf(profileOn)>=0
-        : (r.dataset.tags.split('|').indexOf(state.tab)>=0 || (r.dataset.generic==='1' && state.tab!=='未分類'));
+        : matchTab(r.dataset.tags.split('|'), r.dataset.generic, state.tab);
       var base = tabOk
         && (!state.region || r.dataset.region===state.region)
         && inMyArea(r)
@@ -827,11 +830,15 @@ header .sub b{color:var(--ink);font-weight:700}
         if(flagOnly && r.dataset.flag!=='1')return;
         if(moneyOnly && r.dataset.systems.split('|').indexOf('補助金')<0)return;
         // タブの件数：発信元は今の選択を効かせる（タブ自身の条件だけ外す）
-        if(!state.region || r.dataset.region===state.region)
-          r.dataset.tags.split('|').forEach(function(t){ if(t) tabN[t]=(tabN[t]||0)+1; });
+        // ※ 種別のない補助金の記事（data-generic）は「未分類」以外のすべてのタブに出るので、
+        //   数えるときも同じ扱いにする。揃えないと「グループホーム1件」なのに3件出る、という食い違いになる
+        if(!state.region || r.dataset.region===state.region){
+          var rt=r.dataset.tags.split('|');
+          TABS.forEach(function(t){ if(matchTab(rt,r.dataset.generic,t)) tabN[t]=(tabN[t]||0)+1; });
+        }
         // 発信元の件数：タブは今の選択を効かせる（発信元自身の条件だけ外す）
         var inTab = profileOn ? r.dataset.profiles.split('|').indexOf(profileOn)>=0
-          : (r.dataset.tags.split('|').indexOf(state.tab)>=0 || (r.dataset.generic==='1' && state.tab!=='未分類'));
+          : matchTab(r.dataset.tags.split('|'), r.dataset.generic, state.tab);
         if(inTab){ regN['']++; regN[r.dataset.region]=(regN[r.dataset.region]||0)+1; }
       });
       tabs.forEach(function(t){ var e=t.querySelector('.n'); if(e) e.textContent=tabN[t.dataset.tab]||0; });
