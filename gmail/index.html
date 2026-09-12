@@ -260,10 +260,11 @@
     content: "!"; position: absolute; left: -5px; top: 12px;
     color: #fff; font-weight: 700; font-size: 1.2rem;
   }
-  .dlg-title { margin: 0 0 1rem; font-size: 1.45rem; font-weight: 400; color: #202124; line-height: 1.4; }
-  .dlg-text { margin: 0 0 2.4rem; color: #5f6368; }
+  /* 「.ref p」の指定に負けないよう、.dlg を付けて優先度を上げる */
+  .ref .dlg p.dlg-title { margin: 0 0 1rem; font-size: 1.45rem; font-weight: 400; color: #202124; line-height: 1.4; }
+  .ref .dlg p.dlg-text { margin: 0 0 2.4rem; font-size: .95rem; line-height: 1.7; color: #5f6368; }
+  .ref .dlg p.dlg-more { margin-top: 2.6rem; margin-bottom: 1.6rem; }
   .dlg-mail { color: #1a73e8; text-decoration: underline; }
-  .dlg-more { margin-top: 2.6rem; }
   .dlg-foot { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
   .dlg-link { color: #1a73e8; text-decoration: underline; }
   .dlg-btn {
@@ -272,7 +273,46 @@
     padding: .6rem 1rem; border-radius: 4px; font-weight: 700;
   }
   .hit { outline: 3px solid #d93025; outline-offset: 6px; border-radius: 2px; }
-  .hit-tag { color: #d93025; font-weight: 700; font-size: 1.05rem; margin-left: 1rem; white-space: nowrap; }
+  .hit-tag { color: #d93025; font-weight: 700; font-size: 1.05rem; margin-top: 1rem; }
+
+  /* ---------- AIに手伝ってもらう ---------- */
+
+  .ai {
+    margin-top: 3rem;
+    padding: 1.6rem 1.75rem;
+    background: var(--surface);
+    border: 3px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+  .ai-title { font-family: "Noto Sans JP", sans-serif; font-size: 1.15rem; font-weight: 700; margin: 0 0 .4rem; }
+  .ai-lead { margin: 0 0 1rem; font-size: .92rem; color: var(--ink-soft); }
+  .ai-box {
+    position: relative;
+    background: var(--ground);
+    border: 3px solid var(--line);
+    border-radius: 8px;
+    padding: 1rem 1.1rem;
+    max-height: 18rem;
+    overflow: auto;
+    font-size: .85rem;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--ink);
+    margin: 0;
+    font-family: inherit;
+  }
+  .ai-actions { display: flex; align-items: center; gap: 1rem; margin-top: .8rem; }
+  .ai-copy {
+    padding: .6rem 1.3rem;
+    border: 0; border-radius: 8px;
+    background: var(--accent); color: #fff;
+    font: inherit; font-weight: 700; cursor: pointer;
+  }
+  .ai-copy:hover { background: var(--accent-deep); }
+  .ai-copy:focus-visible { outline: 3px solid var(--accent-deep); outline-offset: 3px; }
+  .ai-status { font-size: .88rem; color: var(--accent-deep); font-weight: 700; }
 
   @media (max-width: 600px) {
     .dlg { padding: 2.5rem 1.25rem 2.5rem; font-size: .88rem; }
@@ -649,9 +689,10 @@
               <p class="dlg-title">このアプリは Google で確認されていません</p>
               <p class="dlg-text">アプリが、Google アカウントのプライベートな情報へのアクセスを求めています。デベロッパー（<span class="dlg-mail">あなたのアドレス</span>）と Google によって確認されるまで、このアプリを使用しないでください。</p>
               <div class="dlg-foot">
-                <span class="dlg-link hit">詳細</span><span class="hit-tag">← ここをクリック</span>
+                <span class="dlg-link hit">詳細</span>
                 <span class="dlg-btn">安全なページに戻る</span>
               </div>
+              <div class="hit-tag">↑ ここをクリック</div>
             </div>
           </div>
         </figure>
@@ -668,8 +709,9 @@
               </div>
               <p class="dlg-text dlg-more">リスクを理解し、デベロッパー（<span class="dlg-mail">あなたのアドレス</span>）を信頼できる場合のみ、続行してください。</p>
               <div class="dlg-foot">
-                <span class="dlg-link hit">Gmail添付ファイル自動保存（安全ではないページ）に移動</span><span class="hit-tag">← ここをクリック</span>
+                <span class="dlg-link hit">Gmail添付ファイル自動保存（安全ではないページ）に移動</span>
               </div>
+              <div class="hit-tag">↑ ここをクリック</div>
             </div>
           </div>
         </figure>
@@ -733,6 +775,48 @@
 
   </div>
 
+  <section class="ai" id="ai">
+    <h2 class="ai-title">AIに横で案内してもらう</h2>
+    <p class="ai-lead">ChatGPTなどのAIに、下の文章をそのまま貼り付けてください。1つずつ操作を案内してくれます。「できた」と返せば次に進みます。</p>
+    <pre class="ai-box" id="ai-prompt">あなたは、Gmailの添付ファイルをGoogleドライブに自動保存するツールの設定を手伝う案内役です。私はパソコン操作に詳しくありません。1回の返事で1つの操作だけを、やさしい言葉で案内してください。私が「できた」と言ったら次に進んでください。分からないと言ったら、別の言い方で説明し直してください。
+
+【ツールの概要】
+・Googleスプレッドシートに組み込まれたプログラム（Apps Script）です。スプレッドシートを自分のドライブにコピーし、メニューから初期設定するだけで動きます。
+・Gmailに届いた添付ファイルを15分ごとにGoogleドライブの指定フォルダへ保存し、ファイル名の頭に日付を付けます。保存から10日たったファイルは「2026.09」のような月フォルダへ自動で移ります。保存の記録はスプレッドシートの「保存ログ」に残ります。
+・すべて本人のGoogleアカウントの中だけで動き、外部のサーバーにデータは送られません。
+
+【手順】
+1. 配布ページの「ツールを自分のドライブにコピーする」ボタンを押し、開いた画面で「コピーを作成」を押します。自分のドライブにコピーができて、新しいタブで開きます。以降はそのコピーで操作します。「同じユーザーと共有する」にはチェックを入れません。
+2. コピーの画面上部にあるメニュー「📬 添付自動保存」→「初期設定」を押します。メニューが見当たらないときは、ページを再読み込みして10秒ほど待ちます。
+3. 初回は「承認が必要です」→「続行」→アカウントを選ぶ→「このアプリは Google で確認されていません」という赤い三角の画面が出ます。これは個人が作ったツール全般に出る警告で、故障ではありません。左下の「詳細」を押すと下に文章が増えるので、一番下の「Gmail添付ファイル自動保存（安全ではないページ）に移動」を押し、次の画面で「許可」を押します。「デベロッパー」に出るアドレスは本人自身のものです（コピーした時点で持ち主が本人になるため）。
+4. 5つの質問が順番に出ます。すべて空欄のままOKを押しても動きます。
+   1) 保存先のフォルダ：ドライブで使いたいフォルダを開き、そのURLを貼ります。空欄なら「Gmail添付ファイル」というフォルダが自動で作られます。
+   2) 対象にするメール：空欄なら添付ファイル付きのメール全部です。Gmailの検索と同じ書き方（from:相手のアドレス、label:ラベル名 など）で絞れます。
+   3) さかのぼる日数：空欄なら30日。初回は過去30日分がまとめて保存されるので、少しだけ試したいときは「1」と入れます。
+   4) 月フォルダに移すまでの日数：空欄なら10日。「0」にすると月をまたいだら移動します。
+   5) ファイル名：1＝日付＋元の名前、2＝日付＋差出人＋元の名前、3＝元の名前のまま、4＝日付＋件名＋元の名前。FAXやスキャンで元の名前が「001.pdf」のような場合は4が便利です。
+5. 「設定が完了しました」と出たら、メニュー「📬 添付自動保存」→「今すぐ保存を実行」を押し、保存先フォルダに添付ファイルが入っていれば成功です。以降は15分ごとに自動で保存されます。
+
+【よくあるつまずき】
+・メニュー「📬 添付自動保存」が出ない：コピーではなく元のファイルを開いている可能性があります。コピーした方を開きます。それでも出なければ再読み込みして10秒待ちます。
+・「設定のやり直しが必要です」と出る：初期設定をもう一度実行します。
+・1件も保存されない：対象の期間に添付付きのメールが無い可能性があります。初期設定をやり直し、質問3で「30」と入れます。
+・会社のGoogleアカウントで手順3から進めない：管理者がApps Scriptの利用を止めている可能性があります。個人のGmailアカウントで試します。
+・同じ名前のファイルが2つある：別のメールに同じ名前の添付があった場合、上書きしないよう連番を付けて両方残す仕様です。
+・自分が送ったメールの添付が保存されない：転送による二重保存を防ぐため、意図的に対象外にしています。
+
+【制約】
+・Gmail専用です。Outlookなど他のメールは対象外です。
+・設定はパソコンで行います。スマホではできません。動き出した後は放置で構いません。
+・保存ログの並べ替えはしないでください。月の区切り行の位置が崩れます。
+
+それでは、最初の操作から案内を始めてください。</pre>
+    <div class="ai-actions">
+      <button type="button" class="ai-copy" id="ai-copy">この文章をコピーする</button>
+      <span class="ai-status" id="ai-status" aria-live="polite"></span>
+    </div>
+  </section>
+
   <section class="fb" id="fb">
     <h2 class="fb-title">ご意見</h2>
     <p class="fb-lead">困ったこと・分かりにくかったところ・欲しい機能を、一言で構いません。匿名で届きます。個人名や会社名は書かないでください。</p>
@@ -766,6 +850,25 @@
 })();
 
 (function () {
+(function () {
+  // AI向けの案内文をコピーする
+  var btn = document.getElementById('ai-copy');
+  var box = document.getElementById('ai-prompt');
+  var st  = document.getElementById('ai-status');
+  btn.addEventListener('click', function () {
+    var text = box.textContent;
+    function done() { st.textContent = 'コピーしました。AIの入力欄に貼り付けてください'; setTimeout(function () { st.textContent = ''; }, 4000); }
+    function fallback() {
+      var range = document.createRange(); range.selectNodeContents(box);
+      var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+      st.textContent = '文章を選択しました。Ctrl+C（Macは⌘+C）でコピーしてください';
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, fallback);
+    } else { fallback(); }
+  });
+})();
+
   var FB_ENDPOINT ="https://script.google.com/macros/s/AKfycbynL6SJnvCbeGCnfh_oXGxxWhh7i775uIA6PA9exuBwRXlJg002a0OjiGPZaPnRy-HF/exec";
   var form = document.getElementById('fb-form');
   var status = document.getElementById('fb-status');
