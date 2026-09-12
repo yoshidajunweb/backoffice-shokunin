@@ -248,18 +248,7 @@
     overflow-x: auto;
   }
   .dlg-inner { max-width: 33rem; }
-  .dlg-warn {
-    width: 0; height: 0;
-    border-left: 26px solid transparent;
-    border-right: 26px solid transparent;
-    border-bottom: 46px solid #d93025;
-    margin-bottom: 1.8rem;
-    position: relative;
-  }
-  .dlg-warn::after {
-    content: "!"; position: absolute; left: -5px; top: 12px;
-    color: #fff; font-weight: 700; font-size: 1.2rem;
-  }
+  .dlg-warn { width: 26px; height: 26px; display: block; margin-bottom: 1.2rem; }
   /* 「.ref p」の指定に負けないよう、.dlg を付けて優先度を上げる */
   .ref .dlg p.dlg-title { margin: 0 0 1rem; font-size: 1.45rem; font-weight: 400; color: #202124; line-height: 1.4; }
   .ref .dlg p.dlg-text { margin: 0 0 2.4rem; font-size: .95rem; line-height: 1.7; color: #5f6368; }
@@ -685,7 +674,7 @@
           <figcaption>① こう表示されたら、左下の「詳細」を押す</figcaption>
           <div class="dlg" aria-hidden="true">
             <div class="dlg-inner">
-              <div class="dlg-warn"></div>
+              <svg class="dlg-warn" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 L22.5 20.5 H1.5 Z" fill="#d93025" stroke="#d93025" stroke-width="2.5" stroke-linejoin="round"/><text x="12" y="18.2" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial, sans-serif">!</text></svg>
               <p class="dlg-title">このアプリは Google で確認されていません</p>
               <p class="dlg-text">アプリが、Google アカウントのプライベートな情報へのアクセスを求めています。デベロッパー（<span class="dlg-mail">あなたのアドレス</span>）と Google によって確認されるまで、このアプリを使用しないでください。</p>
               <div class="dlg-foot">
@@ -700,7 +689,7 @@
           <figcaption>② 下に文章が増えるので、一番下の「…（安全ではないページ）に移動」を押す</figcaption>
           <div class="dlg" aria-hidden="true">
             <div class="dlg-inner">
-              <div class="dlg-warn"></div>
+              <svg class="dlg-warn" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 L22.5 20.5 H1.5 Z" fill="#d93025" stroke="#d93025" stroke-width="2.5" stroke-linejoin="round"/><text x="12" y="18.2" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial, sans-serif">!</text></svg>
               <p class="dlg-title">このアプリは Google で確認されていません</p>
               <p class="dlg-text">アプリが、Google アカウントのプライベートな情報へのアクセスを求めています。デベロッパー（<span class="dlg-mail">あなたのアドレス</span>）と Google によって確認されるまで、このアプリを使用しないでください。</p>
               <div class="dlg-foot">
