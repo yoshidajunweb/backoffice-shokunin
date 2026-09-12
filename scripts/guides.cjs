@@ -51,7 +51,7 @@ for (const file of files) {
         <dt>提出先</dt><dd>${esc(d.contact.name)}<br><span class="hint">${esc(d.contact.tel)}${d.contact.fax ? ' ／ FAX ' + esc(d.contact.fax) : ''}${d.contact.note ? '<br>' + esc(d.contact.note) : ''}</span></dd>
       </dl>
       <div class="dl">
-        ${d.forms.map((f) => `<a class="btn-dl" href="${esc(f.url)}" download>⬇ ${esc(f.name)}<span>${esc(f.size || '')}</span></a>`).join('')}
+        ${d.forms.map((f) => `<a class="btn-dl" href="${esc(f.url)}" download target="_blank" rel="noopener">⬇ ${esc(f.name)}<span>${esc(f.size || '')}</span></a>`).join('')}
       </div>
       <p><a class="btn-go" href="${esc(d.submitUrl)}" target="_blank" rel="noopener">${esc(d.submitLabel)} →</a></p>
       ${(d.notes || []).length ? `<ul class="notes">${d.notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul>` : ''}
