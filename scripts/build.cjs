@@ -392,9 +392,9 @@ header .sub b{color:var(--ink);font-weight:700}
 .src-link{font-size:12px;color:var(--muted);text-decoration:none}
 .src-link:hover{text-decoration:underline}
 @media (max-width:600px){.ev{grid-template-columns:1fr;gap:4px}}
-/* タブ帯：ふだんは背景なし。スクロールで上に張り付いたとき（.stuck）だけ半透明の白＋ぼかしで下の文字を隠す */
-.tabs{position:sticky;top:0;z-index:5;background:transparent;display:flex;gap:6px;flex-wrap:wrap;padding:8px 0;border-bottom:2px solid var(--line);transition:background .2s}
-.tabs.stuck{background:color-mix(in srgb,var(--surface) 80%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+/* タブ帯：背景色は付けない。スクロールで上に張り付いたとき（.stuck）は線を消し、下を通る文字をぼかすだけ */
+.tabs{position:sticky;top:0;z-index:5;background:transparent;display:flex;gap:6px;flex-wrap:wrap;padding:8px 0;border-bottom:2px solid var(--line);transition:border-color .2s}
+.tabs.stuck{border-bottom-color:transparent;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .tab{appearance:none;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:8px 14px;font:inherit;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px}
 .tab .n{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--muted);font-weight:500}
 .tab svg{width:17px;height:17px;flex:none;opacity:.8;stroke-width:2.1}
