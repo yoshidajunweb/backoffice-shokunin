@@ -72,6 +72,7 @@ jobs:
           rm -rf _site
           mkdir -p _site/update
           cp index.html _site/
+          cp -r assets _site/   # トップのロゴアイコンなど
           cp -r chutaikyo gmail _site/
           cp site/index.html _site/update/index.html
           cp -r site/n site/cal _site/update/
