@@ -223,6 +223,53 @@
 
   .qa-q { font-weight: 700; color: var(--ink) !important; font-size: .93rem; }
 
+  /* ---------- 警告画面の図解 ---------- */
+
+  .shot-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: .4rem 0 .8rem; }
+  @media (max-width: 600px) { .shot-row { grid-template-columns: 1fr; } }
+
+  .shot { margin: 0; }
+  .shot figcaption {
+    font-weight: 700;
+    color: var(--ink);
+    font-size: .93rem;
+    margin-bottom: .45rem;
+  }
+
+  /* Googleの警告画面を簡略に描いたもの */
+  .dlg {
+    background: #fff;
+    color: #202124;
+    border: 3px solid var(--line);
+    border-radius: 8px;
+    padding: 1rem 1rem 1.1rem;
+    font-size: .78rem;
+    line-height: 1.6;
+  }
+  .dlg-warn {
+    width: 0; height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 28px solid #d93025;
+    margin-bottom: .6rem;
+    position: relative;
+  }
+  .dlg-warn::after {
+    content: "!"; position: absolute; left: -3px; top: 6px;
+    color: #fff; font-weight: 700; font-size: .85rem;
+  }
+  .dlg-title { margin: 0 0 .4rem; font-size: .95rem; font-weight: 500; color: #202124; }
+  .dlg-text { margin: 0 0 .8rem; color: #5f6368; }
+  .dlg-foot { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+  .dlg-link { color: #1a73e8; text-decoration: underline; }
+  .dlg-btn {
+    margin-left: auto;
+    background: #1a73e8; color: #fff;
+    padding: .35rem .7rem; border-radius: 4px; font-weight: 700;
+  }
+  .hit { outline: 3px solid #d93025; outline-offset: 4px; border-radius: 2px; }
+  .hit-tag { color: #d93025; font-weight: 700; margin-left: .7rem; white-space: nowrap; }
+
   /* ---------- モニター募集 ---------- */
 
   .monitor {
@@ -583,6 +630,31 @@
       <h3>「確認されていません」という警告が出た</h3>
       <p>手順2の途中で出ます。故障ではありません。個人で作ったツールにはすべて同じ警告が出ます。</p>
       <p><span class="path">詳細</span> → <span class="path">（安全ではないページ）に移動</span> → <span class="path">許可</span> と進んでください。</p>
+
+      <div class="shot-row">
+        <figure class="shot">
+          <figcaption>① 左下の「詳細」を押す</figcaption>
+          <div class="dlg" aria-hidden="true">
+            <div class="dlg-warn"></div>
+            <p class="dlg-title">このアプリは Google で確認されていません</p>
+            <p class="dlg-text">アプリが、Google アカウントのプライベートな情報へのアクセスを求めています。デベロッパー（あなたのアドレス）と Google によって確認されるまで、このアプリを使用しないでください。</p>
+            <div class="dlg-foot">
+              <span class="dlg-link hit">詳細</span><span class="hit-tag">← ここをクリック</span>
+              <span class="dlg-btn">安全なページに戻る</span>
+            </div>
+          </div>
+        </figure>
+        <figure class="shot">
+          <figcaption>② 一番下に出る「…に移動」を押す</figcaption>
+          <div class="dlg" aria-hidden="true">
+            <div class="dlg-warn"></div>
+            <p class="dlg-title">このアプリは Google で確認されていません</p>
+            <p class="dlg-text">リスクを理解し、デベロッパー（あなたのアドレス）を信頼できる場合のみ、続行してください。</p>
+            <span class="dlg-link hit">Gmail添付ファイル自動保存（安全ではないページ）に移動</span><span class="hit-tag">← ここをクリック</span>
+          </div>
+        </figure>
+      </div>
+      <p>そのあと「許可」を押せば完了です。画面に出る「デベロッパー」のアドレスは<strong>あなた自身のもの</strong>です。コピーしたファイルの持ち主はあなたになるためで、他の誰かに権限を渡すわけではありません。</p>
       <p><strong>許可されるのは、ご自身のGmailとドライブに対してだけです。</strong>他の人がデータを見ることはできません。</p>
     </section>
 
