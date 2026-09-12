@@ -118,9 +118,9 @@ ${url ? `<link rel="canonical" href="${esc(url)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
 <style>
-:root{--paper:#F4F6F8;--bg-base:#FFFFFF;--grad-a:rgba(88,184,136,.2);--grad-b:rgba(72,136,200,.2);--surface:#FFFFFF;--ink:#1A2230;--muted:#66707E;--line:#D6DBE2;--line-strong:#1A2230;--accent:#2A4D9B;--accent-ink:#fff;--accent-soft:#E4EBF8;--new:#C05621;--ok:#2F855A}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#12161C;--bg-base:#12161C;--grad-a:rgba(88,184,136,.10);--grad-b:rgba(72,136,200,.10);--surface:#1A1F27;--ink:#E7EAEF;--muted:#98A2B0;--line:#2C333E;--line-strong:#E7EAEF;--accent:#8EB0F2;--accent-ink:#0F1A33;--accent-soft:#22304D;--new:#F6AD55;--ok:#68D391}}
-:root[data-theme="dark"]{--paper:#12161C;--bg-base:#12161C;--grad-a:rgba(88,184,136,.10);--grad-b:rgba(72,136,200,.10);--surface:#1A1F27;--ink:#E7EAEF;--muted:#98A2B0;--line:#2C333E;--line-strong:#E7EAEF;--accent:#8EB0F2;--accent-ink:#0F1A33;--accent-soft:#22304D;--new:#F6AD55;--ok:#68D391}
+:root{--paper:#F4F6F8;--bg-base:#FFFFFF;--grad-a:rgba(72,136,200,.1);--grad-b:rgba(88,184,136,.1);--surface:#FFFFFF;--ink:#1A2230;--muted:#66707E;--line:#D6DBE2;--line-strong:#1A2230;--accent:#2A4D9B;--accent-ink:#fff;--accent-soft:#E4EBF8;--new:#C05621;--ok:#2F855A}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#12161C;--bg-base:#12161C;--grad-a:rgba(72,136,200,.06);--grad-b:rgba(88,184,136,.06);--surface:#1A1F27;--ink:#E7EAEF;--muted:#98A2B0;--line:#2C333E;--line-strong:#E7EAEF;--accent:#8EB0F2;--accent-ink:#0F1A33;--accent-soft:#22304D;--new:#F6AD55;--ok:#68D391}}
+:root[data-theme="dark"]{--paper:#12161C;--bg-base:#12161C;--grad-a:rgba(72,136,200,.06);--grad-b:rgba(88,184,136,.06);--surface:#1A1F27;--ink:#E7EAEF;--muted:#98A2B0;--line:#2C333E;--line-strong:#E7EAEF;--accent:#8EB0F2;--accent-ink:#0F1A33;--accent-soft:#22304D;--new:#F6AD55;--ok:#68D391}
 /* スクロールバー：細く、色はサイトの線色に合わせる。
    標準プロパティのみ（Chrome/Safari/Firefox/Edge すべて対応）。
    軌道を transparent にすると背景に馴染む。ダークは変数で自動的に切り替わる */
@@ -128,7 +128,7 @@ html{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
 /* 中でスクロールする箱（モーダル・情報源の枠・横スクロールする表）も同じ見た目に */
 .modal-box,.slist,.list,.panel,pre,table{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
 *{box-sizing:border-box}body{margin:0;background:var(--bg-base);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic UI",system-ui,sans-serif;font-size:15px;line-height:1.75}
-/* 背景：白の上にロゴの緑→青を斜めに薄く敷く（透過0.2）。
+/* 背景：白の上にロゴの青→緑を斜めにごく薄く敷く（透過0.1）。
    iOS は background-attachment:fixed を無視するので、画面に固定した擬似要素で描く。ダークは半分の濃さ */
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(135deg,var(--grad-a) 0%,var(--grad-b) 100%)}
 a{color:inherit}.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}

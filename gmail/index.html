@@ -371,31 +371,36 @@
 
   /* ---------- 右下の「トップに戻る」 ---------- */
 
+  /* 福祉行政アップデートのサイトと同じ形（丸い矢印ボタン） */
   .to-top {
     position: fixed;
-    right: 1.25rem;
-    bottom: 1.25rem;
-    z-index: 10;
-    padding: .55rem 1.2rem;
-    border-radius: 8px;
-    background: var(--surface);
+    right: 18px;
+    bottom: 18px;
+    z-index: 20;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
     border: 3px solid var(--line-strong);
+    background: var(--surface);
     color: var(--ink);
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 700;
-    font-size: .9rem;
-    text-decoration: none;
-    box-shadow: var(--shadow);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(26, 34, 48, .18);
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(10px);
     pointer-events: none;
-    transition: transform .2s ease, opacity .25s ease, background .15s ease;
   }
   .to-top.show { opacity: 1; transform: none; pointer-events: auto; }
-  .to-top:hover { background: var(--accent-soft); }
-  .to-top:active { transform: scale(.96); }
-  .to-top:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
-  @media (prefers-reduced-motion: reduce) { .to-top { transition: none; } }
+  .to-top svg { width: 22px; height: 22px; }
+  .to-top:hover, .to-top:focus-visible { outline: none; border-color: var(--accent); color: var(--accent); }
+  .to-top:active { transform: scale(.97); }
+  @media (prefers-reduced-motion: no-preference) {
+    .to-top { transition: opacity .2s ease, transform .2s ease, border-color .18s ease, color .18s ease; }
+  }
+  @media (max-width: 600px) { .to-top { right: 12px; bottom: 12px; width: 44px; height: 44px; } }
+  @media print { .to-top, .fb-jump { display: none; } }
 
   /* 移動先のフォームを一瞬ふわっと光らせて、ここだと分からせる */
   .fb.fb-focus { animation: fb-glow 1.4s ease-out; }
@@ -481,7 +486,7 @@
 </style>
 
 <a class="fb-jump" href="#fb" id="fb-jump">ご意見</a>
-<a class="to-top" href="#top" id="to-top" aria-label="トップに戻る">トップに戻る</a>
+<button class="to-top" id="to-top" type="button" aria-label="ページの先頭に戻る" title="先頭に戻る"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg></button>
 
 <div class="wrap">
 
@@ -691,7 +696,7 @@
   });
   // 右下の「トップに戻る」：1画面分スクロールしたら出す。押すと滑らかに先頭へ
   var toTop = document.getElementById('to-top');
-  function updateToTop() { toTop.classList.toggle('show', window.scrollY > window.innerHeight * 0.8); }
+  function updateToTop() { toTop.classList.toggle('show', (window.scrollY || document.documentElement.scrollTop) >= 400); }
   window.addEventListener('scroll', updateToTop, { passive: true });
   updateToTop();
   toTop.addEventListener('click', function (e) {

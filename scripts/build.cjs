@@ -257,20 +257,20 @@ const html = `<meta name="viewport" content="width=device-width,initial-scale=1"
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 :root{
-  --paper:#F4F6F8; --bg-base:#FFFFFF;--grad-a:rgba(88,184,136,.2);--grad-b:rgba(72,136,200,.2);--surface:#FFFFFF; --ink:#1A2230; --muted:#66707E; --line:#D6DBE2; --line-strong:#1A2230;
+  --paper:#F4F6F8; --bg-base:#FFFFFF;--grad-a:rgba(72,136,200,.1);--grad-b:rgba(88,184,136,.1);--surface:#FFFFFF; --ink:#1A2230; --muted:#66707E; --line:#D6DBE2; --line-strong:#1A2230;
   --accent:#2A4D9B; --accent-ink:#FFFFFF; --accent-soft:#E4EBF8;
   --r-kuni:#4A5568; --r-kouseikyoku:#0E7C86; --r-ken:#B7791F; --r-shi:#2F855A;
   --new:#C05621;
   --s-iryo:#9B2C2C; --s-kaigo:#2A4D9B; --s-shogai:#6B46C1; --s-roumu:#4A5568;
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
-  --paper:#12161C; --bg-base:#12161C;--grad-a:rgba(88,184,136,.10);--grad-b:rgba(72,136,200,.10);--surface:#1A1F27; --ink:#E7EAEF; --muted:#98A2B0; --line:#2C333E; --line-strong:#E7EAEF;
+  --paper:#12161C; --bg-base:#12161C;--grad-a:rgba(72,136,200,.06);--grad-b:rgba(88,184,136,.06);--surface:#1A1F27; --ink:#E7EAEF; --muted:#98A2B0; --line:#2C333E; --line-strong:#E7EAEF;
   --accent:#8EB0F2; --accent-ink:#0F1A33; --accent-soft:#22304D;
   --r-kuni:#A0AEC0; --r-kouseikyoku:#4FD1C5; --r-ken:#F6C453; --r-shi:#68D391; --new:#F6AD55;
   --s-iryo:#F98080; --s-kaigo:#8EB0F2; --s-shogai:#B794F4; --s-roumu:#A0AEC0;
 }}
 :root[data-theme="dark"]{
-  --paper:#12161C; --bg-base:#12161C;--grad-a:rgba(88,184,136,.10);--grad-b:rgba(72,136,200,.10);--surface:#1A1F27; --ink:#E7EAEF; --muted:#98A2B0; --line:#2C333E; --line-strong:#E7EAEF;
+  --paper:#12161C; --bg-base:#12161C;--grad-a:rgba(72,136,200,.06);--grad-b:rgba(88,184,136,.06);--surface:#1A1F27; --ink:#E7EAEF; --muted:#98A2B0; --line:#2C333E; --line-strong:#E7EAEF;
   --accent:#8EB0F2; --accent-ink:#0F1A33; --accent-soft:#22304D;
   --r-kuni:#A0AEC0; --r-kouseikyoku:#4FD1C5; --r-ken:#F6C453; --r-shi:#68D391; --new:#F6AD55;
   --s-iryo:#F98080; --s-kaigo:#8EB0F2; --s-shogai:#B794F4; --s-roumu:#A0AEC0;
@@ -287,7 +287,7 @@ html{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
 #main:focus{outline:none}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg-base);color:var(--ink);font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI",system-ui,sans-serif;font-size:15px;line-height:1.6}
-/* 背景：白の上にロゴの緑→青を斜めに薄く敷く（透過0.2）。
+/* 背景：白の上にロゴの青→緑を斜めにごく薄く敷く（透過0.1）。
    iOS は background-attachment:fixed を無視するので、画面に固定した擬似要素で描く。ダークは半分の濃さ */
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(135deg,var(--grad-a) 0%,var(--grad-b) 100%)}
 [hidden]{display:none!important}
