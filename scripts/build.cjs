@@ -377,16 +377,18 @@ header .sub b{color:var(--ink);font-weight:700}
 .cal-now .day-h{border-bottom-width:4px}
 .cal-now .day-h span:first-child{color:var(--accent)}
 .cal-empty{font-size:13px;color:var(--muted);margin:4px 0 0}
-.ev{display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px;padding:10px 0;border-bottom:1px solid var(--line);border-left:4px solid var(--line);padding-left:10px;margin-left:-14px}
+/* 左の色棒：border-left だと角が丸くならないので、擬似要素の細い角丸バーで描く */
+.ev{position:relative;display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px;padding:10px 0;border-bottom:1px solid var(--line);padding-left:10px;margin-left:-14px}
+.ev::before{content:"";position:absolute;left:0;top:10px;bottom:10px;width:4px;border-radius:2px;background:var(--line)}
 .ev:last-child{border-bottom:0}
 .ev-when{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--ink);font-weight:500;line-height:1.5;padding-top:3px}
 .ev-title{font-weight:700;text-decoration:none}.ev-title:hover{text-decoration:underline}
 .ev-note{margin:3px 0 0;font-size:13px;color:var(--muted)}
 .kind{font-size:11px;font-weight:900;letter-spacing:.06em;border-radius:4px;padding:1px 7px;color:#fff;background:var(--muted);white-space:nowrap}
-.k-submit{border-left-color:var(--new)} .k-submit .kind{background:var(--new)}
-.k-change{border-left-color:var(--accent)} .k-change .kind{background:var(--accent);color:var(--accent-ink)}
-.k-duty{border-left-color:var(--r-kouseikyoku)} .k-duty .kind{background:var(--r-kouseikyoku)}
-.k-check{border-left-color:var(--line)}
+.k-submit::before{background:var(--new)} .k-submit .kind{background:var(--new)}
+.k-change::before{background:var(--accent)} .k-change .kind{background:var(--accent);color:var(--accent-ink)}
+.k-duty::before{background:var(--r-kouseikyoku)} .k-duty .kind{background:var(--r-kouseikyoku)}
+.k-check::before{background:var(--line)}
 .ev-past{opacity:.55}
 .chip-pref{border-color:var(--r-ken);color:var(--r-ken)}
 .src-link{font-size:12px;color:var(--muted);text-decoration:none}
@@ -460,7 +462,8 @@ header .sub b{color:var(--ink);font-weight:700}
 .judge{margin:4px 0 0;font-size:13px;color:var(--ink)}
 .judge .deadline{color:var(--new);font-weight:700;margin-left:6px}
 .flag{font-size:11px;font-weight:900;letter-spacing:.06em;border-radius:4px;padding:1px 7px;background:var(--new);color:#fff;white-space:nowrap}
-.row-flag{border-left:4px solid var(--new);padding-left:10px;margin-left:-14px}
+.row-flag{position:relative;padding-left:10px;margin-left:-14px}
+.row-flag::before{content:"";position:absolute;left:0;top:10px;bottom:10px;width:4px;border-radius:2px;background:var(--new)}
 .judge .scope{display:block;color:var(--muted);font-size:12px;margin-top:2px}
 .pref-btn{appearance:none;border:2px solid var(--line-strong);background:var(--surface);color:var(--ink);border-radius:10px;padding:6px 12px 6px 8px;font:inherit;font-size:13px;cursor:pointer;display:flex;align-items:center;gap:10px;min-height:48px}
 .pref-shape{width:34px;height:34px;flex:none;fill:var(--accent)}
