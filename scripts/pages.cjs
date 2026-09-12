@@ -70,17 +70,20 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld).replace(
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-:root{--paper:#F4F6F8;--surface:#FFFFFF;--ink:#1A2230;--muted:#66707E;--line:#D6DBE2;--line-strong:#1A2230;--accent:#2A4D9B;--accent-ink:#FFFFFF;--accent-soft:#E4EBF8;--new:#C05621;--amber:#B7791F;
+:root{--paper:#F4F6F8;--bg-base:#FFFFFF;--grad-a:rgba(88,184,136,.2);--grad-b:rgba(72,136,200,.2);--surface:#FFFFFF;--ink:#1A2230;--muted:#66707E;--line:#D6DBE2;--line-strong:#1A2230;--accent:#2A4D9B;--accent-ink:#FFFFFF;--accent-soft:#E4EBF8;--new:#C05621;--amber:#B7791F;
 --s-iryo:#9B2C2C;--s-kaigo:#2A4D9B;--s-shogai:#6B46C1;--s-roumu:#4A5568}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#12161C;--surface:#1A1F27;--ink:#E7EAEF;--muted:#98A2B0;--line:#2C333E;--line-strong:#E7EAEF;--accent:#8EB0F2;--accent-ink:#0F1A33;--accent-soft:#22304D;--new:#F6AD55;--amber:#F6C453;--s-iryo:#F98080;--s-kaigo:#8EB0F2;--s-shogai:#B794F4;--s-roumu:#A0AEC0}}
-:root[data-theme="dark"]{--paper:#12161C;--surface:#1A1F27;--ink:#E7EAEF;--muted:#98A2B0;--line:#2C333E;--line-strong:#E7EAEF;--accent:#8EB0F2;--accent-ink:#0F1A33;--accent-soft:#22304D;--new:#F6AD55;--amber:#F6C453;--s-iryo:#F98080;--s-kaigo:#8EB0F2;--s-shogai:#B794F4;--s-roumu:#A0AEC0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#12161C;--bg-base:#12161C;--grad-a:rgba(88,184,136,.10);--grad-b:rgba(72,136,200,.10);--surface:#1A1F27;--ink:#E7EAEF;--muted:#98A2B0;--line:#2C333E;--line-strong:#E7EAEF;--accent:#8EB0F2;--accent-ink:#0F1A33;--accent-soft:#22304D;--new:#F6AD55;--amber:#F6C453;--s-iryo:#F98080;--s-kaigo:#8EB0F2;--s-shogai:#B794F4;--s-roumu:#A0AEC0}}
+:root[data-theme="dark"]{--paper:#12161C;--bg-base:#12161C;--grad-a:rgba(88,184,136,.10);--grad-b:rgba(72,136,200,.10);--surface:#1A1F27;--ink:#E7EAEF;--muted:#98A2B0;--line:#2C333E;--line-strong:#E7EAEF;--accent:#8EB0F2;--accent-ink:#0F1A33;--accent-soft:#22304D;--new:#F6AD55;--amber:#F6C453;--s-iryo:#F98080;--s-kaigo:#8EB0F2;--s-shogai:#B794F4;--s-roumu:#A0AEC0}
 /* スクロールバー：細く、色はサイトの線色に合わせる。
    標準プロパティのみ（Chrome/Safari/Firefox/Edge すべて対応）。
    軌道を transparent にすると背景に馴染む。ダークは変数で自動的に切り替わる */
 html{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
 /* 中でスクロールする箱（モーダル・情報源の枠・横スクロールする表）も同じ見た目に */
 .modal-box,.slist,.list,.panel,pre,table{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic UI",system-ui,sans-serif;font-size:15px;line-height:1.7}
+*{box-sizing:border-box}body{margin:0;background:var(--bg-base);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic UI",system-ui,sans-serif;font-size:15px;line-height:1.7}
+/* 背景：白の上にロゴの緑→青を斜めに薄く敷く（透過0.2）。
+   iOS は background-attachment:fixed を無視するので、画面に固定した擬似要素で描く。ダークは半分の濃さ */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(135deg,var(--grad-a) 0%,var(--grad-b) 100%)}
 a{color:inherit}.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
 .top{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);margin-bottom:18px}.top a{font-weight:900;color:var(--ink);text-decoration:none}
 .top a:hover{text-decoration:underline}.crumb{margin-left:auto}
