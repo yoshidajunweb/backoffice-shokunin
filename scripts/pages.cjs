@@ -14,6 +14,7 @@ const CAL = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'calendar.json'),
 const FLAGS = (() => { const f = path.join(ROOT, 'data', 'flags.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')).flags : {}; })();
 const CFG = (() => { const f = path.join(ROOT, 'data', 'config.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}; })();
 const SITE_URL = (CFG.siteUrl || '').replace(/\/?$/, '/');   // 例 https://backoffice-shokunin.jp/update/
+const TOP_URL = SITE_URL ? SITE_URL.slice(0, -('update/'.length)) : '../../';   // 道具箱トップ（バックオフィス職人）
 const SITE_NAME = '福祉行政アップデート';
 
 // Lucideアイコン（ISC）。使うものだけ埋め込む
@@ -134,6 +135,7 @@ ul.rel a{text-decoration:none;font-weight:500}ul.rel a:hover{text-decoration:und
 ${body}
 <footer class="site-foot">
   <nav class="sf-nav" aria-label="フッター">
+    <a href="${TOP_URL}" class="sf-home">← バックオフィス職人（道具箱トップ）</a>
     <a href="${SITE_URL || '../'}">更新一覧</a>
     <a href="${SITE_URL || '../'}about.html">運営者情報</a>
     ${CFG.xUrl ? `<a href="${esc(CFG.xUrl)}" target="_blank" rel="noopener">X @fukushi_update</a>` : ''}

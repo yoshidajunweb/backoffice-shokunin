@@ -311,6 +311,7 @@ header h1.logo img{height:64px;width:auto;max-width:100%;display:block}
 .sf-support{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
 .sf-nav{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;margin-bottom:14px}
 .sf-nav a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}.sf-nav a:hover{border-bottom-color:var(--ink)}
+.sf-nav .sf-home{color:var(--accent);font-weight:700;border-bottom-color:transparent}.sf-nav .sf-home:hover{border-bottom-color:var(--accent)}
 .sf-copy{font-size:12px;color:var(--muted);margin:10px 0 0}
 /* 先頭に戻るボタン。少しスクロールしたら右下に出る */
 .to-top{position:fixed;right:18px;bottom:18px;z-index:20;width:46px;height:46px;border-radius:50%;border:2px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(26,34,48,.18);opacity:0;transform:translateY(10px);pointer-events:none}
@@ -637,6 +638,7 @@ header .sub b{color:var(--ink);font-weight:700}
     </div>
   </div>
   <nav class="sf-nav" aria-label="フッター">
+    <a href="../" class="sf-home">← バックオフィス職人（道具箱トップ）</a>
     <a href="./">更新一覧</a>
     <a href="#" id="sf-cal">年間カレンダー</a>
     <a href="about.html">運営者情報</a>
