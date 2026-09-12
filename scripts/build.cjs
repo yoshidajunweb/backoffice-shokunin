@@ -392,9 +392,8 @@ header .sub b{color:var(--ink);font-weight:700}
 .src-link{font-size:12px;color:var(--muted);text-decoration:none}
 .src-link:hover{text-decoration:underline}
 @media (max-width:600px){.ev{grid-template-columns:1fr;gap:4px}}
-/* タブ帯：背景色は付けない。スクロールで上に張り付いたとき（.stuck）は線を消し、下を通る文字をぼかすだけ */
-.tabs{position:sticky;top:0;z-index:5;background:transparent;display:flex;gap:6px;flex-wrap:wrap;padding:8px 0;border-bottom:2px solid var(--line);transition:border-color .2s}
-.tabs.stuck{border-bottom-color:transparent;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+/* タブ帯：背景も線も付けない。張り付いても透明のまま（ぼかしは左右の余白がなく不自然だったのでやめた） */
+.tabs{position:sticky;top:0;z-index:5;background:transparent;display:flex;gap:6px;flex-wrap:wrap;padding:8px 0;}
 .tab{appearance:none;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:8px 14px;font:inherit;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px}
 .tab .n{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--muted);font-weight:500}
 .tab svg{width:17px;height:17px;flex:none;opacity:.8;stroke-width:2.1}
@@ -892,8 +891,6 @@ header .sub b{color:var(--ink);font-weight:700}
     apply();
   });});
   apply();
-// タブ帯が上に張り付いたかどうか。張り付くと帯の上端が画面の上端(0)に来るので、それで判定する
-(function(){var tb=document.querySelector('.tabs');if(!tb)return;function chk(){tb.classList.toggle('stuck',tb.getBoundingClientRect().top<=0&&window.scrollY>0);}window.addEventListener('scroll',chk,{passive:true});chk();})();
 })();
 </script>
 </body>
