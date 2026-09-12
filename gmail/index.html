@@ -292,6 +292,14 @@
     margin: 0;
     font-family: inherit;
   }
+  /* 案内文の箱のスクロールバー：細く、薄く、角丸に */
+  .ai-box { scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; }
+  .ai-box::-webkit-scrollbar { width: 8px; height: 8px; }
+  .ai-box::-webkit-scrollbar-track { background: transparent; }
+  .ai-box::-webkit-scrollbar-thumb { background: var(--line-strong); border-radius: 999px; border: 2px solid var(--ground); }
+  .ai-box::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+  .ai-box::-webkit-scrollbar-button { display: none; height: 0; width: 0; }
+
   .ai-actions { display: flex; align-items: center; gap: 1rem; margin-top: .8rem; }
   .ai-copy {
     padding: .6rem 1.3rem;
