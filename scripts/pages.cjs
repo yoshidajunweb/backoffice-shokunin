@@ -62,6 +62,9 @@ ${SITE_URL ? `<meta property="og:type" content="article">
 <meta property="og:description" content="${esc(description)}">
 ${canonical ? `<meta property="og:url" content="${esc(canonical)}">` : ''}
 <meta property="og:image" content="${esc(SITE_URL)}assets/ogp.png">
+<link rel="icon" type="image/png" sizes="32x32" href="${esc(SITE_URL)}assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="${esc(SITE_URL)}assets/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="${esc(SITE_URL)}assets/apple-touch-icon.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ja_JP">

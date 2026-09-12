@@ -79,6 +79,7 @@ jobs:
           cp site/sitemap.xml site/robots.txt site/about.html site/llms.txt _site/update/
           mkdir -p _site/update/assets
           cp site/assets/ogp.png _site/update/assets/   # 共有カードの画像
+          cp site/assets/favicon-*.png site/assets/apple-touch-icon.png _site/update/assets/   # favicon（福↗）
           cp -r site/guide _site/update/ 2>/dev/null || true   # 手順ガイド
           cp site/recent.txt _site/update/
           rm -f _site/update/private.html

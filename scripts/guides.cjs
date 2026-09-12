@@ -114,6 +114,9 @@ ${url ? `<link rel="canonical" href="${esc(url)}">
 <meta property="og:type" content="article"><meta property="og:site_name" content="${SITE_NAME}">
 <meta property="og:title" content="${esc(g.title)}"><meta property="og:description" content="${esc(g.lead)}">
 <meta property="og:url" content="${esc(url)}"><meta property="og:image" content="${esc(SITE_URL)}assets/ogp.png">
+<link rel="icon" type="image/png" sizes="32x32" href="${esc(SITE_URL)}assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="${esc(SITE_URL)}assets/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="${esc(SITE_URL)}assets/apple-touch-icon.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">` : ''}
 <link rel="preconnect" href="https://fonts.googleapis.com">
