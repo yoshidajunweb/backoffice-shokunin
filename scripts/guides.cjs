@@ -190,7 +190,7 @@ h2.sec{font-size:15px;font-weight:900;margin:28px 0 10px;padding-bottom:4px;bord
 <body>
 <a class="skip" href="#main">本文へ移動</a>
 <div class="wrap" id="main" tabindex="-1">
-<div class="top"><a href="${TOP_URL}">バックオフィス職人</a> › <a href="${SITE_URL || '../'}">${SITE_NAME}</a></div>
+<div class="top"><a href="${SITE_URL || '../'}">${SITE_NAME}</a></div>
 ${body}
 <p class="foot">このページは行政機関の公開情報をもとに、実務の順番に並べ直したものです。様式と提出方法は毎年変わります。手続きの前に必ずリンク先の一次情報を確認してください。（${esc(g.asof)}確認）</p>
 </div>

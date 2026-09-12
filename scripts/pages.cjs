@@ -135,14 +135,13 @@ ul.rel a{text-decoration:none;font-weight:500}ul.rel a:hover{text-decoration:und
 ${body}
 <footer class="site-foot">
   <nav class="sf-nav" aria-label="フッター">
-    <a href="${TOP_URL}" class="sf-home">← バックオフィス職人（道具箱トップ）</a>
     <a href="${SITE_URL || '../'}">更新一覧</a>
     <a href="${SITE_URL || '../'}about.html">運営者情報</a>
     ${CFG.xUrl ? `<a href="${esc(CFG.xUrl)}" target="_blank" rel="noopener">X @fukushi_update</a>` : ''}
     ${CFG.noteUrl ? `<a href="${esc(CFG.noteUrl)}" target="_blank" rel="noopener">note記事</a>` : ''}
   </nav>
   <p class="foot">このページは行政機関の公開情報を要約・整理したものです。必ずリンク先の一次情報を確認してください。国の機関のページは政府標準利用規約（第2.0版）に基づき、出典を明示して要約・リンクしています。</p>
-  <p class="foot">© ${new Date().getFullYear()} バックオフィス職人</p>
+  <p class="foot">© ${new Date().getFullYear()} <a href="${TOP_URL}" style="color:inherit">バックオフィス職人</a></p>
 </footer>
 </div>
 <button class="to-top" id="to-top" type="button" aria-label="ページの先頭に戻る" title="先頭に戻る" hidden>${lucide("arrow-up")}</button>
@@ -222,7 +221,7 @@ ${rel.length ? `<h2 class="sec">関係する最近の更新</h2><ul class="rel">
 const aboutBody = `
 <h1>運営者情報</h1>
 <p class="lead"><b>${SITE_NAME}は、国・地方厚生局・都道府県が出す福祉事業所向けの更新を集め、種別と都道府県で絞って「要対応」と「締切」に変えて見せる個人運営のサイトです。</b></p>
-<div class="box"><h2>誰が</h2><p>運営：バックオフィス職人（現役の福祉事業所の事務担当）。訪問看護・訪問介護・障害福祉の事業所で、届出・請求・労務を実際に回している立場から作っています。</p></div>
+<div class="box"><h2>誰が</h2><p>運営：<a href="${TOP_URL}">バックオフィス職人</a>（現役の福祉事業所の事務担当）。訪問看護・訪問介護・障害福祉の事業所で、届出・請求・労務を実際に回している立場から作っています。</p></div>
 <div class="box"><h2>何を、どう集めているか</h2>
 <p>厚生労働省・WAM NET・こども家庭庁・地方厚生局・都道府県が公開しているRSSとページを、毎日2回（7時・16時）自動で取得しています。記事の本文は転載せず、題名・要約・一次情報へのリンクだけを載せます。</p>
 <p>「要対応」は、その種別・地域の事業所なら共通してやることがある更新に付けています。「年間カレンダー」の日付は公的機関の記載だけを使い、各項目に出所を付けています。</p></div>
