@@ -254,7 +254,7 @@ ${X_URL ? `<meta name="twitter:site" content="@${esc(X_URL.split('/').pop())}">`
 const html = `<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>福祉行政アップデート${PRIVATE ? '（自分用）' : ''}</title>${PRIVATE ? '' : ogpTags}
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 :root{
   --paper:#F4F6F8; --bg-base:#FFFFFF;--grad-a:rgba(88,184,136,.2);--grad-b:rgba(72,136,200,.2);--surface:#FFFFFF; --ink:#1A2230; --muted:#66707E; --line:#D6DBE2; --line-strong:#1A2230;
@@ -286,7 +286,7 @@ html{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
 .skip:focus{top:0}
 #main:focus{outline:none}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg-base);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic UI",system-ui,sans-serif;font-size:15px;line-height:1.6}
+body{margin:0;background:var(--bg-base);color:var(--ink);font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic UI",system-ui,sans-serif;font-size:15px;line-height:1.6}
 /* 背景：白の上にロゴの緑→青を斜めに薄く敷く（透過0.2）。
    iOS は background-attachment:fixed を無視するので、画面に固定した擬似要素で描く。ダークは半分の濃さ */
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(135deg,var(--grad-a) 0%,var(--grad-b) 100%)}
@@ -392,7 +392,9 @@ header .sub b{color:var(--ink);font-weight:700}
 .src-link{font-size:12px;color:var(--muted);text-decoration:none}
 .src-link:hover{text-decoration:underline}
 @media (max-width:600px){.ev{grid-template-columns:1fr;gap:4px}}
-.tabs{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--surface) 86%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:flex;gap:6px;flex-wrap:wrap;padding:8px 0;border-bottom:2px solid var(--line)}
+/* タブ帯：ふだんは背景なし。スクロールで上に張り付いたとき（.stuck）だけ半透明の白＋ぼかしで下の文字を隠す */
+.tabs{position:sticky;top:0;z-index:5;background:transparent;display:flex;gap:6px;flex-wrap:wrap;padding:8px 0;border-bottom:2px solid var(--line);transition:background .2s}
+.tabs.stuck{background:color-mix(in srgb,var(--surface) 80%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
 .tab{appearance:none;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:8px 14px;font:inherit;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px}
 .tab .n{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--muted);font-weight:500}
 .tab svg{width:17px;height:17px;flex:none;opacity:.8;stroke-width:2.1}
@@ -409,7 +411,9 @@ header .sub b{color:var(--ink);font-weight:700}
 .f-label:first-child{margin-left:0}
 /* 発信元は「入っている」が既定。外すと点線＋取り消し線で、外れていることが分かるように */
 .f-issuer[aria-pressed="true"]{background:var(--accent-soft);color:var(--ink);border-color:var(--accent)}
-.f-issuer[aria-pressed="true"]::before{content:"✓ ";font-weight:700;color:var(--accent)}
+.f-issuer{display:inline-flex;align-items:center;gap:4px}
+.f-issuer .chk{width:14px;height:14px;flex:none;color:var(--accent);display:none}
+.f-issuer[aria-pressed="true"] .chk{display:inline-block}
 .f-flag[aria-pressed="true"],.f-money[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .f-flag[aria-pressed="true"] .n,.f-money[aria-pressed="true"] .n{color:var(--paper);opacity:.8}
 .f:focus-visible{outline:none;border-color:var(--accent)}
@@ -572,8 +576,8 @@ header .sub b{color:var(--ink);font-weight:700}
   <span class="pref-note" id="pref-note" hidden></span>
   <div class="filters" aria-label="発信元で絞る">
     <span class="f-label">発信元</span>
-    <button class="f f-issuer" data-region="" aria-pressed="true">すべて <span class="n">${items.length}</span></button>
-    ${REGIONS.filter((r) => regionCounts[r] > 0).map((r) => `<button class="f f-issuer" data-region="${r}" aria-pressed="false" hidden>${r} <span class="n">${regionCounts[r]}</span></button>`).join('')}
+    <button class="f f-issuer" data-region="" aria-pressed="true">${lucide('check','chk')}すべて <span class="n">${items.length}</span></button>
+    ${REGIONS.filter((r) => regionCounts[r] > 0).map((r) => `<button class="f f-issuer" data-region="${r}" aria-pressed="false" hidden>${lucide('check','chk')}${r} <span class="n">${regionCounts[r]}</span></button>`).join('')}
     <span class="f-label">しぼる</span>
     <button class="f f-flag" data-flag="1" aria-pressed="false">要対応だけ <span class="n">${items.filter((it) => FLAGS[it.link]).length}</span></button>
     <button class="f f-money" data-money="1" aria-pressed="false">補助金だけ <span class="n">${items.filter((it) => (it.systems || []).includes('補助金') || (FLAGS[it.link] && FLAGS[it.link].systems.includes('補助金'))).length}</span></button>
@@ -888,6 +892,8 @@ header .sub b{color:var(--ink);font-weight:700}
     apply();
   });});
   apply();
+// タブ帯が上に張り付いたかどうか。張り付くと帯の上端が画面の上端(0)に来るので、それで判定する
+(function(){var tb=document.querySelector('.tabs');if(!tb)return;function chk(){tb.classList.toggle('stuck',tb.getBoundingClientRect().top<=0&&window.scrollY>0);}window.addEventListener('scroll',chk,{passive:true});chk();})();
 })();
 </script>
 </body>
