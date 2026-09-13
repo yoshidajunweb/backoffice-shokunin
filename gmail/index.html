@@ -384,19 +384,20 @@
   /* チェックボックスは自前で描く（角丸と、チェック時の色を細かく決めるため） */
   .pre-check input {
     appearance: none; -webkit-appearance: none;
-    width: 1.15rem; height: 1.15rem; margin: .2rem 0 0; flex: none; cursor: pointer;
-    border: 2px solid #b9c6d8; border-radius: 5px; background: #fff;
+    width: 1.4rem; height: 1.4rem; margin: .1rem 0 0; flex: none; cursor: pointer;
+    border: 3px solid #b9c6d8; border-radius: 6px; background: #fff;
     display: grid; place-items: center;
     transition: background .15s ease, border-color .15s ease;
   }
+  /* チェックマークは箱より一回り小さくして、まわりに余白を残す */
   .pre-check input::before {
-    content: ""; width: .62rem; height: .36rem;
+    content: ""; width: .55rem; height: .32rem;
     border-left: 2.5px solid #fff; border-bottom: 2.5px solid #fff;
-    transform: rotate(-45deg) translate(1px, -1px) scale(0);
+    transform: rotate(-45deg) translate(0, -1px) scale(0);
     transition: transform .15s ease;
   }
   .pre-check input:checked { background: #8bc34a; border-color: #8bc34a; }
-  .pre-check input:checked::before { transform: rotate(-45deg) translate(1px, -1px) scale(1); }
+  .pre-check input:checked::before { transform: rotate(-45deg) translate(0, -1px) scale(1); }
   .pre-check input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 
   /* ---------- できること ---------- */
