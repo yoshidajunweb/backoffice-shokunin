@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14T13:46:58.042Z",
+  "updated": "2026-09-15T00:12:28.308Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 141,
-      "added": 16,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 9,
-      "added": 3,
+      "count": 8,
+      "added": 4,
       "ok": true
     },
     {
@@ -58,7 +58,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/kantoshinetsu/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -106,7 +106,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/hokkaido/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -165,7 +165,7 @@
       "bureau": "四国",
       "url": "https://kouseikyoku.mhlw.go.jp/shikoku/news/news.xml",
       "type": "rss",
-      "count": 5,
+      "count": 4,
       "added": 0,
       "ok": true
     },
@@ -190,7 +190,7 @@
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
       "count": 9,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -214,7 +214,7 @@
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
       "count": 4,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -274,7 +274,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -643,6 +643,64 @@
       "firstSeen": "2026-09-14"
     },
     {
+      "title": "旧一般ガスみなしガス小売事業者の指定旧供給区域等の指定の解除（関東経済産業局所管分・令和８年８月報告分）に対する意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320028&Mode=0",
+      "date": "2026-09-14",
+      "desc": "案の公示日：2026/09/15受付締切日時：2026/10/15 23:59カテゴリー：工業問合せ先（所管省庁・部局名等）：関東経済産業局資源エネルギー環境部ガス事業課 旧一般ガスみなしガス小売事業者の指定旧供給区域等の指定の解除 パブリックコメント担当",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-15"
+    },
+    {
+      "title": "旧簡易ガスみなしガス小売事業者の指定旧供給地点の指定の解除（関東経済産業局所管分・令和８年８月報告分）に対する意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320029&Mode=0",
+      "date": "2026-09-14",
+      "desc": "案の公示日：2026/09/15受付締切日時：2026/10/15 23:59カテゴリー：工業問合せ先（所管省庁・部局名等）：関東経済産業局資源エネルギー環境部ガス事業課 旧簡易ガスみなしガス小売事業者の指定旧供給地点の指定の解除 パブリックコメント担当",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-15"
+    },
+    {
+      "title": "「環境影響評価法の経過措置に係る書類であってその作成の根拠が条例又は地方公共団体に係る行政指導等であるものを指定する件」に関する意見の募集（パブリックコメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260057&Mode=0",
+      "date": "2026-09-14",
+      "desc": "案の公示日：2026/09/15受付締切日時：2026/10/15 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省大臣官房環境影響評価課（03-3581-3351）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-15"
+    },
+    {
+      "title": "医療保険関係通知等を掲載しています。",
+      "link": "https://kouseikyoku.mhlw.go.jp/hokkaido/info/tsuchi/index.html",
+      "date": "2026-09-14",
+      "desc": "",
+      "source": "北海道厚生局",
+      "sourceId": "kk-hokkaido",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "北海道",
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [],
+      "firstSeen": "2026-09-15"
+    },
+    {
       "title": "第266回 社会保障審議会 介護給付費分科会（令和8年9月14日開催）",
       "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22860&ct=010010020&from=rss",
       "date": "2026-09-13",
@@ -782,6 +840,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-09-14"
+    },
+    {
+      "title": "国土交通省関係物資の流通の効率化に関する法律施行規則第四条の四第六号の国土交通大臣の定める基準に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260933&Mode=0",
+      "date": "2026-09-13",
+      "desc": "案の公示日：2026/09/14受付締切日時：2026/10/14 14:00カテゴリー：貨物運送問合せ先（所管省庁・部局名等）：国土交通省物流・自動車局貨物流通事業課貨物流通経営戦略室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-15"
     },
     {
       "title": "令和８年度 第３回化学物質管理に係る専門家検討会 議事録",
