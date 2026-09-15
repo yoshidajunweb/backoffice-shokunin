@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15T12:32:43.167Z",
+  "updated": "2026-09-15T23:55:49.474Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 5,
+      "added": 2,
       "ok": true
     },
     {
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 129,
-      "added": 8,
+      "added": 0,
       "ok": true
     },
     {
@@ -58,7 +58,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/kantoshinetsu/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -142,7 +142,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
       "count": 4,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -165,8 +165,8 @@
       "bureau": "四国",
       "url": "https://kouseikyoku.mhlw.go.jp/shikoku/news/news.xml",
       "type": "rss",
-      "count": 4,
-      "added": 0,
+      "count": 5,
+      "added": 1,
       "ok": true
     },
     {
@@ -214,7 +214,7 @@
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
       "count": 4,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -225,8 +225,8 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 36,
-      "added": 1,
+      "count": 37,
+      "added": 0,
       "ok": true
     },
     {
@@ -250,7 +250,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -274,7 +274,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 9,
-      "added": 2,
+      "added": 1,
       "ok": true
     },
     {
@@ -362,6 +362,20 @@
       "region": "厚生局",
       "pref": null,
       "bureau": "近畿",
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-15"
+    },
+    {
+      "title": "採用情報：期間業務職員の募集情報",
+      "link": "https://www.cfa.go.jp/recruitment/kikan",
+      "date": "2026-09-16",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
       "tags": [],
       "systems": [],
       "firstSeen": "2026-09-15"
@@ -563,6 +577,34 @@
       "desc": "",
       "source": "こども家庭庁 新着・更新",
       "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-15"
+    },
+    {
+      "title": "風しん最新情報（令和8年9月15日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22872&ct=030100130&from=rss",
+      "date": "2026-09-15",
+      "desc": "●概略風しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-15"
+    },
+    {
+      "title": "麻しん最新情報（令和8年9月15日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22873&ct=030100110&from=rss",
+      "date": "2026-09-15",
+      "desc": "●概略麻しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
       "region": "国",
       "pref": null,
       "bureau": null,
@@ -989,6 +1031,22 @@
       "tags": [],
       "systems": [
         "医療"
+      ],
+      "firstSeen": "2026-09-15"
+    },
+    {
+      "title": "令和8年度第1回 四国地方社会保険医療協議会総会議事要旨（令和8年9月14日）",
+      "link": "https://kouseikyoku.mhlw.go.jp/shikoku/kikaku/chiikyou/sokai/sokai080914_00001.html",
+      "date": "2026-09-14",
+      "desc": "",
+      "source": "四国厚生支局",
+      "sourceId": "kk-shikoku",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "四国",
+      "tags": [],
+      "systems": [
+        "労務"
       ],
       "firstSeen": "2026-09-15"
     },
