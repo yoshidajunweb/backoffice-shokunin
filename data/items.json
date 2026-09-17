@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17T00:02:09.528Z",
+  "updated": "2026-09-17T12:30:13.932Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 5,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 104,
-      "added": 1,
+      "count": 107,
+      "added": 4,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 15,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -189,7 +189,7 @@
       "bureau": null,
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
-      "count": 9,
+      "count": 8,
       "added": 0,
       "ok": true
     },
@@ -213,7 +213,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 5,
+      "count": 3,
       "added": 0,
       "ok": true
     },
@@ -261,8 +261,8 @@
       "bureau": null,
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 2,
-      "added": 0,
+      "count": 3,
+      "added": 1,
       "ok": true
     },
     {
@@ -273,8 +273,8 @@
       "bureau": null,
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
-      "count": 9,
-      "added": 1,
+      "count": 10,
+      "added": 4,
       "ok": true
     },
     {
@@ -383,6 +383,142 @@
     {
       "title": "第5回特別養子縁組に関する支援の在り方に関する専門委員会",
       "link": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/tokubetsu-yoshi/b96b26c4",
+      "date": "2026-09-17",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "食肉検査等情報還元調査",
+      "link": "https://www.mhlw.go.jp/toukei/list/113-1.html",
+      "date": "2026-09-17",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "第12回柔道整復療養費のオンライン請求導入等に関するワーキング・グループ議事要旨（2025年7月8日）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76303.html",
+      "date": "2026-09-17",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "第78回労働政策審議会人材開発分科会監理団体審査部会 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76036.html",
+      "date": "2026-09-17",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "労働政策審議会 (人材開発分科会監理団体審査部会)",
+      "link": "https://www.mhlw.go.jp/stf/shingi/shingi-rousei_474670.html",
+      "date": "2026-09-17",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "手話言語の国際デー及び手話の日における本庁舎のライトアップについて(令和8年9月23日実施)",
+      "link": "https://www.pref.chiba.lg.jp/shoufuku/press/2026/syuwagengo-lup2026.html",
+      "date": "",
+      "desc": "",
+      "source": "千葉県",
+      "sourceId": "chiba",
+      "region": "県",
+      "pref": "千葉県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "黄川田大臣記者会見（令和8年9月17日）",
+      "link": "https://www.cfa.go.jp/speech/d2f52cc9",
+      "date": "2026-09-17",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "付人事異動情報",
+      "link": "https://www.cfa.go.jp/about/jinji",
+      "date": "2026-09-17",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "第5回特別養子縁組に関する支援の在り方に関する専門委員会の開催",
+      "link": "https://www.cfa.go.jp/press/bf13e277-6990-4f85-9268-09891a8fb956",
+      "date": "2026-09-17",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "こどもの居場所部会（第23回）",
+      "link": "https://www.cfa.go.jp/councils/shingikai/kodomo_ibasho/8c862ca3",
       "date": "2026-09-17",
       "desc": "",
       "source": "こども家庭庁 新着・更新",
@@ -582,6 +718,86 @@
       "bureau": null,
       "tags": [],
       "systems": [],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "第22回成年後見制度利用促進専門家会議について（令和8年9月25日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22881&ct=070010010&from=rss",
+      "date": "2026-09-16",
+      "desc": "●主な議題（１）関係団体へのヒアリング（２）ワーキング・グループの議論を踏まえた今後の議論の進め方※詳細は以下のリンクか...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "第61回 社会保障審議会 生活保護基準部会（令和8年9月15日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22885&ct=010010220&from=rss",
+      "date": "2026-09-16",
+      "desc": "●主な議題・児童養育加算、母子加算、冬季加算、期末一時扶助の検証方法について※詳細は以下のリンクからご参照ください。 （...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "第267回 社会保障審議会 介護給付費分科会（令和8年9月16日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22884&ct=010010020&from=rss",
+      "date": "2026-09-16",
+      "desc": "●主な議題１令和９年度介護報酬改定に向けて・関係団体等意見交換会③※詳細は以下のリンクからご参照ください。（会議資料）：...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "第159回 社会保障審議会 障害者部会（令和8年9月17日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22883&ct=010010090&from=rss",
+      "date": "2026-09-16",
+      "desc": "●主な議題（１）障害保健福祉施策の動向について（２）その他※詳細は以下のリンクからご参照ください。（会議資料）：社会保障...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "第216回 社会保障審議会 医療保険部会（令和8年9月16日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22882&ct=010010050&from=rss",
+      "date": "2026-09-16",
+      "desc": "●主な議題類似薬の保険給付の見直しの実施について令和７年度医療費の動向について（報告）※詳細は以下のリンクからご参照くだ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [
+        "医療"
+      ],
       "firstSeen": "2026-09-17"
     },
     {
