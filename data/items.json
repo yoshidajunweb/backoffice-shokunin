@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16T12:30:27.836Z",
+  "updated": "2026-09-17T00:02:09.528Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 112,
-      "added": 9,
+      "count": 104,
+      "added": 1,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 16,
-      "added": 9,
+      "count": 15,
+      "added": 3,
       "ok": true
     },
     {
@@ -141,7 +141,7 @@
       "bureau": "近畿",
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
-      "count": 4,
+      "count": 5,
       "added": 0,
       "ok": true
     },
@@ -202,7 +202,7 @@
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
       "count": 2,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -214,7 +214,7 @@
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -274,7 +274,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 9,
-      "added": 3,
+      "added": 1,
       "ok": true
     },
     {
@@ -310,7 +310,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -365,6 +365,34 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-09-15"
+    },
+    {
+      "title": "家事・育児の最適な協力体制づくりのための対話ツール『トモイクシートWeb版』を公表しました",
+      "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000070286_00001.html",
+      "date": "2026-09-17",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "第5回特別養子縁組に関する支援の在り方に関する専門委員会",
+      "link": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/tokubetsu-yoshi/b96b26c4",
+      "date": "2026-09-17",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-17"
     },
     {
       "title": "採用情報：期間業務職員の募集情報",
@@ -541,6 +569,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-09-16"
+    },
+    {
+      "title": "都市再生基本方針（一部変更案）に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=095260870&Mode=0",
+      "date": "2026-09-16",
+      "desc": "案の公示日：2026/09/17受付締切日時：2026/09/30 23:59カテゴリー：地方分権改革等問合せ先（所管省庁・部局名等）：内閣府地方創生推進事務局 都市再生担当 TEL: 03-6206-6174（直通）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-17"
     },
     {
       "title": "第125回コーデックス連絡協議会 (開催案内）",
@@ -919,6 +961,34 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-09-16"
+    },
+    {
+      "title": "電気事業法施行規則等の一部を改正する省令案等に対する意見公募",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340007&Mode=0",
+      "date": "2026-09-15",
+      "desc": "案の公示日：2026/09/16受付締切日時：2026/10/15 23:59カテゴリー：工業問合せ先（所管省庁・部局名等）：資源エネルギー庁 電力・ガス事業部",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "学校設置者等及び民間教育保育等事業者による児童対象性暴力等の防止等のための措置に関する法律の施行に伴う関係政令の整備に関する政令（案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=141000239&Mode=0",
+      "date": "2026-09-15",
+      "desc": "案の公示日：2026/09/16受付締切日時：2026/10/15 23:59カテゴリー：社会福祉問合せ先（所管省庁・部局名等）：こども家庭庁支援局参事官（こども性暴力防止担当）付",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-17"
     },
     {
       "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
