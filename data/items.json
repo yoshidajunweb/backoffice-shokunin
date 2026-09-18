@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T09:16:37.323Z",
+  "updated": "2026-09-18T12:09:11.693Z",
   "sources": [
     {
       "id": "wamnet",
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 126,
-      "added": 1,
+      "count": 128,
+      "added": 2,
       "ok": true
     },
     {
@@ -189,7 +189,7 @@
       "bureau": null,
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
-      "count": 10,
+      "count": 9,
       "added": 0,
       "ok": true
     },
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 2,
       "ok": true
     },
     {
@@ -873,6 +873,48 @@
       "desc": "",
       "source": "厚生労働省 新着情報",
       "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "ＷＯＷＯＷ「連続ドラマＷ MR -医薬情報担当者-」とタイアップします",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76340.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "中司大臣記者会見（令和8年9月18日）",
+      "link": "https://www.cfa.go.jp/speech/cf879852",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "幹部名簿",
+      "link": "https://www.cfa.go.jp/about",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
       "region": "国",
       "pref": null,
       "bureau": null,
@@ -1469,6 +1511,20 @@
       "sourceId": "osaka",
       "region": "県",
       "pref": "大阪府",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "医療施設等の自然災害からの復旧について",
+      "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/iryou/00001.html",
+      "date": "2026-09-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
       "bureau": null,
       "tags": [],
       "systems": [],
