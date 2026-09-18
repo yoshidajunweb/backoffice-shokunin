@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T09:11:41.270Z",
+  "updated": "2026-09-18T09:16:37.323Z",
   "sources": [
     {
       "id": "wamnet",
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 125,
-      "added": 0,
+      "count": 126,
+      "added": 1,
       "ok": true
     },
     {
@@ -297,9 +297,10 @@
       "bureau": null,
       "url": "https://www.careplan-renkei-support.jp/info/index.html",
       "type": "page-list",
-      "count": 32,
+      "count": 0,
       "added": 0,
-      "ok": true
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "id": "mhlw-koyou-josei",
@@ -858,6 +859,20 @@
       "desc": "",
       "source": "ケアプランデータ連携システム お知らせ",
       "sourceId": "careplan",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "病院の耐震改修状況調査の結果",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76330.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
       "region": "国",
       "pref": null,
       "bureau": null,
