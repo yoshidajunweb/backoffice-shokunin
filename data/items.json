@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17T23:52:22.124Z",
+  "updated": "2026-09-18T09:05:02.464Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 3,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 106,
-      "added": 3,
+      "count": 125,
+      "added": 21,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 15,
-      "added": 0,
+      "count": 22,
+      "added": 11,
       "ok": true
     },
     {
@@ -189,8 +189,8 @@
       "bureau": null,
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
-      "count": 8,
-      "added": 0,
+      "count": 9,
+      "added": 1,
       "ok": true
     },
     {
@@ -213,8 +213,8 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 3,
-      "added": 0,
+      "count": 4,
+      "added": 1,
       "ok": true
     },
     {
@@ -225,8 +225,8 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 37,
-      "added": 1,
+      "count": 36,
+      "added": 0,
       "ok": true
     },
     {
@@ -237,7 +237,7 @@
       "bureau": null,
       "url": "https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml",
       "type": "rss",
-      "count": 2,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -274,7 +274,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 6,
       "ok": true
     },
     {
@@ -365,6 +365,404 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-09-15"
+    },
+    {
+      "title": "「第304回原子爆弾被爆者医療分科会」の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_75976.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "労災保険あん摩マッサージ指圧師、はり師及びきゅう師施術料金算定基準について（令和８年度）",
+      "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/rousai_shinryouhi/kaitei0604_00014.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "労災保険柔道整復師施術料金算定基準について（令和８年度）",
+      "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/rousai_shinryouhi/kaitei0604_00013.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "第227回労働政策審議会職業安定分科会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_021225156_00114.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "令和８年度地域医療介護総合確保基金（介護分）の内示（１回目）について",
+      "link": "https://www.mhlw.go.jp/stf/houdou/kikin_R8_1_00001.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "第73回精神保健福祉普及運動を実施します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76233.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "「第２回 薬剤師のキャリアパスに関する懇談会」の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76155.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "毎年10月は中小企業退職金共済制度の「加入促進強化月間」です",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76152.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "麻薬・覚醒剤・大麻乱用防止運動の実施について",
+      "link": "https://www.mhlw.go.jp/stf/houdou/0000179105_00025.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "第398回労働政策審議会職業安定分科会労働力需給制度部会（開催案内）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76117.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "特定機能病院に対する立入検査結果について（令和７年度）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76100.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "医療法第25条第１項の規定に基づく病院に対する立入検査結果について（令和6年度）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76096.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "第29回所属集団判定会議の開催",
+      "link": "https://www.mhlw.go.jp/stf/newpage_75924.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "第５６回特定石綿被害建設業務労働者等認定審査会 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_75923.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "令和８年度第８回「石綿に係る疾病の業務上外に関する検討会」を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_75880.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "地域・職域連携のポータルサイト",
+      "link": "https://www.mhlw.go.jp/chiikishokuikiportal/index.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "柔道整復療養費に係る明細書を有償交付する施術所について",
+      "link": "https://www.mhlw.go.jp/bunya/iryouhoken/jyuudou/ryouyouhi_yusyokouhu_sejutsusho.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "採用情報（期間業務職員（政策統括官付医療情報基盤担当参事官室）募集情報）",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/hijoukin/hj-seisakutoukatsukantsukiiryouzyouhoukibantantousanzikanshitsu01.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "「動物福祉セミナー」を開催します！",
+      "link": "https://www.pref.kanagawa.jp/docs/e8z/prs/r0775018.html",
+      "date": "2026-09-18",
+      "desc": "11月1日（日曜日）にかながわ県民センターで「動物福祉セミナー」を開催します！",
+      "source": "神奈川県",
+      "sourceId": "kanagawa",
+      "region": "県",
+      "pref": "神奈川県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "介護施設・事業所等における災害時情報共有システムについて",
+      "link": "https://www.pref.aichi.jp/soshiki/korei/kaigobousai.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "愛知県",
+      "sourceId": "aichi",
+      "region": "県",
+      "pref": "愛知県",
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "第19回人工妊娠中絶一時金認定審査部会の開催",
+      "link": "https://www.cfa.go.jp/press/1ee54958-d448-4b76-9dc7-a3f2c843b0dc",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "教育・保育施設等における重大事故防止策を考える有識者会議のページ",
+      "link": "https://www.cfa.go.jp/councils/child-safety-kyoiku-hoiku",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "旧優生保護法補償金等支給法に基づく補償金等の請求・相談件数及び支給認定件数、並びにサポート弁護士登録数等の状況",
+      "link": "https://www.cfa.go.jp/kyuyusei-hoshokin",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "匿名障害福祉及び障害児福祉情報等の提供に関する専門委員会（第9回）の開催",
+      "link": "https://www.cfa.go.jp/press/75abdfb1-aae7-40f4-a979-ea7d838f1c09",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [
+        "障害"
+      ],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "みてかんじてつながる劇体験～優良児童劇等公演事業～令和8年11月1日（日）群馬県桐生市にて開催",
+      "link": "https://www.cfa.go.jp/press/837d4573-e5f0-4d47-a150-8490a0837967",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "採用情報：任期付職員の募集情報",
+      "link": "https://www.cfa.go.jp/recruitment/ninki",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
     },
     {
       "title": "家事・育児の最適な協力体制づくりのための対話ツール『トモイクシートWeb版』を公表しました",
@@ -581,6 +979,194 @@
       ],
       "systems": [],
       "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "第63回 障害福祉サービス等報酬改定検討チーム（令和8年9月24日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22887&ct=070010040&from=rss",
+      "date": "2026-09-17",
+      "desc": "●主な議題令和９年度障害福祉報酬改定に向けて（訪問系サービス）その他●厚生労働省への傍聴申込みオンライン会議の様子をにお...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "障害"
+      ],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "第23回 こども家庭審議会 こどもの居場所部会（令和8年9月17日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22890&ct=090080220&from=rss",
+      "date": "2026-09-17",
+      "desc": "●主な議題（１）「若者の居場所づくりに向けた論点整理−すべての若者が利用しやすい居場所づくりのすすめ−」（案）につい...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "第136回 社会保障審議会 介護保険部会（令和8年9月18日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22888&ct=010010030&from=rss",
+      "date": "2026-09-17",
+      "desc": "●主な議題第１号保険料の在り方持続可能性の確保（給付と負担）その他 （１）介護情報基盤（報告） （２）介護サ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "重要品種の育成及びその種苗の生産の振興に関する法律施行令案についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004407&Mode=0",
+      "date": "2026-09-17",
+      "desc": "案の公示日：2026/09/18受付締切日時：2026/10/17 23:59カテゴリー：農業問合せ先（所管省庁・部局名等）：農林水産技術会議事務局研究企画課 電話：03-3502-8111（内線4275）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "「商標法施行規則の一部を改正する省令案」に対する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=630300002&Mode=0",
+      "date": "2026-09-17",
+      "desc": "案の公示日：2026/09/18受付締切日時：2026/10/19 23:59カテゴリー：産業一般問合せ先（所管省庁・部局名等）：特許庁審査業務部商標課商標国際分類室 電話：03-3581-1101（内線2836）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "「類似商品・役務審査基準〔国際分類第13-2027版対応〕（案）」に対する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=630300001&Mode=0",
+      "date": "2026-09-17",
+      "desc": "案の公示日：2026/09/18受付締切日時：2026/10/19 23:59カテゴリー：産業一般問合せ先（所管省庁・部局名等）：特許庁審査業務部商標課商標国際分類室 電話：03-3581-1101（内線2836）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "旧簡易ガスみなしガス小売事業者の指定旧供給地点の指定の解除（近畿経済産業局所管分）に関する意見の募集について（令和８年８月報告分）",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320031&Mode=0",
+      "date": "2026-09-17",
+      "desc": "案の公示日：2026/09/18受付締切日時：2026/10/18 23:59カテゴリー：工業問合せ先（所管省庁・部局名等）：近畿経済産業局 資源エネルギー環境部 電力・ガス事業課 パブリックコメント担当",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "「道路交通法施行規則の一部を改正する内閣府令案」に対する意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=120260026&Mode=0",
+      "date": "2026-09-17",
+      "desc": "案の公示日：2026/09/18受付締切日時：2026/10/18 00:00カテゴリー：警察問合せ先（所管省庁・部局名等）：警察庁交通局運転免許課 電話：03-3581-0141（内線5375）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "「種苗法施行令及び個人情報の保護に関する法律施行令の一部を改正する政令案」及び「種苗法施行規則及び品種登録規則の一部を改正する省令案」についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004409&Mode=0",
+      "date": "2026-09-17",
+      "desc": "案の公示日：2026/09/18受付締切日時：2026/10/17 00:00カテゴリー：農業問合せ先（所管省庁・部局名等）：農林水産省輸出・国際局知的財産課 電話：03-3502-8111（内線4281）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "核原料物質、核燃料物質及び原子炉の規制に関する法律施行令等の改正案に対する意見公募について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=198026105&Mode=0",
+      "date": "2026-09-17",
+      "desc": "案の公示日：2026/09/18受付締切日時：2026/10/18 00:00カテゴリー：工業問合せ先（所管省庁・部局名等）：原子力規制庁 原子力規制部 検査監督総括課 制度班 電話（直通）:03-5114-2122",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "平成15年農林水産省告示第1833号（農業経営統計調査規則第５条の農林水産大臣が定める調査客体の抽出方法等を定める等の件）の一部改正案についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004410&Mode=0",
+      "date": "2026-09-17",
+      "desc": "案の公示日：2026/09/18受付締切日時：2026/10/17 00:00カテゴリー：統計問合せ先（所管省庁・部局名等）：農林水産省大臣官房統計部経営・構造統計課 電話：03-3502-8111（内線3632）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "奄美群島振興開発特別措置法施行規則及び半島振興法施行規則の一部を改正する省令案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260203&Mode=0",
+      "date": "2026-09-17",
+      "desc": "案の公示日：2026/09/18受付締切日時：2026/10/19 00:00カテゴリー：国土開発問合せ先（所管省庁・部局名等）：国土交通省国土政策局特別地域振興官 TEL：03-5253-8423（直通）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "小笠原諸島振興開発特別措置法施行規則の一部を改正する省令案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260204&Mode=0",
+      "date": "2026-09-17",
+      "desc": "案の公示日：2026/09/18受付締切日時：2026/10/19 00:00カテゴリー：国土開発問合せ先（所管省庁・部局名等）：国土交通省国土政策局特別地域振興官 TEL：03-5253-8423（直通）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
     },
     {
       "title": "採用情報：期間業務職員の募集情報",
@@ -851,6 +1437,20 @@
         "医療"
       ],
       "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "中央教育審議会初等中等教育分科会教員養成部会「多様な専門性を有する質の高い教職員集団の形成を加速するための方策について（審議のまとめ）」に関する意見募集の実施について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=185001508&Mode=0",
+      "date": "2026-09-16",
+      "desc": "案の公示日：2026/09/17受付締切日時：2026/10/19 23:59カテゴリー：教育問合せ先（所管省庁・部局名等）：初等中等教育局教育職員政策課 kyoikujinzai@mext.go.jp",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
     },
     {
       "title": "第125回コーデックス連絡協議会 (開催案内）",
@@ -1257,6 +1857,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "第１回創薬力向上のための官民協議会 施策検討・推進部会 資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76243.html",
+      "date": "2026-09-15",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
     },
     {
       "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
@@ -1741,6 +2355,34 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-09-17"
+    },
+    {
+      "title": "「2040年に向けた地域医療構想」について",
+      "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000080850_00017.html",
+      "date": "2026-09-14",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "地域医療構想の実現に向けた重点支援区域の選定を行いました",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76193.html",
+      "date": "2026-09-14",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
     },
     {
       "title": "第266回 社会保障審議会 介護給付費分科会（令和8年9月14日開催）",
