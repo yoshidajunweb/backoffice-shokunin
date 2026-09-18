@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T12:09:11.693Z",
+  "updated": "2026-09-18T23:50:32.863Z",
   "sources": [
     {
       "id": "wamnet",
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 128,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -237,8 +237,8 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 36,
-      "added": 0,
+      "count": 37,
+      "added": 1,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -917,6 +917,20 @@
       "sourceId": "cfa",
       "region": "国",
       "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "宗像・遠賀保健福祉環境事務所管内の歯科技工所名簿を掲載します",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/sikagikousyomunaonho.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
       "bureau": null,
       "tags": [],
       "systems": [],
