@@ -44,8 +44,12 @@ const SOURCES = [
   { id: 'kk-kyushu', name: '九州厚生局', region: '厚生局', bureau: '九州', type: 'rss', url: 'https://kouseikyoku.mhlw.go.jp/kyushu/news/news.xml' },
 
   // 主要県（2026-09-04 夜）。全庁RSSを部署パスか福祉の語で絞る
-  // 東京都福祉局：RSSは「再配布・サイト構築に使うな」、サイトポリシーは「トップ以外へのリンクは事前許可」「非商用のみ」と明記（2026-09-04 確認）。
-  // → 許可を取るまで取らない。東京の読者には「未登録」と出る
+  // 東京都福祉局（2026-09-18 追加）。サイトポリシーは「トップ以外へのリンクは事前許諾」。2026-09-05 に総務課へ連絡済み、返事なし。
+  // 方針：題名・日付・リンクのみ掲載し、「やめてほしい」と連絡があれば即外す（運営者情報に明記）。
+  // 報道発表RSS（新サイト。SmartNews/Gunosy 向け拡張つき＝配信前提で作られている）。題名頭の「９月11日　」を剥がす
+  { id: 'tokyo', name: '東京都福祉局 報道発表', region: '県', pref: '東京都', type: 'rss', url: 'https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss',
+    keep: (it) => keepFukushi(it.title),
+    fix: (it) => ({ ...it, title: it.title.replace(/^[０-９0-9]{1,2}月[０-９0-9]{1,2}日[\s　]*/, '') }) },
   { id: 'kanagawa', name: '神奈川県', region: '県', pref: '神奈川県', type: 'rss', url: 'https://www.pref.kanagawa.jp/prs/list.xml',
     keep: (it) => keepFukushi(it.title) },
   { id: 'osaka', name: '大阪府', region: '県', pref: '大阪府', type: 'rss', url: 'https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml',
@@ -213,6 +217,7 @@ function parsePageList(html, src) {
       const body = await get(src.url);
       let items = src.type === 'rss' ? parseRSS(body, src) : parsePageList(body, src);
       if (src.keep) items = items.filter(src.keep);
+      if (src.fix) items = items.map(src.fix);   // 情報源ごとの題名の整形（東京都の「９月11日　」など）
       let added = 0;
       for (const it of items) {
         if (byLink.has(it.link)) continue;
