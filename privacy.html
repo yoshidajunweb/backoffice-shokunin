@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>集めるもの・集めないもの｜バックオフィス職人</title>
+<meta name="description" content="バックオフィス職人（backoffice-shokunin.jp）が、あなたの何を集めて、何を集めないか。平易な言葉で書いています。">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
+<style>
+:root{
+  --paper:#F4F6F8; --surface:#FFFFFF; --ink:#1A2230; --muted:#66707E; --line:#D6DBE2; --line-strong:#1A2230;
+  --accent:#2A4D9B; --accent-soft:#E4EBF8; --ok:#3B7A2A; --ok-soft:#E8F3E3;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#12161C; --surface:#1A1F27; --ink:#E7EAEF; --muted:#98A2B0; --line:#2C333E; --line-strong:#E7EAEF;
+  --accent:#8EB0F2; --accent-soft:#22304D; --ok:#9BD98A; --ok-soft:#1F2E1A;
+}}
+*{box-sizing:border-box}
+html{color-scheme:light dark}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans JP",system-ui,-apple-system,"Segoe UI","Hiragino Sans",sans-serif;line-height:1.8;font-size:16px}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{border-bottom:6px solid var(--line-strong);background:var(--surface)}
+header .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:18px 20px}
+.brand{font-weight:900;font-size:20px;color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.brand i{display:inline-block;width:24px;height:24px;flex:none;background:currentColor;-webkit-mask:url(assets/brand-icon.png) center/contain no-repeat;mask:url(assets/brand-icon.png) center/contain no-repeat}
+main{padding:40px 0 56px}
+h1{font-size:clamp(24px,4vw,32px);font-weight:900;line-height:1.35;margin:0 0 10px}
+.lead{font-size:18px;font-weight:700;margin:0 0 6px}
+.asof{color:var(--muted);font-size:13px;margin:0 0 32px}
+section{margin:0 0 36px}
+h2{font-size:19px;font-weight:900;margin:0 0 12px;padding-left:12px;border-left:5px solid var(--line-strong);line-height:1.4}
+p{margin:0 0 12px}
+ul{margin:0 0 12px;padding-left:1.3em}
+li{margin:4px 0}
+table{border-collapse:collapse;width:100%;margin:8px 0 12px;font-size:15px}
+th,td{border:3px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--accent-soft);font-weight:700;width:34%}
+.ok{background:var(--ok-soft);border:3px solid var(--ok);border-radius:10px;padding:14px 18px;font-weight:700}
+.note{color:var(--muted);font-size:14px}
+code{font-family:ui-monospace,Consolas,monospace;font-size:.92em;background:var(--accent-soft);padding:1px 6px;border-radius:4px}
+footer{border-top:4px solid var(--line-strong);padding:22px 0 40px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="/"><i aria-hidden="true"></i>バックオフィス職人</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>このサイトが集めるもの・集めないもの</h1>
+  <p class="lead">一言でいうと：あなたの名前も、メールも、ファイルの中身も集めません。</p>
+  <p class="asof">2026年9月14日 現在。変えたときはこのページを直し、日付を更新します。</p>
+
+  <section>
+    <h2>集めないもの</h2>
+    <div class="ok">名前・メールアドレス・住所・電話番号・給与や利用者のデータ・ログイン情報。どれも入力する場所がありません。</div>
+    <p class="note">アクセス解析（Google アナリティクスなど）も入れていません。「誰が何回見たか」を私は知りません。</p>
+  </section>
+
+  <section>
+    <h2>あなたのブラウザの中にだけ残るもの</h2>
+    <p>福祉行政アップデートで選んだ都道府県や、開いていたタブは、<strong>あなたのブラウザの中</strong>（localStorage）に保存されます。次に開いたとき同じ画面になるためです。</p>
+    <ul>
+      <li>どこにも送られません。私にも見えません</li>
+      <li>ブラウザの「サイトデータを削除」で消えます</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>外に送られるもの</h2>
+    <table>
+      <tr><th>いつ</th><td>何が・どこへ</td></tr>
+      <tr><th>「ご意見」を送ったとき</th><td>選んだ種類・本文・見ていたページ・選んでいた都道府県とタブ。これだけです。<strong>送り主の名前・メール・IPアドレスは記録しません</strong>ので、誰からの意見かは私にも分かりません。送り先は Google のスプレッドシートです</td></tr>
+      <tr><th>ページを開いたとき</th><td>文字のデザイン（フォント）を Google から読み込みます。このとき、他のサイトと同じように、Google に接続元の情報（IPアドレスなど）が渡ります</td></tr>
+      <tr><th>ページを開いたとき</th><td>このサイトは GitHub Pages という仕組みで配っています。GitHub のサーバーが通信の記録（IPアドレスなど）を持ちますが、<strong>私はその記録を見ることができません</strong></td></tr>
+    </table>
+    <p class="note">応援のリンク先（OFUSE・Amazon）や X・note は別のサービスです。そこから先は、それぞれのサービスの決まりに従います。</p>
+  </section>
+
+  <section>
+    <h2>道具について</h2>
+    <table>
+      <tr><th>Gmail添付ファイル自動保存</th><td><strong>あなたの Google アカウントの中で動きます。</strong>スプレッドシートをコピーした時点で、それはあなたの持ち物です。あなたのメールも、保存されたファイルも、私には一切見えません。中身のプログラムは、そのスプレッドシートの「拡張機能 → Apps Script」で全部読めます</td></tr>
+      <tr><th>ブラウザの中で動く道具（中退共スケジューラーなど）</th><td>置いたファイルは、あなたのパソコンの中で計算されるだけで、どこにも送られません。<strong>ネットを切っても動きます。</strong>疑うときは、Wi-Fi を切ってから試してみてください</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>疑うときは</h2>
+    <ul>
+      <li>このサイトの中身は、すべて <a href="https://github.com/yoshidajunweb/backoffice-shokunin" target="_blank" rel="noopener">GitHub で公開</a>しています。何をしているか、そのまま読めます</li>
+      <li>ブラウザの中で動く道具は、ネットを切っても動きます</li>
+      <li>Gmail添付のプログラムは、コピーしたスプレッドシートの中で読めます</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>やめるとき</h2>
+    <table>
+      <tr><th>福祉行政アップデート</th><td>ブラウザを閉じるだけ。残るのはブラウザの中の設定だけで、「サイトデータを削除」で消えます</td></tr>
+      <tr><th>Gmail添付ファイル自動保存</th><td>コピーしたスプレッドシートをゴミ箱に入れると、自動保存は止まります。保存済みのファイルはあなたのドライブに残ります</td></tr>
+      <tr><th>ブラウザの中で動く道具</th><td>ページを閉じるだけ。何も残りません</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>このページについて</h2>
+    <p>法律の言葉ではなく、実際にやっていることをそのまま書きました。分かりにくい所や、事実と違う所に気づいたら、サイトの「ご意見」から教えてください。直します。</p>
+    <p>運営：バックオフィス職人（現役の福祉事業所の事務担当）。個人で運営しています。</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>運営：バックオフィス職人</span>
+    <span><a href="/">トップへ</a></span>
+  </div>
+</footer>
+</body>
+</html>
