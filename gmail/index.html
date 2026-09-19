@@ -208,6 +208,25 @@
     color: var(--accent);
   }
 
+  /* 完了の下：AI案内への近道 */
+  .ai-link-wrap { margin: 1.4rem 0 0; text-align: center; display: flex; flex-direction: column; align-items: center; gap: .35rem; }
+  .ai-link {
+    display: inline-block;
+    padding: .7rem 1.4rem;
+    border: 3px solid var(--line-strong);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--ink);
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: var(--shadow);
+    transition: background .15s ease, transform .15s ease;
+  }
+  .ai-link:hover { background: var(--accent-soft); }
+  .ai-link:active { transform: scale(.97); }
+  .ai-link:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .ai-link-note { font-size: .85rem; color: var(--ink-soft); }
+
   /* ---------- 区切り ---------- */
 
   .divider {
@@ -570,7 +589,7 @@
   @media print { .to-top, .fb-jump { display: none; } }
 
   /* 移動先のフォームを一瞬ふわっと光らせて、ここだと分からせる */
-  .fb.fb-focus { animation: fb-glow 1.4s ease-out; }
+  .fb.fb-focus, .ai.fb-focus { animation: fb-glow 1.4s ease-out; }
   @keyframes fb-glow {
     0%   { box-shadow: 0 0 0 0 rgba(47, 107, 176, .6); border-color: var(--accent); }
     60%  { box-shadow: 0 0 0 12px rgba(47, 107, 176, 0); border-color: var(--accent); }
@@ -748,6 +767,7 @@
   </ol>
 
   <p class="done">これで完了です。あとは15分ごとに自動で保存されます。</p>
+  <p class="ai-link-wrap"><a class="ai-link" href="#ai">🤖 AI用プロンプトはコチラ</a><span class="ai-link-note">読むより、聞きながら進めたい方へ</span></p>
 
   <hr class="divider">
 
@@ -947,6 +967,18 @@
 
 (function () {
 (function () {
+  // 「AI用プロンプトはコチラ」：滑らかに移動して枠を光らせる
+  var aiLink = document.querySelector('.ai-link');
+  var aiBox = document.getElementById('ai');
+  if (aiLink && aiBox) {
+    aiLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      aiBox.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+      setTimeout(function () { aiBox.classList.remove('fb-focus'); void aiBox.offsetWidth; aiBox.classList.add('fb-focus'); }, reduced ? 0 : 500);
+    });
+  }
+
   // AI向けの案内文をコピーする
   var btn = document.getElementById('ai-copy');
   var box = document.getElementById('ai-prompt');
