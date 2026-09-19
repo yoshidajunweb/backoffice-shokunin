@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T23:50:32.863Z",
+  "updated": "2026-09-19T10:55:22.847Z",
   "sources": [
     {
       "id": "wamnet",
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 22,
-      "added": 0,
+      "count": 20,
+      "added": 8,
       "ok": true
     },
     {
@@ -238,7 +238,7 @@
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
       "count": 37,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -937,6 +937,80 @@
       "firstSeen": "2026-09-18"
     },
     {
+      "title": "電波有効利用の推進に係る検討課題に対する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210774&Mode=0",
+      "date": "2026-09-18",
+      "desc": "案の公示日：2026/09/19受付締切日時：2026/10/19 23:59カテゴリー：電気通信問合せ先（所管省庁・部局名等）：総務省総合通信基盤局電波部電波政策課 TEL:03-5253-5909",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-19"
+    },
+    {
+      "title": "周波数再編アクションプラン（令和８年度版）（案）に対する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210777&Mode=0",
+      "date": "2026-09-18",
+      "desc": "案の公示日：2026/09/19受付締切日時：2026/10/23 23:59カテゴリー：電気通信問合せ先（所管省庁・部局名等）：総務省総合通信基盤局電波部電波政策課 Tel:03-5253-5874",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-19"
+    },
+    {
+      "title": "厚生労働省組織令及び厚生科学審議会令の一部を改正する政令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260190&Mode=0",
+      "date": "2026-09-18",
+      "desc": "案の公示日：2026/09/19受付締切日時：2026/10/19 00:00カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省健康・生活衛生局感染症対策部予防接種課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-19"
+    },
+    {
+      "title": "「電波有効利用委員会報告（案）」に対する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210775&Mode=0",
+      "date": "2026-09-18",
+      "desc": "案の公示日：2026/09/19受付締切日時：2026/10/19 23:59カテゴリー：電気通信問合せ先（所管省庁・部局名等）：総務省総合通信基盤局電波部移動通信課 Tel:03-5253-5893",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-19"
+    },
+    {
+      "title": "難病の患者に対する医療等に関する法律施行規則第十五条第一項第一号イに規定する厚生労働大臣が定める認定機関が認定する専門医の資格及び児童福祉法施行規則第七条の十第一項第一号に規定する厚生労働大臣が定める認定機関が認定する専門医の資格の一部を改正する告示案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260192&Mode=0",
+      "date": "2026-09-18",
+      "desc": "案の公示日：2026/09/19受付締切日時：2026/10/19 00:00カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省健康・生活衛生局難病対策課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-19"
+    },
+    {
       "title": "第63回 障害福祉サービス等報酬改定検討チーム（令和8年9月24日開催予定）",
       "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22887&ct=070010040&from=rss",
       "date": "2026-09-17",
@@ -1315,6 +1389,48 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "「貸付用不動産の評価について」の法令解釈通達（案）に対する意見公募手続の実施について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=410080055&Mode=0",
+      "date": "2026-09-17",
+      "desc": "案の公示日：2026/09/18受付締切日時：2026/10/18 17:00カテゴリー：国税問合せ先（所管省庁・部局名等）：国税庁 課税部 資産評価企画官 審査係",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-19"
+    },
+    {
+      "title": "「保護司及び保護司会連合会に関する規則の一部を改正する省令案」に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=300110056&Mode=0",
+      "date": "2026-09-17",
+      "desc": "案の公示日：2026/09/18受付締切日時：2026/10/17 18:00カテゴリー：刑事問合せ先（所管省庁・部局名等）：法務省保護局更生保護振興課 ０３ー３５８０ー４１１１（内線２６１２）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-19"
+    },
+    {
+      "title": "ガス事業法施行規則の一部を改正する省令（案）等に対する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320032&Mode=0",
+      "date": "2026-09-17",
+      "desc": "案の公示日：2026/09/18受付締切日時：2026/10/19 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：経済産業省産業保安・安全グループ ガス安全室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-19"
     },
     {
       "title": "第22回成年後見制度利用促進専門家会議について（令和8年9月25日開催予定）",
