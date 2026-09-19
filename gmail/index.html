@@ -97,6 +97,39 @@
     margin: 0 0 3rem;
   }
 
+  /* ---------- 動画 ---------- */
+
+  .video { margin: 0 0 2.75rem; }
+  .video-title {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 .8rem;
+    color: #3b4450;
+  }
+  .video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 3px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: var(--shadow);
+  }
+  .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .video-notes {
+    list-style: none;
+    margin: .9rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    font-size: .9rem;
+    color: #3b4450;
+  }
+  .video-notes b { color: var(--accent-deep); font-variant-numeric: tabular-nums; margin-right: .3rem; }
+
   /* ---------- 手順（主役） ---------- */
 
   .steps {
@@ -668,6 +701,17 @@
     </dl>
     </div>
     </div>
+  </section>
+
+  <section class="video" aria-label="設定の様子（動画）">
+    <h2 class="video-title">動画で見る（2分18秒・音声なし）</h2>
+    <div class="video-frame">
+      <iframe src="https://www.youtube-nocookie.com/embed/vONLYg29kaQ?rel=0" title="Gmailの添付ファイルを自動で保存する設定の様子" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <ul class="video-notes">
+      <li><b>0:06</b>「コピーを作成」を押してから開くまで20秒ほどかかります。何度も押さないでください。</li>
+      <li><b>0:25</b> 開いた直後はメニューがまだ出ません。10〜30秒待つと出ます。</li>
+    </ul>
   </section>
 
   <ol class="steps">
