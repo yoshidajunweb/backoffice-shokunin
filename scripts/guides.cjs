@@ -13,7 +13,7 @@ const SITE = path.join(ROOT, 'site');
 const GDIR = path.join(ROOT, 'data', 'guides');
 const CFG = (() => { const f = path.join(ROOT, 'data', 'config.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}; })();
 const SITE_URL = (CFG.siteUrl || '').replace(/\/?$/, '/');
-const TOP_URL = SITE_URL ? SITE_URL.slice(0, -('update/'.length)) : '../../';   // 道具箱トップ（バックオフィス職人）
+const TOP_URL = SITE_URL ? SITE_URL.slice(0, -('update/'.length)) : '../../';   // トップ（バックオフィス職人）
 const SITE_NAME = '福祉行政アップデート';
 
 // Lucideアイコン（ISC）。使うものだけ埋め込む

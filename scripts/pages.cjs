@@ -14,7 +14,7 @@ const CAL = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'calendar.json'),
 const FLAGS = (() => { const f = path.join(ROOT, 'data', 'flags.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')).flags : {}; })();
 const CFG = (() => { const f = path.join(ROOT, 'data', 'config.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}; })();
 const SITE_URL = (CFG.siteUrl || '').replace(/\/?$/, '/');   // 例 https://backoffice-shokunin.jp/update/
-const TOP_URL = SITE_URL ? SITE_URL.slice(0, -('update/'.length)) : '../../';   // 道具箱トップ（バックオフィス職人）
+const TOP_URL = SITE_URL ? SITE_URL.slice(0, -('update/'.length)) : '../../';   // トップ（バックオフィス職人）
 const SITE_NAME = '福祉行政アップデート';
 
 // Lucideアイコン（ISC）。使うものだけ埋め込む
