@@ -84,6 +84,7 @@ jobs:
           cp site/recent.txt _site/update/
           rm -f _site/update/private.html
           cp CNAME _site/
+          cp sitemap.xml sitemap-main.xml robots.txt _site/   # 検索エンジン向け（root）
           # 検索エンジンの所有確認ファイル（google*.html / BingSiteAuth.xml など）があれば root に置く
           cp google*.html _site/ 2>/dev/null || true
           cp BingSiteAuth.xml _site/ 2>/dev/null || true
