@@ -1,0 +1,1046 @@
+<title>Gmail Attachment Auto-Save</title>
+<meta http-equiv="content-language" content="en">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Backoffice Shokunin">
+<meta property="og:title" content="Gmail Attachment Auto-Save | Backoffice Shokunin">
+<meta property="og:description" content="Every Gmail attachment saved to Google Drive automatically, dated and filed by month. Copy one spreadsheet, answer five questions, done in five minutes. Free while in early access. Made in Japan.">
+<meta property="og:url" content="https://backoffice-shokunin.jp/gmail/en/">
+<meta property="og:image" content="https://backoffice-shokunin.jp/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@fukushi_update">
+<meta name="description" content="Save every Gmail attachment to Google Drive automatically. Dated file names, monthly folders, a log that links back to the email. Set up in five minutes by copying one spreadsheet.">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
+
+<style>
+  :root {
+    --ground:      #f7f9fc;
+    --surface:     #ffffff;
+    --surface-alt: #eef3fa;
+    --ink:         #17222f;
+    --ink-soft:    #55657a;
+    --line:        #dce4ef;
+    --line-strong: #c3d0e2;
+    --accent:      #2f6bb0;
+    --accent-deep: #1f4c83;
+    --accent-soft: #dde7f9;
+    --shadow:      0 1px 2px rgba(23, 34, 47, .05), 0 8px 24px -16px rgba(23, 34, 47, .28);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:      #12181f;
+      --surface:     #1a222c;
+      --surface-alt: #212c39;
+      --ink:         #e7edf5;
+      --ink-soft:    #a9b8ca;
+      --line:        #2c3846;
+      --line-strong: #3d4c5d;
+      --accent:      #7fb0e8;
+      --accent-deep: #a8cbf3;
+      --accent-soft: #1e2c3d;
+      --shadow:      0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -16px rgba(0, 0, 0, .8);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:      #12181f;
+    --surface:     #1a222c;
+    --surface-alt: #212c39;
+    --ink:         #e7edf5;
+    --ink-soft:    #a9b8ca;
+    --line:        #2c3846;
+    --line-strong: #3d4c5d;
+    --accent:      #7fb0e8;
+    --accent-deep: #a8cbf3;
+    --accent-soft: #1e2c3d;
+    --shadow:      0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -16px rgba(0, 0, 0, .8);
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.25rem 5rem;
+  }
+
+  /* ---------- 見出し ---------- */
+
+  h1 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: clamp(1.8rem, 5.5vw, 2.4rem);
+    font-weight: 700;
+    line-height: 1.35;
+    text-wrap: balance;
+    margin: 0 0 .7rem;
+  }
+
+  .page-foot { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line, #D6DBE2); display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; font-size: .9rem; color: var(--muted, #66707E); }
+  .page-foot a { color: var(--accent, #2A4D9B); font-weight: 700; text-decoration: none; }
+  .page-foot a:hover { text-decoration: underline; }
+  .lede {
+    font-size: 1.02rem;
+    color: var(--ink-soft);
+    margin: 0 0 3rem;
+  }
+
+  /* ---------- 動画 ---------- */
+
+  .video { margin: 0 0 2.75rem; }
+  .video-title {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 .8rem;
+    color: #3b4450;
+  }
+  .video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 3px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: var(--shadow);
+  }
+  .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .video-notes {
+    list-style: none;
+    margin: .9rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    font-size: .9rem;
+    color: #3b4450;
+  }
+  .video-notes b { color: var(--accent-deep); font-variant-numeric: tabular-nums; margin-right: .3rem; }
+
+  /* ---------- 手順（主役） ---------- */
+
+  .steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+
+  .step {
+    background: var(--surface);
+    border: 3px solid var(--line);
+    border-radius: 12px;
+    padding: 1.6rem 1.75rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: 2.6rem 1fr;
+    column-gap: 1.1rem;
+    row-gap: .5rem;
+  }
+
+  .num {
+    grid-row: span 2;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent-deep);
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-variant-numeric: tabular-nums;
+    display: grid;
+    place-items: center;
+  }
+
+  .step h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.45;
+    margin: 0;
+    align-self: center;
+  }
+
+  .step-body { grid-column: 2; }
+
+  .do {
+    font-size: 1.05rem;
+    margin: 0;
+    line-height: 1.9;
+  }
+
+  .aside {
+    margin: .7rem 0 0;
+    font-size: .9rem;
+    color: var(--ink-soft);
+  }
+
+  .path {
+    font-weight: 700;
+    background: var(--surface-alt);
+    border-radius: 5px;
+    padding: .12em .5em;
+    white-space: nowrap;
+  }
+
+  .done {
+    margin: 1.6rem 0 0;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--accent);
+  }
+
+  /* 完了の下：AI案内への近道 */
+  .ai-link-wrap { margin: .9rem 0 0; text-align: center; }
+  .ai-link {
+    font-size: .9rem;
+    color: var(--ink-soft);
+    text-decoration: underline;
+    text-decoration-color: var(--line-strong);
+    text-underline-offset: .25em;
+  }
+  .ai-link:hover { color: var(--accent-deep); text-decoration-color: var(--accent); }
+  .ai-link:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+  /* ---------- 区切り ---------- */
+
+  /* 切り取り線のような区切り。「ー ー ー」の太い破線 */
+  .divider {
+    margin: 4.5rem 0 2.5rem;
+    border: 0;
+    height: 4px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='4' viewBox='0 0 30 4'%3E%3Crect x='0' y='0' width='18' height='4' rx='2' fill='%23c3d0e2'/%3E%3C/svg%3E") repeat-x left center;
+    background-size: 30px 4px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .divider {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='4' viewBox='0 0 30 4'%3E%3Crect x='0' y='0' width='18' height='4' rx='2' fill='%233d4c5d'/%3E%3C/svg%3E");
+    }
+  }
+  :root[data-theme="dark"] .divider {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='4' viewBox='0 0 30 4'%3E%3Crect x='0' y='0' width='18' height='4' rx='2' fill='%233d4c5d'/%3E%3C/svg%3E");
+  }
+
+  .ref-head {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 .4rem;
+  }
+
+  .ref-note {
+    font-size: .9rem;
+    color: var(--ink-soft);
+    margin: 0 0 2.25rem;
+  }
+
+  /* ---------- 補足（脇役） ---------- */
+
+  .ref { display: flex; flex-direction: column; gap: 2rem; }
+
+  .ref section { display: flex; flex-direction: column; gap: .6rem; }
+
+  .ref h3 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: .95rem;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: .4rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .ref p, .ref li { font-size: .93rem; line-height: 1.8; color: var(--ink-soft); margin: 0; }
+  .ref strong { color: var(--ink); font-weight: 700; }
+
+  .ref ul { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: .3rem; }
+  .ref li::marker { color: var(--accent); }
+
+  .qa { display: flex; flex-direction: column; }
+
+  .qa-row {
+    display: grid;
+    grid-template-columns: 1.4rem 1fr;
+    gap: .05rem .6rem;
+    padding: .7rem 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .qa-row:first-child { padding-top: .2rem; }
+  .qa-row:last-child { border-bottom: 0; padding-bottom: 0; }
+
+  .qa-n {
+    grid-row: span 2;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-size: .9rem;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .qa-q { font-weight: 700; color: var(--ink) !important; font-size: .93rem; }
+
+  /* ---------- 警告画面の図解 ---------- */
+
+  /* 実際の画面と同じ見え方になるよう、1枚ずつ大きく、余白もそのまま再現する */
+  .shot-row { display: flex; flex-direction: column; gap: 2.2rem; margin: 1rem 0 1.4rem; }
+
+  .shot { margin: 0; }
+  .shot figcaption {
+    font-weight: 700;
+    color: var(--ink);
+    font-size: 1rem;
+    margin-bottom: .6rem;
+  }
+
+  /* Googleの警告画面（白い画面の左上に内容が置かれる）を再現したもの */
+  .dlg {
+    background: #fff;
+    color: #202124;
+    border: 3px solid var(--line);
+    border-radius: 8px;
+    padding: 4.5rem 2.75rem 4rem;
+    font-size: .95rem;
+    line-height: 1.7;
+    overflow-x: auto;
+  }
+  .dlg-inner { max-width: 33rem; }
+  .dlg-warn { width: 52px; height: 52px; display: block; margin-bottom: 1.6rem; }
+  /* 「.ref p」の指定に負けないよう、.dlg を付けて優先度を上げる */
+  .ref .dlg p.dlg-title { margin: 0 0 1rem; font-size: 1.45rem; font-weight: 400; color: #202124; line-height: 1.4; }
+  .ref .dlg p.dlg-text { margin: 0 0 2.4rem; font-size: .95rem; line-height: 1.7; color: #5f6368; }
+  .ref .dlg p.dlg-more { margin-top: 2.6rem; margin-bottom: 1.6rem; }
+  .dlg-mail { color: #1a73e8; text-decoration: underline; }
+  .dlg-foot { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+  .dlg-link { color: #1a73e8; text-decoration: underline; }
+  .dlg-btn {
+    margin-left: auto;
+    background: #1a73e8; color: #fff;
+    padding: .6rem 1rem; border-radius: 4px; font-weight: 700;
+  }
+  .hit { outline: 3px solid #d93025; outline-offset: 6px; border-radius: 2px; }
+  .hit-tag { color: #d93025; font-weight: 700; font-size: 1.05rem; margin-top: 1rem; }
+
+  /* ---------- AIに手伝ってもらう ---------- */
+
+  .ai {
+    margin-top: 3rem;
+    padding: 1.6rem 1.75rem;
+    background: var(--surface);
+    border: 3px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+  .ai-title { font-family: "Noto Sans JP", sans-serif; font-size: 1.15rem; font-weight: 700; margin: 0 0 .4rem; }
+  .ai-lead { margin: 0 0 1rem; font-size: .92rem; color: var(--ink-soft); }
+  .ai-box {
+    position: relative;
+    background: var(--ground);
+    border: 3px solid var(--line);
+    border-radius: 8px;
+    padding: 1rem 1.1rem;
+    max-height: 18rem;
+    overflow: auto;
+    font-size: .85rem;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--ink);
+    margin: 0;
+    font-family: inherit;
+  }
+  /* 案内文の箱のスクロールバー：細く、薄く、角丸に */
+  .ai-box { scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; }
+  .ai-box::-webkit-scrollbar { width: 8px; height: 8px; }
+  .ai-box::-webkit-scrollbar-track { background: transparent; }
+  .ai-box::-webkit-scrollbar-thumb { background: var(--line-strong); border-radius: 999px; border: 2px solid var(--ground); }
+  .ai-box::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+  .ai-box::-webkit-scrollbar-button { display: none; height: 0; width: 0; }
+
+  .ai-actions { display: flex; align-items: center; gap: 1rem; margin-top: .8rem; }
+  .ai-copy {
+    padding: .6rem 1.3rem;
+    border: 0; border-radius: 8px;
+    background: var(--accent); color: #fff;
+    font: inherit; font-weight: 700; cursor: pointer;
+  }
+  .ai-copy:hover { background: var(--accent-deep); }
+  .ai-copy:focus-visible { outline: 3px solid var(--accent-deep); outline-offset: 3px; }
+  .ai-status { font-size: .88rem; color: var(--accent-deep); font-weight: 700; }
+
+  @media (max-width: 600px) {
+    .dlg { padding: 2.5rem 1.25rem 2.5rem; font-size: .88rem; }
+    .dlg-title { font-size: 1.2rem; }
+  }
+
+  /* ---------- モニター募集 ---------- */
+
+  .monitor {
+    background: var(--accent-soft);
+    border-radius: 12px;
+    padding: 2rem 1.6rem 1.6rem;
+    margin: 0 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+  }
+
+  .monitor-tag {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    color: var(--accent-deep);
+    margin: 0;
+  }
+
+  .monitor-text { margin: 0; font-size: .97rem; }
+  .monitor-text strong { color: var(--accent-deep); }
+
+  .monitor-btn {
+    align-self: flex-start;
+    display: inline-block;
+    margin-top: .3rem;
+    padding: .8rem 1.4rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: var(--shadow);
+  }
+  .monitor-btn:hover { background: var(--accent-deep); }
+  .monitor-btn:focus-visible { outline: 3px solid var(--accent-deep); outline-offset: 3px; }
+
+  .monitor-note { margin: 0; font-size: .85rem; color: var(--ink-soft); }
+
+  /* 事前準備（チェックは目印だけ。文字の見た目は変えない） */
+  .prep { margin: 0 0 3.2rem; }
+  .prep-title { font-family: "Noto Sans JP", sans-serif; font-size: 1rem; font-weight: 700; margin: 0 0 1.2rem; color: #3b4450; }
+  .pre-check { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 1rem; }
+  .pre-check label { display: flex; align-items: flex-start; gap: 1.2rem; cursor: pointer; font-size: .97rem; line-height: 1.6; color: #3b4450; }
+  /* チェックボックスは自前で描く（角丸と、チェック時の色を細かく決めるため） */
+  .pre-check input {
+    appearance: none; -webkit-appearance: none;
+    width: 1.4rem; height: 1.4rem; margin: .1rem 0 0; flex: none; cursor: pointer;
+    border: 2.5px solid #b9c6d8; border-radius: 6px; background: #fff;
+    display: grid; place-items: center;
+    transition: background .15s ease, border-color .15s ease;
+  }
+  /* チェックマークは箱より一回り小さくして、まわりに余白を残す */
+  .pre-check input::before {
+    content: ""; width: .55rem; height: .32rem;
+    border-left: 3.5px solid #fff; border-bottom: 3.5px solid #fff;
+    transform: rotate(-45deg) translate(0, -1px) scale(0);
+    transition: transform .15s ease;
+  }
+  .pre-check input:checked { background: #8bc34a; border-color: #8bc34a; }
+  .pre-check input:checked::before { transform: rotate(-45deg) translate(0, -1px) scale(1); }
+  .pre-check input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+  /* ---------- できること ---------- */
+
+  .spec {
+    margin: 0 0 2.75rem;
+    background: var(--surface);
+    border: 3px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  /* 見出しがボタン。押すと下に開く */
+  .spec-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding: 1.2rem 1.75rem;
+    background: none;
+    border: 0;
+    color: var(--ink);
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+  }
+  .spec-toggle:hover { background: var(--surface-alt); }
+  .spec-toggle:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+
+  .spec-title {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+  .spec-hint { font-size: .8rem; color: var(--ink-faint, var(--ink-soft)); }
+  .spec.open .spec-hint { visibility: hidden; }
+
+  .spec-chev {
+    margin-left: auto;
+    width: .8rem;
+    height: .8rem;
+    border-right: 3px solid var(--accent);
+    border-bottom: 3px solid var(--accent);
+    transform: rotate(45deg);
+    transition: transform .45s cubic-bezier(.2, .9, .25, 1.2);
+  }
+  .spec.open .spec-chev { transform: rotate(225deg); }
+
+  /* 高さ 0 → 中身の高さ へ、少し行き過ぎて戻る動き */
+  .spec-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .6s cubic-bezier(.2, .9, .25, 1.18);
+  }
+  .spec.open .spec-body { grid-template-rows: 1fr; }
+  .spec-inner { min-height: 0; overflow: hidden; }
+
+  .spec-list {
+    margin: 0;
+    padding: .4rem 1.75rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+  .spec-list > div { padding-top: 1.1rem; border-top: 1px dashed var(--line); }
+  .spec-list > div:first-child { padding-top: .2rem; border-top: 0; }
+  .spec-list dt {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    color: var(--accent-deep);
+    font-size: 1rem;
+    margin-bottom: .3rem;
+  }
+  .spec-list dd { margin: 0; font-size: .93rem; line-height: 1.8; color: var(--ink-soft); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .spec-body, .spec-chev { transition: none; }
+  }
+
+  /* ---------- 右上の「ご意見」ボタン ---------- */
+
+  .fb-jump {
+    position: fixed;
+    top: 1rem;
+    right: 1.25rem;
+    z-index: 10;
+    padding: .55rem 1.2rem;
+    border-radius: 8px;
+    background: var(--surface);
+    border: 3px solid var(--line-strong);
+    color: var(--ink);
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-size: .9rem;
+    text-decoration: none;
+    box-shadow: var(--shadow);
+    transition: transform .15s ease, opacity .25s ease, background .15s ease;
+  }
+  .fb-jump:hover { background: var(--accent-soft); }
+  .fb-jump:active { transform: scale(.96); }
+  .fb-jump:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  /* フォームが見えている間は引っ込める */
+  .fb-jump.hide { opacity: 0; transform: translateY(-8px); pointer-events: none; }
+
+  /* ---------- 右下の「トップに戻る」 ---------- */
+
+  /* 福祉行政アップデートのサイトと同じ形（丸い矢印ボタン） */
+  .to-top {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 20;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 3px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(26, 34, 48, .18);
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+  }
+  .to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+  .to-top svg { width: 22px; height: 22px; }
+  .to-top:hover, .to-top:focus-visible { outline: none; border-color: var(--accent); color: var(--accent); }
+  .to-top:active { transform: scale(.97); }
+  @media (prefers-reduced-motion: no-preference) {
+    .to-top { transition: opacity .2s ease, transform .2s ease, border-color .18s ease, color .18s ease; }
+  }
+  @media (max-width: 600px) { .to-top { right: 12px; bottom: 12px; width: 44px; height: 44px; } }
+  @media print { .to-top, .fb-jump { display: none; } }
+
+  /* 移動先のフォームを一瞬ふわっと光らせて、ここだと分からせる */
+  .fb.fb-focus, .ai.fb-focus { animation: fb-glow 1.4s ease-out; }
+  @keyframes fb-glow {
+    0%   { box-shadow: 0 0 0 0 rgba(47, 107, 176, .6); border-color: var(--accent); }
+    60%  { box-shadow: 0 0 0 12px rgba(47, 107, 176, 0); border-color: var(--accent); }
+    100% { box-shadow: var(--shadow); border-color: var(--line); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fb.fb-focus { animation: none; border-color: var(--accent); }
+    .fb-jump { transition: none; }
+  }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  /* ---------- ご意見 ---------- */
+
+  .fb {
+    margin-top: 4rem;
+    padding: 1.6rem 1.75rem;
+    background: var(--surface);
+    border: 3px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+
+  .fb-title {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 .4rem;
+  }
+
+  .fb-lead { margin: 0 0 1rem; font-size: .92rem; color: var(--ink-soft); }
+
+  .fb-kinds { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin-bottom: .7rem; font-size: .95rem; }
+  .fb-kinds label { display: inline-flex; align-items: center; gap: .35rem; cursor: pointer; }
+
+  .fb textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .7rem .85rem;
+    border: 3px solid var(--line-strong);
+    border-radius: 8px;
+    background: var(--ground);
+    color: var(--ink);
+    font: inherit;
+    font-size: .95rem;
+    resize: vertical;
+  }
+  .fb textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+  .fb-trap { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+  .fb-actions { display: flex; align-items: center; justify-content: flex-end; gap: 1rem; margin-top: .8rem; }
+
+  .fb-status { font-size: .88rem; color: var(--ink-soft); }
+  .fb-status.ok { color: var(--accent-deep); font-weight: 700; }
+  .fb-status.ng { color: #b3261e; }
+
+  .fb-send {
+    padding: .6rem 1.4rem;
+    border: 0;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .fb-send:hover { background: var(--accent-deep); }
+  .fb-send:disabled { opacity: .6; cursor: default; }
+  .fb-send:focus-visible { outline: 3px solid var(--accent-deep); outline-offset: 3px; }
+
+  @media (max-width: 480px) {
+    .wrap { padding-top: 2.5rem; }
+    .lede { margin-bottom: 2.25rem; }
+    .step { padding: 1.3rem 1.2rem; grid-template-columns: 2.2rem 1fr; column-gap: .85rem; }
+    .num { width: 2.2rem; height: 2.2rem; font-size: 1.05rem; }
+    .step h2 { font-size: 1.15rem; }
+  }
+</style>
+
+<a class="fb-jump" href="#fb" id="fb-jump">Feedback</a>
+<button class="to-top" id="to-top" type="button" aria-label="Back to top" title="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg></button>
+
+<div class="wrap">
+
+  <h1>Save Gmail attachments to Drive, automatically</h1>
+  <p class="lede">Every attachment that lands in your Gmail is saved to a Google Drive folder for you. Three steps, about five minutes.</p>
+
+  <section class="prep" aria-label="Before you start">
+    <h2 class="prep-title">Before you start</h2>
+    <ul class="pre-check">
+      <li><label><input type="checkbox" class="pre-check-box"> You are signed in to the Gmail account you want to use</label></li>
+      <li><label><input type="checkbox" class="pre-check-box"> You are on a computer (setup does not work on a phone)</label></li>
+    </ul>
+  </section>
+
+  <section class="monitor">
+    <p class="monitor-tag">FREE WHILE IN EARLY ACCESS</p>
+    <p class="monitor-text">It is <strong>free</strong> right now. If you try it, a one-line note through "Feedback" (top right) would help a lot.</p>
+    <a class="monitor-btn" href="https://docs.google.com/spreadsheets/d/1AH8O3f3krEiRd5Jr6MV4QlUNUNg9OXwFii5AhbLORIE/copy" target="_blank" rel="noopener">Copy the tool to my Drive</a>
+    <p class="monitor-note">Click while signed in to Google and a copy prompt opens.</p>
+  </section>
+
+  <section class="spec" id="spec">
+    <button class="spec-toggle" type="button" id="spec-toggle" aria-expanded="false" aria-controls="spec-body">
+      <span class="spec-title">What it does</span>
+      <span class="spec-hint">click to open</span>
+      <span class="spec-chev" aria-hidden="true"></span>
+    </button>
+    <div class="spec-body" id="spec-body">
+    <div class="spec-inner">
+    <dl class="spec-list">
+      <div><dt>Saves automatically</dt>
+      <dd>Every 15 minutes, attachments from your Gmail are saved to the Drive folder you choose. Leave it alone and they pile up.</dd></div>
+      <div><dt>Renames files</dt>
+      <dd>The date goes in front, like "2026-09-11_invoice.pdf". You can also add the sender or the subject. Scans and faxes named "001.pdf" become easy to tell apart.</dd></div>
+      <div><dt>Files things away by month</dt>
+      <dd>Ten days after saving, a file moves into a month folder like "2026.09". Only recent files stay at the top, so the folder stays easy to browse. When the year changes, last year's months are grouped into a year folder.</dd></div>
+      <div><dt>Keeps a log</dt>
+      <dd>When, from whom, from which email, and what was saved: one row each in a spreadsheet. Click the subject to open the email, click the file name to open the file.</dd></div>
+      <div><dt>Never saves twice</dt>
+      <dd>The same email is never saved again. Files with the same name are numbered instead of overwritten. Emails you sent yourself and signature logos are skipped.</dd></div>
+      <div><dt>Lets you narrow it down</dt>
+      <dd>"Only from this sender", "only with this label": anything you can type into the Gmail search box works.</dd></div>
+      <div><dt>Stays inside your account</dt>
+      <dd>It runs entirely inside your own Google account. No email or file is ever sent to an outside server.</dd></div>
+    </dl>
+    </div>
+    </div>
+  </section>
+
+  <ol class="steps">
+
+    <li class="step">
+      <span class="num">1</span>
+      <h2>Make your copy</h2>
+      <div class="step-body">
+        <p class="do">Click the button above → click <span class="path">Make a copy</span> on the screen that appears</p>
+        <p class="aside">The spreadsheet that opens is your own. From here on, work in that spreadsheet.</p>
+        <p class="aside">If you see "Share it with the same people", <strong>leave it unchecked.</strong></p>
+      </div>
+    </li>
+
+    <li class="step">
+      <span class="num">2</span>
+      <h2>Set it up</h2>
+      <div class="step-body">
+        <p class="do">Click <span class="path">📬 Attachment Saver</span> → <span class="path">Set up</span></p>
+        <p class="aside">Then just answer the questions. <strong>Leaving every box empty and clicking OK is fine.</strong></p>
+        <p class="aside">If the menu is not there yet, the copy is still getting ready. <strong>Wait about 30 seconds and reload</strong> the page.</p>
+      </div>
+    </li>
+
+    <li class="step">
+      <span class="num">3</span>
+      <h2>Try it</h2>
+      <div class="step-body">
+        <p class="do">Click <span class="path">📬 Attachment Saver</span> → <span class="path">Save now</span></p>
+        <p class="aside">If attachments show up in the folder, it works.</p>
+      </div>
+    </li>
+
+  </ol>
+
+  <p class="done">That's it. From now on it saves automatically every 15 minutes.</p>
+  <p class="ai-link-wrap"><a class="ai-link" href="#ai">🤖 Prompt for your AI assistant</a></p>
+
+  <hr class="divider">
+
+  <p class="ref-head">You can stop reading here</p>
+  <p class="ref-note">The rest is only for when something gets in the way.</p>
+
+  <div class="ref">
+
+    <section>
+      <h3>What you need</h3>
+      <ul>
+        <li>A Google account that uses Gmail</li>
+        <li>A computer for the setup (phones don't work for setup; once it's running you can forget about it)</li>
+        <li>If it's a company Google account, your admin must allow Apps Script (if it's blocked, step 2 will not go through)</li>
+      </ul>
+      <p><strong>Gmail only.</strong> Outlook and other mail services are not supported. Attachments must be attached to the email itself; Drive share links are not saved.</p>
+    </section>
+
+    <section>
+      <h3>If you see "Google hasn't verified this app"</h3>
+      <p>It appears during step 2. Nothing is broken. Every tool made by an individual shows this warning.</p>
+      <p>Click <span class="path">Advanced</span> → <span class="path">Go to ... (unsafe)</span> → <span class="path">Allow</span>.</p>
+
+      <div class="shot-row">
+        <figure class="shot">
+          <figcaption>① When this appears, click "Advanced" at the bottom left</figcaption>
+          <div class="dlg" aria-hidden="true">
+            <div class="dlg-inner">
+              <svg class="dlg-warn" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L23 21 H1 Z" fill="#d93025"/><text x="12" y="18.2" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial, sans-serif">!</text></svg>
+              <p class="dlg-title">Google hasn’t verified this app</p>
+              <p class="dlg-text">The app is requesting access to sensitive info in your Google Account. Until the developer (<span class="dlg-mail">your address</span>) verifies this app with Google, you shouldn't use it.</p>
+              <div class="dlg-foot">
+                <span class="dlg-link hit">Advanced</span>
+                <span class="dlg-btn">Back to safety</span>
+              </div>
+              <div class="hit-tag">↑ Click here</div>
+            </div>
+          </div>
+        </figure>
+        <figure class="shot">
+          <figcaption>② More text appears below. Click "Go to ... (unsafe)" at the very bottom</figcaption>
+          <div class="dlg" aria-hidden="true">
+            <div class="dlg-inner">
+              <svg class="dlg-warn" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L23 21 H1 Z" fill="#d93025"/><text x="12" y="18.2" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Arial, sans-serif">!</text></svg>
+              <p class="dlg-title">Google hasn’t verified this app</p>
+              <p class="dlg-text">The app is requesting access to sensitive info in your Google Account. Until the developer (<span class="dlg-mail">your address</span>) verifies this app with Google, you shouldn't use it.</p>
+              <div class="dlg-foot">
+                <span class="dlg-link">Hide Advanced</span>
+                <span class="dlg-btn">Back to safety</span>
+              </div>
+              <p class="dlg-text dlg-more">Continue only if you understand the risks and trust the developer (<span class="dlg-mail">your address</span>).</p>
+              <div class="dlg-foot">
+                <span class="dlg-link hit">Go to Gmail Attachment Auto-Save (unsafe)</span>
+              </div>
+              <div class="hit-tag">↑ Click here</div>
+            </div>
+          </div>
+        </figure>
+      </div>
+      <p>Then click "Allow" and you're done. The "developer" address shown is <strong>your own</strong>: once you made the copy, you became its owner. You are not handing access to anyone else.</p>
+      <p><strong>The permission covers only your own Gmail and Drive.</strong> Nobody else can see your data.</p>
+    </section>
+
+    <section>
+      <h3>What the questions mean</h3>
+      <div class="qa">
+        <div class="qa-row">
+          <span class="qa-n">1</span>
+          <p class="qa-q">Where to save</p>
+          <p>Open the folder in Drive and paste its URL. Leave it empty and a new folder is created.</p>
+        </div>
+        <div class="qa-row">
+          <span class="qa-n">2</span>
+          <p class="qa-q">Which emails</p>
+          <p>Leave it empty for every email with an attachment.</p>
+        </div>
+        <div class="qa-row">
+          <span class="qa-n">3</span>
+          <p class="qa-q">How many days back</p>
+          <p>Empty means 30 days, and the first run saves all of them at once. To try with just a little, enter "1".</p>
+        </div>
+        <div class="qa-row">
+          <span class="qa-n">4</span>
+          <p class="qa-q">Days before filing away</p>
+          <p>After this many days a file moves into a month folder like "2026.09". When the year changes, last year's months go into a "2026" folder. Empty means 10.</p>
+        </div>
+        <div class="qa-row">
+          <span class="qa-n">5</span>
+          <p class="qa-q">How to name files</p>
+          <p>Empty means "date + original name".</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>The "📬 Attachment Saver" menu doesn't appear</h3>
+      <p>You may have the original open instead of your copy. Go back to step 1.</p>
+      <p>If it still doesn't appear, the copy is still getting ready. Wait about 30 seconds and reload.</p>
+    </section>
+
+    <section>
+      <h3>Nothing gets saved</h3>
+      <p>There may be no email with an attachment in the period. Run "Set up" again and enter "30" for question 3.</p>
+    </section>
+
+    <section>
+      <h3>Two files with the same name</h3>
+      <p>Not a fault. When two emails carry attachments with the same name, a number is added so neither one is overwritten.</p>
+    </section>
+
+    <section>
+      <h3>Other notes</h3>
+      <p><strong>Please don't sort the Log sheet.</strong> The month divider rows would end up in the wrong places. Filtering is fine.</p>
+      <p>Attachments in emails you sent yourself are skipped on purpose, so that forwarding an email does not save the same file twice.</p>
+    </section>
+
+  </div>
+
+  <section class="ai" id="ai">
+    <h2 class="ai-title">🤖 Let your AI assistant walk you through it</h2>
+    <p class="ai-lead">Paste the text below into ChatGPT or any AI assistant. It will guide you one step at a time. Reply "done" to move on.</p>
+    <pre class="ai-box" id="ai-prompt">You are a guide helping me set up a tool that saves Gmail attachments to Google Drive automatically. I am not confident with computers. Give me one action per reply, in plain words. When I say "done", move to the next step. If I say I don't understand, explain it a different way.
+
+[About the tool]
+- It is a program (Apps Script) built into a Google Sheet. I copy the sheet to my own Drive and run the setup from its menu. That is all.
+- Every 15 minutes it saves attachments from my Gmail into a Drive folder I choose, with the date added to the front of each file name. Ten days after saving, files move into a month folder like "2026.09". A record of every save is kept in the sheet's "Log" tab.
+- Everything runs inside my own Google account. Nothing is sent to an outside server.
+
+[Steps]
+1. On the tool's page, click "Copy the tool to my Drive", then click "Make a copy" on the screen that appears. A copy opens in a new tab; from now on I work in that copy. I leave "Share it with the same people" unchecked.
+2. In the copy, click the menu "📬 Attachment Saver" → "Set up". If the menu is not there yet, the copy is still getting ready: wait about 30 seconds and reload.
+3. The first time, Google asks for permission: "Authorization required" → "Continue" → choose my account → a screen with a red triangle says "Google hasn't verified this app". This warning appears for every tool made by an individual; nothing is broken. Click "Advanced" at the bottom left, then the last link "Go to Gmail Attachment Auto-Save (unsafe)", then "Allow" on the next screen. The "developer" address shown is my own, because I became the owner when I made the copy.
+4. Five questions appear in turn. Leaving all of them empty and clicking OK works.
+   1) Where to save: open the folder in Drive and paste its URL. Empty creates a folder called "Gmail Attachments".
+   2) Which emails: empty means every email with an attachment. Gmail search wording (from:someone@example.com, label:name) narrows it down.
+   3) How many days back: empty means 30. The first run saves all of them, so to try with just a little, enter "1".
+   4) Days before filing into month folders: empty means 10. "0" means move when the month changes.
+   5) File naming: 1 = date + original name, 2 = date + sender + original name, 3 = original name only, 4 = date + subject + original name. 4 is handy for scans and faxes named "001.pdf".
+5. When "Setup complete" appears, click "📬 Attachment Saver" → "Save now". If attachments appear in the folder, it works. From then on it saves automatically every 15 minutes.
+
+[Common problems]
+- The "📬 Attachment Saver" menu is missing: I may have the original open instead of my copy. Open the copy. If it is still missing, wait about 30 seconds and reload.
+- "Please run Set up again" appears: run "Set up" again.
+- Nothing is saved: there may be no email with an attachment in the period. Run "Set up" again and enter "30" for question 3.
+- A company Google account cannot get past step 3: the admin may have blocked Apps Script. Try a personal Gmail account.
+- Two files with the same name: when two emails carry attachments with the same name, a number is added so neither is overwritten. This is by design.
+- Attachments in emails I sent myself are not saved: this is on purpose, to avoid saving the same file twice when forwarding.
+
+[Limits]
+- Gmail only. Outlook and other services are not supported.
+- Setup must be done on a computer, not a phone. Once running, it can be left alone.
+- Do not sort the Log sheet; the month divider rows would end up in the wrong places.
+
+Please start with the first action.</pre>
+    <div class="ai-actions">
+      <button type="button" class="ai-copy" id="ai-copy">Copy this text</button>
+      <span class="ai-status" id="ai-status" aria-live="polite"></span>
+    </div>
+  </section>
+
+  <section class="fb" id="fb">
+    <h2 class="fb-title">Feedback</h2>
+    <p class="fb-lead">Something that went wrong, something unclear, something you wish it did: one line is enough. It arrives anonymously. Please don't include names or company names.</p>
+    <form id="fb-form" autocomplete="off">
+      <div class="fb-kinds" role="radiogroup" aria-label="Type">
+        <label><input type="radio" name="kind" value="困った" checked> Something went wrong</label>
+        <label><input type="radio" name="kind" value="要望"> Request</label>
+        <label><input type="radio" name="kind" value="その他"> Other</label>
+      </div>
+      <textarea name="message" id="fb-message" rows="4" maxlength="2000" required placeholder="e.g. I got stuck at the warning screen in step 2"></textarea>
+      <input class="fb-trap" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="fb-actions">
+        <span class="fb-status" id="fb-status" aria-live="polite"></span>
+        <button type="submit" class="fb-send" id="fb-send">Send</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="page-foot">
+    <a href="/">← Backoffice Shokunin (all tools)</a>
+    <span><a href="/gmail/" style="font-weight:400">日本語版</a> · Made in Japan · Run by Backoffice Shokunin</span>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  // "What it does" open/close
+  var spec = document.getElementById('spec');
+  var toggle = document.getElementById('spec-toggle');
+  toggle.addEventListener('click', function () {
+    var open = !spec.classList.contains('open');
+    spec.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();
+
+(function () {
+  // Prompt link: scroll smoothly and flash the box
+  var aiLink = document.querySelector('.ai-link');
+  var aiBox = document.getElementById('ai');
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (aiLink && aiBox) {
+    aiLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      aiBox.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+      setTimeout(function () { aiBox.classList.remove('fb-focus'); void aiBox.offsetWidth; aiBox.classList.add('fb-focus'); }, reduced ? 0 : 500);
+    });
+  }
+
+  // Copy the prompt
+  var btn = document.getElementById('ai-copy');
+  var box = document.getElementById('ai-prompt');
+  var st  = document.getElementById('ai-status');
+  btn.addEventListener('click', function () {
+    var text = box.textContent;
+    function done() { st.textContent = 'Copied. Paste it into your AI assistant.'; setTimeout(function () { st.textContent = ''; }, 4000); }
+    function fallback() {
+      var range = document.createRange(); range.selectNodeContents(box);
+      var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+      st.textContent = 'Text selected. Press Ctrl+C (⌘+C on Mac) to copy.';
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, fallback);
+    } else { fallback(); }
+  });
+
+  var FB_ENDPOINT = "https://script.google.com/macros/s/AKfycbynL6SJnvCbeGCnfh_oXGxxWhh7i775uIA6PA9exuBwRXlJg002a0OjiGPZaPnRy-HF/exec";
+  var form = document.getElementById('fb-form');
+  var status = document.getElementById('fb-status');
+  var send = document.getElementById('fb-send');
+  function say(text, cls) { status.textContent = text; status.className = 'fb-status' + (cls ? ' ' + cls : ''); }
+
+  // "Feedback" (top right): scroll to the form, flash it, focus the box
+  var jump = document.getElementById('fb-jump');
+  var fbBox = document.getElementById('fb');
+  jump.addEventListener('click', function (e) {
+    e.preventDefault();
+    fbBox.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+    setTimeout(function () {
+      fbBox.classList.remove('fb-focus');
+      void fbBox.offsetWidth;
+      fbBox.classList.add('fb-focus');
+      document.getElementById('fb-message').focus({ preventScroll: true });
+    }, reduced ? 0 : 500);
+  });
+
+  // "Back to top" (bottom right)
+  var toTop = document.getElementById('to-top');
+  function updateToTop() { toTop.classList.toggle('show', (window.scrollY || document.documentElement.scrollTop) >= 400); }
+  window.addEventListener('scroll', updateToTop, { passive: true });
+  updateToTop();
+  toTop.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' });
+  });
+
+  // Hide the Feedback button while the form is on screen
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      jump.classList.toggle('hide', entries[0].isIntersecting);
+    }, { threshold: 0.25 }).observe(fbBox);
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var fd = new FormData(form);
+    if (String(fd.get('message') || '').trim().length < 5) { say('Could you add a little more detail?', 'ng'); return; }
+    var last = 0; try { last = +localStorage.getItem('gmail-fb-last') || 0; } catch (err) {}
+    if (Date.now() - last < 60000) { say('Please wait a moment before sending again.', 'ng'); return; }
+    fd.append('page', location.href.split('#')[0].slice(0, 200));
+    send.disabled = true; say('Sending…');
+    fetch(FB_ENDPOINT, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(fd) }).then(function () {
+      try { localStorage.setItem('gmail-fb-last', String(Date.now())); } catch (err) {}
+      say('Received. Thank you!', 'ok'); form.reset();
+    }).catch(function () {
+      say('Could not send. Please try again later.', 'ng');
+    }).finally(function () { send.disabled = false; });
+  });
+})();
+</script>
