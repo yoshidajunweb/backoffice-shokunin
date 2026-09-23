@@ -715,7 +715,7 @@
       <div><dt>Renames files</dt>
       <dd>The date goes in front, like "2026-09-11_invoice.pdf". You can also add the sender or the subject. Scans and faxes named "001.pdf" become easy to tell apart.</dd></div>
       <div><dt>Files things away by month</dt>
-      <dd>Ten days after saving, a file moves into a month folder like "2026.09". Only recent files stay at the top, so the folder stays easy to browse. When the year changes, last year's months are grouped into a year folder.</dd></div>
+      <dd>After the number of days you choose, a file moves into a month folder like "2026.09". Only recent files stay at the top, so the folder stays easy to browse. When the year changes, last year's months are grouped into a year folder.</dd></div>
       <div><dt>Keeps a log</dt>
       <dd>When, from whom, from which email, and what was saved: one row each in a spreadsheet. Click the subject to open the email, click the file name to open the file.</dd></div>
       <div><dt>Never saves twice</dt>
@@ -859,7 +859,7 @@
         <div class="qa-row">
           <span class="qa-n">4</span>
           <p class="qa-q">Days before filing away</p>
-          <p>After this many days a file moves into a month folder like "2026.09". When the year changes, last year's months go into a "2026" folder. Empty means 10.</p>
+          <p>After the number of days you enter, a file moves into a month folder like "2026.09". You can choose any number of days. When the year changes, last year's months go into a "2026" folder. Empty means 10.</p>
         </div>
         <div class="qa-row">
           <span class="qa-n">5</span>
@@ -900,7 +900,7 @@
 
 [About the tool]
 - It is a program (Apps Script) built into a Google Sheet. I copy the sheet to my own Drive and run the setup from its menu. That is all.
-- Every 15 minutes it saves attachments from my Gmail into a Drive folder I choose, with the date added to the front of each file name. Ten days after saving, files move into a month folder like "2026.09". A record of every save is kept in the sheet's "Log" tab.
+- Every 15 minutes it saves attachments from my Gmail into a Drive folder I choose, with the date added to the front of each file name. After the number of days I choose, files move into a month folder like "2026.09". A record of every save is kept in the sheet's "Log" tab.
 - Everything runs inside my own Google account. Nothing is sent to an outside server.
 
 [Steps]
@@ -911,7 +911,7 @@
    1) Where to save: open the folder in Drive and paste its URL. Empty creates a folder called "Gmail Attachments".
    2) Which emails: empty means every email with an attachment. Gmail search wording (from:someone@example.com, label:name) narrows it down.
    3) How many days back: empty means 30. The first run saves all of them, so to try with just a little, enter "1".
-   4) Days before filing into month folders: empty means 10. "0" means move when the month changes.
+   4) Days before filing into month folders: enter the number of days to choose when files move. Empty means 10. "0" means move when the month changes.
    5) File naming: 1 = date + original name, 2 = date + sender + original name, 3 = original name only, 4 = date + subject + original name. 4 is handy for scans and faxes named "001.pdf".
 5. When "Setup complete" appears, click "📬 Attachment Saver" → "Save now". If attachments appear in the folder, it works. From then on it saves automatically every 15 minutes.
 
