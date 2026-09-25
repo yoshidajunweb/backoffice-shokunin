@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T12:37:57.802Z",
+  "updated": "2026-09-25T00:14:11.293Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 106,
-      "added": 11,
+      "count": 94,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 19,
-      "added": 0,
+      "count": 10,
+      "added": 4,
       "ok": true
     },
     {
@@ -249,10 +249,9 @@
       "bureau": null,
       "url": "https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml",
       "type": "rss",
-      "count": 0,
+      "count": 1,
       "added": 0,
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true
     },
     {
       "id": "chiba-koufuku",
@@ -263,7 +262,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -323,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -606,6 +605,48 @@
       "firstSeen": "2026-09-24"
     },
     {
+      "title": "電気通信番号計画の一部を変更する告示案に対する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210780&Mode=0",
+      "date": "2026-09-24",
+      "desc": "案の公示日：2026/09/25受付締切日時：2026/10/26 23:59カテゴリー：電気通信問合せ先（所管省庁・部局名等）：総務省総合通信基盤局電気通信事業部 電気通信技術システム課番号企画室 電話：03-5253-5859",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-25"
+    },
+    {
+      "title": "「飼料及び飼料添加物の成分規格等に関する省令の一部改正案」についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004412&Mode=0",
+      "date": "2026-09-24",
+      "desc": "案の公示日：2026/09/25受付締切日時：2026/10/25 23:59カテゴリー：農業問合せ先（所管省庁・部局名等）：農林水産省消費・安全局畜水産安全管理課 電話：03-3502-8111（内線4546）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-25"
+    },
+    {
+      "title": "社会福祉法施行令等の一部を改正する政令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260195&Mode=0",
+      "date": "2026-09-24",
+      "desc": "案の公示日：2026/09/25受付締切日時：2026/10/25 00:00カテゴリー：社会福祉問合せ先（所管省庁・部局名等）：厚生労働省社会・援護局地域福祉課 03-5253-1111",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-25"
+    },
+    {
       "title": "「水道水中における農薬類の目標値等見直し（案）」に関する御意見の募集について",
       "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260058&Mode=0",
       "date": "2026-09-23",
@@ -650,6 +691,20 @@
         "介護"
       ],
       "firstSeen": "2026-09-24"
+    },
+    {
+      "title": "「航空機による爆発物等の輸送基準等を定める告示」及び関係通達の一部改正案に関する意見公募について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155261233&Mode=0",
+      "date": "2026-09-23",
+      "desc": "案の公示日：2026/09/24受付締切日時：2026/10/27 00:00カテゴリー：航空問合せ先（所管省庁・部局名等）：国土交通省航空局安全部安全政策課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-25"
     },
     {
       "title": "「第304回原子爆弾被爆者医療分科会」の開催について",
