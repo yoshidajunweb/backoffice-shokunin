@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26T12:08:05.208Z",
+  "updated": "2026-09-27T00:09:56.572Z",
   "sources": [
     {
       "id": "wamnet",
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 12,
-      "added": 0,
+      "count": 9,
+      "added": 2,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -631,6 +631,34 @@
         "労務"
       ],
       "firstSeen": "2026-09-26"
+    },
+    {
+      "title": "建築基準法施行規則の一部を改正する省令案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260722&Mode=0",
+      "date": "2026-09-25",
+      "desc": "案の公示日：2026/09/26受付締切日時：2026/10/26 17:00カテゴリー：建築、住宅問合せ先（所管省庁・部局名等）：国土交通省住宅局建築指導課・参事官（建築企画担当）付",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-27"
+    },
+    {
+      "title": "建築基準法施行令の一部を改正する政令の施行に伴う関係告示等の制定及び改正案に関する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260723&Mode=0",
+      "date": "2026-09-25",
+      "desc": "案の公示日：2026/09/26受付締切日時：2026/10/26 17:00カテゴリー：建築、住宅問合せ先（所管省庁・部局名等）：国土交通省住宅局建築指導課・参事官（建築企画担当）付",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-27"
     },
     {
       "title": "「第58回労働政策審議会」を開催します（開催案内）",
