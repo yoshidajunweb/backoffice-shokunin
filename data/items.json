@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27T12:52:55.546Z",
+  "updated": "2026-09-28T00:16:33.904Z",
   "sources": [
     {
       "id": "wamnet",
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 109,
-      "added": 0,
+      "count": 95,
+      "added": 1,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -381,6 +381,20 @@
         "労務"
       ],
       "firstSeen": "2026-09-25"
+    },
+    {
+      "title": "毎月勤労統計調査ー2026（令和８）年７月分結果確報",
+      "link": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2607r/2607r.html",
+      "date": "2026-09-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-28"
     },
     {
       "title": "第４回介護保険制度における預貯金等の把握等に係る検討の場の開催について",
