@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T01:26:08.566Z",
+  "updated": "2026-09-29T13:53:02.974Z",
   "sources": [
     {
       "id": "wamnet",
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 104,
-      "added": 0,
+      "count": 103,
+      "added": 13,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 5,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 4,
       "ok": true
     },
     {
@@ -364,6 +364,228 @@
     }
   ],
   "items": [
+    {
+      "title": "介護給付費等実態統計月報（令和８（2026）年６月審査分）",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/06.html",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "第217回社会保障審議会医療保険部会（ペーパーレス）の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76382.html",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "令和７（2025）年医療施設（動態）調査・病院報告の概況",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/iryosd/25/",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "労働経済動向調査（令和８(2026)年８月）の概況",
+      "link": "https://www.mhlw.go.jp/toukei/itiran/roudou/koyou/keizai/2608/",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "第268回社会保障審議会介護給付費分科会（Web会議）を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76244.html",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "第48回技能五輪国際大会(中国・上海）での 日本選手団の成績を公表します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76044.html",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "令和７年度「少子高齢社会等調査検討事業」の報告書を公表します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_75934.html",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "「令和８年版厚生労働白書」を公表します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_75936.html",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "「令和８年版 労働経済の分析」を公表します ～分析テーマは「ＡＩ等技術革新が進む中での労働市場の現状と課題」～",
+      "link": "https://www.mhlw.go.jp/stf/newpage_75700.html",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "厚生労働省関係の主な制度変更（令和８年10月）について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76324.html",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "中司大臣記者会見（令和8年9月29日）",
+      "link": "https://www.cfa.go.jp/speech/6b7e57d9",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "青少年インターネット環境整備法の在り方等に関する検討ワーキンググループ（第9回）の開催",
+      "link": "https://www.cfa.go.jp/press/e3f549f5-065b-4c1c-8e24-5ba309b90424",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "青少年インターネット環境整備法の在り方等に関する検討ワーキンググループ（第9回）の開催案内",
+      "link": "https://www.cfa.go.jp/councils/internet-kaigi/5468bf4a",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "令和8年度里親月間 10月は「里親月間」です",
+      "link": "https://www.cfa.go.jp/press/ae304a7d-0c06-4b27-9733-df3cc8772a10",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-29"
+    },
     {
       "title": "国民健康保険実態調査に関する報告システムについて",
       "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/iryouhoken/database/seido/kokuho_jittai_system.html",
@@ -712,6 +934,24 @@
       "tags": [],
       "systems": [
         "労務"
+      ],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "第４回介護保険制度における預貯金等の把握等に係る検討の場の資料について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76407.html",
+      "date": "2026-09-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
       ],
       "firstSeen": "2026-09-29"
     },
@@ -2508,6 +2748,42 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-09-19"
+    },
+    {
+      "title": "令和８年版厚生労働白書を公表します",
+      "link": "https://www.mhlw.go.jp/stf/wp/hakusyo/kousei/26/26-3.html",
+      "date": "2026-09-17",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-29"
+    },
+    {
+      "title": "令和８年版厚生労働白書を公表します",
+      "link": "https://www.mhlw.go.jp/stf/wp/hakusyo/kousei/26/index.html",
+      "date": "2026-09-17",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-29"
     },
     {
       "title": "第22回成年後見制度利用促進専門家会議について（令和8年9月25日開催予定）",
