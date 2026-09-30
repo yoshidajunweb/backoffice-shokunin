@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T01:00:10.032Z",
+  "updated": "2026-09-30T13:28:09.987Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 95,
-      "added": 1,
+      "count": 111,
+      "added": 15,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 7,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -189,8 +189,8 @@
       "bureau": null,
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
-      "count": 8,
-      "added": 0,
+      "count": 9,
+      "added": 1,
       "ok": true
     },
     {
@@ -201,8 +201,8 @@
       "bureau": null,
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
-      "count": 9,
-      "added": 0,
+      "count": 10,
+      "added": 1,
       "ok": true
     },
     {
@@ -213,8 +213,8 @@
       "bureau": null,
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 3,
-      "added": 0,
+      "count": 4,
+      "added": 1,
       "ok": true
     },
     {
@@ -226,7 +226,7 @@
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
       "count": 2,
-      "added": 0,
+      "added": 2,
       "ok": true
     },
     {
@@ -237,8 +237,8 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 36,
-      "added": 0,
+      "count": 37,
+      "added": 2,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 5,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -377,6 +377,343 @@
       "tags": [
         "訪問看護"
       ],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "地域ブロック別の職種別平均手数料及び離職率について",
+      "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/36163_00001.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "令和７（2025）年 人口動態統計（確定数）の概況",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/index.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "令和８年度保健師活動領域調査（領域調査）の結果について",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/hoken/katsudou/09/ryouikichousa_r08.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "最近の調剤医療費（電算処理分）の動向 令和8年度4～5月号",
+      "link": "https://www.mhlw.go.jp/topics/medias/c-med/2026/05/",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "最近の歯科医療費（電算処理分）の動向 令和8年度4～5月号",
+      "link": "https://www.mhlw.go.jp/topics/medias/shika_iryou/2026/05/",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "最近の医科医療費（電算処理分）の動向 令和8年度4～5月号",
+      "link": "https://www.mhlw.go.jp/topics/medias/ika_iryou/2026/05/",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "最近の医療費の動向-MEDIAS-令和8年度4～5月号",
+      "link": "https://www.mhlw.go.jp/topics/medias/month/26/04-05.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "石綿対策に係る全国一斉パトロールを実施します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76403.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "医療施設動態調査（令和8(2026)年7月末概数）",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/iryosd/m26/is2607.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "令和７（2025）年度 介護給付費等実態統計の概況(令和７（2025）年5月審査分～令和８（2026）年4月審査分）",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/25/index.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "第５回ゲノム編集技術等を用いたヒト受精胚等の取扱い等に関する合同会議（第13回ゲノム編集技術等を用いたヒト受精胚等の臨床利用のあり方に関する専門委員会、第26回ヒト受精胚を用いる遺伝性・先天性疾患研究に関する専門委員会）の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76378.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "第５回ゲノム編集技術等を用いたヒト受精胚等の取扱い等に関する合同会議（第13回ゲノム編集技術等を用いたヒト受精胚等の臨床利用のあり方に関する専門委員会、第26回ヒト受精胚を用いる遺伝性・先天性疾患研究に関する専門委員会）の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76328.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "おたふくかぜワクチンについての議論のまとめ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76495.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "営繕技官募集案内【係長級】",
+      "link": "https://www.mhlw.go.jp/general/saiyo/eizen_kakariin.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "一都三県（埼玉県、千葉県、東京都、神奈川県）共同で「障害者用駐車場の適正利用に向けた普及啓発活動」を実施します",
+      "link": "https://www.pref.kanagawa.jp/docs/n7j/prs/r6683892.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "神奈川県",
+      "sourceId": "kanagawa",
+      "region": "県",
+      "pref": "神奈川県",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "「大阪府高齢者大学校」2027年度（令和9年度）受講生の募集",
+      "link": "https://www.pref.osaka.lg.jp/hodo/fumin/o090090/prs_50952.html",
+      "date": "2026-09-30",
+      "desc": "大阪府高齢者大学校では令和9年度（2027年度）の受講生を募集します。通常講座は60科目（歴史、語学、教養、自然、美術、健康、音楽、探訪など）。",
+      "source": "大阪府",
+      "sourceId": "osaka",
+      "region": "県",
+      "pref": "大阪府",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "令和8年度愛知県訪問介護サービス提供体制確保支援事業費補助金の受付を開始しました",
+      "link": "https://www.pref.aichi.jp/soshiki/korei/homonkaigo.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "愛知県",
+      "sourceId": "aichi",
+      "region": "県",
+      "pref": "愛知県",
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護",
+        "補助金"
+      ],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "第45回障害者作品即売会「福祉の店」の出店者を募集します",
+      "link": "https://www.pref.aichi.jp/soshiki/shogai/45-fukushinomise.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "愛知県",
+      "sourceId": "aichi",
+      "region": "県",
+      "pref": "愛知県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "旧優生保護法問題の全面解決に向けた協議（第3回）の会議資料",
+      "link": "https://www.cfa.go.jp/councils/kyuyusei-zemmeikaiketsu/0899e4c0",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "こども家庭審議会障害児支援部会（第21回）の議事概要",
+      "link": "https://www.cfa.go.jp/councils/shingikai/shougaiji_shien/c1010d3b",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "障害児通所"
+      ],
+      "systems": [
+        "障害"
+      ],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "令和8年健やか親子21内閣府特命担当大臣表彰の受賞者発表",
+      "link": "https://www.cfa.go.jp/press/ad6f3159-43eb-48b2-a6c3-40dc43f521e9",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "第16回ヒト受精胚等を用いる生殖補助医療研究等に関する専門委員会の開催について",
+      "link": "https://www.cfa.go.jp/press/ab4c3ae4-ba86-4d5a-8ba7-c3f7ea42908c",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "第19回人工妊娠中絶一時金認定審査部会の審査結果",
+      "link": "https://www.cfa.go.jp/press/2020862d-cd0d-4ae3-9ba9-6d93e3ba2a2f",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
       "systems": [],
       "firstSeen": "2026-09-30"
     },
@@ -673,6 +1010,38 @@
       "pref": null,
       "bureau": null,
       "tags": [],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "一都三県共同で「障害者用駐車場の適正利用に向けた普及啓発活動」を実施します",
+      "link": "https://www.fukushi.metro.tokyo.lg.jp/information/press/2026/9/093002",
+      "date": "2026-09-29",
+      "desc": "東京都福祉局の９月30日 一都三県共同で「障害者用駐車場の適正利用に向けた普及啓発活動」を実施します(9月)です。",
+      "source": "東京都福祉局 報道発表",
+      "sourceId": "tokyo",
+      "region": "県",
+      "pref": "東京都",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "福岡県医療的ケア児・者家族レスパイト支援事業のご案内",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/iryoutekikeajizaitakuresupaitojigyou.html",
+      "date": "2026-09-29",
+      "desc": "",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
       "systems": [],
       "firstSeen": "2026-09-30"
     },
@@ -3144,6 +3513,24 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-09-28"
+    },
+    {
+      "title": "10月は年次有給休暇取得促進期間です。",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76262.html",
+      "date": "2026-09-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-09-30"
     },
     {
       "title": "風しん最新情報（令和8年9月15日更新）",
@@ -7218,6 +7605,22 @@
         "医療"
       ],
       "firstSeen": "2026-09-04"
+    },
+    {
+      "title": "障がいのある児童等に対する療育支援について",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/syougaiziryouikushien.html",
+      "date": "2026-08-31",
+      "desc": "療育 障がい児",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-09-30"
     },
     {
       "title": "「介護保険資格確認等WEBサービスとの連携におけるAPI仕様書（第1.0版）」について",
