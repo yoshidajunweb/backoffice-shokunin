@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T14:19:58.054Z",
+  "updated": "2026-10-02T01:16:10.984Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 4,
+      "added": 3,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 119,
-      "added": 12,
+      "count": 113,
+      "added": 2,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 16,
-      "added": 0,
+      "count": 20,
+      "added": 7,
       "ok": true
     },
     {
@@ -118,7 +118,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/tohoku/news/news.xml",
       "type": "rss",
       "count": 4,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -202,7 +202,7 @@
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
       "count": 11,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -225,8 +225,8 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 4,
-      "added": 2,
+      "count": 5,
+      "added": 1,
       "ok": true
     },
     {
@@ -238,7 +238,7 @@
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
       "count": 37,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -364,6 +364,20 @@
     }
   ],
   "items": [
+    {
+      "title": "【障害者就労施設向け】工賃向上研修・アドバイザー派遣の参加者を募集します",
+      "link": "https://www.pref.aichi.jp/soshiki/shogai/kouchinseminar.html",
+      "date": "2026-10-02",
+      "desc": "工賃向上 工賃 賃金向上 賃金 アドバイザー 経営強化 経営改善",
+      "source": "愛知県",
+      "sourceId": "aichi",
+      "region": "県",
+      "pref": "愛知県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
     {
       "title": "採用情報（任期付職員（肝炎対策専門官又は主査）募集情報）",
       "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/ninkituki/ninki-kanensenmonkan.html",
@@ -644,6 +658,108 @@
         "補助金"
       ],
       "firstSeen": "2026-10-01"
+    },
+    {
+      "title": "風しん最新情報（令和8年10月1日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22909&ct=030100130&from=rss",
+      "date": "2026-10-01",
+      "desc": "●概略風しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "第48回 匿名医療情報等の提供に関する専門委員会（令和8年10月5日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22912&ct=010010265&from=rss",
+      "date": "2026-10-01",
+      "desc": "●主な議題個別審査（非公開）※詳細は以下のリンクからご参照ください。（会議資料）：第回 匿名医療情報等の提供に関する専門...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "麻しん最新情報（令和8年10月1日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22910&ct=030100110&from=rss",
+      "date": "2026-10-01",
+      "desc": "●概略麻しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "第92回労働政策審議会雇用環境・均等分科会の資料を掲載しました。",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76543.html",
+      "date": "2026-10-01",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "一般職業紹介状況(令和8年8月分)について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76397.html",
+      "date": "2026-10-01",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "現場技術業務民間競争入札実施要項案及び発注者支援業務（監督支援業務）民間競争入札実施要項案についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004414&Mode=0",
+      "date": "2026-10-01",
+      "desc": "案の公示日：2026/10/02受付締切日時：2026/10/15 23:59カテゴリー：農業問合せ先（所管省庁・部局名等）：農林水産省農村振興局整備部設計課施工企画調整室 電話：03-3502-8111（内線5513）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "「指定自動車教習所等の教習の基準の細目に関する規則及び指定自動車教習所等の教習の基準の細目に関する規則の一部を改正する規則の一部を改正する規則案」に対する意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=120260028&Mode=0",
+      "date": "2026-10-01",
+      "desc": "案の公示日：2026/10/02受付締切日時：2026/11/01 00:00カテゴリー：警察問合せ先（所管省庁・部局名等）：警察庁交通局運転免許課 電話：03-3581-0141（内線5337）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
     },
     {
       "title": "令和７年度 看護職員の資質の向上に係る研修事業等の実施状況",
@@ -1265,6 +1381,76 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-01"
+    },
+    {
+      "title": "内閣府・財務省・農林水産省関係経済施策を一体的に講ずることによる安全保障の確保の推進に関する法律に基づく特定社会基盤事業者の指定等に関する命令の一部を改正する命令案についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004415&Mode=0",
+      "date": "2026-09-30",
+      "desc": "案の公示日：2026/10/01受付締切日時：2026/10/31 12:00カテゴリー：農業問合せ先（所管省庁・部局名等）：農林水産省経営局金融調整課 電話：03-3502-8111（内線5247）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "「地方税法施行規則附則第６条第30 項に基づく国土交通大臣の証明について」及び「申請書兼証明書」の案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260407&Mode=0",
+      "date": "2026-09-30",
+      "desc": "案の公示日：2026/10/01受付締切日時：2026/10/30 18:00カテゴリー：都市計画問合せ先（所管省庁・部局名等）：国土交通省 都市局 まちづくり推進課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "文化審議会文化財分科会企画調査会による答申（素案）に関する意見募集の実施について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=185001510&Mode=0",
+      "date": "2026-09-30",
+      "desc": "案の公示日：2026/10/01受付締切日時：2026/10/30 23:59カテゴリー：文化問合せ先（所管省庁・部局名等）：文化資源政策・記念物課企画係（9653)",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "「経済施策を一体的に講ずることによる安全保障の確保の推進に関する法律に基づく特定社会基盤事業者の指定等に関する内閣府令の一部を改正する内閣府令（案）」等の公表について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=225026066&Mode=0",
+      "date": "2026-09-30",
+      "desc": "案の公示日：2026/10/01受付締切日時：2026/10/31 12:00カテゴリー：金融、保険問合せ先（所管省庁・部局名等）：金融庁 Tel 03-3506-6000（代表） 企画市場局総務課調査室（内線3857、3647）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "経済産業省関係経済施策を一体的に講ずることによる安全保障の確保の推進に関する法律に基づく特定社会基盤事業者等に関する省令の一部を改正する省令（案）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320036&Mode=0",
+      "date": "2026-09-30",
+      "desc": "案の公示日：2026/10/01受付締切日時：2026/10/31 23:59カテゴリー：その他問合せ先（所管省庁・部局名等）：経済産業省貿易経済安全保障局経済安全保障政策課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
     },
     {
       "title": "介護給付費等実態統計月報（令和８（2026）年６月審査分）",
