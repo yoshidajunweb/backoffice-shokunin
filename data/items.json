@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T01:16:10.984Z",
+  "updated": "2026-10-02T13:41:57.133Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 113,
-      "added": 2,
+      "count": 119,
+      "added": 4,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 20,
-      "added": 7,
+      "added": 0,
       "ok": true
     },
     {
@@ -117,8 +117,8 @@
       "bureau": "東北",
       "url": "https://kouseikyoku.mhlw.go.jp/tohoku/news/news.xml",
       "type": "rss",
-      "count": 4,
-      "added": 0,
+      "count": 5,
+      "added": 2,
       "ok": true
     },
     {
@@ -189,8 +189,8 @@
       "bureau": null,
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
-      "count": 9,
-      "added": 0,
+      "count": 10,
+      "added": 1,
       "ok": true
     },
     {
@@ -226,7 +226,7 @@
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -237,8 +237,8 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 37,
-      "added": 0,
+      "count": 38,
+      "added": 1,
       "ok": true
     },
     {
@@ -249,8 +249,8 @@
       "bureau": null,
       "url": "https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml",
       "type": "rss",
-      "count": 3,
-      "added": 0,
+      "count": 4,
+      "added": 1,
       "ok": true
     },
     {
@@ -273,8 +273,8 @@
       "bureau": null,
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 4,
-      "added": 0,
+      "count": 3,
+      "added": 1,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -373,6 +373,78 @@
       "sourceId": "aichi",
       "region": "県",
       "pref": "愛知県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "総合職（化学・生物・薬学）（薬系技官）",
+      "link": "https://www.mhlw.go.jp/general/saiyo/kokka1/yakugaku.html",
+      "date": "2026-10-02",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "ロシア連邦政府等から提供された抑留者に関する資料を日本側の資料と照合し、抑留中に死亡した者の個人を特定しました",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76250.html",
+      "date": "2026-10-02",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "「介護のしごと職場バス見学会」を開催します！（10/24、11/14）",
+      "link": "https://www.pref.hokkaido.lg.jp/hf/khf/jinzai/271635.html",
+      "date": "2026-10-02",
+      "desc": "",
+      "source": "北海道（保健福祉部）",
+      "sourceId": "hokkaido",
+      "region": "県",
+      "pref": "北海道",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "第10回障害のある人もない人も共に暮らしやすい千葉県づくり推進会議の開催について",
+      "link": "https://www.pref.chiba.lg.jp/shoufuku/shingikai/suishin/kaisai.html",
+      "date": "",
+      "desc": "",
+      "source": "千葉県",
+      "sourceId": "chiba",
+      "region": "県",
+      "pref": "千葉県",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "中司大臣記者会見（令和8年10月2日）",
+      "link": "https://www.cfa.go.jp/speech/9a360866",
+      "date": "2026-10-02",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
       "bureau": null,
       "tags": [],
       "systems": [],
@@ -756,6 +828,20 @@
       "sourceId": "egov-pc",
       "region": "国",
       "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "介護支援専門員証更新交付申請書の提出",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/keamanekoushinnkoufu.html",
+      "date": "2026-10-01",
+      "desc": "",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
       "bureau": null,
       "tags": [],
       "systems": [],
@@ -1453,6 +1539,48 @@
       "firstSeen": "2026-10-02"
     },
     {
+      "title": "初診料及び外来診療料の注2、注3掲げる報告について",
+      "link": "https://kouseikyoku.mhlw.go.jp/tohoku/shinsei/shido_kansa/sonota/syoshinn2-3.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "東北厚生局",
+      "sourceId": "kk-tohoku",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "東北",
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "妥結率等の報告について",
+      "link": "https://kouseikyoku.mhlw.go.jp/tohoku/shinsei/shido_kansa/sonota/26-daketsu.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "東北厚生局",
+      "sourceId": "kk-tohoku",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "東北",
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "2026社会福祉の手引を発行",
+      "link": "https://www.fukushi.metro.tokyo.lg.jp/information/press/2026/10/100117",
+      "date": "2026-09-30",
+      "desc": "東京都福祉局の10月１日 2026社会福祉の手引を発行(10月)です。",
+      "source": "東京都福祉局 報道発表",
+      "sourceId": "tokyo",
+      "region": "県",
+      "pref": "東京都",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
+    },
+    {
       "title": "介護給付費等実態統計月報（令和８（2026）年６月審査分）",
       "link": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/06.html",
       "date": "2026-09-29",
@@ -2099,6 +2227,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-09-30"
+    },
+    {
+      "title": "「第２回 創薬力向上のための官民協議会 施策検討・推進部会」を開催します（開催案内）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76402.html",
+      "date": "2026-09-28",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-02"
     },
     {
       "title": "毎月勤労統計調査ー2026（令和８）年７月分結果確報",
@@ -3564,6 +3706,24 @@
       ],
       "systems": [],
       "firstSeen": "2026-09-28"
+    },
+    {
+      "title": "第60回労働政策審議会人材開発分科会（オンライン併用）の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76345.html",
+      "date": "2026-09-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-02"
     },
     {
       "title": "第63回 障害福祉サービス等報酬改定検討チーム（令和8年9月24日開催予定）",
