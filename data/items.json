@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T13:41:57.133Z",
+  "updated": "2026-10-03T00:53:55.367Z",
   "sources": [
     {
       "id": "wamnet",
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 119,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 20,
-      "added": 0,
+      "count": 21,
+      "added": 3,
       "ok": true
     },
     {
@@ -118,7 +118,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/tohoku/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -190,7 +190,7 @@
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
       "count": 10,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -238,7 +238,7 @@
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
       "count": 38,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -250,7 +250,7 @@
       "url": "https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml",
       "type": "rss",
       "count": 4,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -274,7 +274,7 @@
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
       "count": 3,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -449,6 +449,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "国家社会機能継続性確保施策及び副首都の整備に係る施策の推進に関する法律施行令等（案）に関する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=060261003&Mode=0",
+      "date": "2026-10-02",
+      "desc": "案の公示日：2026/10/03受付締切日時：2026/10/16 23:59カテゴリー：地方自治問合せ先（所管省庁・部局名等）：内閣官房地域未来戦略本部事務局副首都整備等推進室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-03"
     },
     {
       "title": "採用情報（任期付職員（肝炎対策専門官又は主査）募集情報）",
@@ -846,6 +860,34 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "二酸化炭素の貯留事業に関する法律に基づく貯留事業の実施に係るガイドライン（案）に対する意見公募",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340011&Mode=0",
+      "date": "2026-10-01",
+      "desc": "案の公示日：2026/10/02受付締切日時：2026/10/31 23:59カテゴリー：工業問合せ先（所管省庁・部局名等）：経済産業省資源エネルギー庁資源・燃料部燃料環境適合利用推進課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-03"
+    },
+    {
+      "title": "二酸化炭素の貯留事業に関する法律に基づく経済産業大臣の処分に係る審査基準等の一部を改正する訓令案に対する意見公募",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340010&Mode=0",
+      "date": "2026-10-01",
+      "desc": "案の公示日：2026/10/02受付締切日時：2026/10/31 23:59カテゴリー：工業問合せ先（所管省庁・部局名等）：経済産業省資源エネルギー庁資源・燃料部燃料環境適合利用推進課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-03"
     },
     {
       "title": "令和７年度 看護職員の資質の向上に係る研修事業等の実施状況",
