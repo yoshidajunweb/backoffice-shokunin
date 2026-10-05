@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T00:24:21.418Z",
+  "updated": "2026-10-05T15:42:52.097Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 3,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 119,
-      "added": 0,
+      "count": 100,
+      "added": 6,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 6,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -141,7 +141,7 @@
       "bureau": "近畿",
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
-      "count": 4,
+      "count": 5,
       "added": 1,
       "ok": true
     },
@@ -189,7 +189,7 @@
       "bureau": null,
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
-      "count": 10,
+      "count": 9,
       "added": 0,
       "ok": true
     },
@@ -237,8 +237,8 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 40,
-      "added": 2,
+      "count": 38,
+      "added": 0,
       "ok": true
     },
     {
@@ -249,7 +249,7 @@
       "bureau": null,
       "url": "https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml",
       "type": "rss",
-      "count": 4,
+      "count": 3,
       "added": 0,
       "ok": true
     },
@@ -273,7 +273,7 @@
       "bureau": null,
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 3,
+      "count": 2,
       "added": 0,
       "ok": true
     },
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -365,6 +365,98 @@
   ],
   "items": [
     {
+      "title": "関係法令、その他関係通知等",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76430.html",
+      "date": "2026-10-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-05"
+    },
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76586.html",
+      "date": "2026-10-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-05"
+    },
+    {
+      "title": "WHOとの共同プレスリリースを公表しました",
+      "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000120172.html",
+      "date": "2026-10-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-05"
+    },
+    {
+      "title": "第78回厚生科学審議会予防接種・ワクチン分科会予防接種基本方針部会の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76200.html",
+      "date": "2026-10-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-05"
+    },
+    {
+      "title": "令和８年度 薬事功労者厚生労働大臣表彰を行います",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76394.html",
+      "date": "2026-10-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-05"
+    },
+    {
+      "title": "「第21回若年者ものづくり競技大会」における選手表彰の追加について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_75929.html",
+      "date": "2026-10-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-05"
+    },
+    {
       "title": "無人航空機に係る安定供給確保を図るための取組方針の改正案に対する意見公募",
       "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320035&Mode=0",
       "date": "2026-10-04",
@@ -401,6 +493,55 @@
       "sourceId": "fukuoka",
       "region": "県",
       "pref": "福岡県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-05"
+    },
+    {
+      "title": "中央社会保険医療協議会の開催について（令和8年10月7日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22916&ct=070010030&from=rss",
+      "date": "2026-10-04",
+      "desc": "●傍聴等について （中央社会保険医療協議会動画チャンネルにて実施）において、下記の題名にて開催日時より配信予定となってお...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "医療",
+        "労務"
+      ],
+      "firstSeen": "2026-10-05"
+    },
+    {
+      "title": "介護保険最新情報Vol.1545（PDF：558KB）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/1005093222401/ksvol.1545.pdf?from=rss",
+      "date": "2026-10-04",
+      "desc": "...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-05"
+    },
+    {
+      "title": "第158回 先進医療会議（令和8年10月9日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22917&ct=070010030&from=rss",
+      "date": "2026-10-04",
+      "desc": "●主な議題先進医療Ｂに係る新規技術の科学的評価等について新規技術（月受理分）の先進医療Ａ又は先進医療Ｂへの振り分けについ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
       "bureau": null,
       "tags": [],
       "systems": [],
@@ -14915,6 +15056,24 @@
       "systems": [],
       "pref": "茨城県",
       "bureau": null
+    },
+    {
+      "title": "施設基準に係る年間実績等の報告の取扱いについて",
+      "link": "https://kouseikyoku.mhlw.go.jp/kinki/newpage_00292.html",
+      "date": "2021-03-03",
+      "desc": "",
+      "source": "近畿厚生局",
+      "sourceId": "kk-kinki",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "近畿",
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-10-05"
     },
     {
       "title": "「WAM.NET（独立行政法人福祉医療機構HP)」（外部サイトへリンク）",
