@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04T13:05:53.042Z",
+  "updated": "2026-10-05T00:24:21.418Z",
   "sources": [
     {
       "id": "wamnet",
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 21,
-      "added": 0,
+      "count": 6,
+      "added": 1,
       "ok": true
     },
     {
@@ -141,8 +141,8 @@
       "bureau": "近畿",
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
-      "count": 5,
-      "added": 0,
+      "count": 4,
+      "added": 1,
       "ok": true
     },
     {
@@ -237,8 +237,8 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 38,
-      "added": 0,
+      "count": 40,
+      "added": 2,
       "ok": true
     },
     {
@@ -364,6 +364,48 @@
     }
   ],
   "items": [
+    {
+      "title": "無人航空機に係る安定供給確保を図るための取組方針の改正案に対する意見公募",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320035&Mode=0",
+      "date": "2026-10-04",
+      "desc": "案の公示日：2026/10/05受付締切日時：2026/11/03 23:59カテゴリー：産業一般問合せ先（所管省庁・部局名等）：経済産業省製造産業局航空機武器産業課次世代空モビリティ政策室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-05"
+    },
+    {
+      "title": "令和8年度介護支援専門員実務研修受講試験",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/keamaneshiken.html",
+      "date": "2026-10-04",
+      "desc": "",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-05"
+    },
+    {
+      "title": "令和８年度福岡県介護支援専門員実務研修受講試験会場等のお知らせ",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/shiken.html",
+      "date": "2026-10-04",
+      "desc": "介護支援専門員実務研修受講試験",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-05"
+    },
     {
       "title": "【障害者就労施設向け】工賃向上研修・アドバイザー派遣の参加者を募集します",
       "link": "https://www.pref.aichi.jp/soshiki/shogai/kouchinseminar.html",
@@ -1621,6 +1663,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "係長級職員（一般職相当） 採用の選考案内について",
+      "link": "https://kouseikyoku.mhlw.go.jp/kinki/newpage_00494.html",
+      "date": "2026-09-30",
+      "desc": "",
+      "source": "近畿厚生局",
+      "sourceId": "kk-kinki",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "近畿",
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-05"
     },
     {
       "title": "介護給付費等実態統計月報（令和８（2026）年６月審査分）",
