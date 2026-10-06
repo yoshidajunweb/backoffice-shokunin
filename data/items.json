@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T15:42:52.097Z",
+  "updated": "2026-10-06T02:02:08.922Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 3,
+      "added": 2,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 100,
-      "added": 6,
+      "count": 103,
+      "added": 3,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 6,
-      "added": 0,
+      "count": 8,
+      "added": 6,
       "ok": true
     },
     {
@@ -237,7 +237,7 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 38,
+      "count": 37,
       "added": 0,
       "ok": true
     },
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -364,6 +364,54 @@
     }
   ],
   "items": [
+    {
+      "title": "第62回社会保障審議会生活保護基準部会 資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76589.html",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "厚生労働省 心理療法士（一般職員）採用案内",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/shinriryouhoushi.html",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "第111回社会保障審議会年金数理部会（オンラインセミナー形式）資料",
+      "link": "https://www.mhlw.go.jp/stf/shingi2/0000198131_00058.html",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-06"
+    },
     {
       "title": "関係法令、その他関係通知等",
       "link": "https://www.mhlw.go.jp/stf/newpage_76430.html",
@@ -457,6 +505,90 @@
       "firstSeen": "2026-10-05"
     },
     {
+      "title": "第78回 厚生科学審議会予防接種・ワクチン分科会予防接種基本方針部会の開催について（令和8年10月8日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22919&ct=070010010&from=rss",
+      "date": "2026-10-05",
+      "desc": "●主な議題（１）ワクチンの男性への接種に係る課題について（２）予防接種法の一部を改正する法律の成立について（報告）（３）...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "第10回 有料老人ホームにおける望ましいサービス提供のあり方に関する検討会（令和8年10月9日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22920&ct=070010010&from=rss",
+      "date": "2026-10-05",
+      "desc": "●主な議題登録制の施行に向けた対応について（まとめ）その他●厚生労働省への傍聴申込みオンライン会議の様子をにおいてライブ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "「公共サービス改革基本方針」の見直しに関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210782&Mode=0",
+      "date": "2026-10-05",
+      "desc": "案の公示日：2026/10/06受付締切日時：2026/11/04 23:59カテゴリー：経済財政政策問合せ先（所管省庁・部局名等）：総務省行政管理局公共サービス改革推進室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "日本薬局方外生薬規格2026（案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260193&Mode=0",
+      "date": "2026-10-05",
+      "desc": "案の公示日：2026/10/06受付締切日時：2026/11/05 00:00カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省医薬局医薬品審査管理課 電話：０３－５２５３－１１１１（内線２７４１）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "「水質汚濁に係る農薬登録基準値（案）」に対する御意見の募集（パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260061&Mode=0",
+      "date": "2026-10-05",
+      "desc": "案の公示日：2026/10/06受付締切日時：2026/11/05 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省水・大気環境局環境管理課農薬環境管理室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "「生活環境動植物の被害防止に係る農薬登録基準値（案）」に対する御意見の募集（パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260062&Mode=0",
+      "date": "2026-10-05",
+      "desc": "案の公示日：2026/10/06受付締切日時：2026/11/05 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省水・大気環境局環境管理課農薬環境管理室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
       "title": "無人航空機に係る安定供給確保を図るための取組方針の改正案に対する意見公募",
       "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320035&Mode=0",
       "date": "2026-10-04",
@@ -546,6 +678,34 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-05"
+    },
+    {
+      "title": "一般乗用旅客自動車運送事業標準運送約款等の一部を改正する告示案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260935&Mode=0",
+      "date": "2026-10-04",
+      "desc": "案の公示日：2026/10/05受付締切日時：2026/11/03 17:00カテゴリー：陸運問合せ先（所管省庁・部局名等）：国土交通省物流・自動車局旅客課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "道路運送車両の保安基準の細目を定める告示等の一部を改正する告示案について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260934&Mode=0",
+      "date": "2026-10-04",
+      "desc": "案の公示日：2026/10/05受付締切日時：2026/11/05 14:00カテゴリー：陸運問合せ先（所管省庁・部局名等）：国土交通省物流・自動車局車両基準・国際課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
     },
     {
       "title": "【障害者就労施設向け】工賃向上研修・アドバイザー派遣の参加者を募集します",
@@ -14665,6 +14825,20 @@
       ],
       "pref": "茨城県",
       "bureau": null
+    },
+    {
+      "title": "保険課",
+      "link": "https://kouseikyoku.mhlw.go.jp/kinki/gyomu/bu_ka/hoken/index.html",
+      "date": "2024-12-10",
+      "desc": "",
+      "source": "近畿厚生局",
+      "sourceId": "kk-kinki",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "近畿",
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
     },
     {
       "title": "令和6年度年金委員功労者厚生労働大臣表彰の伝達を行いました",
