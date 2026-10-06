@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06T02:02:08.922Z",
+  "updated": "2026-10-06T14:02:19.590Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 103,
-      "added": 3,
+      "count": 112,
+      "added": 9,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 8,
-      "added": 6,
+      "added": 0,
       "ok": true
     },
     {
@@ -106,7 +106,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/hokkaido/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -142,7 +142,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -190,7 +190,7 @@
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
       "count": 9,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -225,7 +225,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 5,
+      "count": 6,
       "added": 0,
       "ok": true
     },
@@ -285,8 +285,8 @@
       "bureau": null,
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
-      "count": 10,
-      "added": 0,
+      "count": 9,
+      "added": 2,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -410,6 +410,150 @@
       "systems": [
         "労務"
       ],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "第82回厚生科学審議会疾病対策部会臓器移植委員会 (Web会議) を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76092.html",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "第５回ゲノム編集技術等を用いたヒト受精胚等の取扱い等に関する合同会議（第13回ゲノム編集技術等を用いたヒト受精胚等の臨床利用のあり方に関する専門委員会、第26回ヒト受精胚を用いる遺伝性・先天性疾患研究に関する専門委員会） 資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76509.html",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "第68回厚生科学審議会疾病対策部会指定難病検討委員会 議事録",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76609.html",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "「人口動態統計月報（概数）」令和８（2026）年５月分",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/geppo/m2026/05.html",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "令和８年度第６回化学物質管理に係る専門家検討会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76576.html",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "第23回成年後見制度利用促進専門家会議 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76546.html",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "第212回労働政策審議会労働条件分科会 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76388.html",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "第31回キャリアコンサルタント登録制度等に関する検討会（議事録）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76596.html",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "ヒト受精胚を用いる生殖補助医療研究等に関する専門委員会（第16回）の会議情報",
+      "link": "https://www.cfa.go.jp/councils/shingikai/kagaku_gijutsu/art/1fba736a",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "中司大臣記者会見（令和8年10月6日）",
+      "link": "https://www.cfa.go.jp/speech/15435bb4",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
       "firstSeen": "2026-10-06"
     },
     {
@@ -585,6 +729,36 @@
       "pref": null,
       "bureau": null,
       "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "初診料及び外来診療料の注2、注3に規定する紹介割合等の報告が必要です",
+      "link": "https://kouseikyoku.mhlw.go.jp/hokkaido/iryo_shido/shoshin.html",
+      "date": "2026-10-05",
+      "desc": "",
+      "source": "北海道厚生局",
+      "sourceId": "kk-hokkaido",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "北海道",
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "「第42回国民文化祭」及び「第27回全国障害者芸術・文化祭」の開催概要公表",
+      "link": "https://www.fukushi.metro.tokyo.lg.jp/information/press/2026/10/100606",
+      "date": "2026-10-05",
+      "desc": "東京都福祉局の10月６日 「第42回国民文化祭」及び「第27回全国障害者芸術・文化祭」の開催概要公表(10月)です。",
+      "source": "東京都福祉局 報道発表",
+      "sourceId": "tokyo",
+      "region": "県",
+      "pref": "東京都",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
       "systems": [],
       "firstSeen": "2026-10-06"
     },
@@ -1231,6 +1405,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-03"
+    },
+    {
+      "title": "第２回法的脳死判定基準に関する作業班（Web会議）を開催します",
+      "link": "https://www.mhlw.go.jp/stf/shingi/newpage_00067.html",
+      "date": "2026-10-01",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-06"
     },
     {
       "title": "令和７年度 看護職員の資質の向上に係る研修事業等の実施状況",
