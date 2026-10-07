@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06T14:02:19.590Z",
+  "updated": "2026-10-07T01:11:51.858Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 5,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 112,
-      "added": 9,
+      "count": 116,
+      "added": 4,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 8,
-      "added": 0,
+      "count": 12,
+      "added": 4,
       "ok": true
     },
     {
@@ -69,9 +69,10 @@
       "bureau": null,
       "url": "https://www.pref.ibaraki.jp/news.xml",
       "type": "rss",
-      "count": 1,
+      "count": 0,
       "added": 0,
-      "ok": true
+      "ok": false,
+      "error": "HTTP 503"
     },
     {
       "id": "ibaraki-shofuku",
@@ -81,9 +82,10 @@
       "bureau": null,
       "url": "https://www.pref.ibaraki.jp/hokenfukushi/shofuku/jiritsu/shofuku/e/01_jigyoushomuke/08_osirase.html",
       "type": "page-list",
-      "count": 34,
+      "count": 0,
       "added": 0,
-      "ok": true
+      "ok": false,
+      "error": "HTTP 503"
     },
     {
       "id": "ibaraki-kaigo",
@@ -93,9 +95,10 @@
       "bureau": null,
       "url": "https://www.pref.ibaraki.jp/hokenfukushi/chofuku/jigyo/kaigo/index.html",
       "type": "page-list",
-      "count": 7,
+      "count": 0,
       "added": 0,
-      "ok": true
+      "ok": false,
+      "error": "HTTP 503"
     },
     {
       "id": "kk-hokkaido",
@@ -106,7 +109,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/hokkaido/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -190,7 +193,7 @@
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
       "count": 9,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -237,7 +240,7 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 37,
+      "count": 38,
       "added": 0,
       "ok": true
     },
@@ -322,7 +325,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -334,9 +337,10 @@
       "bureau": null,
       "url": "https://www.pref.ibaraki.jp/hokenfukushi/iryo/isei/20260225.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
-      "ok": true
+      "ok": false,
+      "error": "HTTP 503"
     },
     {
       "id": "ibaraki-kaigotech",
@@ -348,7 +352,8 @@
       "type": "page-list",
       "count": 0,
       "added": 0,
-      "ok": true
+      "ok": false,
+      "error": "HTTP 503"
     },
     {
       "id": "ibaraki-kaigochinage",
@@ -358,12 +363,55 @@
       "bureau": null,
       "url": "https://www.pref.ibaraki.jp/hokenfukushi/chofuku/jigyo/kaigo/r8chinageshien.html",
       "type": "page-list",
-      "count": 2,
+      "count": 0,
       "added": 0,
-      "ok": true
+      "ok": false,
+      "error": "HTTP 503"
     }
   ],
   "items": [
+    {
+      "title": "被保護者調査（令和８年７月分概数）",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/hihogosya/m2026/07.html",
+      "date": "2026-10-07",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "採用情報【きぬ川学院】：国立児童自立支援施設職員（心理療法士）の募集情報",
+      "link": "https://www.cfa.go.jp/kinugawa",
+      "date": "2026-10-07",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "採用情報【武蔵野学院】：国立児童自立支援施設職員（心理療法士）の募集情報",
+      "link": "https://www.cfa.go.jp/musashino/others",
+      "date": "2026-10-07",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
     {
       "title": "第62回社会保障審議会生活保護基準部会 資料",
       "link": "https://www.mhlw.go.jp/stf/newpage_76589.html",
@@ -555,6 +603,90 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "風しん最新情報（令和8年10月6日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22931&ct=030100130&from=rss",
+      "date": "2026-10-06",
+      "desc": "●概略風しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "第62回 社会保障審議会 生活保護基準部会（令和8年10月6日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22936&ct=010010220&from=rss",
+      "date": "2026-10-06",
+      "desc": "●主な議題・生活扶助基準の体系の検証について・児童養育加算、母子加算、冬季加算、期末一時扶助の検証方法について※詳細は以...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "第16回 こども家庭審議会 科学技術部会 ヒト受精胚を用いる生殖補助医療研究等に関する専門委員会（令和8年10月7日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22934&ct=090080225&from=rss",
+      "date": "2026-10-06",
+      "desc": "●主な議題ゲノム編集技術等を用いたヒト受精胚等の規制の在り方について ヒトゲノム編集胚等の取扱いの規制に関する法律に...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "麻しん最新情報（令和8年10月6日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22933&ct=030100110&from=rss",
+      "date": "2026-10-06",
+      "desc": "●概略麻しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "第23回成年後見制度利用促進専門家会議について（令和8年10月13日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22932&ct=070010010&from=rss",
+      "date": "2026-10-06",
+      "desc": "●主な議題（１）成年後見制度の見直し等を踏まえた適切な権利擁護支援の実施（２）成年後見制度の見直しの趣旨・内容等を踏まえ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "毎月勤労統計調査ー2026（令和8）年８月分結果速報",
+      "link": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2608p/2608p.html",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
     },
     {
       "title": "関係法令、その他関係通知等",
@@ -763,6 +895,62 @@
       "firstSeen": "2026-10-06"
     },
     {
+      "title": "人事労務マガジン 定例第192号",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76577.html",
+      "date": "2026-10-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "幼児教育WG・保育専門委員会取りまとめ（案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=141000241&Mode=0",
+      "date": "2026-10-05",
+      "desc": "案の公示日：2026/10/06受付締切日時：2026/11/05 23:59カテゴリー：社会福祉問合せ先（所管省庁・部局名等）：こども家庭庁成育局成育基盤企画課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "「電力品質確保に係る系統連系技術要件ガイドライン」改定案に対する意見公募",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340012&Mode=0",
+      "date": "2026-10-05",
+      "desc": "案の公示日：2026/10/06受付締切日時：2026/11/06 23:59カテゴリー：工業問合せ先（所管省庁・部局名等）：資源エネルギー庁 電力・ガス事業部 電力基盤整備課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "都市再生特別措置法等の一部を改正する法律の施行に伴う関係政令の整備に関する政令案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260410&Mode=0",
+      "date": "2026-10-05",
+      "desc": "案の公示日：2026/10/06受付締切日時：2026/11/05 21:00カテゴリー：都市計画問合せ先（所管省庁・部局名等）：国土交通省都市局都市計画課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
       "title": "無人航空機に係る安定供給確保を図るための取組方針の改正案に対する意見公募",
       "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320035&Mode=0",
       "date": "2026-10-04",
@@ -880,6 +1068,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "「次期学習指導要領等に向けた審議まとめ」に関するパブリック・コメント（意見公募手続）の実施について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=185001511&Mode=0",
+      "date": "2026-10-04",
+      "desc": "案の公示日：2026/10/05受付締切日時：2026/11/05 23:59カテゴリー：教育問合せ先（所管省庁・部局名等）：初等中等教育局教育教育課程課 kyokyo@mext.go.jp",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
     },
     {
       "title": "【障害者就労施設向け】工賃向上研修・アドバイザー派遣の参加者を募集します",
@@ -2828,6 +3030,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-02"
+    },
+    {
+      "title": "第２回法的脳死判定基準に関する作業班 資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76401.html",
+      "date": "2026-09-28",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
     },
     {
       "title": "毎月勤労統計調査ー2026（令和８）年７月分結果確報",
