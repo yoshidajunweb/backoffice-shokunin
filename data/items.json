@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T01:11:51.858Z",
+  "updated": "2026-10-07T14:20:00.584Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 5,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 116,
-      "added": 4,
+      "count": 121,
+      "added": 6,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 12,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -228,7 +228,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 6,
+      "count": 5,
       "added": 0,
       "ok": true
     },
@@ -265,7 +265,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -289,7 +289,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 9,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -325,7 +325,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -410,6 +410,112 @@
       "bureau": null,
       "tags": [],
       "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "厚生科学審議会感染症部会第２７回新型インフルエンザ対策に関する小委員会 ・第１２回危機対応医薬品等に関する小委員会についてを開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76638.html",
+      "date": "2026-10-07",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "厚生科学審議会 (新型インフルエンザ対策に関する小委員会)",
+      "link": "https://www.mhlw.go.jp/stf/shingi/shingi-kousei_263447_00003.html",
+      "date": "2026-10-07",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "第１７回厚生科学審議会結核部会の開催について",
+      "link": "https://www.mhlw.go.jp/stf/shingi2/0000068982_00003.html",
+      "date": "2026-10-07",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "第188回市町村セミナーの資料について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76616.html",
+      "date": "2026-10-07",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "薬事審議会 医薬品第二部会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76547.html",
+      "date": "2026-10-07",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "第38回特定石綿被害建設業務労働者等認定審査会専門委員会 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76524.html",
+      "date": "2026-10-07",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "千葉県訪問介護事業所等における安全確保対策推進事業補助金",
+      "link": "https://www.pref.chiba.lg.jp/hoken/tetsuzuki/kaigo/anzenkakuho.html",
+      "date": "",
+      "desc": "",
+      "source": "千葉県 高齢者福祉課",
+      "sourceId": "chiba-koufuku",
+      "region": "県",
+      "pref": "千葉県",
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "補助金"
+      ],
       "firstSeen": "2026-10-07"
     },
     {
