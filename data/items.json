@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T14:20:00.584Z",
+  "updated": "2026-10-08T01:32:21.299Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 3,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 121,
-      "added": 6,
+      "count": 124,
+      "added": 3,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 12,
-      "added": 0,
+      "count": 9,
+      "added": 2,
       "ok": true
     },
     {
@@ -228,7 +228,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 5,
+      "count": 4,
       "added": 0,
       "ok": true
     },
@@ -240,7 +240,7 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 38,
+      "count": 37,
       "added": 0,
       "ok": true
     },
@@ -265,7 +265,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -289,7 +289,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 9,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -325,7 +325,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -370,6 +370,48 @@
     }
   ],
   "items": [
+    {
+      "title": "世界メンタルヘルスデー JAPAN 2026 特設サイト",
+      "link": "https://www.mhlw.go.jp/kokoro/mental_health_day/",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "採用情報（期間業務職員（大臣官房会計課）募集情報",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/hijoukin/hj-daijinkanboukaikeika-kanrieiyoushi01.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "採用情報：期間業務職員の募集情報",
+      "link": "https://www.cfa.go.jp/recruitment/kikan",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
     {
       "title": "被保護者調査（令和８年７月分概数）",
       "link": "https://www.mhlw.go.jp/toukei/saikin/hw/hihogosya/m2026/07.html",
@@ -517,6 +559,64 @@
         "補助金"
       ],
       "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "第27回 厚生科学審議会 新型インフルエンザ対策に関する小委員会 ・第１２回危機対応医薬品等に関する小委員会（令和8年10月14日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22937&ct=010020210&from=rss",
+      "date": "2026-10-07",
+      "desc": "●主な議題戦略を踏まえた支援・法制度等の在り方について●厚生労働省への傍聴申込み 一般傍聴席は設けていません。 ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "インフルエンザ最新情報（令和8年10月2日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22939&ct=030100310&from=rss",
+      "date": "2026-10-07",
+      "desc": "●概略国立感染症研究所が発表するインフルエンザ流行レベルマップの最新情報を掲載しています。●概略国立感染症研究所へ移動イ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "令和８年度第５回医薬品等安全対策部会安全対策調査会 議事録",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76578.html",
+      "date": "2026-10-07",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律第四条第五項第三号の規定に基づき厚生労働大臣が指定する要指導医薬品の一部を改正する件（案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260197&Mode=0",
+      "date": "2026-10-07",
+      "desc": "案の公示日：2026/10/08受付締切日時：2026/11/07 00:00カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省医薬局医薬品審査管理課 電話：０３－５２５３－１１１１（内線２７３８）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-08"
     },
     {
       "title": "第62回社会保障審議会生活保護基準部会 資料",
@@ -795,6 +895,20 @@
       "firstSeen": "2026-10-07"
     },
     {
+      "title": "危険物船舶運送及び貯蔵規則の一部を改正する省令案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155261032&Mode=0",
+      "date": "2026-10-06",
+      "desc": "案の公示日：2026/10/07受付締切日時：2026/11/06 18:00カテゴリー：海運問合せ先（所管省庁・部局名等）：国土交通省海事局検査測度課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
+    {
       "title": "関係法令、その他関係通知等",
       "link": "https://www.mhlw.go.jp/stf/newpage_76430.html",
       "date": "2026-10-05",
@@ -1055,6 +1169,24 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "介護保険事務処理システム変更に係る参考資料（その１）（令和8年10月6日事務連絡）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22911&ct=020050010&from=rss",
+      "date": "2026-10-05",
+      "desc": "●資料（※掲載しているＰＤＦファイルの閲覧について）事務連絡厚生労働省事務連絡厚生労働省事務連絡資料１事業所番号の考え方...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-08"
     },
     {
       "title": "無人航空機に係る安定供給確保を図るための取組方針の改正案に対する意見公募",
