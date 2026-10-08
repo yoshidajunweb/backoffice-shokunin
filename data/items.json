@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08T01:32:21.299Z",
+  "updated": "2026-10-08T14:28:19.451Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 124,
-      "added": 3,
+      "count": 133,
+      "added": 9,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 9,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -192,8 +192,8 @@
       "bureau": null,
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
-      "count": 9,
-      "added": 0,
+      "count": 10,
+      "added": 1,
       "ok": true
     },
     {
@@ -216,8 +216,8 @@
       "bureau": null,
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 3,
-      "added": 0,
+      "count": 5,
+      "added": 2,
       "ok": true
     },
     {
@@ -228,7 +228,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 4,
+      "count": 3,
       "added": 0,
       "ok": true
     },
@@ -240,8 +240,8 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 37,
-      "added": 0,
+      "count": 38,
+      "added": 1,
       "ok": true
     },
     {
@@ -288,7 +288,7 @@
       "bureau": null,
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
-      "count": 9,
+      "count": 8,
       "added": 1,
       "ok": true
     },
@@ -325,7 +325,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -401,6 +401,186 @@
     {
       "title": "採用情報：期間業務職員の募集情報",
       "link": "https://www.cfa.go.jp/recruitment/kikan",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "第133回労働政策審議会労働条件分科会労災保険部会資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76665.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "第60回労働政策審議会人材開発分科会（オンライン併用）の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76663.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76658.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "第269回社会保障審議会介護給付費分科会（Web会議）を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76455.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "薬事審議会 再生医療等製品・生物由来技術部会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76385.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "令和８年度「食品衛生事業功労者厚生労働大臣表彰」の受賞者の決定について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76332.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "化学物質審査専門官の募集について",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/ninkituki/ninki-kagakubushitsushinsasenmonkan.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "第38回全国健康福祉祭埼玉大会（ねんりんピック彩の国さいたま２０２６）の開催及び美術展における厚生労働大臣賞等の決定について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76588.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "大阪府公式Webサイト及びおおさか防災ネットの自動翻訳サービスに関する障害について",
+      "link": "https://www.pref.osaka.lg.jp/hodo/fumin/o070050/prs_51095.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "大阪府",
+      "sourceId": "osaka",
+      "region": "県",
+      "pref": "大阪府",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "令和9年度大阪府障がい者委託訓練事業の実施事業者を募集します!",
+      "link": "https://www.pref.osaka.lg.jp/hodo/fumin/o110110/prs_50755.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "大阪府",
+      "sourceId": "osaka",
+      "region": "県",
+      "pref": "大阪府",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "国立きぬ川学院：国立きぬ川学院公用車の交換購入一式の入札公告",
+      "link": "https://www.cfa.go.jp/kinugawa/nyuusatu-r8",
       "date": "2026-10-08",
       "desc": "",
       "source": "こども家庭庁 新着・更新",
@@ -616,6 +796,52 @@
       "systems": [
         "労務"
       ],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "第80回ハンセン病元患者家族補償金認定審査会",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76654.html",
+      "date": "2026-10-07",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "障害者週間記念の集い ふれあいフェスティバルを開催",
+      "link": "https://www.fukushi.metro.tokyo.lg.jp/information/press/2026/10/100806",
+      "date": "2026-10-07",
+      "desc": "東京都福祉局の10月８日 障害者週間記念の集い ふれあいフェスティバルを開催(10月)です。",
+      "source": "東京都福祉局 報道発表",
+      "sourceId": "tokyo",
+      "region": "県",
+      "pref": "東京都",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-10-08"
+    },
+    {
+      "title": "その心の悩みご相談ください（精神障がい者の方やその家族のための「心の相談電話」のご案内）",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/r8kokoronosoudankazoku.html",
+      "date": "2026-10-07",
+      "desc": "",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
       "firstSeen": "2026-10-08"
     },
     {
