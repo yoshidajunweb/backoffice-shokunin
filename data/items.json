@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T01:42:14.491Z",
+  "updated": "2026-10-09T14:15:04.803Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 121,
-      "added": 1,
+      "count": 131,
+      "added": 10,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 6,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -72,7 +72,7 @@
       "count": 0,
       "added": 0,
       "ok": false,
-      "error": "HTTP 503"
+      "error": "HTTP 404"
     },
     {
       "id": "ibaraki-shofuku",
@@ -85,7 +85,7 @@
       "count": 0,
       "added": 0,
       "ok": false,
-      "error": "HTTP 503"
+      "error": "HTTP 404"
     },
     {
       "id": "ibaraki-kaigo",
@@ -98,7 +98,7 @@
       "count": 0,
       "added": 0,
       "ok": false,
-      "error": "HTTP 503"
+      "error": "HTTP 404"
     },
     {
       "id": "kk-hokkaido",
@@ -169,7 +169,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/shikoku/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -204,7 +204,7 @@
       "bureau": null,
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
-      "count": 11,
+      "count": 10,
       "added": 0,
       "ok": true
     },
@@ -217,7 +217,7 @@
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
       "count": 5,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -228,7 +228,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 3,
+      "count": 2,
       "added": 0,
       "ok": true
     },
@@ -241,7 +241,7 @@
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
       "count": 37,
-      "added": 0,
+      "added": 2,
       "ok": true
     },
     {
@@ -289,7 +289,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 8,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -325,7 +325,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -340,7 +340,7 @@
       "count": 0,
       "added": 0,
       "ok": false,
-      "error": "HTTP 503"
+      "error": "HTTP 404"
     },
     {
       "id": "ibaraki-kaigotech",
@@ -353,7 +353,7 @@
       "count": 0,
       "added": 0,
       "ok": false,
-      "error": "HTTP 503"
+      "error": "HTTP 404"
     },
     {
       "id": "ibaraki-kaigochinage",
@@ -366,10 +366,176 @@
       "count": 0,
       "added": 0,
       "ok": false,
-      "error": "HTTP 503"
+      "error": "HTTP 404"
     }
   ],
   "items": [
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76679.html",
+      "date": "2026-10-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "令和８年度（令和７年度からの繰越分）医療施設等施設整備費補助金の交付額の３回目内示について（２次募集分）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76647.html",
+      "date": "2026-10-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "第222回国会（令和８年臨時会）提出法律案",
+      "link": "https://www.mhlw.go.jp/stf/topics/bukyoku/soumu/houritu/222.html",
+      "date": "2026-10-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "第10回労働政策審議会職業安定分科会地方連携部会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76621.html",
+      "date": "2026-10-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "薬事審議会 医薬品第一部会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76600.html",
+      "date": "2026-10-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "令和８年度第９回「石綿に係る疾病の業務上外に関する検討会」を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76555.html",
+      "date": "2026-10-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "第151回脳死下での臓器提供事例に係る検証会議を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76552.html",
+      "date": "2026-10-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "第６回2040年に向けた看護職員の養成・確保の在り方に関する検討会の開催について：開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76493.html",
+      "date": "2026-10-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [],
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "ひきこもり当事者会inOSAKA2市を開催します",
+      "link": "https://www.pref.osaka.lg.jp/hodo/fumin/o090136/prs_51105.html",
+      "date": "2026-10-09",
+      "desc": "",
+      "source": "大阪府",
+      "sourceId": "osaka",
+      "region": "県",
+      "pref": "大阪府",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "介護特定技能外国人マッチング支援事業受入準備セミナー及び定着支援セミナーの開催について",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/kaigotokuteiginou-matching3.html",
+      "date": "2026-10-09",
+      "desc": "介護特定技能外国人マッチング支援事業",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "中司大臣記者会見（令和8年10月9日）",
+      "link": "https://www.cfa.go.jp/speech/841eb9e1",
+      "date": "2026-10-09",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-09"
+    },
     {
       "title": "世界メンタルヘルスデー JAPAN 2026 特設サイト",
       "link": "https://www.mhlw.go.jp/kokoro/mental_health_day/",
@@ -660,6 +826,34 @@
       "region": "国",
       "pref": null,
       "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "令和８年度 地域における医薬品提供体制等の構築・強化に係るモデル事業",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76653.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "令和8年度地域共生セミナーを開催します！",
+      "link": "https://kouseikyoku.mhlw.go.jp/shikoku/chiiki_houkatsu/kiboutaishi_00003.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "四国厚生支局",
+      "sourceId": "kk-shikoku",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "四国",
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-09"
@@ -1501,6 +1695,20 @@
       "firstSeen": "2026-10-08"
     },
     {
+      "title": "「令和８年度地域・職域連携推進関係者会議 」開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76584.html",
+      "date": "2026-10-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-09"
+    },
+    {
       "title": "無人航空機に係る安定供給確保を図るための取組方針の改正案に対する意見公募",
       "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320035&Mode=0",
       "date": "2026-10-04",
@@ -1632,6 +1840,22 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-07"
+    },
+    {
+      "title": "令和８年度福岡県介護事業所の各種研修受講に係る代替職員派遣事業について",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/hakenn05.html",
+      "date": "2026-10-04",
+      "desc": "",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [],
+      "firstSeen": "2026-10-09"
     },
     {
       "title": "【障害者就労施設向け】工賃向上研修・アドバイザー派遣の参加者を募集します",
