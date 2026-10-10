@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T14:15:04.803Z",
+  "updated": "2026-10-10T01:28:15.263Z",
   "sources": [
     {
       "id": "wamnet",
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 131,
-      "added": 10,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 6,
-      "added": 0,
+      "count": 14,
+      "added": 9,
       "ok": true
     },
     {
@@ -169,7 +169,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/shikoku/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -217,7 +217,7 @@
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -228,7 +228,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 2,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -240,8 +240,8 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 37,
-      "added": 2,
+      "count": 38,
+      "added": 0,
       "ok": true
     },
     {
@@ -289,7 +289,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 8,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -535,6 +535,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "感染症の予防及び感染症の患者に対する医療に関する法律施行規則の一部を改正する省令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260216&Mode=0",
+      "date": "2026-10-09",
+      "desc": "案の公示日：2026/10/10受付締切日時：2026/11/09 09:00カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省健康・生活衛生局感染症対策部感染症対策課 03-5253-1111 内線8055",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-10"
     },
     {
       "title": "世界メンタルヘルスデー JAPAN 2026 特設サイト",
@@ -857,6 +871,120 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "「景観行政団体及び景観計画に関する省令の一部を改正する省令案」に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260411&Mode=0",
+      "date": "2026-10-08",
+      "desc": "案の公示日：2026/10/09受付締切日時：2026/11/07 09:30カテゴリー：都市計画問合せ先（所管省庁・部局名等）：国土交通省都市局公園緑地・景観課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-10"
+    },
+    {
+      "title": "都市計画区域外の景観重要樹木及び景観協定に関する省令及び畜舎等の建築等及び利用の特例に関する法律施行規則の一部を改正する省令案に関する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260724&Mode=0",
+      "date": "2026-10-08",
+      "desc": "案の公示日：2026/10/09受付締切日時：2026/11/08 09:30カテゴリー：建築、住宅問合せ先（所管省庁・部局名等）：国土交通省住宅局建築指導課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-10"
+    },
+    {
+      "title": "「文部科学省・農林水産省・国土交通省関係地域における歴史的風致の維持及び向上に関する法律施行規則の一部を改正する省令案」に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260412&Mode=0",
+      "date": "2026-10-08",
+      "desc": "案の公示日：2026/10/09受付締切日時：2026/11/07 09:30カテゴリー：都市計画問合せ先（所管省庁・部局名等）：国土交通省都市局公園緑地・景観課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-10"
+    },
+    {
+      "title": "貿易関係貿易外取引等に関する省令第十条第三項の規定に基づく重要管理対象技術を提供することを目的とする取引を行おうとする者に報告を求める事項の一部を改正する件に対する意見公募",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320038&Mode=0",
+      "date": "2026-10-08",
+      "desc": "案の公示日：2026/10/09受付締切日時：2026/11/07 16:30カテゴリー：外国為替、貿易問合せ先（所管省庁・部局名等）：経済産業省 貿易経済安全保障局 経済安全保障政策課 技術調査・流出対策室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-10"
+    },
+    {
+      "title": "「電気事業法の一部を改正する法律の施行に伴う関係政令の整備に関する政令（案）」等に対する意見公募",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340014&Mode=0",
+      "date": "2026-10-08",
+      "desc": "案の公示日：2026/10/09受付締切日時：2026/11/07 23:59カテゴリー：工業問合せ先（所管省庁・部局名等）：資源エネルギー庁 電力・ガス事業部政策課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-10"
+    },
+    {
+      "title": "「男女雇用機会均等対策基本方針（案）」に関する意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260217&Mode=0",
+      "date": "2026-10-08",
+      "desc": "案の公示日：2026/10/09受付締切日時：2026/11/07 23:59カテゴリー：労働問合せ先（所管省庁・部局名等）：厚生労働省雇用環境・均等局雇用機会均等課 電話：03-5253-1111（内線 7846）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-10"
+    },
+    {
+      "title": "可燃性天然ガスに係る安定供給確保を図るための取組方針の改正案に対する意見公募",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340013&Mode=0",
+      "date": "2026-10-08",
+      "desc": "案の公示日：2026/10/09受付締切日時：2026/11/07 15:00カテゴリー：工業問合せ先（所管省庁・部局名等）：資源エネルギー庁資源・燃料部資源開発課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-10"
+    },
+    {
+      "title": "船舶による放射性物質等の運送基準の細目等を定める告示等の一部を改正する告示案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155261033&Mode=0",
+      "date": "2026-10-08",
+      "desc": "案の公示日：2026/10/09受付締切日時：2026/11/09 12:00カテゴリー：海運問合せ先（所管省庁・部局名等）：国土交通省海事局検査測度課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-10"
     },
     {
       "title": "被保護者調査（令和８年７月分概数）",
