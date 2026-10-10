@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T01:28:15.263Z",
+  "updated": "2026-10-10T13:26:01.191Z",
   "sources": [
     {
       "id": "wamnet",
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 14,
-      "added": 9,
+      "added": 0,
       "ok": true
     },
     {
@@ -84,8 +84,7 @@
       "type": "page-list",
       "count": 0,
       "added": 0,
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true
     },
     {
       "id": "ibaraki-kaigo",
@@ -97,8 +96,7 @@
       "type": "page-list",
       "count": 0,
       "added": 0,
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true
     },
     {
       "id": "kk-hokkaido",
@@ -339,8 +337,7 @@
       "type": "page-list",
       "count": 0,
       "added": 0,
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true
     },
     {
       "id": "ibaraki-kaigotech",
@@ -352,8 +349,7 @@
       "type": "page-list",
       "count": 0,
       "added": 0,
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true
     },
     {
       "id": "ibaraki-kaigochinage",
@@ -365,8 +361,7 @@
       "type": "page-list",
       "count": 0,
       "added": 0,
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true
     }
   ],
   "items": [
