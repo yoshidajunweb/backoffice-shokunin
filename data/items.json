@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12T16:36:37.637Z",
+  "updated": "2026-10-13T02:49:24.420Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 4,
       "ok": true
     },
     {
@@ -21,7 +21,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 131,
+      "count": 109,
       "added": 0,
       "ok": true
     },
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 14,
-      "added": 0,
+      "count": 13,
+      "added": 1,
       "ok": true
     },
     {
@@ -226,7 +226,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -287,7 +287,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 8,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -365,6 +365,94 @@
     }
   ],
   "items": [
+    {
+      "title": "一般競争入札：保育業務施設管理プラットフォームの軽微改修業務等（令和8年度）一式",
+      "link": "https://www.cfa.go.jp/procurement/service",
+      "date": "2026-10-13",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "インフルエンザ最新情報（令和8年10月9日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22941&ct=030100310&from=rss",
+      "date": "2026-10-12",
+      "desc": "●概略国立感染症研究所が発表するインフルエンザ流行レベルマップの最新情報を掲載しています。●概略国立感染症研究所へ移動イ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "第158回 先進医療会議（令和8年10月9日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22944&ct=030010140&from=rss",
+      "date": "2026-10-12",
+      "desc": "●主な議題新規技術（９月受理分）の先進医療Ａ又は先進医療Ｂへの振り分けについて（報告）（先−１）（別紙１）新規技術（月受...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "第150回 厚生科学審議会 科学技術部会（令和8年10月9日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22943&ct=010020020&from=rss",
+      "date": "2026-10-12",
+      "desc": "●主な議題ヒトゲノム編集胚等の取扱いの規制に関する法律関係法令の整備状況についてヒトゲノム編集胚等の取扱いの規制に関する...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "第269回 社会保障審議会 介護給付費分科会（令和8年10月9日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22942&ct=010010020&from=rss",
+      "date": "2026-10-12",
+      "desc": "●主な議題 令和９年度介護報酬改定に向けて （１）各サービス（定期巡回・随時対応型訪問介護看護及び夜間対応型訪...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "特定外来生物による生態系等に係る被害の防止に関する法律施行令の一部を改正する政令案等に対する意見の募集（パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260063&Mode=0",
+      "date": "2026-10-12",
+      "desc": "案の公示日：2026/10/13受付締切日時：2026/11/12 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省自然環境局野生生物課外来生物対策室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-13"
+    },
     {
       "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
       "link": "https://www.mhlw.go.jp/stf/newpage_76679.html",
