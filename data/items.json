@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T02:49:24.420Z",
+  "updated": "2026-10-13T14:53:54.693Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 109,
-      "added": 0,
+      "count": 117,
+      "added": 9,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 13,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -274,7 +274,7 @@
       "bureau": null,
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 2,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -323,7 +323,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -368,6 +368,146 @@
     {
       "title": "一般競争入札：保育業務施設管理プラットフォームの軽微改修業務等（令和8年度）一式",
       "link": "https://www.cfa.go.jp/procurement/service",
+      "date": "2026-10-13",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "令和８年度第１回社会復帰促進等事業に関する検討会（議事録)",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76702.html",
+      "date": "2026-10-13",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "第133回労働政策審議会労働条件分科会労災保険部会資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76698.html",
+      "date": "2026-10-13",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "第２７回新型インフルエンザ対策に関する小委員会 第１２回危機対応医薬品等に関する小委員会 資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76692.html",
+      "date": "2026-10-13",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "第228回労働政策審議会職業安定分科会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_021225156_00115.html",
+      "date": "2026-10-13",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "第24回 ASEAN・日本社会保障ハイレベル会合（開催案内）",
+      "link": "https://www.mhlw.go.jp/stf/aseanjapan_highlevelofficialsmeeting24.html",
+      "date": "2026-10-13",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "第270回社会保障審議会介護給付費分科会（Web会議）を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76627.html",
+      "date": "2026-10-13",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "薬物乱用防止を目的とした啓発特設サイトを公開しました",
+      "link": "https://www.mhlw.go.jp/stf/houdou/0000179105_00026.html",
+      "date": "2026-10-13",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "家政婦(夫)サービスの求人情報の概要を発信する「家政婦(夫)ネット」の運用（モデル事業）を開始しました",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76363.html",
+      "date": "2026-10-13",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [],
+      "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "中司大臣記者会見（令和8年10月13日）",
+      "link": "https://www.cfa.go.jp/speech/61fab23e",
       "date": "2026-10-13",
       "desc": "",
       "source": "こども家庭庁 新着・更新",
@@ -2167,6 +2307,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-03"
+    },
+    {
+      "title": "健康・医療・介護情報利活用検討会 医療等情報利活用ワーキンググループ 第１回歯科情報に関する技術作業班の開催案内",
+      "link": "https://www.mhlw.go.jp/stf/shingi/0001210262_00104.html",
+      "date": "2026-10-02",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-13"
     },
     {
       "title": "採用情報（任期付職員（肝炎対策専門官又は主査）募集情報）",
