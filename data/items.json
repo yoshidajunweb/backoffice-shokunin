@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14T00:50:21.525Z",
+  "updated": "2026-10-14T12:44:59.937Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 6,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 117,
-      "added": 0,
+      "count": 114,
+      "added": 7,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 15,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -238,7 +238,7 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 38,
+      "count": 37,
       "added": 0,
       "ok": true
     },
@@ -323,7 +323,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -365,6 +365,93 @@
     }
   ],
   "items": [
+    {
+      "title": "第212回労働政策審議会労働条件分科会（資料）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76683.html",
+      "date": "2026-10-14",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-14"
+    },
+    {
+      "title": "第218回社会保障審議会医療保険部会（ペーパーレス）の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76677.html",
+      "date": "2026-10-14",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-10-14"
+    },
+    {
+      "title": "看護教育ポータル 発見・看護！｜厚生労働省",
+      "link": "https://www.mhlw.go.jp/kango_kyouiku/",
+      "date": "2026-10-14",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護",
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-14"
+    },
+    {
+      "title": "国民年金システム標準化研究会ワーキングチーム 資料(第１回)",
+      "link": "https://www.mhlw.go.jp/stf/nenkin_kenkyuukai-siryo02_00166.html",
+      "date": "2026-10-14",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-14"
+    },
+    {
+      "title": "看護系技官採用サイト更新",
+      "link": "https://www.mhlw.go.jp/general/saiyo/kangokei/",
+      "date": "2026-10-14",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-14"
+    },
     {
       "title": "一般競争入札：保育業務施設管理プラットフォームの軽微改修業務等（令和8年度）一式",
       "link": "https://www.cfa.go.jp/procurement/service",
@@ -582,6 +669,20 @@
       "desc": "●概略麻しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
       "source": "WAM NET 行政情報",
       "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-14"
+    },
+    {
+      "title": "第17回厚生科学審議会結核部会 資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76689.html",
+      "date": "2026-10-13",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
       "region": "国",
       "pref": null,
       "bureau": null,
@@ -2170,6 +2271,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-09"
+    },
+    {
+      "title": "第2回精神医療に関する地域医療構想検討ワーキンググループの開催について：開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76595.html",
+      "date": "2026-10-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-14"
     },
     {
       "title": "無人航空機に係る安定供給確保を図るための取組方針の改正案に対する意見公募",
