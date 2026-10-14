@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T14:53:54.693Z",
+  "updated": "2026-10-14T00:50:21.525Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 6,
       "ok": true
     },
     {
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 117,
-      "added": 9,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 13,
-      "added": 0,
+      "count": 15,
+      "added": 2,
       "ok": true
     },
     {
@@ -287,7 +287,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 8,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -323,7 +323,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -520,6 +520,76 @@
       "firstSeen": "2026-10-13"
     },
     {
+      "title": "風しん最新情報（令和8年10月13日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22948&ct=030100130&from=rss",
+      "date": "2026-10-13",
+      "desc": "●概略風しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-14"
+    },
+    {
+      "title": "第23回 成年後見制度利用促進専門家会議（令和8年10月13日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22954&ct=100100170&from=rss",
+      "date": "2026-10-13",
+      "desc": "●主な議題（１）次期基本計画に係る意見交換（成年後見制度の見直し等を踏まえた適切な権利擁護支援の実施、成年後見制度の見直...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-14"
+    },
+    {
+      "title": "第16回 幼児期までのこどもの育ち部会（令和8年10月23日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22953&ct=070010010&from=rss",
+      "date": "2026-10-13",
+      "desc": "●主な議題（）団体ヒアリング●オンライン配信：※詳細は以下のリンクからご参照ください。幼児期までのこどもの育ち部会（第回...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-14"
+    },
+    {
+      "title": "第27回 新型インフルエンザ対策に関する小委員会 ・第12回 危機対応医薬品等に関する小委員会（令和8年10月14日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22951&ct=010020210&from=rss",
+      "date": "2026-10-13",
+      "desc": "●主な議題（１）戦略を踏まえた支援・法制度等の在り方について※詳細は以下のリンクからご参照ください。（会議資料）： 第回...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-14"
+    },
+    {
+      "title": "麻しん最新情報（令和8年10月13日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22950&ct=030100110&from=rss",
+      "date": "2026-10-13",
+      "desc": "●概略麻しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-14"
+    },
+    {
       "title": "インフルエンザ最新情報（令和8年10月9日更新）",
       "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22941&ct=030100310&from=rss",
       "date": "2026-10-12",
@@ -592,6 +662,48 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-13"
+    },
+    {
+      "title": "第160回 社会保障審議会 障害者部会（令和8年10月20日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22949&ct=070010040&from=rss",
+      "date": "2026-10-12",
+      "desc": "●主な議題（１）障害保健福祉施策の動向について（２）その他※詳細は以下のリンクからご参照ください。社会保障審議会障害者部...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-14"
+    },
+    {
+      "title": "「関係行政機関が所管する法令に係る情報通信技術を活用した行政の推進等に関する法律施行規則の一部を改正する命令案」に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260413&Mode=0",
+      "date": "2026-10-12",
+      "desc": "案の公示日：2026/10/13受付締切日時：2026/11/11 09:30カテゴリー：IT社会化推進問合せ先（所管省庁・部局名等）：国土交通省都市局公園緑地・景観課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-14"
+    },
+    {
+      "title": "地域における医療及び介護の総合的な確保の促進に関する法律施行令の一部を改正する政令案の御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260218&Mode=0",
+      "date": "2026-10-12",
+      "desc": "案の公示日：2026/10/13受付締切日時：2026/11/12 00:00カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省政策統括官付医療情基盤担当参事官室 03-3595-2174 内線8257",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-14"
     },
     {
       "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
