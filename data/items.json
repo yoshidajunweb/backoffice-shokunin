@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T00:16:32.829Z",
+  "updated": "2026-10-15T12:32:25.834Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 4,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 97,
-      "added": 0,
+      "count": 107,
+      "added": 10,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 15,
-      "added": 11,
+      "added": 0,
       "ok": true
     },
     {
@@ -118,7 +118,7 @@
       "bureau": "東北",
       "url": "https://kouseikyoku.mhlw.go.jp/tohoku/news/news.xml",
       "type": "rss",
-      "count": 5,
+      "count": 4,
       "added": 0,
       "ok": true
     },
@@ -203,7 +203,7 @@
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
       "count": 10,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -238,8 +238,8 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 37,
-      "added": 0,
+      "count": 36,
+      "added": 1,
       "ok": true
     },
     {
@@ -250,8 +250,8 @@
       "bureau": null,
       "url": "https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml",
       "type": "rss",
-      "count": 3,
-      "added": 0,
+      "count": 4,
+      "added": 1,
       "ok": true
     },
     {
@@ -287,7 +287,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 8,
-      "added": 0,
+      "added": 3,
       "ok": true
     },
     {
@@ -323,7 +323,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -365,6 +365,187 @@
     }
   ],
   "items": [
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76750.html",
+      "date": "2026-10-15",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "令和８年熊本地震に伴う産業雇用安定助成金の特例を実施します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76532.html",
+      "date": "2026-10-15",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務",
+        "補助金"
+      ],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "第37回厚生科学審議会予防接種・ワクチン分科会予防接種基本方針部会ワクチン評価に関する小委員会の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76729.html",
+      "date": "2026-10-15",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "11月6日開催 健康的で持続可能な食環境戦略イニシアチブ オープンフォーラム2026登壇者決定",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76660.html",
+      "date": "2026-10-15",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "有料老人ホームにおける望ましいサービス提供のあり方に関する検討会（第９回）議事録",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76739.html",
+      "date": "2026-10-15",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "厚生労働省本省係長級職員（一般職相当）採用選考 - 令和８年度第３期・第４期",
+      "link": "https://www.mhlw.go.jp/stf/newpage_33437.html",
+      "date": "2026-10-15",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "平塚保健福祉事務所秦野センターの竣工式を開催します",
+      "link": "https://www.pref.kanagawa.jp/docs/ka8/prs/r6071143.html",
+      "date": "2026-10-15",
+      "desc": "",
+      "source": "神奈川県",
+      "sourceId": "kanagawa",
+      "region": "県",
+      "pref": "神奈川県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "福岡県腎臓疾患患者福祉給付金に関する手続きについて",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/jinzou.html",
+      "date": "2026-10-15",
+      "desc": "福岡県 腎臓疾患患者福祉給付金 腎臓疾患",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "「介護のしごとフェスティバル2026 in旭川」を11月7日（土）に開催します！",
+      "link": "https://www.pref.hokkaido.lg.jp/hf/khf/jinzai/272449.html",
+      "date": "2026-10-15",
+      "desc": "",
+      "source": "北海道（保健福祉部）",
+      "sourceId": "hokkaido",
+      "region": "県",
+      "pref": "北海道",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "第20回補償金・優生手術等一時金認定審査部会の開催",
+      "link": "https://www.cfa.go.jp/press/b1eb1779-6c55-475b-be92-2d28359feca0",
+      "date": "2026-10-15",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "第2回乳幼児の健康診査等のあり方に関する検討会",
+      "link": "https://www.cfa.go.jp/press/6914ca83-1b2c-42c9-9bf5-452019407b00",
+      "date": "2026-10-15",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "みて かんじて つながる劇体験～優良児童劇等公演事業～令和8年11月23日（月・祝）香川県三豊市にて開催",
+      "link": "https://www.cfa.go.jp/press/265d8a4d-cf47-487c-821e-f76c90a06d44",
+      "date": "2026-10-15",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-15"
+    },
     {
       "title": "第212回労働政策審議会労働条件分科会（資料）",
       "link": "https://www.mhlw.go.jp/stf/newpage_76683.html",
@@ -603,6 +784,102 @@
       "pref": null,
       "bureau": null,
       "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "第218回 社会保障審議会 医療保険部会の開催について（令和8年10月16日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22955&ct=070010030&from=rss",
+      "date": "2026-10-14",
+      "desc": "●主な議題高齢者医療制度について医療保険制度における出産に対する支援の強化について後期高齢者医療制度における金融所得の公...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "第270回 社会保障審議会 介護給付費分科会（令和8年10月14日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22958&ct=010010020&from=rss",
+      "date": "2026-10-14",
+      "desc": "●主な議題 令和９年度介護報酬改定に向けて （１）各サービス （通所介護、地域密着型通所介護、認...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "第144回 労働政策審議会障害者雇用分科会（令和8年10月21日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22957&ct=070010010&from=rss",
+      "date": "2026-10-14",
+      "desc": "●主な議題（１）障害者雇用率制度等の在り方について ・障害者雇用納付金制度の在り方について ・中小企業に対する企...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "第193回 先進医療技術審査部会（令和8年10月16日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22956&ct=070010030&from=rss",
+      "date": "2026-10-14",
+      "desc": "●主な議題（１）新規申請技術の評価について（２）試験実施計画の変更について（３）先進医療の試験終了に伴う取下げについて（...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "地域介護・福祉空間整備等施設整備交付金",
+      "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/fukushi/shisetsu_seibi_00005.html",
+      "date": "2026-10-14",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
+      "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "地域医療介護総合確保基金（介護施設等の整備に関する事業分）",
+      "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/fukushi/shisetsu_seibi_00004.html",
+      "date": "2026-10-14",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
       "systems": [],
       "firstSeen": "2026-10-15"
     },
@@ -2133,6 +2410,24 @@
       "firstSeen": "2026-10-08"
     },
     {
+      "title": "第10回労働政策審議会職業安定分科会地方連携部会 資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76622.html",
+      "date": "2026-10-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-15"
+    },
+    {
       "title": "関係法令、その他関係通知等",
       "link": "https://www.mhlw.go.jp/stf/newpage_76430.html",
       "date": "2026-10-05",
@@ -3141,6 +3436,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-06"
+    },
+    {
+      "title": "10月は造血幹細胞移植普及推進月間です。",
+      "link": "https://www.mhlw.go.jp/stf/htcp-topics-20261001.html",
+      "date": "2026-10-01",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-15"
     },
     {
       "title": "令和７年度 看護職員の資質の向上に係る研修事業等の実施状況",
