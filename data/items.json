@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T12:32:25.834Z",
+  "updated": "2026-10-16T00:02:19.185Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 107,
-      "added": 10,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 15,
-      "added": 0,
+      "count": 21,
+      "added": 7,
       "ok": true
     },
     {
@@ -203,7 +203,7 @@
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
       "count": 10,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -238,7 +238,7 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 36,
+      "count": 37,
       "added": 1,
       "ok": true
     },
@@ -251,7 +251,7 @@
       "url": "https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml",
       "type": "rss",
       "count": 4,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -287,7 +287,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 8,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -545,6 +545,62 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "「エネルギーの使用の合理化及び非化石エネルギーへの転換等に関する法律施行規則（案）」、「サッシの性能の向上に関する熱損失防止建築材料製造事業者等の判断の基準等（案）」の改正に対する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340009&Mode=0",
+      "date": "2026-10-15",
+      "desc": "案の公示日：2026/10/16受付締切日時：2026/11/16 17:00カテゴリー：建築、住宅問合せ先（所管省庁・部局名等）：経済産業省 資源エネルギー庁 省エネルギー・新エネルギー部 省エネルギー課 建材トップランナー制度担当 あて",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "伊豆箱根鉄道株式会社の鉄道事業に係る旅客運賃上限変更認可申請に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260819&Mode=0",
+      "date": "2026-10-15",
+      "desc": "案の公示日：2026/10/16受付締切日時：2026/10/30 23:59カテゴリー：陸運問合せ先（所管省庁・部局名等）：国土交通省中部運輸局鉄道部監理課 電話：052-952-8030",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "「保育所における感染症対策ガイドライン（2026年改訂版）」案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=141000243&Mode=0",
+      "date": "2026-10-15",
+      "desc": "案の公示日：2026/10/16受付締切日時：2026/11/15 00:00カテゴリー：社会福祉問合せ先（所管省庁・部局名等）：こども家庭庁成育局成育基盤企画課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "情報処理の促進に関する法律施行規則の一部を改正する省令（案）等に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320040&Mode=0",
+      "date": "2026-10-15",
+      "desc": "案の公示日：2026/10/16受付締切日時：2026/11/14 23:59カテゴリー：IT社会化推進問合せ先（所管省庁・部局名等）：経済産業省 商務情報政策局 情報経済課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
     },
     {
       "title": "第212回労働政策審議会労働条件分科会（資料）",
@@ -882,6 +938,68 @@
       ],
       "systems": [],
       "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "海上衝突予防法施行規則の一部を改正する省令案に関するパブリックコメントの募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=670000138&Mode=0",
+      "date": "2026-10-14",
+      "desc": "案の公示日：2026/10/15受付締切日時：2026/11/14 14:00カテゴリー：海運問合せ先（所管省庁・部局名等）：海上保安庁交通部航行安全課（03-3591-6361）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "健康保険法等の一部を改正する法律の施行に伴う厚生労働省関係告示の整備に関する告示案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260209&Mode=0",
+      "date": "2026-10-14",
+      "desc": "案の公示日：2026/10/15受付締切日時：2026/11/14 19:00カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省医政局医療経営改革課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "「航空運送事業等の安全監査に関する基本方針」の一部改正及び関連通達の制定に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155261238&Mode=0",
+      "date": "2026-10-14",
+      "desc": "案の公示日：2026/10/15受付締切日時：2026/11/13 23:59カテゴリー：航空問合せ先（所管省庁・部局名等）：国土交通省 航空局 安全部 航空安全推進室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "「障害福祉サービス事業所等における防犯マニュアル」の作成",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/shogaibohanmanual.html",
+      "date": "2026-10-14",
+      "desc": "",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [
+        "障害"
+      ],
+      "firstSeen": "2026-10-16"
     },
     {
       "title": "一般競争入札：保育業務施設管理プラットフォームの軽微改修業務等（令和8年度）一式",
