@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T00:02:19.185Z",
+  "updated": "2026-10-16T12:11:24.574Z",
   "sources": [
     {
       "id": "wamnet",
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 107,
-      "added": 0,
+      "count": 101,
+      "added": 12,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 21,
-      "added": 7,
+      "added": 0,
       "ok": true
     },
     {
@@ -202,7 +202,7 @@
       "bureau": null,
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
-      "count": 10,
+      "count": 9,
       "added": 0,
       "ok": true
     },
@@ -214,8 +214,8 @@
       "bureau": null,
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 5,
-      "added": 0,
+      "count": 6,
+      "added": 1,
       "ok": true
     },
     {
@@ -226,8 +226,8 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 0,
-      "added": 0,
+      "count": 2,
+      "added": 2,
       "ok": true
     },
     {
@@ -238,8 +238,8 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 37,
-      "added": 1,
+      "count": 35,
+      "added": 0,
       "ok": true
     },
     {
@@ -263,7 +263,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -274,7 +274,7 @@
       "bureau": null,
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 1,
+      "count": 2,
       "added": 0,
       "ok": true
     },
@@ -286,8 +286,8 @@
       "bureau": null,
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
-      "count": 8,
-      "added": 0,
+      "count": 10,
+      "added": 4,
       "ok": true
     },
     {
@@ -323,7 +323,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -365,6 +365,318 @@
     }
   ],
   "items": [
+    {
+      "title": "薬事審議会 医療機器・体外診断薬部会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76766.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "令和８年度生活衛生功労者に対する厚生労働大臣表彰について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76727.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "令和８年度厚生労働統計功労者功績表彰の受賞者が決定しました",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76718.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "病院報告（令和８(2026)年7月分概数）",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/byouin/m26/07.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "第２２回肝炎治療戦略会議の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76678.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "第271回社会保障審議会介護給付費分科会（Web会議）を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76624.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "第213回労働政策審議会労働条件分科会 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76433.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "中央最低賃金審議会(目安制度の在り方に関する全員協議会)",
+      "link": "https://www.mhlw.go.jp/stf/shingi/shingi-tingin_127940.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "中央最低賃金審議会 (中央最低賃金審議会)",
+      "link": "https://www.mhlw.go.jp/stf/shingi/shingi-tingin_127939.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "令和8年国民年金被保険者実態調査にご協力をお願いします",
+      "link": "https://www.mhlw.go.jp/toukei/list/140-15.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "人口動態職業・産業別統計 調査の概要",
+      "link": "https://www.mhlw.go.jp/toukei/list/135-2.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "採用情報（任期付職員（就労支援専門官）募集情報）",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/ninkituki/ninki-syuuroushiensenmonkan.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "第2回ワーク・ライフ・バランス実現セミナー「子育て・介護と仕事を両立できる職場環境づくり」を開催します！",
+      "link": "https://www.pref.osaka.lg.jp/hodo/fumin/o110090/prs_51157.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "大阪府",
+      "sourceId": "osaka",
+      "region": "県",
+      "pref": "大阪府",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "加算等の届出について（児童福祉法）",
+      "link": "https://www.pref.aichi.jp/soshiki/shogai/jikasan.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "愛知県",
+      "sourceId": "aichi",
+      "region": "県",
+      "pref": "愛知県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "加算等の届出について（障害者総合支援法）",
+      "link": "https://www.pref.aichi.jp/soshiki/shogai/shakasan.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "愛知県",
+      "sourceId": "aichi",
+      "region": "県",
+      "pref": "愛知県",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [
+        "障害"
+      ],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "令和9年度千葉県生涯大学校入学生の募集について",
+      "link": "https://www.pref.chiba.lg.jp/koufuku/press/2026/r9gakuseibosyu.html",
+      "date": "",
+      "desc": "",
+      "source": "千葉県 高齢者福祉課",
+      "sourceId": "chiba-koufuku",
+      "region": "県",
+      "pref": "千葉県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "『はじめの100か月の育ちビジョン』全国大会・国際シンポジウム",
+      "link": "https://www.cfa.go.jp/policies/kodomo_sodachi/nationaltournament-symposium",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "中司大臣記者会見（令和8年10月16日）",
+      "link": "https://www.cfa.go.jp/speech/7f686acc",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "第6回特別養子縁組に関する支援の在り方に関する専門委員会の開催",
+      "link": "https://www.cfa.go.jp/press/2b342d1c-f577-465e-9d59-c33d479d09e4",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "第6回特別養子縁組に関する支援の在り方に関する専門委員会",
+      "link": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/tokubetsu-yoshi/076d89ea",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-16"
+    },
     {
       "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
       "link": "https://www.mhlw.go.jp/stf/newpage_76750.html",
