@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T00:08:11.206Z",
+  "updated": "2026-10-17T11:29:53.791Z",
   "sources": [
     {
       "id": "wamnet",
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 30,
-      "added": 9,
+      "added": 0,
       "ok": true
     },
     {
@@ -191,7 +191,7 @@
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
       "count": 10,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
