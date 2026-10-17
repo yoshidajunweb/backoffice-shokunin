@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T12:11:24.574Z",
+  "updated": "2026-10-17T00:08:11.206Z",
   "sources": [
     {
       "id": "wamnet",
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 101,
-      "added": 12,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 21,
-      "added": 0,
+      "count": 30,
+      "added": 9,
       "ok": true
     },
     {
@@ -191,7 +191,7 @@
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
       "count": 10,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -215,7 +215,7 @@
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
       "count": 6,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -227,7 +227,7 @@
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
       "count": 2,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -263,7 +263,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -287,7 +287,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -323,7 +323,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -913,6 +913,158 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "資金移動業者の口座への賃金支払に関する資金移動業者向けガイドライン（改正案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260213&Mode=0",
+      "date": "2026-10-15",
+      "desc": "案の公示日：2026/10/16受付締切日時：2026/11/16 23:59カテゴリー：労働問合せ先（所管省庁・部局名等）：厚生労働省労働基準局賃金課 電話：03-5253-1111（内線5677）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-17"
+    },
+    {
+      "title": "社会福祉法等の一部を改正する法律の施行に伴う厚生労働省関係省令の整備等に関する省令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260222&Mode=0",
+      "date": "2026-10-15",
+      "desc": "案の公示日：2026/10/16受付締切日時：2026/11/15 12:00カテゴリー：社会福祉問合せ先（所管省庁・部局名等）：厚生労働省社会・援護局地域福祉課 03-5253-1111",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-17"
+    },
+    {
+      "title": "下水道法等の一部を改正する法律の施行に伴う関係政令・関係省令・関係告示（案）に関するパブリックコメントの募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260509&Mode=0",
+      "date": "2026-10-15",
+      "desc": "案の公示日：2026/10/16受付締切日時：2026/11/14 11:00カテゴリー：道路問合せ先（所管省庁・部局名等）：国土交通省水管理・国土保全局上下水道企画課意見募集担当 国土交通省道路局路政課意見募集担当",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-17"
+    },
+    {
+      "title": "「監査基準の改訂について（公開草案）」の公表について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=225026067&Mode=0",
+      "date": "2026-10-15",
+      "desc": "案の公示日：2026/10/16受付締切日時：2026/11/16 17:00カテゴリー：金融、保険問合せ先（所管省庁・部局名等）：金融庁 03-3506-6000（代表） 企画市場局企業開示課（内線：3655、5443）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-17"
+    },
+    {
+      "title": "医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律等の一部を改正する法律の一部の施行に伴う厚生労働省関係省令の整備等に関する省令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260220&Mode=0",
+      "date": "2026-10-15",
+      "desc": "案の公示日：2026/10/16受付締切日時：2026/11/14 23:59カテゴリー：厚生問合せ先（所管省庁・部局名等）：医薬局総務課 03-5253-1111（内線4211） 03-3595-2377（直通）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-17"
+    },
+    {
+      "title": "医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律第三十六条の三第二項の規定に基づき厚生労働大臣が指定する医薬品（案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260221&Mode=0",
+      "date": "2026-10-15",
+      "desc": "案の公示日：2026/10/16受付締切日時：2026/11/14 23:59カテゴリー：厚生問合せ先（所管省庁・部局名等）：医薬局総務課 03-5253-1111（内線4211） 03-3595-2377（直通）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-17"
+    },
+    {
+      "title": "都市再生特別措置法等の一部を改正する法律の施行に伴う国土交通省関係省令の整備等に関する省令案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260416&Mode=0",
+      "date": "2026-10-15",
+      "desc": "案の公示日：2026/10/16受付締切日時：2026/11/14 23:59カテゴリー：都市計画問合せ先（所管省庁・部局名等）：国土交通省都市局都市計画課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-17"
+    },
+    {
+      "title": "「景観法運用指針の一部改正（案）」に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260414&Mode=0",
+      "date": "2026-10-15",
+      "desc": "案の公示日：2026/10/16受付締切日時：2026/11/14 19:00カテゴリー：都市計画問合せ先（所管省庁・部局名等）：国土交通省都市局公園緑地・景観課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-17"
+    },
+    {
+      "title": "「地域における歴史的風致の維持及び向上に関する法律運用指針の一部改正（案）」 に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260415&Mode=0",
+      "date": "2026-10-15",
+      "desc": "案の公示日：2026/10/16受付締切日時：2026/11/14 19:00カテゴリー：都市計画問合せ先（所管省庁・部局名等）：国土交通省都市局公園緑地・景観課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-17"
+    },
+    {
+      "title": "介護・障害福祉事業所における介護と育児の両立を支援します",
+      "link": "https://www.fukushi.metro.tokyo.lg.jp/information/press/2026/10/101601",
+      "date": "2026-10-15",
+      "desc": "東京都福祉局の10月16日 介護・障害福祉事業所における介護と育児の両立を支援します(10月)です。",
+      "source": "東京都福祉局 報道発表",
+      "sourceId": "tokyo",
+      "region": "県",
+      "pref": "東京都",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [
+        "障害"
+      ],
+      "firstSeen": "2026-10-17"
     },
     {
       "title": "第212回労働政策審議会労働条件分科会（資料）",
