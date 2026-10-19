@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T23:53:17.837Z",
+  "updated": "2026-10-19T14:28:26.012Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 6,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 101,
-      "added": 0,
+      "count": 105,
+      "added": 12,
       "ok": true
     },
     {
@@ -238,7 +238,7 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 36,
+      "count": 35,
       "added": 0,
       "ok": true
     },
@@ -287,7 +287,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -365,6 +365,266 @@
     }
   ],
   "items": [
+    {
+      "title": "11月17日は世界さい帯血の日です。",
+      "link": "https://www.mhlw.go.jp/stf/htcp-topics-20261001_00001.html",
+      "date": "2026-11-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76821.html",
+      "date": "2026-10-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "「事業場における労働者の健康保持増進のための指針」について（公示）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76807.html",
+      "date": "2026-10-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "「第37回 労働政策審議会勤労者生活分科会」を開催します（開催案内）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76708.html",
+      "date": "2026-10-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "第33回キャリアコンサルタント登録制度等に関する検討会を10月26日に開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76690.html",
+      "date": "2026-10-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "第９回労働政策審議会労働条件分科会「組織再編に伴う労働関係の調整に関する部会」(開催案内)",
+      "link": "https://www.mhlw.go.jp/stf/shinngi_00022.html",
+      "date": "2026-10-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "「中高年の活躍支援」特設サイトをリニューアルしました",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76610.html",
+      "date": "2026-10-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "「第305回原子爆弾被爆者医療分科会」の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76439.html",
+      "date": "2026-10-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "令和８年労働安全衛生調査（実態調査）にご協力をお願いします",
+      "link": "https://www.mhlw.go.jp/toukei/oshirase/261014.html",
+      "date": "2026-10-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "採用情報（期間業務職員（政策統括官（総合政策、労使関係担当））募集情報）",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/hijoukin/hj-kenkou_seikatueiseikyoku01_00005.html",
+      "date": "2026-10-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "こども家庭審議会 幼児期までのこどもの育ち部会（第16回）",
+      "link": "https://www.cfa.go.jp/press/f19217c3-341d-4451-812e-16127aac5216",
+      "date": "2026-10-19",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "第271回 社会保障審議会 介護給付費分科会（令和8年10月19日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22960&ct=010010020&from=rss",
+      "date": "2026-10-18",
+      "desc": "●主な議題 令和９年度介護報酬改定に向けて （１）各サービス （訪問介護、訪問入浴介護、訪問看護...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "第218回 社会保障審議会 医療保険部会（令和8年10月16日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22964&ct=010010050&from=rss",
+      "date": "2026-10-18",
+      "desc": "●主な議題高齢者医療制度について医療保険制度における出産に対する支援の強化について後期高齢者医療制度における金融所得の公...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "介護保険最新情報Vol.1546（PDF：1.6MB）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/1019100230408/ksvol.1546.pdf?from=rss",
+      "date": "2026-10-18",
+      "desc": "...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "第114回厚生科学審議会予防接種・ワクチン分科会副反応検討部会、令和8年度第9回薬事審議会医薬品等安全対策部会安全対策調査会（合同開催）（ペーパーレス、Web会議）の開催について（令和8年10月23日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22962&ct=070010030&from=rss",
+      "date": "2026-10-18",
+      "desc": "●主な議題（１）新型コロナワクチンの接種及び副反応疑い報告の状況等について（２）麻しん、風しん、おたふくかぜ、水痘、帯状...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "第93回労働政策審議会雇用環境・均等分科会（ペーパーレス会議）を開催します（開催案内）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76686.html",
+      "date": "2026-10-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-19"
+    },
     {
       "title": "薬事審議会 医療機器・体外診断薬部会を開催します",
       "link": "https://www.mhlw.go.jp/stf/newpage_76766.html",
@@ -676,6 +936,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-16"
+    },
+    {
+      "title": "個人防護具の配布について",
+      "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/kojinbougogu/haifu/index.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-19"
     },
     {
       "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
@@ -4032,6 +4306,24 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-15"
+    },
+    {
+      "title": "介護保険最新情報Vol.1545（PDF：558KB）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/1019100416764/ksvol.1545.pdf?from=rss",
+      "date": "2026-10-01",
+      "desc": "...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-19"
     },
     {
       "title": "令和７年度 看護職員の資質の向上に係る研修事業等の実施状況",
@@ -9299,6 +9591,20 @@
         "医療"
       ],
       "firstSeen": "2026-09-18"
+    },
+    {
+      "title": "第113回厚生科学審議会予防接種・ワクチン分科会副反応検討部会、令和8年度第7回薬事審議会医薬品等安全対策部会安全対策調査会（合同開催）（持ち回り審議）資料（令和8年9月10日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22961&ct=010020265&from=rss",
+      "date": "2026-09-09",
+      "desc": "●主な議題令和年度の定期接種で使用する新型コロナワクチンに係る副反応疑い報告基準について※詳細は以下のリンクからご参照く...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-19"
     },
     {
       "title": "介護保険最新情報Vol.1541（PDF：136KB）",
