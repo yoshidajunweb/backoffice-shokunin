@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T14:28:26.012Z",
+  "updated": "2026-10-20T00:53:42.785Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 6,
+      "added": 0,
       "ok": true
     },
     {
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 105,
-      "added": 12,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 30,
-      "added": 0,
+      "count": 22,
+      "added": 9,
       "ok": true
     },
     {
@@ -202,7 +202,7 @@
       "bureau": null,
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
-      "count": 9,
+      "count": 8,
       "added": 0,
       "ok": true
     },
@@ -238,7 +238,7 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 35,
+      "count": 33,
       "added": 0,
       "ok": true
     },
@@ -287,7 +287,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -540,6 +540,48 @@
       "firstSeen": "2026-10-19"
     },
     {
+      "title": "「臭気指数及び臭気排出強度の算定の方法の一部を改正する告示案」 に関する御意見の募集（パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260064&Mode=0",
+      "date": "2026-10-19",
+      "desc": "案の公示日：2026/10/20受付締切日時：2026/11/19 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省 水・大気環境局環境管理課環境汚染対策室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-20"
+    },
+    {
+      "title": "「平成２３年人事院公示第１８号の一部を改正する人事院公示案」及び「平成２６年人事院公示第２２号の一部を改正する人事院公示案」の概要に対するパブリックコメント（意見公募手続）の実施について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=050202607&Mode=0",
+      "date": "2026-10-19",
+      "desc": "案の公示日：2026/10/20受付締切日時：2026/11/18 23:59カテゴリー：国家公務員問合せ先（所管省庁・部局名等）：人事院事務総局人材局企画課制度第一班 ＴＥＬ：０３－３５８１－５３１１",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-20"
+    },
+    {
+      "title": "郵便事業の安定的・持続的な運営を確保するための方策に関する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210786&Mode=0",
+      "date": "2026-10-19",
+      "desc": "案の公示日：2026/10/20受付締切日時：2026/11/20 23:59カテゴリー：郵務問合せ先（所管省庁・部局名等）：総務省情報流通行政局郵政行政部郵便課 TEL：03-5253-5975",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-20"
+    },
+    {
       "title": "第271回 社会保障審議会 介護給付費分科会（令和8年10月19日開催）",
       "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22960&ct=010010020&from=rss",
       "date": "2026-10-18",
@@ -624,6 +666,90 @@
         "労務"
       ],
       "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "三陸復興国立公園（南三陸金華山地域）の公園区域及び公園計画の変更［一部変更］に関する意見の募集（パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260067&Mode=0",
+      "date": "2026-10-18",
+      "desc": "案の公示日：2026/10/19受付締切日時：2026/11/18 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省自然環境局国立公園課（03-5521-8279）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-20"
+    },
+    {
+      "title": "日高山脈襟裳十勝国立公園の公園計画の変更［一部変更］に関する意見の募集（パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260068&Mode=0",
+      "date": "2026-10-18",
+      "desc": "案の公示日：2026/10/19受付締切日時：2026/11/18 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省自然環境局国立公園課（03-5521-8279）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-20"
+    },
+    {
+      "title": "蔵王国定公園の公園計画の変更［一部変更］に関する意見の募集（パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260069&Mode=0",
+      "date": "2026-10-18",
+      "desc": "案の公示日：2026/10/19受付締切日時：2026/11/18 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省自然環境局国立公園課(03-5521-8279)",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-20"
+    },
+    {
+      "title": "金剛生駒紀泉国定公園の公園計画の変更［一部変更］に関する意見の募集（パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260070&Mode=0",
+      "date": "2026-10-18",
+      "desc": "案の公示日：2026/10/19受付締切日時：2026/11/18 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省自然環境局国立公園課(03-5521-8279)",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-20"
+    },
+    {
+      "title": "伊勢志摩国立公園の公園区域及び公園計画の変更［第７次点検］に関する意見の募集（パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260066&Mode=0",
+      "date": "2026-10-18",
+      "desc": "案の公示日：2026/10/19受付締切日時：2026/11/18 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省自然環境局国立公園課（03-5521-8279）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-20"
+    },
+    {
+      "title": "外国為替令及び輸出貿易管理令の一部を改正する政令案等に対する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320041&Mode=0",
+      "date": "2026-10-18",
+      "desc": "案の公示日：2026/10/19受付締切日時：2026/11/18 17:00カテゴリー：外国為替、貿易問合せ先（所管省庁・部局名等）：経済産業省貿易経済安全保障局 安全保障貿易管理課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-20"
     },
     {
       "title": "薬事審議会 医療機器・体外診断薬部会を開催します",
