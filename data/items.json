@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T00:21:35.661Z",
+  "updated": "2026-10-21T12:48:51.026Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 108,
-      "added": 0,
+      "count": 107,
+      "added": 9,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 21,
-      "added": 12,
+      "added": 0,
       "ok": true
     },
     {
@@ -143,7 +143,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -190,8 +190,8 @@
       "bureau": null,
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
-      "count": 10,
-      "added": 0,
+      "count": 12,
+      "added": 2,
       "ok": true
     },
     {
@@ -274,7 +274,7 @@
       "bureau": null,
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 2,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -287,7 +287,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 4,
       "ok": true
     },
     {
@@ -378,6 +378,167 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "第８回医療扶助・健康管理支援等に関する検討会の開催について（報道発表）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76805.html",
+      "date": "2026-10-21",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "第24回成年後見制度利用促進専門家会議 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76735.html",
+      "date": "2026-10-21",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "令和８年賃金引上げ等の実態に関する調査の概況",
+      "link": "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/jittai/26/index.html",
+      "date": "2026-10-21",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "令和８年度「介護老人保健施設事業功労者厚生労働大臣表彰」の受賞者について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76587.html",
+      "date": "2026-10-21",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護",
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "第５７回特定石綿被害建設業務労働者等認定審査会 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76516.html",
+      "date": "2026-10-21",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "人事労務マガジン 特集第249号 国家公務員の高い専門能力と豊富な経験を事業に活かしてみませんか？他",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76816.html",
+      "date": "2026-10-21",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "補償金・優生手術等一時金認定審査部会（第20回）の会議資料",
+      "link": "https://www.cfa.go.jp/councils/hoshokin-yuseishujutsu/fadbc2c9",
+      "date": "2026-10-21",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "11月は「乳幼児突然死症候群（SIDS）」の対策強化月間です",
+      "link": "https://www.cfa.go.jp/press/e64cf5c5-1de9-4983-af20-e9f5cfc3f4bc",
+      "date": "2026-10-21",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "こども家庭審議会障害児支援部会（第22回）",
+      "link": "https://www.cfa.go.jp/councils/shingikai/shougaiji_shien/779b0299",
+      "date": "2026-10-21",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "障害児通所"
+      ],
+      "systems": [
+        "障害"
+      ],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "第22回 こども家庭審議会障害児支援部会の開催",
+      "link": "https://www.cfa.go.jp/press/ce59fc80-1b14-4aa3-9f61-3f8ca050f345",
+      "date": "2026-10-21",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "障害児通所"
+      ],
+      "systems": [
+        "障害"
+      ],
+      "firstSeen": "2026-10-21"
     },
     {
       "title": "第２回創薬力向上のための官民協議会 施策検討・推進部会 資料",
@@ -647,6 +808,68 @@
       "bureau": null,
       "tags": [],
       "systems": [],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "第137回 社会保障審議会 介護保険部会（令和8年10月26日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22970&ct=070010020&from=rss",
+      "date": "2026-10-20",
+      "desc": "●主な議題持続可能性の確保（給付と負担）要介護認定その他（１）介護支援専門員法定研修の見直しの検討状況（報告）（２）その...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "第211回労働政策審議会労働条件分科会 議事録（2026年9月16日）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76835.html",
+      "date": "2026-10-20",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "第５回 医療関係職種の安定的な養成・確保に関する検討会：開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76847.html",
+      "date": "2026-10-20",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "自立支援医療受給者証(精神通院)交付事務に係る特定個人情報保護評価書（案）意見募集",
+      "link": "https://www.fukushi.metro.tokyo.lg.jp/information/press/2026/10/102101",
+      "date": "2026-10-20",
+      "desc": "東京都福祉局の10月21日 自立支援医療受給者証(精神通院)交付事務に係る特定個人情報保護評価書（案）意見募集(10月)です。",
+      "source": "東京都福祉局 報道発表",
+      "sourceId": "tokyo",
+      "region": "県",
+      "pref": "東京都",
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "障害"
+      ],
       "firstSeen": "2026-10-21"
     },
     {
@@ -1016,6 +1239,34 @@
       "sourceId": "egov-pc",
       "region": "国",
       "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "第２回精神医療に関する地域医療構想検討ワーキンググループ：資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76798.html",
+      "date": "2026-10-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "「都有地を活用した社会福祉施設建替え促進施設」の利用事業者の決定について",
+      "link": "https://www.fukushi.metro.tokyo.lg.jp/information/press/2026/10/102001",
+      "date": "2026-10-19",
+      "desc": "東京都福祉局の10月20日 「都有地を活用した社会福祉施設建替え促進施設」の利用事業者の決定について(10月)です。",
+      "source": "東京都福祉局 報道発表",
+      "sourceId": "tokyo",
+      "region": "県",
+      "pref": "東京都",
       "bureau": null,
       "tags": [],
       "systems": [],
@@ -1905,6 +2156,20 @@
         "障害"
       ],
       "firstSeen": "2026-10-17"
+    },
+    {
+      "title": "令和8年度 麻薬・覚醒剤・大麻乱用防止運動大阪大会を開催します。",
+      "link": "https://kouseikyoku.mhlw.go.jp/kinki/newpage_01367.html",
+      "date": "2026-10-15",
+      "desc": "",
+      "source": "近畿厚生局",
+      "sourceId": "kk-kinki",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "近畿",
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-21"
     },
     {
       "title": "第212回労働政策審議会労働条件分科会（資料）",
