@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T00:24:00.006Z",
+  "updated": "2026-10-22T12:52:10.185Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 9,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 107,
-      "added": 0,
+      "count": 104,
+      "added": 6,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 18,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -143,7 +143,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -214,7 +214,7 @@
       "bureau": null,
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 6,
+      "count": 5,
       "added": 0,
       "ok": true
     },
@@ -238,7 +238,7 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 32,
+      "count": 31,
       "added": 0,
       "ok": true
     },
@@ -287,7 +287,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -378,6 +378,108 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76909.html",
+      "date": "2026-10-22",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "令和８年度の医師臨床研修マッチング結果をお知らせします",
+      "link": "https://www.mhlw.go.jp/stf/houdou/0000180824_00012.html",
+      "date": "2026-10-22",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "薬事審議会 医薬品等安全対策部会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76824.html",
+      "date": "2026-10-22",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "「2040年に向けた地域医療構想」について",
+      "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000080850_00019.html",
+      "date": "2026-10-22",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "地域医療構想の実現に向けた重点支援区域の選定を行いました",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76650.html",
+      "date": "2026-10-22",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "採用情報（期間業務職員（職業安定局） )募集情報",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/hijoukin/hj-syokugyouanteikyoku.html",
+      "date": "2026-10-22",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "みて かんじて つながる劇体験 ～優良児童劇等公演事業～ 令和8年11月29日（日）三重県松坂市にて開催",
+      "link": "https://www.cfa.go.jp/press/2af7bcf9-bc05-4b75-be9a-155a2ad88045",
+      "date": "2026-10-22",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
     },
     {
       "title": "第８回医療扶助・健康管理支援等に関する検討会の開催について（報道発表）",
@@ -552,6 +654,130 @@
       "bureau": null,
       "tags": [],
       "systems": [],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "介護保険最新情報Vol.1548（PDF：700KB）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/1022090859211/ksvol.1548.pdf?from=rss",
+      "date": "2026-10-21",
+      "desc": "...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "介護保険最新情報Vol.1547（PDF：521KB）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/1022090743857/ksvol.1547.pdf?from=rss",
+      "date": "2026-10-21",
+      "desc": "...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "第24回成年後見制度利用促進専門家会議について（令和8年10月27日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22972&ct=070010010&from=rss",
+      "date": "2026-10-21",
+      "desc": "●主な議題（１）次期基本計画に係る意見交換（市町村長申立ての適切な実施と成年後見制度利用支援事業の推進、制度の利用しやす...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "風しん最新情報（令和8年10月20日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22982&ct=030100130&from=rss",
+      "date": "2026-10-21",
+      "desc": "●概略風しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "麻しん最新情報（令和8年10月20日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22980&ct=030100110&from=rss",
+      "date": "2026-10-21",
+      "desc": "●概略麻しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "第108回 厚生科学審議会感染症部会（令和8年10月28日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22977&ct=070010010&from=rss",
+      "date": "2026-10-21",
+      "desc": "●主な議題（１）感染症指定医療機関に求められる役割及び指定基準のあり方について●厚生労働省への傍聴申込み 一般傍聴席は...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "第160回 社会保障審議会 障害者部会（令和8年10月20日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22976&ct=010010090&from=rss",
+      "date": "2026-10-21",
+      "desc": "●主な議題（１）障害保健福祉施策の動向について（２）その他※詳細は以下のリンクからご参照ください。（会議資料）：社会保障...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "第22回 こども家庭審議会 障害児支援部会（令和8年10月28日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22975&ct=070010010&from=rss",
+      "date": "2026-10-21",
+      "desc": "●主な議題障害福祉報酬改定検討チームの議論の状況について（障害児支援関係）※詳細は以下のリンクからご参照ください。 ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "障害"
+      ],
       "firstSeen": "2026-10-22"
     },
     {
@@ -2212,6 +2438,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "インフルエンザ最新情報（令和8年10月16日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22979&ct=030100310&from=rss",
+      "date": "2026-10-15",
+      "desc": "●概略国立感染症研究所が発表するインフルエンザ流行レベルマップの最新情報を掲載しています。●概略国立感染症研究所へ移動イ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
     },
     {
       "title": "第212回労働政策審議会労働条件分科会（資料）",
