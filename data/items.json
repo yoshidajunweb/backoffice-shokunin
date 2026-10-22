@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T12:48:51.026Z",
+  "updated": "2026-10-22T00:24:00.006Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 107,
-      "added": 9,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 21,
-      "added": 0,
+      "count": 18,
+      "added": 3,
       "ok": true
     },
     {
@@ -191,7 +191,7 @@
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
       "count": 12,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -287,7 +287,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -539,6 +539,20 @@
         "障害"
       ],
       "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "スポーツにおける使用を禁止すべき物質及び国際規約に違反する行為を定める省令の一部を改正する省令に関するパブリック・コメント（意見公募手続）の実施について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=185001512&Mode=0",
+      "date": "2026-10-21",
+      "desc": "案の公示日：2026/10/22受付締切日時：2026/11/20 23:59カテゴリー：その他問合せ先（所管省庁・部局名等）：スポーツ庁参事官（国際担当）付 アンチ・ドーピング企画調整係、企画係 電話：03-5253-4111（内線2947）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
     },
     {
       "title": "第２回創薬力向上のための官民協議会 施策検討・推進部会 資料",
@@ -871,6 +885,34 @@
         "障害"
       ],
       "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "個人情報の保護に関する法律施行規則及び行政手続における特定の個人を識別するための番号の利用等に関する法律第二十九条の四第一項及び第二項に基づく特定個人情報の漏えい等に関する報告等に関する規則の一部を改正する規則（案）の意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=240000131&Mode=0",
+      "date": "2026-10-20",
+      "desc": "案の公示日：2026/10/21受付締切日時：2026/11/20 17:00カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：個人情報保護委員会事務局（個人情報保護制度担当室） 03-6457-9680（代表）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
+    },
+    {
+      "title": "J－クレジット制度文書の改定案に対する意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320043&Mode=0",
+      "date": "2026-10-20",
+      "desc": "案の公示日：2026/10/21受付締切日時：2026/11/04 18:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：経済産業省GXグループ環境政策課GX推進企画室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
     },
     {
       "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
@@ -3539,6 +3581,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-10"
+    },
+    {
+      "title": "令和8年度 医療観察法研修会の開催について",
+      "link": "https://kouseikyoku.mhlw.go.jp/kinki/newpage_01362.html",
+      "date": "2026-10-08",
+      "desc": "",
+      "source": "近畿厚生局",
+      "sourceId": "kk-kinki",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "近畿",
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-22"
     },
     {
       "title": "被保護者調査（令和８年７月分概数）",
