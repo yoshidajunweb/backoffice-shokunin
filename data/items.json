@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23T12:30:25.792Z",
+  "updated": "2026-10-24T00:13:17.100Z",
   "sources": [
     {
       "id": "wamnet",
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 102,
-      "added": 8,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 11,
-      "added": 0,
+      "count": 13,
+      "added": 7,
       "ok": true
     },
     {
@@ -191,7 +191,7 @@
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
       "count": 12,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -227,7 +227,7 @@
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
       "count": 4,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -238,7 +238,7 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 31,
+      "count": 32,
       "added": 0,
       "ok": true
     },
@@ -250,10 +250,9 @@
       "bureau": null,
       "url": "https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml",
       "type": "rss",
-      "count": 0,
+      "count": 4,
       "added": 0,
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true
     },
     {
       "id": "chiba-koufuku",
@@ -288,7 +287,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 9,
-      "added": 5,
+      "added": 0,
       "ok": true
     },
     {
@@ -623,6 +622,48 @@
       "firstSeen": "2026-10-23"
     },
     {
+      "title": "周波数割当計画の一部を変更する告示案に係る意見募集 -26GHz帯における第5世代移動通信システムの普及のための価額競争実施指針に係る価額競争の実施の結果の反映-",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210784&Mode=0",
+      "date": "2026-10-23",
+      "desc": "案の公示日：2026/10/24受付締切日時：2026/11/24 23:59カテゴリー：電気通信問合せ先（所管省庁・部局名等）：総務省総合通信基盤局電波部電波政策課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-24"
+    },
+    {
+      "title": "選挙の公正に対する悪影響を軽減するための措置の適切かつ有効な実施に関する指針案等に対する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210789&Mode=0",
+      "date": "2026-10-23",
+      "desc": "案の公示日：2026/10/24受付締切日時：2026/11/24 23:59カテゴリー：電気通信問合せ先（所管省庁・部局名等）：総務省情報流通行政局情報流通振興課 情報流通適正化推進室 TEL:03-5253-5850",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-24"
+    },
+    {
+      "title": "令和８年総務省告示第43号（電波法施行規則第７条第５号の規定に基づく特定実験試験局として使用可能な周波数の範囲等を定める件）の一部を改正する告示案に関する意見募集 - 5.8GHz帯ドローン用実験試験局の利用手続の簡素化 -",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210785&Mode=0",
+      "date": "2026-10-23",
+      "desc": "案の公示日：2026/10/24受付締切日時：2026/11/24 23:59カテゴリー：電気通信問合せ先（所管省庁・部局名等）：総務省総合通信基盤局電波部電波政策課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-24"
+    },
+    {
       "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
       "link": "https://www.mhlw.go.jp/stf/newpage_76909.html",
       "date": "2026-10-22",
@@ -823,6 +864,62 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-23"
+    },
+    {
+      "title": "車両制限令の一部を改正する政令案に関するパブリックコメントの募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260605&Mode=0",
+      "date": "2026-10-22",
+      "desc": "案の公示日：2026/10/23受付締切日時：2026/11/21 16:30カテゴリー：道路問合せ先（所管省庁・部局名等）：国土交通省道路局路政課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-24"
+    },
+    {
+      "title": "サイバー・フィジカル・セキュリティ対策フレームワーク（CPSF）version 1.1（案）に対する意見公募について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320042&Mode=0",
+      "date": "2026-10-22",
+      "desc": "案の公示日：2026/10/23受付締切日時：2026/12/22 00:00カテゴリー：IT社会化推進問合せ先（所管省庁・部局名等）：経済産業省商務情報政策局サイバーセキュリティ課・情報経済課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-24"
+    },
+    {
+      "title": "釧路湿原国立公園の公園区域及び公園計画の変更[第２次点検]に関する意見の募集（パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260072&Mode=0",
+      "date": "2026-10-22",
+      "desc": "案の公示日：2026/10/23受付締切日時：2026/11/22 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省自然環境局国立公園課（03-5521-8279）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-24"
+    },
+    {
+      "title": "防災重点農業用ため池に係る防災工事等基本指針の一部改正案についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004434&Mode=0",
+      "date": "2026-10-22",
+      "desc": "案の公示日：2026/10/23受付締切日時：2026/11/24 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：農林水産省農村振興局整備部防災課 電話：03-3502-8111（内線5660）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-24"
     },
     {
       "title": "第８回医療扶助・健康管理支援等に関する検討会の開催について（報道発表）",
