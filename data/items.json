@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T12:25:38.288Z",
+  "updated": "2026-10-25T23:45:06.596Z",
   "sources": [
     {
       "id": "wamnet",
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 102,
-      "added": 0,
+      "count": 94,
+      "added": 1,
       "ok": true
     },
     {
@@ -142,7 +142,7 @@
       "bureau": "近畿",
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
-      "count": 5,
+      "count": 4,
       "added": 0,
       "ok": true
     },
@@ -226,7 +226,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 4,
+      "count": 2,
       "added": 0,
       "ok": true
     },
@@ -323,7 +323,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -378,6 +378,24 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "第137回社会保障審議会介護保険部会の資料について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76887.html",
+      "date": "2026-10-25",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-25"
     },
     {
       "title": "第213回労働政策審議会労働条件分科会（資料）",
