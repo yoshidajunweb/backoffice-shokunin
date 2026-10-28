@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T00:56:41.111Z",
+  "updated": "2026-10-28T13:54:25.708Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 98,
-      "added": 0,
+      "count": 104,
+      "added": 6,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 17,
-      "added": 7,
+      "added": 0,
       "ok": true
     },
     {
@@ -201,8 +201,8 @@
       "bureau": null,
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
-      "count": 8,
-      "added": 0,
+      "count": 9,
+      "added": 1,
       "ok": true
     },
     {
@@ -213,8 +213,8 @@
       "bureau": null,
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 5,
-      "added": 0,
+      "count": 6,
+      "added": 1,
       "ok": true
     },
     {
@@ -225,8 +225,8 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 2,
-      "added": 0,
+      "count": 3,
+      "added": 1,
       "ok": true
     },
     {
@@ -262,7 +262,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -273,8 +273,8 @@
       "bureau": null,
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 1,
-      "added": 0,
+      "count": 3,
+      "added": 2,
       "ok": true
     },
     {
@@ -285,8 +285,8 @@
       "bureau": null,
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
-      "count": 10,
-      "added": 0,
+      "count": 9,
+      "added": 5,
       "ok": true
     },
     {
@@ -377,6 +377,246 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "第１回 生命科学・医学系研究等における個人情報の取扱い等に関する合同会議 第１タスクフォース",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76975.html",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "労働者派遣事業及び有料の職業紹介事業の許可を取り消しました",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76850.html",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "2026年９月14日 第８回労働政策審議会労働条件分科会「組織再編に伴う労働関係の調整に関する部会」 議事録",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76987.html",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "民間競争入札実施事業 就労条件総合調査の実施状況について（令和７年度分）",
+      "link": "https://www.mhlw.go.jp/topics/2026/10/tp1028-1.html",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "令和８年度栄養関係功労者（食生活改善事業功労者・地区組織）厚生労働大臣表彰受賞者が決まりました",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76867.html",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "七沢療育園における利用者への虐待について",
+      "link": "https://www.pref.kanagawa.jp/docs/w8d/prs/r3654722.html",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "神奈川県",
+      "sourceId": "kanagawa",
+      "region": "県",
+      "pref": "神奈川県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "令和8年度「民間事業者向け認知症への理解増進セミナー」の開催について",
+      "link": "https://www.pref.osaka.lg.jp/hodo/fumin/o090090/prs_50955.html",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "大阪府",
+      "sourceId": "osaka",
+      "region": "県",
+      "pref": "大阪府",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "「介護の日」及び「福祉人材確保重点実施期間」について",
+      "link": "https://www.pref.aichi.jp/soshiki/fukushi-kikaku/fukushijinnzaikakuhojyuutennjissikikann.html",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "愛知県",
+      "sourceId": "aichi",
+      "region": "県",
+      "pref": "愛知県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "介護サービス事業者経営情報の報告",
+      "link": "https://www.pref.chiba.lg.jp/koufuku/kaigohoken/kaigokeiei.html",
+      "date": "",
+      "desc": "",
+      "source": "千葉県 高齢者福祉課",
+      "sourceId": "chiba-koufuku",
+      "region": "県",
+      "pref": "千葉県",
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "「心の健康フェア2026 in ちば」の開催について",
+      "link": "https://www.pref.chiba.lg.jp/shoufuku/press/2026/fair2026.html",
+      "date": "",
+      "desc": "",
+      "source": "千葉県",
+      "sourceId": "chiba",
+      "region": "県",
+      "pref": "千葉県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "精神科病院における業務従事者による障害者虐待の状況等について",
+      "link": "https://www.pref.chiba.lg.jp/shoufuku/press/2026/gyakutai.html",
+      "date": "",
+      "desc": "",
+      "source": "千葉県",
+      "sourceId": "chiba",
+      "region": "県",
+      "pref": "千葉県",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "児童厚生施設及び放課後児童クラブに関する専門委員会（第8回）",
+      "link": "https://www.cfa.go.jp/councils/shingikai/kodomo_ibasho/jidoukan/5d5ae75e",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "児童厚生施設及び放課後児童クラブに関する専門委員会（第8回）",
+      "link": "https://www.cfa.go.jp/press/1a661ea3-dac7-4c0e-b3b6-d3ef735cfc45",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "第20回 人工妊娠中絶一時金認定審査部会の審査結果",
+      "link": "https://www.cfa.go.jp/press/4359160a-5c32-4321-83a2-0b33852287a6",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "意見招請：保育業務施設管理プラットフォームの運用・保守等業務（令和9年度～令和13年度）一式",
+      "link": "https://www.cfa.go.jp/procurement",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "title": "「第44回青少年インターネット利用環境づくりフォーラムin熊本」の開催",
+      "link": "https://www.cfa.go.jp/policies/youth-kankyou/internet_use_gyouji/r08-forum",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-28"
     },
     {
       "title": "第１回国民年金第３号被保険者制度等に関する検討会（議事録）",
@@ -3253,6 +3493,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "採用情報（任期付職員（医業経営専門官又は主査）募集情報）",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/ninkituki/ninki-igyoukeieisenmonkanorsyusa.html",
+      "date": "2026-10-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-28"
     },
     {
       "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
