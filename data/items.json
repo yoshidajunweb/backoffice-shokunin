@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T01:29:49.348Z",
+  "updated": "2026-10-29T14:00:22.210Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 98,
-      "added": 0,
+      "count": 101,
+      "added": 3,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 16,
-      "added": 7,
+      "added": 0,
       "ok": true
     },
     {
@@ -189,8 +189,8 @@
       "bureau": null,
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
-      "count": 12,
-      "added": 0,
+      "count": 13,
+      "added": 1,
       "ok": true
     },
     {
@@ -213,8 +213,8 @@
       "bureau": null,
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 6,
-      "added": 0,
+      "count": 7,
+      "added": 1,
       "ok": true
     },
     {
@@ -225,7 +225,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 2,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -262,7 +262,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -285,8 +285,8 @@
       "bureau": null,
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
-      "count": 9,
-      "added": 0,
+      "count": 10,
+      "added": 1,
       "ok": true
     },
     {
@@ -392,6 +392,54 @@
       "systems": [
         "補助金"
       ],
+      "firstSeen": "2026-10-29"
+    },
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77072.html",
+      "date": "2026-10-29",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-29"
+    },
+    {
+      "title": "頼れる身寄りがいない高齢者等の支援に係る市町村勉強会の開催について",
+      "link": "https://www.pref.osaka.lg.jp/hodo/fumin/o090020/prs_51109.html",
+      "date": "2026-10-29",
+      "desc": "",
+      "source": "大阪府",
+      "sourceId": "osaka",
+      "region": "県",
+      "pref": "大阪府",
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [],
+      "firstSeen": "2026-10-29"
+    },
+    {
+      "title": "保育士養成課程等検討会（第6回）",
+      "link": "https://www.cfa.go.jp/press/995f00fa-de6e-4d25-bf16-2449e3c6c6c3",
+      "date": "2026-10-29",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
       "firstSeen": "2026-10-29"
     },
     {
@@ -691,6 +739,40 @@
       "firstSeen": "2026-10-29"
     },
     {
+      "title": "第272回 社会保障審議会 介護給付費分科会（令和8年10月28日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=22997&ct=010010020&from=rss",
+      "date": "2026-10-28",
+      "desc": "●主な議題 １．令和９年度介護報酬改定に向けて （１）各サービス（特定施設入居者生活介護、登録施設介護支援）...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-29"
+    },
+    {
+      "title": "『高齢者の生活実態』の結果 令和7年度東京都福祉保健基礎調査",
+      "link": "https://www.fukushi.metro.tokyo.lg.jp/information/press/2026/10/102916",
+      "date": "2026-10-28",
+      "desc": "東京都福祉局の10月29日 『高齢者の生活実態』の結果 令和7年度東京都福祉保健基礎調査(10月)です。",
+      "source": "東京都福祉局 報道発表",
+      "sourceId": "tokyo",
+      "region": "県",
+      "pref": "東京都",
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [],
+      "firstSeen": "2026-10-29"
+    },
+    {
       "title": "第１回国民年金第３号被保険者制度等に関する検討会（議事録）",
       "link": "https://www.mhlw.go.jp/stf/newpage_76904.html",
       "date": "2026-10-27",
@@ -887,6 +969,20 @@
       "desc": "案の公示日：2026/10/28受付締切日時：2026/11/27 00:00カテゴリー：産業一般問合せ先（所管省庁・部局名等）：経済産業省イノベーション・環境局計量行政室",
       "source": "e-Gov パブコメ",
       "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-29"
+    },
+    {
+      "title": "第16回医師養成過程を通じた医師の偏在対策等に関する検討会",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76989.html",
+      "date": "2026-10-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
       "region": "国",
       "pref": null,
       "bureau": null,
@@ -1698,6 +1794,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-24"
+    },
+    {
+      "title": "先進医療会議の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76926.html",
+      "date": "2026-10-23",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-29"
     },
     {
       "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
