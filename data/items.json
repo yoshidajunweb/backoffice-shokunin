@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T01:30:59.179Z",
+  "updated": "2026-10-30T13:55:32.846Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 102,
-      "added": 6,
+      "count": 131,
+      "added": 27,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 17,
-      "added": 9,
+      "added": 0,
       "ok": true
     },
     {
@@ -129,8 +129,8 @@
       "bureau": "東海北陸",
       "url": "https://kouseikyoku.mhlw.go.jp/tokaihokuriku/news/news.xml",
       "type": "rss",
-      "count": 1,
-      "added": 0,
+      "count": 2,
+      "added": 1,
       "ok": true
     },
     {
@@ -201,8 +201,8 @@
       "bureau": null,
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
-      "count": 9,
-      "added": 0,
+      "count": 10,
+      "added": 2,
       "ok": true
     },
     {
@@ -213,8 +213,8 @@
       "bureau": null,
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 7,
-      "added": 0,
+      "count": 6,
+      "added": 1,
       "ok": true
     },
     {
@@ -225,7 +225,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 2,
+      "count": 3,
       "added": 1,
       "ok": true
     },
@@ -262,7 +262,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -273,8 +273,8 @@
       "bureau": null,
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 3,
-      "added": 0,
+      "count": 5,
+      "added": 2,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 2,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -470,6 +470,491 @@
       "systems": [
         "介護"
       ],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "不正アクセスによる情報漏えい等の事案を踏まえたセキュリティ対策の徹底について（注意喚起）",
+      "link": "https://www.mhlw.go.jp/stf/kinkyu/20261030.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "中央最低賃金審議会 (目安に関する小委員会)",
+      "link": "https://www.mhlw.go.jp/stf/shingi/shingi-tingin_127941.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "平成２５年生活扶助基準改定に関する最高裁判決への対応について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77119.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "平成２５年生活扶助基準改定に関する最高裁判決への対応について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77114.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "輸入食品に対する検査命令の実施 （中国産おくら、その加工品）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77091.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77107.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "11月は「『しわ寄せ』防止キャンペーン月間」です",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76722.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "「グッドキャリア企業アワード2026」表彰式の参加申込開始",
+      "link": "https://www.mhlw.go.jp/career-award/",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "令和８年度生涯現役地域づくり環境整備事業情報交換会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77054.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "11月は｢人材開発促進月間｣です",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77005.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "最近の調剤医療費（電算処理分）の動向 令和8年度6月号",
+      "link": "https://www.mhlw.go.jp/topics/medias/c-med/2026/06/",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "最近の歯科医療費（電算処理分）の動向 令和8年度6月号",
+      "link": "https://www.mhlw.go.jp/topics/medias/shika_iryou/2026/06/",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "最近の医科医療費（電算処理分）の動向 令和8年度6月号",
+      "link": "https://www.mhlw.go.jp/topics/medias/ika_iryou/2026/06/",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "最近の医療費の動向-MEDIAS-令和8年度6月号",
+      "link": "https://www.mhlw.go.jp/topics/medias/month/26/06.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "介護給付費等実態統計月報（令和８（2026）年７月審査分）",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/kaigo/kyufu/2026/07.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "令和８年度地域介護・福祉空間整備等施設整備交付金（一次協議分）の内示について（追加内示）",
+      "link": "https://www.mhlw.go.jp/stf/hard2026-10_00001.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "「遺族年金受給者実態調査」にご協力ください",
+      "link": "https://www.mhlw.go.jp/toukei/list/95-1.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "医療施設動態調査（令和8(2026)年8月末概数）",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/iryosd/m26/is2608.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "第273回社会保障審議会介護給付費分科会（Web会議）を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76901.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "令和８年度「認定生活困窮者就労訓練事業所厚生労働大臣表彰」の被表彰事業所の決定について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76872.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "令和６（2024）年度 国民医療費",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/k-iryohi/24/index.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "第１回「令和８年度管理栄養士国家試験出題基準（ガイドライン）改定検討会」開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76777.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "「第14回厚生科学審議会食品衛生監視部会」の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76613.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "「福祉を次のキャリアに～ミドル・シニアの経験を生かす新たな挑戦」オンライン説明会を開催します",
+      "link": "https://www.pref.kanagawa.jp/docs/n7j/prs/r3881112.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "神奈川県",
+      "sourceId": "kanagawa",
+      "region": "県",
+      "pref": "神奈川県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "令和8年6月1日現在の障害者雇用率",
+      "link": "https://www.pref.kanagawa.jp/docs/s6d/prs/r4366831.html",
+      "date": "2026-10-30",
+      "desc": "令和8年6月1日現在の障害者雇用率",
+      "source": "神奈川県",
+      "sourceId": "kanagawa",
+      "region": "県",
+      "pref": "神奈川県",
+      "bureau": null,
+      "tags": [
+        "障害福祉",
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "11月は「子供・若者育成支援推進強調月間」です",
+      "link": "https://www.pref.osaka.lg.jp/hodo/fumin/o090136/prs_51107.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "大阪府",
+      "sourceId": "osaka",
+      "region": "県",
+      "pref": "大阪府",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "第12回東海三県小児在宅医療・福祉・教育研究会の参加者を募集します",
+      "link": "https://www.pref.aichi.jp/soshiki/shogai/toukaisanken2026.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "愛知県",
+      "sourceId": "aichi",
+      "region": "県",
+      "pref": "愛知県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "介護事業所の経営改善支援モデル事業に係る支援先事業所の募集について",
+      "link": "https://www.pref.chiba.lg.jp/koufuku/gyoumukaizen/keieimodel.html",
+      "date": "",
+      "desc": "",
+      "source": "千葉県 高齢者福祉課",
+      "sourceId": "chiba-koufuku",
+      "region": "県",
+      "pref": "千葉県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "令和8年度第1回千葉県障害者差別解消支援地域協議会及び第2回千葉県障害のある人の相談に関する調整委員会の開催について",
+      "link": "https://www.pref.chiba.lg.jp/shoufuku/shingikai/chousei/kaisai.html",
+      "date": "",
+      "desc": "",
+      "source": "千葉県",
+      "sourceId": "chiba",
+      "region": "県",
+      "pref": "千葉県",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "指定障害児通所支援事業者の行政処分について（令和８年10月30日）",
+      "link": "https://www.pref.chiba.lg.jp/shoji/press/2026/mkshobun.html",
+      "date": "",
+      "desc": "",
+      "source": "千葉県",
+      "sourceId": "chiba",
+      "region": "県",
+      "pref": "千葉県",
+      "bureau": null,
+      "tags": [
+        "障害児通所"
+      ],
+      "systems": [
+        "障害"
+      ],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "中司大臣記者会見（令和8年10月30日）",
+      "link": "https://www.cfa.go.jp/speech/68cfc922",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "第9回 社会的養育・家庭支援部会の開催",
+      "link": "https://www.cfa.go.jp/press/9531350c-b313-4403-98d1-bac77d7677ca",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
       "firstSeen": "2026-10-30"
     },
     {
@@ -641,6 +1126,34 @@
       "desc": "案の公示日：2026/10/30受付締切日時：2026/11/30 23:59カテゴリー：国税問合せ先（所管省庁・部局名等）：国税庁課税部酒税課酒類業振興・輸出促進室 地理的表示係03－3581－4161（内線3114）",
       "source": "e-Gov パブコメ",
       "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "第２回創薬力向上のための官民協議会 施策検討・推進部会 資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77073.html",
+      "date": "2026-10-29",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "平成２５年生活扶助基準改定に関する最高裁判決への対応について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77069.html",
+      "date": "2026-10-29",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
       "region": "国",
       "pref": null,
       "bureau": null,
@@ -1027,6 +1540,20 @@
       "desc": "案の公示日：2026/10/29受付締切日時：2026/11/27 18:00カテゴリー：工業問合せ先（所管省庁・部局名等）：資源エネルギー庁資源・燃料部 燃料流通政策室 パブリックコメント担当",
       "source": "e-Gov パブコメ",
       "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "実施中の調査",
+      "link": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000149274_00001.html",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
       "region": "国",
       "pref": null,
       "bureau": null,
@@ -1772,6 +2299,20 @@
         "労務"
       ],
       "firstSeen": "2026-10-27"
+    },
+    {
+      "title": "中東情勢関連対策ワンストップポータル",
+      "link": "https://www.mhlw.go.jp/stf/chuto-josei.html",
+      "date": "2026-10-25",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
     },
     {
       "title": "第213回労働政策審議会労働条件分科会（資料）",
@@ -3483,6 +4024,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-21"
+    },
+    {
+      "title": "令和8年度医療安全に関するワークショップの開催について",
+      "link": "https://kouseikyoku.mhlw.go.jp/tokaihokuriku/gyomu/gyomu/iryoanzen/index_0001.html",
+      "date": "2026-10-19",
+      "desc": "",
+      "source": "東海北陸厚生局",
+      "sourceId": "kk-tokai",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "東海北陸",
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-30"
     },
     {
       "title": "第271回 社会保障審議会 介護給付費分科会（令和8年10月19日開催）",
