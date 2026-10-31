@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T13:55:32.846Z",
+  "updated": "2026-10-31T01:24:13.128Z",
   "sources": [
     {
       "id": "wamnet",
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 131,
-      "added": 27,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 17,
-      "added": 0,
+      "count": 23,
+      "added": 10,
       "ok": true
     },
     {
@@ -130,7 +130,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/tokaihokuriku/news/news.xml",
       "type": "rss",
       "count": 2,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -202,7 +202,7 @@
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
       "count": 10,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -214,7 +214,7 @@
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
       "count": 6,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -226,7 +226,7 @@
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
       "count": 3,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -262,7 +262,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -274,7 +274,7 @@
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
       "count": 5,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -958,6 +958,20 @@
       "firstSeen": "2026-10-30"
     },
     {
+      "title": "行政書士法施行規則の一部を改正する省令（案）に対する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210794&Mode=0",
+      "date": "2026-10-30",
+      "desc": "案の公示日：2026/10/31受付締切日時：2026/11/30 23:59カテゴリー：地方自治問合せ先（所管省庁・部局名等）：総務省自治行政局行政課 TEL:03-5253-5510 FAX:03-5253-5511",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-31"
+    },
+    {
       "title": "【再募集】令和9年度地域介護・福祉空間整備等施設整備補助金の募集について（応募〆切：令和8年11月6日（金曜日））",
       "link": "https://www.pref.chiba.lg.jp/koufuku/shisetsuseibi/hojo/saichosakuukanhojokin.html",
       "date": "",
@@ -1160,6 +1174,134 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "「基礎ぐいを有する建築物の転倒に対する検証・改修指針（案）」に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260725&Mode=0",
+      "date": "2026-10-29",
+      "desc": "案の公示日：2026/10/30受付締切日時：2026/11/29 09:30カテゴリー：建築、住宅問合せ先（所管省庁・部局名等）：国土交通省住宅局建築指導課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-31"
+    },
+    {
+      "title": "医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律施行規則第二百十六条の二第一項の規定に基づき厚生労働大臣が指定する医薬品及び期間の一部を改正する件（案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260246&Mode=0",
+      "date": "2026-10-29",
+      "desc": "案の公示日：2026/10/30受付締切日時：2026/11/29 00:00カテゴリー：厚生問合せ先（所管省庁・部局名等）：医薬局 監視指導・麻薬対策課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-10-31"
+    },
+    {
+      "title": "トド管理基本方針の一部改正案についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004440&Mode=0",
+      "date": "2026-10-29",
+      "desc": "案の公示日：2026/10/30受付締切日時：2026/11/28 23:59カテゴリー：水産業問合せ先（所管省庁・部局名等）：水産庁増殖推進部漁場資源課生態系保全室環境調査班 電話：03-3502-8111（内線6810）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-31"
+    },
+    {
+      "title": "ヒトゲノム編集胚等の取扱いの規制に関する法律施行令（案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260239&Mode=0",
+      "date": "2026-10-29",
+      "desc": "案の公示日：2026/10/30受付締切日時：2026/11/28 23:59カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省大臣官房厚生科学課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-31"
+    },
+    {
+      "title": "ヒトゲノム編集胚等の取扱いの規制に関する法律施行規則（案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260240&Mode=0",
+      "date": "2026-10-29",
+      "desc": "案の公示日：2026/10/30受付締切日時：2026/11/28 23:59カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省大臣官房厚生科学課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-31"
+    },
+    {
+      "title": "ヒトゲノム編集胚等の取扱いに関する指針（案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260241&Mode=0",
+      "date": "2026-10-29",
+      "desc": "案の公示日：2026/10/30受付締切日時：2026/11/28 23:59カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省大臣官房厚生科学課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-31"
+    },
+    {
+      "title": "畜舎等の建築等及び利用の特例に関する法律施行規則の一部を改正する省令案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260729&Mode=0",
+      "date": "2026-10-29",
+      "desc": "案の公示日：2026/10/30受付締切日時：2026/11/29 00:00カテゴリー：建築、住宅問合せ先（所管省庁・部局名等）：国土交通省住宅局建築指導課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-31"
+    },
+    {
+      "title": "経済産業省関係産業競争力強化法施行規則の一部を改正する省令（案）に対する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320118&Mode=0",
+      "date": "2026-10-29",
+      "desc": "案の公示日：2026/10/30受付締切日時：2026/11/28 23:59カテゴリー：経済財政政策問合せ先（所管省庁・部局名等）：​経済産業省 ​​経済産業政策局 産業創造課​",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-31"
+    },
+    {
+      "title": "経済産業省関係産業競争力強化法施行規則第二十九条第二項の規定に基づき認証紛争解決事業者が手続実施者に確認を求める事項の一部を改正する告示（案）に対する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320119&Mode=0",
+      "date": "2026-10-29",
+      "desc": "案の公示日：2026/10/30受付締切日時：2026/11/28 23:59カテゴリー：経済財政政策問合せ先（所管省庁・部局名等）：経済産業省 経済産業政策局 産業創造課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-10-31"
     },
     {
       "title": "第１回 生命科学・医学系研究等における個人情報の取扱い等に関する合同会議 第１タスクフォース",
