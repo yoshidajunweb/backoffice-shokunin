@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T13:28:26.531Z",
+  "updated": "2026-11-01T00:39:33.113Z",
   "sources": [
     {
       "id": "wamnet",
@@ -225,7 +225,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 3,
+      "count": 4,
       "added": 0,
       "ok": true
     },
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
