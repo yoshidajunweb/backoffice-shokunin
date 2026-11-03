@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T16:55:43.150Z",
+  "updated": "2026-11-03T03:16:24.760Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 5,
+      "added": 0,
       "ok": true
     },
     {
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 131,
-      "added": 11,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 17,
-      "added": 0,
+      "count": 12,
+      "added": 9,
       "ok": true
     },
     {
@@ -190,7 +190,7 @@
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
       "count": 15,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -202,7 +202,7 @@
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
       "count": 11,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -214,7 +214,7 @@
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
       "count": 6,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -262,7 +262,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -285,7 +285,7 @@
       "bureau": null,
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
-      "count": 9,
+      "count": 10,
       "added": 1,
       "ok": true
     },
@@ -377,6 +377,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "令和8年秋の叙勲受章者一覧",
+      "link": "https://www.cfa.go.jp/press/d57d945a-34a1-4ce9-b5c6-9ecc7a53eb69",
+      "date": "2026-11-03",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-03"
     },
     {
       "title": "採用情報（任期付職員（業務改革推進専門官又は主査）募集情報）",
@@ -633,6 +647,34 @@
       "firstSeen": "2026-11-02"
     },
     {
+      "title": "栄養士法施行規則の一部を改正する省令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260248&Mode=0",
+      "date": "2026-11-02",
+      "desc": "案の公示日：2026/11/03受付締切日時：2026/12/03 00:00カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省健康・生活衛生局健康課 代表番号：03-5253-1111（内線8125）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-03"
+    },
+    {
+      "title": "第一種指定電気通信設備接続料規則の一部を改正する省令案に対する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210791&Mode=0",
+      "date": "2026-11-02",
+      "desc": "案の公示日：2026/11/03受付締切日時：2026/12/02 23:59カテゴリー：電気通信問合せ先（所管省庁・部局名等）：総務省総合通信基盤局電気通信事業部料金サービス課 電話：０３－５２５３－５８４４",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-03"
+    },
+    {
       "title": "●○● 11月は ｢ケアラー支援推進月間｣ ●○● ケアラー支援に関する道の取組について",
       "link": "https://www.pref.hokkaido.lg.jp/hf/khf/238460.html",
       "date": "2026-11-01",
@@ -820,6 +862,104 @@
         "障害"
       ],
       "firstSeen": "2026-11-02"
+    },
+    {
+      "title": "「著作権法施行令の一部を改正する政令（案）」及び「著作権法施行規則の一部を改正する省令（案）」に関する意見募集の実施について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=185001515&Mode=0",
+      "date": "2026-11-01",
+      "desc": "案の公示日：2026/11/02受付締切日時：2026/12/01 23:59カテゴリー：文化問合せ先（所管省庁・部局名等）：文化庁著作権課 03-5253-4111（内線：4824）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-03"
+    },
+    {
+      "title": "「遺伝子治療等臨床研究に関する指針」を廃止する告示（案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260247&Mode=0",
+      "date": "2026-11-01",
+      "desc": "案の公示日：2026/11/02受付締切日時：2026/12/01 23:59カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省大臣官房厚生科学課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-03"
+    },
+    {
+      "title": "船舶安全法施行規則及び船舶設備規程等の一部を改正する省令の一部を改正する省令案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155261034&Mode=0",
+      "date": "2026-11-01",
+      "desc": "案の公示日：2026/11/02受付締切日時：2026/12/03 16:30カテゴリー：海運問合せ先（所管省庁・部局名等）：国土交通省海事局安全政策課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-03"
+    },
+    {
+      "title": "児童福祉施設の設備及び運営に関する基準の一部を改正する内閣府令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=141000244&Mode=0",
+      "date": "2026-11-01",
+      "desc": "案の公示日：2026/11/02受付締切日時：2026/12/01 23:59カテゴリー：社会福祉問合せ先（所管省庁・部局名等）：こども家庭庁成育局保育政策課企画法令第一係",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-03"
+    },
+    {
+      "title": "幼保連携型認定こども園の学級の編制、職員、設備及び運営に関する基準の一部を改正する命令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=141000245&Mode=0",
+      "date": "2026-11-01",
+      "desc": "案の公示日：2026/11/02受付締切日時：2026/12/01 23:59カテゴリー：社会福祉問合せ先（所管省庁・部局名等）：こども家庭庁成育局保育政策課企画法令第一係",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-03"
+    },
+    {
+      "title": "就学前の子どもに関する教育、保育等の総合的な提供の推進に関する法律第三条第二項及び第四項の規定に基づき内閣総理大臣及び文部科学大臣が定める施設の設備及び運営に関する基準の一部を改正する件案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=141000246&Mode=0",
+      "date": "2026-11-01",
+      "desc": "案の公示日：2026/11/02受付締切日時：2026/12/01 23:59カテゴリー：社会福祉問合せ先（所管省庁・部局名等）：こども家庭庁成育局保育政策課企画法令第一係",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-03"
+    },
+    {
+      "title": "高圧ガス保安法に基づく指定完成検査機関等の指定について等の一部を改正する規程（案）に対する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320120&Mode=0",
+      "date": "2026-11-01",
+      "desc": "案の公示日：2026/11/02受付締切日時：2026/12/01 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：経済産業省大臣官房産業保安・安全グループ高圧ガス保安室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-03"
     },
     {
       "title": "採用情報（任期付職員（企画開発係長）募集情報）",
