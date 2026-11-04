@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T01:51:41.363Z",
+  "updated": "2026-11-04T15:15:55.305Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 115,
-      "added": 8,
+      "count": 120,
+      "added": 5,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 16,
-      "added": 5,
+      "added": 0,
       "ok": true
     },
     {
@@ -166,7 +166,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/shikoku/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -190,7 +190,7 @@
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
       "count": 15,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -213,8 +213,8 @@
       "bureau": null,
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 6,
-      "added": 0,
+      "count": 7,
+      "added": 1,
       "ok": true
     },
     {
@@ -225,7 +225,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 3,
+      "count": 4,
       "added": 0,
       "ok": true
     },
@@ -237,7 +237,7 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 32,
+      "count": 33,
       "added": 0,
       "ok": true
     },
@@ -274,7 +274,7 @@
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
       "count": 5,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -285,8 +285,8 @@
       "bureau": null,
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
-      "count": 10,
-      "added": 0,
+      "count": 8,
+      "added": 3,
       "ok": true
     },
     {
@@ -297,9 +297,10 @@
       "bureau": null,
       "url": "https://www.careplan-renkei-support.jp/info/index.html",
       "type": "page-list",
-      "count": 35,
-      "added": 3,
-      "ok": true
+      "count": 0,
+      "added": 0,
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "id": "mhlw-koyou-josei",
@@ -321,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -476,6 +477,154 @@
       "firstSeen": "2026-11-04"
     },
     {
+      "title": "「人口動態統計月報（概数）」令和８（2026）年６月分",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/geppo/m2026/06.html",
+      "date": "2026-11-04",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-04"
+    },
+    {
+      "title": "第138回社会保障審議会介護保険部会の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77153.html",
+      "date": "2026-11-04",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-04"
+    },
+    {
+      "title": "第１回令和８年度管理栄養士国家試験出題基準（ガイドライン）改定検討会 資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77142.html",
+      "date": "2026-11-04",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-04"
+    },
+    {
+      "title": "令和８年度第７回化学物質管理に係る専門家検討会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77017.html",
+      "date": "2026-11-04",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-04"
+    },
+    {
+      "title": "社会保障審議会（介護保険部会）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77162.html",
+      "date": "2026-11-04",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-04"
+    },
+    {
+      "title": "ひきこもり当事者会inOSAKA2市を開催します",
+      "link": "https://www.pref.osaka.lg.jp/hodo/fumin/o090136/prs_51106.html",
+      "date": "2026-11-04",
+      "desc": "",
+      "source": "大阪府",
+      "sourceId": "osaka",
+      "region": "県",
+      "pref": "大阪府",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-04"
+    },
+    {
+      "title": "「ちば農福連携マルシェ」及び「手しごとマルシェ」の開催について（令和8年度）",
+      "link": "https://www.pref.chiba.lg.jp/shoji/press/2026/marushe8.html",
+      "date": "",
+      "desc": "",
+      "source": "千葉県",
+      "sourceId": "chiba",
+      "region": "県",
+      "pref": "千葉県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-04"
+    },
+    {
+      "title": "第26回健やか親子21推進本部総会の開催",
+      "link": "https://www.cfa.go.jp/press/e6c80e6c-f7e7-4205-9dd7-215023b7577f",
+      "date": "2026-11-04",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-04"
+    },
+    {
+      "title": "こども家庭審議会幼児期までのこどもの育ち部会こどもの預かりサービスの在り方に関する専門委員会(第3回)",
+      "link": "https://www.cfa.go.jp/press/aec42643-7ded-4738-96b4-1570aaea9a37",
+      "date": "2026-11-04",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-04"
+    },
+    {
+      "title": "採用情報：選考採用試験（課長補佐級（総合職相当））（係長級（総合職相当））",
+      "link": "https://www.cfa.go.jp/recruitment/senkou",
+      "date": "2026-11-04",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-04"
+    },
+    {
       "title": "令和8年秋の叙勲受章者一覧",
       "link": "https://www.cfa.go.jp/press/d57d945a-34a1-4ce9-b5c6-9ecc7a53eb69",
       "date": "2026-11-03",
@@ -600,6 +749,20 @@
       "sourceId": "egov-pc",
       "region": "国",
       "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-04"
+    },
+    {
+      "title": "令和8年度第1回東京都介護現場革新会議の開催について",
+      "link": "https://www.fukushi.metro.tokyo.lg.jp/information/press/2026/11/110410",
+      "date": "2026-11-03",
+      "desc": "東京都福祉局の11月４日 令和8年度第1回東京都介護現場革新会議の開催について(11月)です。",
+      "source": "東京都福祉局 報道発表",
+      "sourceId": "tokyo",
+      "region": "県",
+      "pref": "東京都",
       "bureau": null,
       "tags": [],
       "systems": [],
