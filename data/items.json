@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T01:58:16.814Z",
+  "updated": "2026-11-05T15:16:47.113Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 5,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 116,
-      "added": 3,
+      "count": 124,
+      "added": 8,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 18,
-      "added": 12,
+      "added": 0,
       "ok": true
     },
     {
@@ -178,7 +178,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/kyushu/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -225,7 +225,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 3,
+      "count": 2,
       "added": 0,
       "ok": true
     },
@@ -285,8 +285,8 @@
       "bureau": null,
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
-      "count": 8,
-      "added": 1,
+      "count": 10,
+      "added": 6,
       "ok": true
     },
     {
@@ -395,6 +395,190 @@
     {
       "title": "第5回の児童買春・児童ポルノ被害児童の保護施策に関する検証・評価専門員会",
       "link": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/jidobaishunhogo/b00f2e82",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77204.html",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "第39回特定石綿被害建設業務労働者等認定審査会専門委員会 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77066.html",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "「第46回全国障害者技能競技大会（アビリンピック）」を12月４日～６日に開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77001.html",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "第274回社会保障審議会介護給付費分科会（Web会議）を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76993.html",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "第111回社会保障審議会年金数理部会 議事録",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76982.html",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "「第64回技能五輪全国大会」を12月４日から７日まで開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76817.html",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "第21回 補償金・優生手術等一時金認定審査部会の開催",
+      "link": "https://www.cfa.go.jp/press/fdcfed06-0a19-4b1b-ad04-a1b7a4bf7e92",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "第5回 児童買春・児童ポルノ被害児童の保護施策に関する検証・評価専門委員会",
+      "link": "https://www.cfa.go.jp/press/dd847759-44c6-4bd2-858d-81038a60a74f",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "こども性暴力防止法特設サイト「こまもろうナビ」を開設",
+      "link": "https://www.cfa.go.jp/press/e1ea6b93-4d9d-4f53-a217-19caa509ef0a",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "こども性暴力防止法施行準備検討会（第14回）",
+      "link": "https://www.cfa.go.jp/councils/koseibo-jumbi/232a9d87",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "第14回 こども性暴力防止法施行準備検討会の開催",
+      "link": "https://www.cfa.go.jp/press/2927c1e9-00cb-4c1e-86fc-84dcd9811e5e",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "青少年インターネット環境の整備等に関する検討会（第71回）及び青少年インターネット環境整備法の在り方等に関する検討ワーキンググループ（第11回）の合同開催の開催案内",
+      "link": "https://www.cfa.go.jp/councils/internet-kaigi/d83aacab",
       "date": "2026-11-05",
       "desc": "",
       "source": "こども家庭庁 新着・更新",
@@ -868,6 +1052,39 @@
       "bureau": null,
       "tags": [],
       "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "第１タスクフォース第１回 資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77023.html",
+      "date": "2026-11-04",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "厚生労働省や地方厚生局の職員を装った不審電話等にご注意ください。",
+      "link": "https://kouseikyoku.mhlw.go.jp/kyushu/info/fushindenwatou.html",
+      "date": "2026-11-04",
+      "desc": "",
+      "source": "九州厚生局",
+      "sourceId": "kk-kyushu",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "九州",
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "医療",
+        "労務"
+      ],
       "firstSeen": "2026-11-05"
     },
     {
@@ -3007,6 +3224,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-30"
+    },
+    {
+      "title": "「令和８年度健康危機における保健活動推進会議 」開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77010.html",
+      "date": "2026-10-28",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
     },
     {
       "title": "第１回国民年金第３号被保険者制度等に関する検討会（議事録）",
