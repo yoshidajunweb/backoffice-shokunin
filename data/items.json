@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T15:15:55.305Z",
+  "updated": "2026-11-05T01:58:16.814Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 5,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 120,
-      "added": 5,
+      "count": 116,
+      "added": 3,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 16,
-      "added": 0,
+      "count": 18,
+      "added": 12,
       "ok": true
     },
     {
@@ -190,7 +190,7 @@
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
       "count": 15,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -214,7 +214,7 @@
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -225,7 +225,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 4,
+      "count": 3,
       "added": 0,
       "ok": true
     },
@@ -274,7 +274,7 @@
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 8,
-      "added": 3,
+      "added": 1,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -377,6 +377,34 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "第63回社会保障審議会生活保護基準部会 資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77177.html",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "第5回の児童買春・児童ポルノ被害児童の保護施策に関する検証・評価専門員会",
+      "link": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/jidobaishunhogo/b00f2e82",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
     },
     {
       "title": "人事労務マガジン定例第193号 「生涯現役地域づくり環境整備事業情報交換会」を11月17日に開催します 他",
@@ -625,6 +653,224 @@
       "firstSeen": "2026-11-04"
     },
     {
+      "title": "風しん最新情報（令和8年11月4日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23010&ct=030100130&from=rss",
+      "date": "2026-11-04",
+      "desc": "●概略風しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "第219回 社会保障審議会 医療保険部会（令和8年11月5日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23014&ct=010010050&from=rss",
+      "date": "2026-11-04",
+      "desc": "●主な議題後期高齢者保険料について先行バイオ医薬品の保険給付の在り方について※詳細は以下のリンクからご参照ください。（会...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "第138回 社会保障審議会 介護保険部会（令和8年11月9日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23013&ct=070010020&from=rss",
+      "date": "2026-11-04",
+      "desc": "●主な議題特定地域の基準案（報告）特定地域居宅サービス等事業その他有料老人ホームに係る登録制の施行に向けた対応（報告）そ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "麻しん最新情報（令和8年11月4日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23012&ct=030100110&from=rss",
+      "date": "2026-11-04",
+      "desc": "●概略麻しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "第89回 障害者政策委員会（令和8年11月5日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23011&ct=050020110&from=rss",
+      "date": "2026-11-04",
+      "desc": "●主な議題障害者基本計画（第５次）の実施状況（令和７年度）障害者基本計画（第５次）関連成果目標差別の解消、権利擁護の推進...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "令和８年度 第２回化学物質管理に係る専門家検討会 議事録",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77172.html",
+      "date": "2026-11-04",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "低たん白加工処理玄米の包装米飯の日本農林規格の確認案についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004436&Mode=0",
+      "date": "2026-11-04",
+      "desc": "案の公示日：2026/11/05受付締切日時：2026/12/04 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：農林水産省大臣官房新事業・食品産業部食品製造課基準認証室 電話：03-3502-8111（内線4481）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "「特定水産動植物等の国内流通の適正化等に関する法律施行規則第二条及び第四条の農林水産大臣が別に定めて告示する加工品を定める件の一部改正案」についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004438&Mode=0",
+      "date": "2026-11-04",
+      "desc": "案の公示日：2026/11/05受付締切日時：2026/12/04 23:59カテゴリー：水産業問合せ先（所管省庁・部局名等）：水産庁漁政部加工流通課 電話：03-3502-8111（内線6683）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "りんごジュース中のプロシアニジン類の定量 －高速液体クロマトグラフ法の日本農林規格の確認案についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004437&Mode=0",
+      "date": "2026-11-04",
+      "desc": "案の公示日：2026/11/05受付締切日時：2026/12/04 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：農林水産省大臣官房新事業・食品産業部食品製造課基準認証室 電話：03-3502-8111（内線4481）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "合板等のホルムアルデヒド放散量の試験方法の日本農林規格案についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004443&Mode=0",
+      "date": "2026-11-04",
+      "desc": "案の公示日：2026/11/05受付締切日時：2026/12/04 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：農林水産省大臣官房新事業・食品産業部食品製造課基準認証室 電話：03-3502-8111（内線4357）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "素材の日本農林規格の一部改正案についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004444&Mode=0",
+      "date": "2026-11-04",
+      "desc": "案の公示日：2026/11/05受付締切日時：2026/12/04 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：農林水産省大臣官房新事業・食品産業部食品製造課基準認証室 電話：03-3502-8111（内線4357）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "中小企業等の経営強化に関する基本方針の一部を改正する告示について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=640230105&Mode=0",
+      "date": "2026-11-04",
+      "desc": "案の公示日：2026/11/05受付締切日時：2026/12/04 23:59カテゴリー：産業一般問合せ先（所管省庁・部局名等）：中小企業庁経営支援部経営支援課 TEL03-3501-1763",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "自衛隊法施行規則の一 部を改正する省令案及 び若年定年制自衛官等 であった者の就職の援 助について（案）に関す る意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=170000251&Mode=0",
+      "date": "2026-11-04",
+      "desc": "案の公示日：2026/11/05受付締切日時：2026/12/04 00:00カテゴリー：防衛問合せ先（所管省庁・部局名等）：防衛省人事教育局人材育成課 （TEL03-3268-3111 内線23634）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "「次世代船舶の開発」プロジェクトに関する研究開発・社会実装計画（改定案）",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155261035&Mode=0",
+      "date": "2026-11-04",
+      "desc": "案の公示日：2026/11/05受付締切日時：2026/12/05 18:00カテゴリー：海運問合せ先（所管省庁・部局名等）：海事局海洋・環境政策課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "がん登録等の推進に関する法律施行規則の一部を改正する省令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260251&Mode=0",
+      "date": "2026-11-04",
+      "desc": "案の公示日：2026/11/05受付締切日時：2026/12/04 23:59カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省健康・生活衛生局がん・疾病対策課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
       "title": "令和8年秋の叙勲受章者一覧",
       "link": "https://www.cfa.go.jp/press/d57d945a-34a1-4ce9-b5c6-9ecc7a53eb69",
       "date": "2026-11-03",
@@ -767,6 +1013,48 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-04"
+    },
+    {
+      "title": "「建築ライフサイクルDX戦略（案）」の策定に向けた意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260728&Mode=0",
+      "date": "2026-11-03",
+      "desc": "案の公示日：2026/11/04受付締切日時：2026/11/18 00:00カテゴリー：建築、住宅問合せ先（所管省庁・部局名等）：国土交通省住宅局建築指導課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "社会福祉法人会計基準及び社会福祉連携推進法人会計基準の一部を改正する省令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260249&Mode=0",
+      "date": "2026-11-03",
+      "desc": "案の公示日：2026/11/04受付締切日時：2026/12/03 23:59カテゴリー：社会福祉問合せ先（所管省庁・部局名等）：厚生労働省社会・援護局福祉基盤課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
+    },
+    {
+      "title": "社会福祉法等の一部を改正する法律の施行に伴う関係政令の整備及び経過措置に関する政令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260233&Mode=0",
+      "date": "2026-11-03",
+      "desc": "案の公示日：2026/11/04受付締切日時：2026/12/04 21:00カテゴリー：社会福祉問合せ先（所管省庁・部局名等）：厚生労働省老健局高齢者支援課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-05"
     },
     {
       "title": "採用情報（任期付職員（業務改革推進専門官又は主査）募集情報）",
@@ -1957,6 +2245,22 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-31"
+    },
+    {
+      "title": "令和８年度（令和７年度からの繰越分）医療提供体制施設整備交付金（２次募集）の交付額の内示について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76961.html",
+      "date": "2026-10-30",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
+      "firstSeen": "2026-11-05"
     },
     {
       "title": "【再募集】令和9年度地域介護・福祉空間整備等施設整備補助金の募集について（応募〆切：令和8年11月6日（金曜日））",
