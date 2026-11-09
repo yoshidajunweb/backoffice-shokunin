@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T14:09:57.006Z",
+  "updated": "2026-11-09T01:23:55.031Z",
   "sources": [
     {
       "id": "wamnet",
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 132,
-      "added": 0,
+      "count": 120,
+      "added": 1,
       "ok": true
     },
     {
@@ -141,8 +141,8 @@
       "bureau": "近畿",
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
-      "count": 4,
-      "added": 0,
+      "count": 5,
+      "added": 1,
       "ok": true
     },
     {
@@ -377,6 +377,24 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "第138回社会保障審議会介護保険部会の資料について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77213.html",
+      "date": "2026-11-08",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-09"
     },
     {
       "title": "第２回障害福祉分野における人材確保・生産性向上に関する検討会（資料）",
@@ -1039,6 +1057,22 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-07"
+    },
+    {
+      "title": "非常勤職員の公募について",
+      "link": "https://kouseikyoku.mhlw.go.jp/kinki/newpage_01310.html",
+      "date": "2026-11-05",
+      "desc": "",
+      "source": "近畿厚生局",
+      "sourceId": "kk-kinki",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "近畿",
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
+      "firstSeen": "2026-11-09"
     },
     {
       "title": "人事労務マガジン定例第193号 「生涯現役地域づくり環境整備事業情報交換会」を11月17日に開催します 他",
