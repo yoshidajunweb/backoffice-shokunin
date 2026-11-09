@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T01:23:55.031Z",
+  "updated": "2026-11-09T17:17:54.924Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 6,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 120,
-      "added": 1,
+      "count": 132,
+      "added": 10,
       "ok": true
     },
     {
@@ -141,8 +141,8 @@
       "bureau": "近畿",
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
-      "count": 5,
-      "added": 1,
+      "count": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -225,7 +225,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 3,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 6,
       "ok": true
     },
     {
@@ -379,6 +379,230 @@
       "firstSeen": "2026-10-19"
     },
     {
+      "title": "有料老人ホームにおける望ましいサービス提供のあり方に関する検討会（第10回）議事録",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77301.html",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "第81回ハンセン病元患者家族補償金認定審査会",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77295.html",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77290.html",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "第220回社会保障審議会医療保険部会（ペーパーレス）の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77211.html",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "第83回厚生科学審議会疾病対策部会臓器移植委員会 (Web会議) を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77183.html",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "「令和８年度 歯科保健事業功労者厚生労働大臣表彰」について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77121.html",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "「第306回原子爆弾被爆者医療分科会」の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76981.html",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "厚生科学審議会 (疾病対策部会臓器移植委員会)",
+      "link": "https://www.mhlw.go.jp/stf/shingi/shingi-kousei_127745.html",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "介護福祉士養成施設における教育の充実モデル支援事業の公募結果について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77232.html",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "第8回こどものケアニーズ応じた支援の在り方に関する専門委員会",
+      "link": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/care-needs/d66b8a15",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "第2回旧優生保護法補償金等認定審査会の開催",
+      "link": "https://www.cfa.go.jp/press/0b36bf75-1067-4563-b2ff-aef24cd872a3",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "第21回 人工妊娠中絶一時金認定審査部会の開催",
+      "link": "https://www.cfa.go.jp/press/d6e7bdab-eeb2-42e3-9aaa-661de2587e6e",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "第22回基本政策部会の開催",
+      "link": "https://www.cfa.go.jp/press/fb3236f0-59d9-4932-85e3-9ec0b2b8995b",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "こどもまんなか社会実現プラットフォーム事業のチーム活動情報",
+      "link": "https://www.cfa.go.jp/policies/platform",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "こどもの預かりサービスの在り方に関する専門委員会（第3回）の会議資料",
+      "link": "https://www.cfa.go.jp/councils/shingikai/kodomo_sodachi/azukari_service/5d6b029e",
+      "date": "2026-11-09",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
       "title": "第138回社会保障審議会介護保険部会の資料について",
       "link": "https://www.mhlw.go.jp/stf/newpage_77213.html",
       "date": "2026-11-08",
@@ -394,6 +618,97 @@
       "systems": [
         "介護"
       ],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "中央社会保険医療協議会の開催について（令和8年11月11日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23023&ct=070010030&from=rss",
+      "date": "2026-11-08",
+      "desc": "●傍聴等について （中央社会保険医療協議会動画チャンネルにて実施）において、下記の題名にて開催日時より配信予定となってお...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "医療",
+        "労務"
+      ],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "インフルエンザ最新情報（令和8年11月6日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23030&ct=030100310&from=rss",
+      "date": "2026-11-08",
+      "desc": "●概略国立感染症研究所が発表するインフルエンザ流行レベルマップの最新情報を掲載しています。●概略国立感染症研究所へ移動イ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "第26回 健やか親子21推進本部総会（令和8年11月9日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23029&ct=090080320&from=rss",
+      "date": "2026-11-08",
+      "desc": "●主な議題（１）こども家庭庁における健やか親子２１の推進について（２）令和８年度健やか親子２１内閣府特命担当大臣表彰...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "第274回 社会保障審議会 介護給付費分科会（令和8年11月6日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23028&ct=010010020&from=rss",
+      "date": "2026-11-08",
+      "desc": "●主な議題 １．令和９年度介護報酬改定に向けて（１）横断的事項（人口減少・サービス需要の変化に応じたサービス提供体制...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "第195回 先進医療技術審査部会（令和8年11月11日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23025&ct=070010030&from=rss",
+      "date": "2026-11-08",
+      "desc": "●主な議題（１）総括報告書の評価について（２）新規申請技術の評価について（３）試験実施計画の変更について（４）先進医療の...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "第131回 社会保障審議会医療部会の開催について（令和8年11月11日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23024&ct=070010030&from=rss",
+      "date": "2026-11-08",
+      "desc": "●主な議題医師手当事業に関する今後の検討体制について基幹インフラ制度への医療分野の追加に係る検討状況について医療関係職種...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
       "firstSeen": "2026-11-09"
     },
     {
@@ -705,6 +1020,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-07"
+    },
+    {
+      "title": "令和８年10月23日 第114回厚生科学審議会予防接種・ワクチン分科会副反応検討部会、令和8年度第9回薬事審議会医薬品等安全対策部会安全対策調査会（合同開催）議事録",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77195.html",
+      "date": "2026-11-06",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-09"
     },
     {
       "title": "第63回社会保障審議会生活保護基準部会 資料",
