@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T03:57:00.654Z",
+  "updated": "2026-11-10T15:28:38.353Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 123,
-      "added": 1,
+      "count": 129,
+      "added": 7,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 9,
-      "added": 7,
+      "added": 0,
       "ok": true
     },
     {
@@ -141,8 +141,8 @@
       "bureau": "近畿",
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
-      "count": 4,
-      "added": 0,
+      "count": 5,
+      "added": 1,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 1,
+      "added": 6,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -395,6 +395,210 @@
     {
       "title": "みて かんじて つながる劇体験～優良児童劇等公演事業～令和8年12月15日（火）鹿児島県日置市にて開催",
       "link": "https://www.cfa.go.jp/press/52bdd846-b58c-4edf-aa17-f81609a965de",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "第８回 医療扶助・健康管理支援等に関する検討会 議事録",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77344.html",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "第212回労働政策審議会労働条件分科会 議事録（2026年10月14日）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77343.html",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "第60回「ねむの木賞」「高木賞」の贈呈式が行われます",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77319.html",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "第26回成年後見制度利用促進専門家会議 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77165.html",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "残留限度値を超えるΔ９-THCが検出された製品に対する注意喚起について",
+      "link": "https://www.mhlw.go.jp/stf/houdou/0000212707_00059.html",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "「第２回毎月勤労統計調査の調査手法の検討等に関するワーキンググループ」の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77176.html",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "第215回労働政策審議会労働条件分科会 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76846.html",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "指導医療官の募集について",
+      "link": "https://kouseikyoku.mhlw.go.jp/kinki/newpage_01309.html",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "近畿厚生局",
+      "sourceId": "kk-kinki",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "近畿",
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "こどもとともに成長する企業構想 フラッグシップ企業を発表しました",
+      "link": "https://www.cfa.go.jp/press/9b95e378-b813-45ae-9716-dbee3e54db8f",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "中司大臣記者会見（令和8年11月10日）",
+      "link": "https://www.cfa.go.jp/speech/3e3dc13b",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "令和8年度「こども・若者育成支援研修～地域における多様なアプローチを学ぶ～」に係る研修生募集要項",
+      "link": "https://www.cfa.go.jp/policies/youth/ikusei-hikikomori/youkou-r8",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "第8回 こどものケアニーズに応じた支援の在り方に関する専門委員会の開催",
+      "link": "https://www.cfa.go.jp/press/944d3758-23fc-427e-8c38-120cc81d84be",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "第5回ひとり親家庭支援ワーキンググループの開催",
+      "link": "https://www.cfa.go.jp/press/dd446ba4-b3cb-40be-b893-ac3eb79b5edf",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "第5回ひとり親家庭支援ワーキンググループ",
+      "link": "https://www.cfa.go.jp/councils/shingikai/hinkon_hitorioya/db5ea08f",
       "date": "2026-11-10",
       "desc": "",
       "source": "こども家庭庁 新着・更新",
