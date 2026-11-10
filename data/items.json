@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T17:17:54.924Z",
+  "updated": "2026-11-10T03:57:00.654Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 6,
+      "added": 3,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 132,
-      "added": 10,
+      "count": 123,
+      "added": 1,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 16,
-      "added": 0,
+      "count": 9,
+      "added": 7,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 6,
+      "added": 1,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -377,6 +377,34 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "アルコール関連問題啓発週間（11月10日～11月16日）に伴い、 YouTube動画を公開します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77189.html",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "みて かんじて つながる劇体験～優良児童劇等公演事業～令和8年12月15日（火）鹿児島県日置市にて開催",
+      "link": "https://www.cfa.go.jp/press/52bdd846-b58c-4edf-aa17-f81609a965de",
+      "date": "2026-11-10",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
     },
     {
       "title": "有料老人ホームにおける望ましいサービス提供のあり方に関する検討会（第10回）議事録",
@@ -603,6 +631,64 @@
       "firstSeen": "2026-11-09"
     },
     {
+      "title": "第220回 社会保障審議会 医療保険部会の開催について（令和8年11月11日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23031&ct=070010030&from=rss",
+      "date": "2026-11-09",
+      "desc": "●主な議題医療保険制度における出産に対する支援の強化について国民健康保険の保険料（税）の賦課（課税）限度額等について※詳...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "第22回 こども家庭審議会 基本政策部会（令和8年11月16日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23033&ct=070010010&from=rss",
+      "date": "2026-11-09",
+      "desc": "●主な議題「こどもまんなか実行計画」の実施状況等について自殺対策及びいじめ対策の取組状況について令和年熊本地震への対応に...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "第3回 こどもの預かりサービスの在り方に関する専門委員会（令和8年11月9日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23032&ct=090080345&from=rss",
+      "date": "2026-11-09",
+      "desc": "●主な議題（１）認可外保育施設の現状について（２）こども性暴力防止法施行に向けた取組について（３）安全で質の高いベビーシ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "魚類の鮮度（K値）試験方法 －高速液体クロマトグラフ法の日本農林規格の確認案についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004445&Mode=0",
+      "date": "2026-11-09",
+      "desc": "案の公示日：2026/11/10受付締切日時：2026/12/09 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：農林水産省大臣官房新事業・食品産業部食品製造課基準認証室 電話：03-3502-8111（内線4481）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
       "title": "第138回社会保障審議会介護保険部会の資料について",
       "link": "https://www.mhlw.go.jp/stf/newpage_77213.html",
       "date": "2026-11-08",
@@ -710,6 +796,90 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-09"
+    },
+    {
+      "title": "京成電鉄株式会社の鉄道事業の旅客運賃の上限変更認可申請に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260820&Mode=0",
+      "date": "2026-11-08",
+      "desc": "案の公示日：2026/11/09受付締切日時：2026/11/24 00:00カテゴリー：陸運問合せ先（所管省庁・部局名等）：国土交通省鉄道局鉄道事業課旅客輸送業務監理室 意見募集担当",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "「特定個人情報保護評価書（全項目評価書）（案）」に関する意見公募",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=300080359&Mode=0",
+      "date": "2026-11-08",
+      "desc": "案の公示日：2026/11/09受付締切日時：2026/12/08 23:59カテゴリー：民事問合せ先（所管省庁・部局名等）：法務省民事局民事第一課 電話：０３－３５８０－４１１１（内２６９２）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "「経済価値ベースのソルベンシー規制に関する告示の一部改正（案）」の公表について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=225026068&Mode=0",
+      "date": "2026-11-08",
+      "desc": "案の公示日：2026/11/09受付締切日時：2026/12/09 17:00カテゴリー：金融、保険問合せ先（所管省庁・部局名等）：金融庁 03-3506-6000（代表） 資産運用・保険監督局保険課 （内線）5635",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "学校設置者等及び民間教育保育等事業者による児童対象性暴力等の防止等のための措置に関する法律施行規則の一部を改正する内閣府令（案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=141000247&Mode=0",
+      "date": "2026-11-08",
+      "desc": "案の公示日：2026/11/09受付締切日時：2026/11/18 23:59カテゴリー：社会福祉問合せ先（所管省庁・部局名等）：こども家庭庁支援局参事官（こども性暴力防止担当）付",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "産業技術力強化法施行令及び経済施策を一体的に講ずることによる安全保障の確保の推進に関する法律施行令の一部を改正する政令案等に対する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320046&Mode=0",
+      "date": "2026-11-08",
+      "desc": "案の公示日：2026/11/09受付締切日時：2026/12/08 23:59カテゴリー：産業一般問合せ先（所管省庁・部局名等）：経済産業省イノベーション・環境局研究開発課、大学連携推進室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "医療法施行規則の一部を改正する省令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260250&Mode=0",
+      "date": "2026-11-08",
+      "desc": "案の公示日：2026/11/09受付締切日時：2026/12/08 00:00カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省医政局研究開発政策課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-10"
     },
     {
       "title": "第２回障害福祉分野における人材確保・生産性向上に関する検討会（資料）",
