@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T15:28:38.353Z",
+  "updated": "2026-11-11T01:41:35.331Z",
   "sources": [
     {
       "id": "wamnet",
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 129,
-      "added": 7,
+      "count": 124,
+      "added": 1,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 9,
-      "added": 0,
+      "count": 11,
+      "added": 4,
       "ok": true
     },
     {
@@ -142,7 +142,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 6,
+      "added": 0,
       "ok": true
     },
     {
@@ -377,6 +377,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "公務研究セミナーin霞が関のご案内",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/ningen-kagaku/seminar-kasumigaseki.html",
+      "date": "2026-11-11",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-11"
     },
     {
       "title": "アルコール関連問題啓発週間（11月10日～11月16日）に伴い、 YouTube動画を公開します",
@@ -609,6 +623,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "窒素含有量についての総量規制基準に係る業種その他の区分及びその区分ごとの範囲の一部を改正する告示案に対する御意見の募集（パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260080&Mode=0",
+      "date": "2026-11-10",
+      "desc": "案の公示日：2026/11/11受付締切日時：2026/12/12 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省水・大気環境局海洋環境課海域環境管理室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-11"
     },
     {
       "title": "有料老人ホームにおける望ましいサービス提供のあり方に関する検討会（第10回）議事録",
@@ -891,6 +919,50 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-10"
+    },
+    {
+      "title": "下水道の整備及び基盤の強化に関する基本的な方針（案）に関するパブリックコメントの募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260510&Mode=0",
+      "date": "2026-11-09",
+      "desc": "案の公示日：2026/11/10受付締切日時：2026/12/10 11:00カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：国土交通省水管理・国土保全局上下水道企画課意見募集担当",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-11"
+    },
+    {
+      "title": "医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律施行令第八十条第二項第七号ヘの規定に基づき厚生労働大臣の指定する医薬品（案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260256&Mode=0",
+      "date": "2026-11-09",
+      "desc": "案の公示日：2026/11/10受付締切日時：2026/12/09 23:59カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省 医薬局 監視指導・麻薬対策課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-11"
+    },
+    {
+      "title": "特定優良賃貸住宅の供給の促進に関する法律施行規則等の一部を改正する省令案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260726&Mode=0",
+      "date": "2026-11-09",
+      "desc": "案の公示日：2026/11/10受付締切日時：2026/12/10 23:59カテゴリー：建築、住宅問合せ先（所管省庁・部局名等）：国土交通省 住宅局住宅総合整備課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-11"
     },
     {
       "title": "第138回社会保障審議会介護保険部会の資料について",
