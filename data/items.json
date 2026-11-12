@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T02:40:08.633Z",
+  "updated": "2026-11-12T15:52:03.456Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 3,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 123,
-      "added": 0,
+      "count": 130,
+      "added": 6,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 12,
-      "added": 7,
+      "added": 0,
       "ok": true
     },
     {
@@ -142,7 +142,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -226,7 +226,7 @@
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
       "count": 3,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -413,6 +413,96 @@
       "desc": "",
       "source": "こども家庭庁 新着・更新",
       "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-12"
+    },
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77378.html",
+      "date": "2026-11-12",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-12"
+    },
+    {
+      "title": "2026年10月26日 第137回社会保障審議会介護保険部会 議事録",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77348.html",
+      "date": "2026-11-12",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-12"
+    },
+    {
+      "title": "厚生科学審議会感染症部会第２８回新型インフルエンザ対策に関する小委員会 ・第１３回危機対応医薬品等に関する小委員会についてを開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77300.html",
+      "date": "2026-11-12",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-12"
+    },
+    {
+      "title": "第79回厚生科学審議会予防接種・ワクチン分科会予防接種基本方針部会の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76869.html",
+      "date": "2026-11-12",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-12"
+    },
+    {
+      "title": "国民健康・栄養調査企画解析検討会の開催について",
+      "link": "https://www.mhlw.go.jp/stf/other-kenkou_128610_00048.html",
+      "date": "2026-11-12",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-12"
+    },
+    {
+      "title": "採用情報（期間業務職員（人材開発統括官）)募集情報",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/hijoukin/hj-jinzaikaihatsutoukatsukan04.html",
+      "date": "2026-11-12",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
       "region": "国",
       "pref": null,
       "bureau": null,
@@ -604,6 +694,58 @@
       "bureau": "近畿",
       "tags": [],
       "systems": [],
+      "firstSeen": "2026-11-12"
+    },
+    {
+      "title": "第220回 社会保障審議会 医療保険部会（令和8年11月11日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23038&ct=010010050&from=rss",
+      "date": "2026-11-11",
+      "desc": "●主な議題医療保険制度における出産に対する支援の強化について 国民健康保険の保険料（税）の賦課（課税）限度額等について※...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-11-12"
+    },
+    {
+      "title": "第63回 社会保障審議会 生活保護基準部会（令和8年11月11日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23044&ct=010010220&from=rss",
+      "date": "2026-11-11",
+      "desc": "●主な議題・児童養育加算、母子加算、冬季加算、期末一時扶助の検証について・消費実態による検証を補完する方法について・生活...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-12"
+    },
+    {
+      "title": "第77回 中央社会保険医療協議会 診療報酬改定結果検証部会（令和8年11月11日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23041&ct=010050030&from=rss",
+      "date": "2026-11-11",
+      "desc": "●主な議題令和８年度診療報酬改定の結果検証に係る特別調査（令和８年度調査）の調査票案について※詳細は以下のリンクからご参...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護",
+        "労務・社保"
+      ],
+      "systems": [
+        "医療",
+        "労務"
+      ],
       "firstSeen": "2026-11-12"
     },
     {
