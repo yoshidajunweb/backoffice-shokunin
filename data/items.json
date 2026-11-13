@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T15:52:03.456Z",
+  "updated": "2026-11-13T02:21:19.151Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 130,
-      "added": 6,
+      "added": 2,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 12,
-      "added": 0,
+      "count": 14,
+      "added": 6,
       "ok": true
     },
     {
@@ -106,7 +106,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/hokkaido/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -225,7 +225,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 3,
+      "count": 2,
       "added": 0,
       "ok": true
     },
@@ -237,7 +237,7 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 32,
+      "count": 31,
       "added": 0,
       "ok": true
     },
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -377,6 +377,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "後発医薬品を製造販売する企業の安定供給の取組に関する評価結果を公表します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77371.html",
+      "date": "2026-11-13",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-13"
     },
     {
       "title": "2026年度愛知県災害福祉広域支援推進協議会",
@@ -509,6 +523,48 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-12"
+    },
+    {
+      "title": "外国人漁業の規制に関する法律施行規則及び排他的経済水域における漁業等に関する主権的権利の行使等に関する法律施行規則の一部改正案及び外国人漁業の規制に関する法律第2条第7項の農林水産大臣の指定する船舶を定める件の制定案についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004446&Mode=0",
+      "date": "2026-11-12",
+      "desc": "案の公示日：2026/11/13受付締切日時：2026/12/12 23:59カテゴリー：水産業問合せ先（所管省庁・部局名等）：水産庁資源管理部漁獲監理官付 電話：03-3502-8111（内線6656）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-13"
+    },
+    {
+      "title": "「自動車騒音の大きさの許容限度」の一部を改正する案に対する御意見の募集（パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260075&Mode=0",
+      "date": "2026-11-12",
+      "desc": "案の公示日：2026/11/13受付締切日時：2026/12/13 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省水・大気環境局モビリティ環境対策課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-13"
+    },
+    {
+      "title": "地方公共団体の手数料の標準に関する政令の一部を改正する政令案及び地方公共団体の手数料の標準に関する政令に規定する総務省令で定める金額等を定める省令の一部を改正する省令案に対する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210801&Mode=0",
+      "date": "2026-11-12",
+      "desc": "案の公示日：2026/11/13受付締切日時：2026/12/14 23:59カテゴリー：地方自治問合せ先（所管省庁・部局名等）：総務省自治財政局調整課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-13"
     },
     {
       "title": "公務研究セミナーin霞が関のご案内",
@@ -747,6 +803,62 @@
         "労務"
       ],
       "firstSeen": "2026-11-12"
+    },
+    {
+      "title": "第13回自殺総合対策の推進に関する有識者会議資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77355.html",
+      "date": "2026-11-11",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-13"
+    },
+    {
+      "title": "絶滅のおそれのある野生動植物の種の保存に関する法律 に基づく生息地等保護区及び管理地区の指定案に対する意見の募集 （パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260078&Mode=0",
+      "date": "2026-11-11",
+      "desc": "案の公示日：2026/11/12受付締切日時：2026/12/12 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省自然環境局野生生物課希少種保全推進室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-13"
+    },
+    {
+      "title": "「絶滅のおそれのある野生動植物の種の保存につき講ずべき措置について（答申案）」に対する意見募集（パブリック・コメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260079&Mode=0",
+      "date": "2026-11-11",
+      "desc": "案の公示日：2026/11/12受付締切日時：2026/12/12 00:00カテゴリー：環境保全問合せ先（所管省庁・部局名等）：環境省自然環境局野生生物課希少種保全推進室（代表:03-3581-3351、直通:03-5521-8353）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-13"
+    },
+    {
+      "title": "「情報通信技術の進展等に対応するための刑事訴訟法等の一部を改正する法律の施行に伴う関係政令の整備及び経過措置に関する政令案」について（意見募集）",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=300090078&Mode=0",
+      "date": "2026-11-11",
+      "desc": "案の公示日：2026/11/12受付締切日時：2026/12/13 00:00カテゴリー：刑事問合せ先（所管省庁・部局名等）：法務省刑事局刑事法制管理官室 電話０３－３５８０－４１１１（内線２５３６、２５３５）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-13"
     },
     {
       "title": "アルコール関連問題啓発週間（11月10日～11月16日）に伴い、 YouTube動画を公開します",
@@ -2891,6 +3003,24 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-06"
+    },
+    {
+      "title": "第40回北海道地方社会保険医療協議会について",
+      "link": "https://kouseikyoku.mhlw.go.jp/hokkaido/newpage_00097.html",
+      "date": "2026-11-04",
+      "desc": "",
+      "source": "北海道厚生局",
+      "sourceId": "kk-hokkaido",
+      "region": "厚生局",
+      "pref": null,
+      "bureau": "北海道",
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-13"
     },
     {
       "title": "令和8年秋の叙勲受章者一覧",
