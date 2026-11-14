@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T01:57:31.509Z",
+  "updated": "2026-11-14T14:00:17.203Z",
   "sources": [
     {
       "id": "wamnet",
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 20,
-      "added": 6,
+      "added": 0,
       "ok": true
     },
     {
