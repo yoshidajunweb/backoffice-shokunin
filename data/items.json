@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T01:29:42.987Z",
+  "updated": "2026-11-15T14:37:10.684Z",
   "sources": [
     {
       "id": "wamnet",
@@ -9,10 +9,9 @@
       "bureau": null,
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
-      "count": 0,
+      "count": 200,
       "added": 0,
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true
     },
     {
       "id": "mhlw",
