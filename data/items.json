@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T14:00:17.203Z",
+  "updated": "2026-11-15T01:29:42.987Z",
   "sources": [
     {
       "id": "wamnet",
@@ -9,9 +9,10 @@
       "bureau": null,
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
-      "count": 200,
+      "count": 0,
       "added": 0,
-      "ok": true
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "id": "mhlw",
@@ -273,7 +274,7 @@
       "bureau": null,
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 7,
+      "count": 6,
       "added": 0,
       "ok": true
     },
@@ -322,7 +323,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
