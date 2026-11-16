@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T01:32:41.873Z",
+  "updated": "2026-11-16T16:52:02.397Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 112,
-      "added": 0,
+      "count": 117,
+      "added": 6,
       "ok": true
     },
     {
@@ -141,7 +141,7 @@
       "bureau": "近畿",
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
-      "count": 5,
+      "count": 4,
       "added": 0,
       "ok": true
     },
@@ -189,7 +189,7 @@
       "bureau": null,
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
-      "count": 16,
+      "count": 15,
       "added": 0,
       "ok": true
     },
@@ -202,7 +202,7 @@
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
       "count": 9,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -237,7 +237,7 @@
       "bureau": null,
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
-      "count": 32,
+      "count": 33,
       "added": 0,
       "ok": true
     },
@@ -273,7 +273,7 @@
       "bureau": null,
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 6,
+      "count": 5,
       "added": 0,
       "ok": true
     },
@@ -390,6 +390,118 @@
       "bureau": null,
       "tags": [],
       "systems": [],
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77453.html",
+      "date": "2026-11-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "title": "令和８年度（令和７年度からの繰越分）医療施設等施設整備費補助金の交付額について（４回目内示）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77273.html",
+      "date": "2026-11-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "title": "令和８年度医療施設等施設整備費補助金の交付額の内示について （4回目内示）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77272.html",
+      "date": "2026-11-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "title": "薬事審議会 医薬品第二部会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77353.html",
+      "date": "2026-11-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "title": "第７回2040年に向けた看護職員の養成・確保の在り方に関する検討会の開催について：開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77291.html",
+      "date": "2026-11-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [],
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "title": "県立障害者支援施設等へのハンドアーチェリーの寄贈に対して感謝状を贈呈します",
+      "link": "https://www.pref.kanagawa.jp/docs/m8u/prs/r2736087.html",
+      "date": "2026-11-16",
+      "desc": "",
+      "source": "神奈川県",
+      "sourceId": "kanagawa",
+      "region": "県",
+      "pref": "神奈川県",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "title": "令和8年度「はたらく母子家庭・父子家庭応援企業表彰」の公募を11月16日（月）より開始します",
+      "link": "https://www.cfa.go.jp/press/a12593cd-d2fb-4da5-8593-c6c0de90c7ea",
+      "date": "2026-11-16",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
       "firstSeen": "2026-11-16"
     },
     {
@@ -1051,6 +1163,24 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-14"
+    },
+    {
+      "title": "社会保障審議会（介護保険部会）",
+      "link": "https://www.mhlw.go.jp/stf/shingi/shingi-hosho_126734_old2.html",
+      "date": "2026-11-12",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-16"
     },
     {
       "title": "公務研究セミナーin霞が関のご案内",
