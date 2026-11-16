@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T14:37:10.684Z",
+  "updated": "2026-11-16T01:32:41.873Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 2,
       "ok": true
     },
     {
@@ -21,7 +21,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 144,
+      "count": 112,
       "added": 0,
       "ok": true
     },
@@ -165,7 +165,7 @@
       "bureau": "四国",
       "url": "https://kouseikyoku.mhlw.go.jp/shikoku/news/news.xml",
       "type": "rss",
-      "count": 5,
+      "count": 4,
       "added": 0,
       "ok": true
     },
@@ -285,8 +285,8 @@
       "bureau": null,
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
-      "count": 8,
-      "added": 0,
+      "count": 9,
+      "added": 1,
       "ok": true
     },
     {
@@ -377,6 +377,54 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-10-19"
+    },
+    {
+      "title": "令和8年度「はたらく母子家庭・父子家庭応援企業表彰」",
+      "link": "https://www.cfa.go.jp/policies/hitori-oya/kigyohyosho-r08",
+      "date": "2026-11-16",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "title": "第275回 社会保障審議会 介護給付費分科会（令和8年11月16日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23049&ct=010010020&from=rss",
+      "date": "2026-11-15",
+      "desc": "●主な議題 １．令和９年度介護報酬改定に向けて（１）横断的事項（介護人材の確保に向けた処遇改善等、介護現場の生産性向...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "title": "第221回 社会保障審議会 医療保険部会の開催について（令和8年11月17日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23050&ct=070010030&from=rss",
+      "date": "2026-11-15",
+      "desc": "●主な議題医療保険制度改革について医師手当事業に関する今後の検討体制について（報告）※詳細は以下のリンクからご参照くださ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-11-16"
     },
     {
       "title": "後発医薬品を製造販売する企業の安定供給の取組に関する評価結果を公表します",
