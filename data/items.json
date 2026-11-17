@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T16:52:02.397Z",
+  "updated": "2026-11-17T04:17:58.741Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 2,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 117,
-      "added": 6,
+      "count": 103,
+      "added": 2,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 20,
-      "added": 0,
+      "count": 16,
+      "added": 7,
       "ok": true
     },
     {
@@ -202,7 +202,7 @@
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
       "count": 9,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -238,7 +238,7 @@
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
       "count": 33,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -249,7 +249,7 @@
       "bureau": null,
       "url": "https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml",
       "type": "rss",
-      "count": 4,
+      "count": 3,
       "added": 0,
       "ok": true
     },
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -364,6 +364,66 @@
     }
   ],
   "items": [
+    {
+      "title": "第215回労働政策審議会労働条件分科会（資料）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77450.html",
+      "date": "2026-11-17",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-17"
+    },
+    {
+      "title": "採用情報（任期付職員（企画開発係長）募集情報）",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/ninkituki/ninki-igyoukeieisenmonkanorsyusa_00002.html",
+      "date": "2026-11-17",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-17"
+    },
+    {
+      "title": "【粕屋保健福祉事務所】社会福祉施設等における感染症等集団発生時の報告等について",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/kansentaisaku.html",
+      "date": "2026-11-17",
+      "desc": "",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-17"
+    },
+    {
+      "title": "第21回 人工妊娠中絶一時金認定審査部会の審査結果",
+      "link": "https://www.cfa.go.jp/press/22a2b9f0-7d28-4afc-a398-fa5b3498dcfb",
+      "date": "2026-11-17",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-17"
+    },
     {
       "title": "11月17日は世界さい帯血の日です。",
       "link": "https://www.mhlw.go.jp/stf/htcp-topics-20261001_00001.html",
@@ -505,6 +565,62 @@
       "firstSeen": "2026-11-16"
     },
     {
+      "title": "第26回 成年後見制度利用促進専門家会議（令和8年11月16日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23058&ct=100100170&from=rss",
+      "date": "2026-11-16",
+      "desc": "●主な議題（１）次期基本計画に係る意見交換（体制整備の推進体制、総論）※詳細は以下のリンクからご参照ください。（会議資料...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-17"
+    },
+    {
+      "title": "第17回 幼児期までのこどもの育ち部会（令和8年11月30日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23059&ct=070010010&from=rss",
+      "date": "2026-11-16",
+      "desc": "●主な議題（）「保育所、認定こども園における保育の内容の基準等の在り方について」に関する答申（案）について（）その他●オ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-17"
+    },
+    {
+      "title": "「水道水中における従属栄養細菌の目標値見直し（案）」に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=195260083&Mode=0",
+      "date": "2026-11-16",
+      "desc": "案の公示日：2026/11/17受付締切日時：2026/12/17 00:00カテゴリー：厚生問合せ先（所管省庁・部局名等）：環境省水・大気環境局環境管理課水道水質・衛生管理室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-17"
+    },
+    {
+      "title": "職業能力開発促進法施行規則の一部を改正する省令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260265&Mode=0",
+      "date": "2026-11-16",
+      "desc": "案の公示日：2026/11/17受付締切日時：2026/12/17 00:00カテゴリー：労働問合せ先（所管省庁・部局名等）：厚生労働省人材開発統括官付能力評価担当参事官室 代表番号：03-5253-1111（内線5946）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-17"
+    },
+    {
       "title": "第275回 社会保障審議会 介護給付費分科会（令和8年11月16日開催）",
       "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23049&ct=010010020&from=rss",
       "date": "2026-11-15",
@@ -537,6 +653,78 @@
         "医療"
       ],
       "firstSeen": "2026-11-16"
+    },
+    {
+      "title": "歯科技工士法施行規則等の一部を改正する省令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260267&Mode=0",
+      "date": "2026-11-15",
+      "desc": "案の公示日：2026/11/16受付締切日時：2026/12/15 23:59カテゴリー：厚生問合せ先（所管省庁・部局名等）：医政局医事課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-17"
+    },
+    {
+      "title": "航空法施行規則の一部改正（案）に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155261242&Mode=0",
+      "date": "2026-11-15",
+      "desc": "案の公示日：2026/11/16受付締切日時：2026/12/15 23:59カテゴリー：航空問合せ先（所管省庁・部局名等）：国土交通省航空局安全部無人航空機安全課 意見募集担当",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-17"
+    },
+    {
+      "title": "医療法施行令等の一部を改正する政令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260268&Mode=0",
+      "date": "2026-11-15",
+      "desc": "案の公示日：2026/11/16受付締切日時：2026/12/16 17:00カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省医政局地域医療計画課 電話：03-3595-2194（内線:4128）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-17"
+    },
+    {
+      "title": "高齢者の医療の確保に関する法律施行令の一部を改正する政令案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260266&Mode=0",
+      "date": "2026-11-15",
+      "desc": "案の公示日：2026/11/16受付締切日時：2026/12/16 00:00カテゴリー：社会保険問合せ先（所管省庁・部局名等）：厚生労働省保険局高齢者医療課 電話：03-3595-2090",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-17"
+    },
+    {
+      "title": "東日本大震災に対処するための特別の財政援助及び助成に関する法律の厚生労働省関係規定の施行等に関する政令の一部を改正する政令案に関する御意見募集（パブリックコメント）について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=291260010&Mode=0",
+      "date": "2026-11-15",
+      "desc": "案の公示日：2026/11/16受付締切日時：2026/12/16 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：防災庁統括官（総合政策担当）付参事官（被災者生活再建担当）付",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-17"
     },
     {
       "title": "後発医薬品を製造販売する企業の安定供給の取組に関する評価結果を公表します",
