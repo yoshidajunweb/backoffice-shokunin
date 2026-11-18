@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T16:46:50.186Z",
+  "updated": "2026-11-18T03:17:33.675Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 4,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 109,
-      "added": 6,
+      "count": 113,
+      "added": 4,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 16,
-      "added": 0,
+      "count": 9,
+      "added": 2,
       "ok": true
     },
     {
@@ -141,7 +141,7 @@
       "bureau": "近畿",
       "url": "https://kouseikyoku.mhlw.go.jp/kinki/news/news.xml",
       "type": "rss",
-      "count": 4,
+      "count": 5,
       "added": 0,
       "ok": true
     },
@@ -178,7 +178,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/kyushu/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -262,7 +262,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 2,
+      "added": 1,
       "ok": true
     },
     {
@@ -297,10 +297,9 @@
       "bureau": null,
       "url": "https://www.careplan-renkei-support.jp/info/index.html",
       "type": "page-list",
-      "count": 0,
-      "added": 0,
-      "ok": false,
-      "error": "HTTP 404"
+      "count": 35,
+      "added": 1,
+      "ok": true
     },
     {
       "id": "mhlw-koyou-josei",
@@ -322,7 +321,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -364,6 +363,80 @@
     }
   ],
   "items": [
+    {
+      "title": "人事労務マガジン 特集第250号 12月は「職場のハラスメント撲滅月間」他",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77416.html",
+      "date": "2026-11-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "採用情報（任期付職員（課長補佐又は主査（感染症対策担当）募集情報）",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/ninkituki/ninki-kacyohosamatawasyusa.html",
+      "date": "2026-11-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "令和９・10年度競争参加資格審査（建設工事及び測量・建設コンサルタント等業務）定期審査について",
+      "link": "https://www.mhlw.go.jp/sinsei/chotatu/sikaku/",
+      "date": "2026-11-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "第３８回厚生科学審議会がん登録部会（資料）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77501.html",
+      "date": "2026-11-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "社会総がかりで取り組むいじめ・不登校対策に向けた全国フォーラムの開催",
+      "link": "https://www.cfa.go.jp/policies/ijime-boushi/r08-ijime-futokoforum",
+      "date": "2026-11-18",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
     {
       "title": "第215回労働政策審議会労働条件分科会（資料）",
       "link": "https://www.mhlw.go.jp/stf/newpage_77450.html",
@@ -569,6 +642,94 @@
       "firstSeen": "2026-11-17"
     },
     {
+      "title": "麻しん最新情報（令和8年11月17日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23061&ct=030100110&from=rss",
+      "date": "2026-11-17",
+      "desc": "●概略麻しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "第64回 社会保障審議会 生活保護基準部会（令和8年11月17日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23064&ct=010010220&from=rss",
+      "date": "2026-11-17",
+      "desc": "●主な議題・生活扶助基準の水準の検証について・調査実施時点以降の社会経済情勢の変化の反映方法・児童養育加算、母子加算、冬...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "第221回 社会保障審議会 医療保険部会（令和8年11月17日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23063&ct=010010050&from=rss",
+      "date": "2026-11-17",
+      "desc": "●主な議題医療保険制度改革について医師手当事業に関する今後の検討体制について（報告）※詳細は以下のリンクからご参照くださ...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "風しん最新情報（令和8年11月17日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23062&ct=030100130&from=rss",
+      "date": "2026-11-17",
+      "desc": "●概略風しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "「バーティポート整備指針」及び「地方航空局における場外離着陸許可の事務処理基準」等の一部改正（案）に関する意見公募について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155261241&Mode=0",
+      "date": "2026-11-17",
+      "desc": "案の公示日：2026/11/18受付締切日時：2026/12/18 17:00カテゴリー：航空問合せ先（所管省庁・部局名等）：国土交通省 航空局 安全部 無人航空機安全課 TEL：03-5253-8111 (代表)",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "船舶安全法施行規則の一部を改正する省令案に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155261036&Mode=0",
+      "date": "2026-11-17",
+      "desc": "案の公示日：2026/11/18受付締切日時：2026/12/17 23:59カテゴリー：海運問合せ先（所管省庁・部局名等）：国土交通省海事局内航課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
       "title": "11月17日は世界さい帯血の日です。",
       "link": "https://www.mhlw.go.jp/stf/htcp-topics-20261001_00001.html",
       "date": "2026-11-16",
@@ -763,6 +924,20 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-17"
+    },
+    {
+      "title": "ケアプランデータ連携システム ヘルプデスクお問い合わせ窓口引っ越しのお知らせ",
+      "link": "https://www.careplan-renkei-support.jp/wp-content/uploads/sites/2/2026/11/%E3%82%B1%E3%82%A2%E3%83%97%E3%83%A9%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF%E9%80%A3%E6%90%BA%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%98%E3%83%AB%E3%83%97%E3%83%87%E3%82%B9%E3%82%AF%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E7%AA%93%E5%8F%A3%E5%BC%95%E3%81%A3%E8%B6%8A%E3%81%97%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B.pdf",
+      "date": "2026-11-16",
+      "desc": "",
+      "source": "ケアプランデータ連携システム お知らせ",
+      "sourceId": "careplan",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
     },
     {
       "title": "第275回 社会保障審議会 介護給付費分科会（令和8年11月16日開催）",
