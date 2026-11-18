@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T03:17:33.675Z",
+  "updated": "2026-11-18T16:18:13.248Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 113,
-      "added": 4,
+      "count": 121,
+      "added": 7,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 9,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -189,8 +189,8 @@
       "bureau": null,
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
-      "count": 15,
-      "added": 0,
+      "count": 16,
+      "added": 1,
       "ok": true
     },
     {
@@ -225,8 +225,8 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 2,
-      "added": 0,
+      "count": 3,
+      "added": 1,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -297,9 +297,10 @@
       "bureau": null,
       "url": "https://www.careplan-renkei-support.jp/info/index.html",
       "type": "page-list",
-      "count": 35,
-      "added": 1,
-      "ok": true
+      "count": 0,
+      "added": 0,
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "id": "mhlw-koyou-josei",
@@ -321,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -432,6 +433,112 @@
       "sourceId": "cfa",
       "region": "国",
       "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "医薬品安定供給・流通確認システムへの不正アクセスに係る 個人情報の漏えいについて",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77515.html",
+      "date": "2026-11-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "高齢者に対する肺炎球菌ワクチン及び小児におけるRSウイルス感染症の予防についての議論のまとめ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77498.html",
+      "date": "2026-11-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "2026年10月26日 第９回労働政策審議会労働条件分科会「組織再編に伴う労働関係の調整に関する部会」 議事録",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77507.html",
+      "date": "2026-11-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "「令和８年度第１回薬事審議会審議参加規程評価委員会」を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77361.html",
+      "date": "2026-11-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "薬事審議会 医薬品第一部会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77354.html",
+      "date": "2026-11-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "第５８回特定石綿被害建設業務労働者等認定審査会 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77226.html",
+      "date": "2026-11-18",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "【講義動画公開中(12月21日まで）】工賃向上研修について",
+      "link": "https://www.pref.aichi.jp/soshiki/shogai/kouchinseminar-douga.html",
+      "date": "2026-11-18",
+      "desc": "",
+      "source": "愛知県",
+      "sourceId": "aichi",
+      "region": "県",
+      "pref": "愛知県",
       "bureau": null,
       "tags": [],
       "systems": [],
@@ -730,6 +837,20 @@
       "firstSeen": "2026-11-18"
     },
     {
+      "title": "9法人9事業所を「令和8年度介護WITH事業所」に選定",
+      "link": "https://www.fukushi.metro.tokyo.lg.jp/information/press/2026/11/111817",
+      "date": "2026-11-17",
+      "desc": "東京都福祉局の11月18日 9法人9事業所を「令和8年度介護WITH事業所」に選定(11月)です。",
+      "source": "東京都福祉局 報道発表",
+      "sourceId": "tokyo",
+      "region": "県",
+      "pref": "東京都",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
       "title": "11月17日は世界さい帯血の日です。",
       "link": "https://www.mhlw.go.jp/stf/htcp-topics-20261001_00001.html",
       "date": "2026-11-16",
@@ -937,6 +1058,24 @@
       "bureau": null,
       "tags": [],
       "systems": [],
+      "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "第62回労働政策審議会人材開発分科会（オンライン併用）の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77440.html",
+      "date": "2026-11-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
       "firstSeen": "2026-11-18"
     },
     {
