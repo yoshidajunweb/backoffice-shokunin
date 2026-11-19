@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T16:18:13.248Z",
+  "updated": "2026-11-19T02:55:10.762Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 3,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 121,
-      "added": 7,
+      "count": 108,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 9,
-      "added": 0,
+      "count": 10,
+      "added": 6,
       "ok": true
     },
     {
@@ -190,7 +190,7 @@
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
       "count": 16,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -226,7 +226,7 @@
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
       "count": 3,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 2,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -364,6 +364,34 @@
     }
   ],
   "items": [
+    {
+      "title": "「第1回 保育の魅力フォトコンテスト」を開催します",
+      "link": "https://www.cfa.go.jp/press/1ff19f4a-c058-43ce-82ec-643a42fadb20",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "第8回特別養子縁組に関する支援の在り方に関する専門委員会",
+      "link": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/tokubetsu-yoshi/1bec26a7",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
     {
       "title": "人事労務マガジン 特集第250号 12月は「職場のハラスメント撲滅月間」他",
       "link": "https://www.mhlw.go.jp/stf/newpage_77416.html",
@@ -543,6 +571,110 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "第70回 障害福祉報酬改定検討チーム（令和8年11月20日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23067&ct=070010040&from=rss",
+      "date": "2026-11-18",
+      "desc": "●主な議題令和９年度障害福祉報酬改定に向けて（横断的事項）その他●厚生労働省への傍聴申込みオンライン会議の様子をにおいて...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "障害"
+      ],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "第79回 厚生科学審議会 予防接種・ワクチン分科会 予防接種基本方針部会（令和8年11月19日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23069&ct=010020270&from=rss",
+      "date": "2026-11-18",
+      "desc": "●主な議題（１）令和９年度からの定期接種について（２）新型コロナウイルス感染症に関する個別予防接種推進指針について（３）...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "介護保険最新情報Vol.1551（PDF：446KB）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/111909364579/ksvol.1551.pdf?from=rss",
+      "date": "2026-11-18",
+      "desc": "...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "非常勤消防団員等に係る損害補償の基準を定める政令の一部を改正する政令案に対する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=860202607&Mode=0",
+      "date": "2026-11-18",
+      "desc": "案の公示日：2026/11/19受付締切日時：2026/12/18 23:59カテゴリー：消防問合せ先（所管省庁・部局名等）：総務省消防庁国民保護・防災部防災課地域防災室 03-5253-7561（直通）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "電気通信事業法施行規則等の一部改正に対する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210802&Mode=0",
+      "date": "2026-11-18",
+      "desc": "案の公示日：2026/11/19受付締切日時：2026/12/18 23:59カテゴリー：電気通信問合せ先（所管省庁・部局名等）：総務省総合通信基盤局電気通信事業部料金サービス課 電話：０３ー５２５３－５８４５",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "組換えDNA技術応用飼料の安全性確認申請案件についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004447&Mode=0",
+      "date": "2026-11-18",
+      "desc": "案の公示日：2026/11/19受付締切日時：2026/12/18 23:59カテゴリー：農業問合せ先（所管省庁・部局名等）：農林水産省消費・安全局畜水産安全管理課 電話：03-3502-8111（内線4546）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "米穀の出荷販売事業者が遵守すべき事項を定める省令の一部を改正する省令案についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=550004448&Mode=0",
+      "date": "2026-11-18",
+      "desc": "案の公示日：2026/11/19受付締切日時：2026/12/18 23:59カテゴリー：農業問合せ先（所管省庁・部局名等）：農林水産省農産局農産政策部企画課 電話：03-3502-8111（内線4971）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
     },
     {
       "title": "第215回労働政策審議会労働条件分科会（資料）",
@@ -849,6 +981,34 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "「銀行法施行規則」等、「自己資本比率規制（第１の柱・第３の柱）に関する告示」等及び「主要行等向けの総合的な監督指針」等の一部改正（案）の公表について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=225026070&Mode=0",
+      "date": "2026-11-17",
+      "desc": "案の公示日：2026/11/18受付締切日時：2026/12/18 15:00カテゴリー：金融、保険問合せ先（所管省庁・部局名等）：金融庁 Tel：03-3506-6000（代表） 銀行・証券監督局総務課健全性基準室（内線2358）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "フルペンチオフェノックスに係る食品健康影響評価に関する審議結果（案）についての意見・情報の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=095260950&Mode=0",
+      "date": "2026-11-17",
+      "desc": "案の公示日：2026/11/18受付締切日時：2026/12/17 23:59カテゴリー：国民生活の安全・安心の確保問合せ先（所管省庁・部局名等）：【本件連絡先】 内閣府食品安全委員会事務局 評価第一課農薬評価室 塩澤、鈴木 電話：03(6234)1187又は1165",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
     },
     {
       "title": "11月17日は世界さい帯血の日です。",
