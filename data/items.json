@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T02:55:10.762Z",
+  "updated": "2026-11-19T16:26:43.685Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 3,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 108,
-      "added": 0,
+      "count": 119,
+      "added": 11,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 10,
-      "added": 6,
+      "added": 0,
       "ok": true
     },
     {
@@ -70,7 +70,7 @@
       "url": "https://www.pref.ibaraki.jp/news.xml",
       "type": "rss",
       "count": 1,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -189,8 +189,8 @@
       "bureau": null,
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
-      "count": 16,
-      "added": 0,
+      "count": 17,
+      "added": 1,
       "ok": true
     },
     {
@@ -238,7 +238,7 @@
       "url": "https://www.pref.fukuoka.lg.jp/rss/10/life3.xml",
       "type": "rss",
       "count": 33,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -273,7 +273,7 @@
       "bureau": null,
       "url": "https://www.pref.chiba.lg.jp/homepage/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 4,
+      "count": 3,
       "added": 0,
       "ok": true
     },
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 2,
+      "added": 3,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 0,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -381,6 +381,246 @@
     {
       "title": "第8回特別養子縁組に関する支援の在り方に関する専門委員会",
       "link": "https://www.cfa.go.jp/councils/shingikai/shakai_katei/tokubetsu-yoshi/1bec26a7",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77537.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "「第８回 ハローワーク業務改善コンクール」を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77509.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "再生医療等の安全性の確保等に関する法律に基づく緊急命令について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77480.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "派遣元事業主に対する労働者派遣事業改善命令について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77462.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "第５回 困難な問題を抱える女性への支援に関する検討会を開催いたします",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77436.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "第５回 困難な問題を抱える女性への支援に関する検討会を開催いたします",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77434.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "第400回労働政策審議会職業安定分科会労働力需給制度部会（開催案内）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77308.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "第276回社会保障審議会介護給付費分科会（Web会議）を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77263.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "令和８年度調理師関係功労者に対する厚生労働大臣表彰について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77194.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "令和８年度「わたしと年金」エッセイ表彰式を行います",
+      "link": "https://www.mhlw.go.jp/stf/newpage_261119_00001.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "「第15回 健康寿命をのばそう！アワード（介護予防・高齢者生活支援分野）」の表彰式を行います",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77302.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "外国人介護人材の介護福祉士資格取得に向けた指導者養成研修について",
+      "link": "https://www.pref.fukuoka.lg.jp/contents/sidousyayousei.html",
+      "date": "2026-11-19",
+      "desc": "外国人介護人材、介護福祉、☒",
+      "source": "福岡県（健康・福祉・子育て）",
+      "sourceId": "fukuoka",
+      "region": "県",
+      "pref": "福岡県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "第8回特別養子縁組に関する支援の在り方に関する専門委員会の開催",
+      "link": "https://www.cfa.go.jp/press/b00abf6a-9427-4d77-a739-e68342c1df91",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "青少年インターネット環境整備法の在り方等に関する検討ワーキンググループ（第13回）の開催",
+      "link": "https://www.cfa.go.jp/press/51c93d01-d420-4d31-83f1-3b989b7a7bd1",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "青少年インターネット環境整備法の在り方等に関する検討ワーキンググループ（第13回）の開催案内",
+      "link": "https://www.cfa.go.jp/councils/internet-kaigi/c76416e1",
       "date": "2026-11-19",
       "desc": "",
       "source": "こども家庭庁 新着・更新",
@@ -671,6 +911,34 @@
       "sourceId": "egov-pc",
       "region": "国",
       "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "福祉用具に係る重大製品事故について",
+      "link": "https://www.pref.ibaraki.jp/hokenfukushi/chofuku/jigyo/kaigo/jigyosha/tuti/hukuyogujiko.html",
+      "date": "2026-11-18",
+      "desc": "",
+      "source": "茨城県",
+      "sourceId": "ibaraki",
+      "region": "県",
+      "pref": "茨城県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-19"
+    },
+    {
+      "title": "令和8年度 東京都地域福祉支援計画推進委員会（第2回）の開催について",
+      "link": "https://www.fukushi.metro.tokyo.lg.jp/information/press/2026/11/111904",
+      "date": "2026-11-18",
+      "desc": "東京都福祉局の11月19日 令和8年度 東京都地域福祉支援計画推進委員会（第2回）の開催について(11月)です。",
+      "source": "東京都福祉局 報道発表",
+      "sourceId": "tokyo",
+      "region": "県",
+      "pref": "東京都",
       "bureau": null,
       "tags": [],
       "systems": [],
