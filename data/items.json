@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T02:48:40.695Z",
+  "updated": "2026-11-20T15:58:40.823Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 2,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 115,
-      "added": 1,
+      "count": 130,
+      "added": 13,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 15,
-      "added": 7,
+      "added": 0,
       "ok": true
     },
     {
@@ -69,8 +69,8 @@
       "bureau": null,
       "url": "https://www.pref.ibaraki.jp/news.xml",
       "type": "rss",
-      "count": 1,
-      "added": 0,
+      "count": 2,
+      "added": 1,
       "ok": true
     },
     {
@@ -129,7 +129,7 @@
       "bureau": "東海北陸",
       "url": "https://kouseikyoku.mhlw.go.jp/tokaihokuriku/news/news.xml",
       "type": "rss",
-      "count": 2,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -189,8 +189,8 @@
       "bureau": null,
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
-      "count": 17,
-      "added": 0,
+      "count": 18,
+      "added": 1,
       "ok": true
     },
     {
@@ -202,7 +202,7 @@
       "url": "https://www.pref.kanagawa.jp/prs/list.xml",
       "type": "rss",
       "count": 9,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -214,7 +214,7 @@
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
       "count": 6,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -225,7 +225,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 2,
+      "count": 1,
       "added": 0,
       "ok": true
     },
@@ -249,8 +249,8 @@
       "bureau": null,
       "url": "https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml",
       "type": "rss",
-      "count": 3,
-      "added": 0,
+      "count": 8,
+      "added": 6,
       "ok": true
     },
     {
@@ -262,7 +262,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 6,
       "ok": true
     },
     {
@@ -297,10 +297,9 @@
       "bureau": null,
       "url": "https://www.careplan-renkei-support.jp/info/index.html",
       "type": "page-list",
-      "count": 0,
-      "added": 0,
-      "ok": false,
-      "error": "HTTP 404"
+      "count": 36,
+      "added": 1,
+      "ok": true
     },
     {
       "id": "mhlw-koyou-josei",
@@ -322,7 +321,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -371,6 +370,406 @@
       "desc": "",
       "source": "厚生労働省 新着情報",
       "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "令和８年度 感染症危機管理対応のための厚生労働省エボラ出血熱等対策推進本部訓練を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77581.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "「第2回と畜場の制度に関する研究会」の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77521.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77571.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "第139回社会保障審議会介護保険部会の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77380.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "ＵＨＣナレッジハブの第七回調整委員会の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77568.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "第79回補装具評価検討会 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/74hosougu_00005.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "第１タスクフォース第２回 資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77525.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "「毎月勤労統計調査（全国調査）」における公表結果の訂正等について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77497.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "第84回厚生科学審議会疾病対策部会臓器移植委員会 (Web会議) を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77481.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "令和９年３月大学等卒業予定者の就職内定状況（10 月１日現在）を公表します",
+      "link": "https://www.mhlw.go.jp/stf/houdou/0000184815_00068.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "第216回労働政策審議会労働条件分科会 開催案内",
+      "link": "https://www.mhlw.go.jp/stf/newpage_76855.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "「神奈川県地域福祉支援計画評価・推進等委員会」公募委員を募集します!",
+      "link": "https://www.pref.kanagawa.jp/docs/n7j/prs/r9605817.html",
+      "date": "2026-11-20",
+      "desc": "「神奈川県地域福祉支援計画評価・推進等委員会」公募委員を募集します!",
+      "source": "神奈川県",
+      "sourceId": "kanagawa",
+      "region": "県",
+      "pref": "神奈川県",
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "令和8年度大阪府要約筆記者登録試験のお知らせ",
+      "link": "https://www.pref.osaka.lg.jp/hodo/fumin/o090060/prs_51180.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "大阪府",
+      "sourceId": "osaka",
+      "region": "県",
+      "pref": "大阪府",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "令和８年度（2026年度）介護事業所生産性向上推進事業総合評価一般競争入札の実施について（終了しました）",
+      "link": "https://www.pref.hokkaido.lg.jp/hf/khf/250227.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "北海道（保健福祉部）",
+      "sourceId": "hokkaido",
+      "region": "県",
+      "pref": "北海道",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "【終了しました】令和８年度（2026年度）介護職員等のたん吸引等研修事業に係る総合評価一般競争入札の実施について",
+      "link": "https://www.pref.hokkaido.lg.jp/hf/khf/180675.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "北海道（保健福祉部）",
+      "sourceId": "hokkaido",
+      "region": "県",
+      "pref": "北海道",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "【終了しました】令和８年度（2026年度）介護事業所等及び介護施設等に対するサービス継続支援事業費に係る事務委託業務 一般競争入札の実施について",
+      "link": "https://www.pref.hokkaido.lg.jp/hf/khf/250530.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "北海道（保健福祉部）",
+      "sourceId": "hokkaido",
+      "region": "県",
+      "pref": "北海道",
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "補助金"
+      ],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "【終了しました】令和８年度（2026年度）介護職員等処遇改善加算取得促進支援事業総合評価一般競争入札の実施について",
+      "link": "https://www.pref.hokkaido.lg.jp/hf/khf/250481.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "北海道（保健福祉部）",
+      "sourceId": "hokkaido",
+      "region": "県",
+      "pref": "北海道",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "【入札告示の修正について】「令和７年度（2025年度）介護職員等のたん吸引等研修事業総合評価一般競争入札の実施について」【終了しました】",
+      "link": "https://www.pref.hokkaido.lg.jp/hf/khf/217265.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "北海道（保健福祉部）",
+      "sourceId": "hokkaido",
+      "region": "県",
+      "pref": "北海道",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "【終了しました】令和7年度（2025年度）介護職員等処遇改善加算取得促進支援事業総合評価一般競争入札の実施について",
+      "link": "https://www.pref.hokkaido.lg.jp/hf/khf/214826.html",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "北海道（保健福祉部）",
+      "sourceId": "hokkaido",
+      "region": "県",
+      "pref": "北海道",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "令和８年度介護現場におけるハラスメント防止啓発事業に係る企画提案募集（プロポーザル）について",
+      "link": "https://www.pref.chiba.lg.jp/koufuku/nyuu-kei/buppin-itaku/nyuusatsukoukoku/r8gharasumenntokboushikeihatsu.html",
+      "date": "",
+      "desc": "",
+      "source": "千葉県 高齢者福祉課",
+      "sourceId": "chiba-koufuku",
+      "region": "県",
+      "pref": "千葉県",
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "こどもの自殺対策に関する関係省庁連絡会議（第11回）",
+      "link": "https://www.cfa.go.jp/councils/kodomonojisatsutaisaku-kaigi/f2569aa2",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "中司大臣記者会見（令和8年11月20日）",
+      "link": "https://www.cfa.go.jp/speech/3ccaacbe",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "こども若者の自殺対策の推進に関するワーキンググループ（第1回）",
+      "link": "https://www.cfa.go.jp/councils/workinggroup",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "第1回こども・若者の自殺対策の推進に関するワーキンググループの開催",
+      "link": "https://www.cfa.go.jp/press/cbd8762e-b8b9-487a-8d55-b795057c0798",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "CDR（Child Death Review ：こどもの死亡検証）の制度のあり方に関する検討会 （第5回）",
+      "link": "https://www.cfa.go.jp/councils/cdr-seidonoarikata/dafdc690",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "第5回CDR（Child Death Review：こどもの死亡検証）の制度のあり方に関する検討会の開催のお知らせと検討会当日の頭撮り・事後記者ブリーフィングの実施",
+      "link": "https://www.cfa.go.jp/press/a2c988a4-78ee-4c3c-912f-cf2e050c7beb",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "https://youtube.com/live/n8tpLAXNlXk",
+      "link": "https://youtube.com/live/n8tpLAXNlXk",
+      "date": "2026-11-20",
+      "desc": "",
+      "source": "ケアプランデータ連携システム お知らせ",
+      "sourceId": "careplan",
       "region": "国",
       "pref": null,
       "bureau": null,
@@ -711,6 +1110,48 @@
       "sourceId": "egov-pc",
       "region": "国",
       "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "「献血普及啓発ボランティア活動発表会」の作品を募集します （募集期間：令和８年 11 月 20 日(金)～令和９年 1 月 15 日(金)）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77526.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "令和８年12月25日より「こども性暴力防止法」がスタートします。",
+      "link": "https://www.pref.ibaraki.jp/hokenfukushi/kodomo/hoiku/20261225.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "茨城県",
+      "sourceId": "ibaraki",
+      "region": "県",
+      "pref": "茨城県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-20"
+    },
+    {
+      "title": "福祉の仕事のやりがいや専門性を発信する福祉職を募集！TOKYO福祉キャスト育成事業",
+      "link": "https://www.fukushi.metro.tokyo.lg.jp/information/press/2026/11/112012",
+      "date": "2026-11-19",
+      "desc": "東京都福祉局の11月19日 福祉の仕事のやりがいや専門性を発信する福祉職を募集！TOKYO福祉キャスト育成事業(11月)です。",
+      "source": "東京都福祉局 報道発表",
+      "sourceId": "tokyo",
+      "region": "県",
+      "pref": "東京都",
       "bureau": null,
       "tags": [],
       "systems": [],
@@ -2397,6 +2838,24 @@
         "介護"
       ],
       "firstSeen": "2026-11-16"
+    },
+    {
+      "title": "第94回労働政策審議会雇用環境・均等分科会（ペーパーレス会議）を開催します（開催案内）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77388.html",
+      "date": "2026-11-12",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-20"
     },
     {
       "title": "公務研究セミナーin霞が関のご案内",
