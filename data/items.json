@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T02:10:31.557Z",
+  "updated": "2026-11-23T19:05:37.021Z",
   "sources": [
     {
       "id": "wamnet",
@@ -262,7 +262,7 @@
       "url": "https://www.pref.chiba.lg.jp/koufuku/shinchaku.xml",
       "type": "rss",
       "count": 7,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -322,7 +322,7 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html",
       "type": "page-list",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -364,6 +364,20 @@
     }
   ],
   "items": [
+    {
+      "title": "「令和8年度（第29回）千葉県介護支援専門員実務研修受講試験」の結果について",
+      "link": "https://www.pref.chiba.lg.jp/koufuku/kaigohoken/service/goukakukeamane.html",
+      "date": "",
+      "desc": "",
+      "source": "千葉県 高齢者福祉課",
+      "sourceId": "chiba-koufuku",
+      "region": "県",
+      "pref": "千葉県",
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-23"
+    },
     {
       "title": "採用情報（任期付職員（地域医療計画課長補佐）募集情報）",
       "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/ninkituki/ninki-chiikiiryoukeikakukahosa.html",
