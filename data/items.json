@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T05:43:31.197Z",
+  "updated": "2026-11-24T18:44:54.911Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 6,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 111,
-      "added": 7,
+      "count": 115,
+      "added": 4,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 2,
+      "added": 1,
       "ok": true
     },
     {
@@ -469,6 +469,80 @@
     {
       "title": "こども意見ファシリテーター養成講座（群馬県桐生市）開催のご案内",
       "link": "https://www.cfa.go.jp/press/a71c8b63-0e3b-455d-b9d7-c8b6db229b15",
+      "date": "2026-11-24",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-24"
+    },
+    {
+      "title": "第134回労働政策審議会労働条件分科会労災保険部会資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77622.html",
+      "date": "2026-11-24",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-24"
+    },
+    {
+      "title": "創薬力向上のための官民協議会 施策検討・推進部会における主な意見",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77538.html",
+      "date": "2026-11-24",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-24"
+    },
+    {
+      "title": "「人口動態統計速報」令和８（2026）年09月分",
+      "link": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/geppo/s2026/09.html",
+      "date": "2026-11-24",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-24"
+    },
+    {
+      "title": "第152回脳死下での臓器提供事例に係る検証会議を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77467.html",
+      "date": "2026-11-24",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-24"
+    },
+    {
+      "title": "中司大臣記者会見（令和8年11月24日）",
+      "link": "https://www.cfa.go.jp/speech/8b395dc4",
       "date": "2026-11-24",
       "desc": "",
       "source": "こども家庭庁 新着・更新",
