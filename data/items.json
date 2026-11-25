@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T18:44:54.911Z",
+  "updated": "2026-11-25T04:45:49.250Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 6,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 115,
-      "added": 4,
+      "count": 109,
+      "added": 5,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 17,
-      "added": 0,
+      "count": 6,
+      "added": 4,
       "ok": true
     },
     {
@@ -189,8 +189,8 @@
       "bureau": null,
       "url": "https://www.fukushi.metro.tokyo.lg.jp/index.html/-/asset_publisher/uvrx/rss",
       "type": "rss",
-      "count": 18,
-      "added": 0,
+      "count": 19,
+      "added": 1,
       "ok": true
     },
     {
@@ -249,7 +249,7 @@
       "bureau": null,
       "url": "https://www.pref.hokkaido.lg.jp/news/oshirase/rss.xml",
       "type": "rss",
-      "count": 3,
+      "count": 2,
       "added": 0,
       "ok": true
     },
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -297,10 +297,9 @@
       "bureau": null,
       "url": "https://www.careplan-renkei-support.jp/info/index.html",
       "type": "page-list",
-      "count": 0,
+      "count": 36,
       "added": 0,
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true
     },
     {
       "id": "mhlw-koyou-josei",
@@ -364,6 +363,36 @@
     }
   ],
   "items": [
+    {
+      "title": "採用情報（任期付職員（調査分析専門官又は主査）募集情報）",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/ninkituki/ninki-syakai-chousabunsekisenmonkan.html",
+      "date": "2026-11-25",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "第６９回 厚生科学審議会疾病対策部会 指定難病検討委員会（持ち回り）を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77586.html",
+      "date": "2026-11-25",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-11-25"
+    },
     {
       "title": "第１回 生命科学・医学系研究等における個人情報の取扱い等に関する合同会議 第２タスクフォース",
       "link": "https://www.mhlw.go.jp/stf/newpage_77569.html",
@@ -555,6 +584,188 @@
       "firstSeen": "2026-11-24"
     },
     {
+      "title": "風しん最新情報（令和8年11月24日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23080&ct=030100130&from=rss",
+      "date": "2026-11-24",
+      "desc": "●概略風しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "第69回 厚生科学審議会 疾病対策部会 指定難病検討委員会（令和8年11月25日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23088&ct=010020245&from=rss",
+      "date": "2026-11-24",
+      "desc": "●主な議題指定難病（令和年度適用分）に係るパブリックコメントの結果について指定難病（令和年度適用分）に係る検討結果につい...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "麻しん最新情報（令和8年11月24日更新）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23087&ct=030100110&from=rss",
+      "date": "2026-11-24",
+      "desc": "●概略麻しんの発生動向に関する速報グラフ等を掲載しています。（国立感染症研究所感染症疫学センターホームページより）●関連...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "第146回 労働政策審議会障害者雇用分科会（令和8年11月30日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23084&ct=070010010&from=rss",
+      "date": "2026-11-24",
+      "desc": "●主な議題（１）意見書（案）について※詳細は以下のリンクからご参照ください。「第回労働政策審議会障害者雇用分科会」を...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "第71回 障害福祉報酬改定検討チーム（令和8年11月26日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23082&ct=070010040&from=rss",
+      "date": "2026-11-24",
+      "desc": "●主な議題令和９年度障害福祉報酬改定に向けて（横断的事項、就労系サービス③）その他●厚生労働省への傍聴申込みオンライン会...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "障害"
+      ],
+      "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "第222回 社会保障審議会 医療保険部会の開催について（令和8年11月26日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23081&ct=070010030&from=rss",
+      "date": "2026-11-24",
+      "desc": "●主な議題高齢者医療制度について医療保険制度における出産に対する支援の強化について医療保険制度改革について※詳細は以下の...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "毎月勤労統計調査ー2026（令和８）年９月分結果確報",
+      "link": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609r/2609r.html",
+      "date": "2026-11-24",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "第２回「国民年金第３号被保険者制度等に関する検討会」資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77577.html",
+      "date": "2026-11-24",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "第213回労働政策審議会労働条件分科会 議事録（2026年10月23日）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77627.html",
+      "date": "2026-11-24",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "経済構造実態調査規則の一部を改正する省令案に関する意見募集",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210793&Mode=0",
+      "date": "2026-11-24",
+      "desc": "案の公示日：2026/11/25受付締切日時：2026/12/24 23:59カテゴリー：統計問合せ先（所管省庁・部局名等）：総務省統計局統計調査部経済統計課 TEL:03-5273-1165",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "「高周波利用設備の条件の特例を定める件」の一部改正案に対する意見募集－走行中無線給電の公道実証実験に対応するための告示改正－",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210798&Mode=0",
+      "date": "2026-11-24",
+      "desc": "案の公示日：2026/11/25受付締切日時：2026/12/24 23:59カテゴリー：電気通信問合せ先（所管省庁・部局名等）：総務省総合通信基盤局電波部電波環境課 TEL:03-5253-5905",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "「自動車特定整備事業者が事業場以外の場所において特定整備を行う場合の実施規程」の一部を改正する告示案・通達案について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155260940&Mode=0",
+      "date": "2026-11-24",
+      "desc": "案の公示日：2026/11/25受付締切日時：2026/12/25 23:59カテゴリー：陸運問合せ先（所管省庁・部局名等）：国土交通省 物流・自動車局 自動車整備課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-25"
+    },
+    {
       "title": "「令和8年度（第29回）千葉県介護支援専門員実務研修受講試験」の結果について",
       "link": "https://www.pref.chiba.lg.jp/koufuku/kaigohoken/service/goukakukeamane.html",
       "date": "",
@@ -660,6 +871,36 @@
         "介護"
       ],
       "firstSeen": "2026-11-24"
+    },
+    {
+      "title": "次世代電力・ガス事業基盤構築小委員会 電力安定供給ワーキンググループ 長期脱炭素電源オークションの第４回募集に向けて（改定案） 長期脱炭素電源オークションガイドライン（改定案）についての意見公募",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340106&Mode=0",
+      "date": "2026-11-23",
+      "desc": "案の公示日：2026/11/24受付締切日時：2026/12/23 23:59カテゴリー：工業問合せ先（所管省庁・部局名等）：資源エネルギー庁 電力・ガス事業部 電力基盤整備課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "12月3日から9日は「障害者週間」です",
+      "link": "https://www.fukushi.metro.tokyo.lg.jp/information/press/2026/11/112418",
+      "date": "2026-11-23",
+      "desc": "東京都福祉局の11月24日 12月3日から9日は「障害者週間」です(11月)です。",
+      "source": "東京都福祉局 報道発表",
+      "sourceId": "tokyo",
+      "region": "県",
+      "pref": "東京都",
+      "bureau": null,
+      "tags": [
+        "障害福祉"
+      ],
+      "systems": [],
+      "firstSeen": "2026-11-25"
     },
     {
       "title": "採用情報（任期付職員（地域医療計画課長補佐）募集情報）",
