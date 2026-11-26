@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T03:55:15.108Z",
+  "updated": "2026-11-26T17:37:18.989Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 5,
+      "added": 0,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 115,
-      "added": 2,
+      "count": 125,
+      "added": 10,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 10,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -213,7 +213,7 @@
       "bureau": null,
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 6,
+      "count": 5,
       "added": 0,
       "ok": true
     },
@@ -225,7 +225,7 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 1,
+      "count": 0,
       "added": 0,
       "ok": true
     },
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 1,
       "ok": true
     },
     {
@@ -297,10 +297,9 @@
       "bureau": null,
       "url": "https://www.careplan-renkei-support.jp/info/index.html",
       "type": "page-list",
-      "count": 0,
+      "count": 36,
       "added": 0,
-      "ok": false,
-      "error": "HTTP 404"
+      "ok": true
     },
     {
       "id": "mhlw-koyou-josei",
@@ -364,6 +363,132 @@
     }
   ],
   "items": [
+    {
+      "title": "「第８回 ハローワーク業務改善コンクール」の授賞を決定しました",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77683.html",
+      "date": "2026-11-26",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "上野厚生労働大臣 閣議後記者会見のお知らせ",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77679.html",
+      "date": "2026-11-26",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "厚生労働省、農林水産省、経済産業省及びスポーツ庁が合同で日経健康経営・ロンジェビティEXPO 2026に出展・登壇します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77684.html",
+      "date": "2026-11-26",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "第70回 医療上の必要性の高い未承認薬・適応外薬検討会議（オンライン会議）を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77599.html",
+      "date": "2026-11-26",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "令和８年度第２回医道審議会医師分科会医師国家試験等改善検討部会",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77579.html",
+      "date": "2026-11-26",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "令和８年度「援護事業功労者 厚生労働大臣表彰」の受賞者（被表彰者）を決定しました",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77527.html",
+      "date": "2026-11-26",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "「第15回 健康寿命をのばそう！アワード」",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77503.html",
+      "date": "2026-11-26",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "第22回 補償金・優生手術等一時金認定審査部会の開催",
+      "link": "https://www.cfa.go.jp/press/41fce6af-7e92-4254-8ce5-6db68997d005",
+      "date": "2026-11-26",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-26"
+    },
     {
       "title": "採用情報（任期付職員（調査分析専門官又は主査）募集情報）",
       "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/ninkituki/ninki-syakai-chousabunsekisenmonkan.html",
@@ -625,6 +750,20 @@
     {
       "title": "第３回精神医療に関する地域医療構想検討ワーキンググループ：資料",
       "link": "https://www.mhlw.go.jp/stf/newpage_77662.html",
+      "date": "2026-11-25",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "第48回 保険者による健診・保健指導等に関する検討会の開催について（オンライン会議・ペーパーレス）",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77655.html",
       "date": "2026-11-25",
       "desc": "",
       "source": "厚生労働省 新着情報",
@@ -1075,6 +1214,24 @@
       "pref": null,
       "bureau": null,
       "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "12月は「職場のハラスメント撲滅月間」です",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77623.html",
+      "date": "2026-11-24",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
       "systems": [
         "労務"
       ],
@@ -3070,6 +3227,20 @@
         "労務"
       ],
       "firstSeen": "2026-11-18"
+    },
+    {
+      "title": "先進医療会議の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77458.html",
+      "date": "2026-11-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-26"
     },
     {
       "title": "第275回 社会保障審議会 介護給付費分科会（令和8年11月16日開催）",
