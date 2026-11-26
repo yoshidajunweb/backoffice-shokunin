@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T17:52:50.307Z",
+  "updated": "2026-11-26T03:55:15.108Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 5,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 118,
-      "added": 9,
+      "count": 115,
+      "added": 2,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 6,
-      "added": 0,
+      "count": 10,
+      "added": 4,
       "ok": true
     },
     {
@@ -58,7 +58,7 @@
       "url": "https://kouseikyoku.mhlw.go.jp/kantoshinetsu/news/news.xml",
       "type": "rss",
       "count": 5,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -521,6 +521,120 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "第50回 匿名医療情報等の提供に関する専門委員会（令和8年12月2日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23089&ct=070010010&from=rss",
+      "date": "2026-11-25",
+      "desc": "●主な議題第回オープンデータ（年次）、第回オープンデータ（月次）の作成方針について（案）の探索的利用環境における公表前確...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "介護保険最新情報Vol.1552（PDF：1.7MB）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/1126094726317/ksvol.1552.pdf?from=rss",
+      "date": "2026-11-25",
+      "desc": "...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "第139回 社会保障審議会 介護保険部会（令和8年11月26日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23092&ct=010010030&from=rss",
+      "date": "2026-11-25",
+      "desc": "●主な議題第１号保険料の在り方持続可能性の確保（給付と負担）その他※詳細は以下のリンクからご参照ください。（会議資料）：...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "第222回 社会保障審議会 医療保険部会（令和8年11月26日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23091&ct=010010050&from=rss",
+      "date": "2026-11-25",
+      "desc": "●主な議題高齢者医療制度について医療保険制度における出産に対する支援の強化について医療保険制度改革について※詳細は以下の...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護"
+      ],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "第27回成年後見制度利用促進専門家会議について（令和8年12月1日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23090&ct=070010010&from=rss",
+      "date": "2026-11-25",
+      "desc": "●主な議題（１）次期基本計画（素案）に係る意見交換※詳細は以下のリンクからご参照ください。第回成年後見制度利用促進専門家...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "第139回社会保障審議会介護保険部会の資料について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77651.html",
+      "date": "2026-11-25",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "第３回精神医療に関する地域医療構想検討ワーキンググループ：資料",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77662.html",
+      "date": "2026-11-25",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-26"
     },
     {
       "title": "第１回 生命科学・医学系研究等における個人情報の取扱い等に関する合同会議 第２タスクフォース",
@@ -907,6 +1021,64 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-25"
+    },
+    {
+      "title": "ベースロード市場ガイドライン（案）に対する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=620340105&Mode=0",
+      "date": "2026-11-24",
+      "desc": "案の公示日：2026/11/25受付締切日時：2026/12/24 23:59カテゴリー：工業問合せ先（所管省庁・部局名等）：資源エネルギー庁電力・ガス事業部電力産業・市場室",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "港則法施行規則第十一条第一項の規定による進路を他の船舶に知らせるために船舶自動識別装置の目的地に関する情報として送信する記号の一部を改正する告示案に関するパブリックコメントの募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=670000140&Mode=0",
+      "date": "2026-11-24",
+      "desc": "案の公示日：2026/11/25受付締切日時：2026/12/25 23:59カテゴリー：海運問合せ先（所管省庁・部局名等）：海上保安庁交通部航行安全課（０３－３５９１－６３６１）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "電気事業法第５２条に基づく火力設備に対する溶接自主検査ガイド（２０２３０３１０保局第２号）等 の一部を改正する規程に対する意見公募について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=595320124&Mode=0",
+      "date": "2026-11-24",
+      "desc": "案の公示日：2026/11/25受付締切日時：2026/12/24 15:00カテゴリー：工業問合せ先（所管省庁・部局名等）：経済産業省 産業保安・安全グループ 電力安全課",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "「医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律施行令第二条の十三各号の規定に基づき厚生労働大臣が指定する医薬品（案）」に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260272&Mode=0",
+      "date": "2026-11-24",
+      "desc": "案の公示日：2026/11/25受付締切日時：2026/12/24 23:59カテゴリー：厚生問合せ先（所管省庁・部局名等）：厚生労働省医薬局医療機器審査管理課 電話：03-5253-1111 内線番号：4212",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-26"
     },
     {
       "title": "「令和8年度（第29回）千葉県介護支援専門員実務研修受講試験」の結果について",
