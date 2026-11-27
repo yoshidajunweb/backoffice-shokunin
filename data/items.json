@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T17:37:18.989Z",
+  "updated": "2026-11-27T03:55:09.383Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 0,
+      "added": 3,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 125,
-      "added": 10,
+      "count": 121,
+      "added": 4,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 10,
-      "added": 0,
+      "count": 11,
+      "added": 4,
       "ok": true
     },
     {
@@ -225,8 +225,8 @@
       "bureau": null,
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
-      "count": 0,
-      "added": 0,
+      "count": 1,
+      "added": 1,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -363,6 +363,48 @@
     }
   ],
   "items": [
+    {
+      "title": "「第20回薬局・薬剤師の機能強化等に関する検討会」の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77518.html",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "採用情報（任期付職員（発達障害施策調整官）募集情報）",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/ninkituki/ninki-hattatsushougaishisakuchouseikan.html",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "採用情報（任期付職員（歯科保健課長補佐又は主査）募集情報）",
+      "link": "https://www.mhlw.go.jp/stf/kouseiroudoushou/saiyou/ninkituki/ninki-shikahokenka.html",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
     {
       "title": "「第８回 ハローワーク業務改善コンクール」の授賞を決定しました",
       "link": "https://www.mhlw.go.jp/stf/newpage_77683.html",
@@ -488,6 +530,121 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "第160回 先進医療会議（令和8年12月3日開催予定）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23094&ct=070010030&from=rss",
+      "date": "2026-11-26",
+      "desc": "●主な議題先進医療Ｂに係る新規技術の科学的評価等について先進医療Ｂの総括報告書に関する評価についてその他●厚生労働省への...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "第277回 社会保障審議会 介護給付費分科会（令和8年11月26日開催）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23096&ct=010010020&from=rss",
+      "date": "2026-11-26",
+      "desc": "●主な議題 １．令和９年度介護報酬改定に向けて（１）横断的事項（認知症への対応力強化、科学的介護情報システム（）、住ま...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "介護保険最新情報Vol.1553（PDF：485KB）",
+      "link": "https://www.wam.go.jp/gyoseiShiryou-files/documents/2026/1127092746138/ksvol.1553.pdf?from=rss",
+      "date": "2026-11-26",
+      "desc": "...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "第94回労働政策審議会雇用環境・均等分科会の資料を掲載しました。",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77686.html",
+      "date": "2026-11-26",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "無人航空機の登録講習機関及び登録更新講習機関に関する省令の一部改正（案）に関する意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=155261234&Mode=0",
+      "date": "2026-11-26",
+      "desc": "案の公示日：2026/11/27受付締切日時：2026/12/28 00:00カテゴリー：航空問合せ先（所管省庁・部局名等）：国土交通省航空局安全部無人航空機安全課 意見募集担当",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "人工衛星等の打上げ及び人工衛星の管理に関する法律等の一部を改正する法律（令和八年法律第三十九号）の施行に伴う人工衛星等の打上げ及び人工衛星の管理に関する法律施行規則及び宇宙資源の探査及び開発に関する事業活動の促進に関する法律施行規則の一部を改正する内閣府令（案）等に係る意見募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=095260960&Mode=0",
+      "date": "2026-11-26",
+      "desc": "案の公示日：2026/11/27受付締切日時：2026/12/28 00:00カテゴリー：その他問合せ先（所管省庁・部局名等）：内閣府宇宙開発戦略推進事務局 宇宙活動法担当 電話：03-6205-7036",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "令和8年度愛知県訪問介護サービス提供体制確保支援事業費補助金の実績報告について",
+      "link": "https://www.pref.aichi.jp/soshiki/korei/homonkaigojiseki.html",
+      "date": "2026-11-26",
+      "desc": "",
+      "source": "愛知県",
+      "sourceId": "aichi",
+      "region": "県",
+      "pref": "愛知県",
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護",
+        "補助金"
+      ],
+      "firstSeen": "2026-11-27"
     },
     {
       "title": "採用情報（任期付職員（調査分析専門官又は主査）募集情報）",
@@ -774,6 +931,38 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "労働者災害補償保険法等の一部を改正する法律の施行に伴う厚生労働省関係省令の整備に関する省令案に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260273&Mode=0",
+      "date": "2026-11-25",
+      "desc": "案の公示日：2026/11/26受付締切日時：2026/12/27 00:00カテゴリー：労働問合せ先（所管省庁・部局名等）：労働基準局労災管理課 電話：03-3502-6292",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "介護保険事業に係る保険給付の円滑な実施を確保するための基本的な指針の全部を改正する件（案）に関する御意見の募集について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=495260276&Mode=0",
+      "date": "2026-11-25",
+      "desc": "案の公示日：2026/11/26受付締切日時：2026/12/26 00:00カテゴリー：社会福祉問合せ先（所管省庁・部局名等）：厚生労働省老健局介護保険計画課 電話：03-3595-2890",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "介護"
+      ],
+      "firstSeen": "2026-11-27"
     },
     {
       "title": "第１回 生命科学・医学系研究等における個人情報の取扱い等に関する合同会議 第２タスクフォース",
