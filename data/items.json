@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T03:55:09.383Z",
+  "updated": "2026-11-27T17:19:51.993Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 3,
+      "added": 1,
       "ok": true
     },
     {
@@ -21,8 +21,8 @@
       "bureau": null,
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
-      "count": 121,
-      "added": 4,
+      "count": 134,
+      "added": 11,
       "ok": true
     },
     {
@@ -46,7 +46,7 @@
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
       "count": 11,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -213,7 +213,7 @@
       "bureau": null,
       "url": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
       "type": "rss",
-      "count": 5,
+      "count": 4,
       "added": 0,
       "ok": true
     },
@@ -226,7 +226,7 @@
       "url": "https://www.pref.aichi.jp/rss/10/list1.xml",
       "type": "rss",
       "count": 1,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 0,
+      "added": 4,
       "ok": true
     },
     {
@@ -297,9 +297,10 @@
       "bureau": null,
       "url": "https://www.careplan-renkei-support.jp/info/index.html",
       "type": "page-list",
-      "count": 36,
+      "count": 0,
       "added": 0,
-      "ok": true
+      "ok": false,
+      "error": "HTTP 404"
     },
     {
       "id": "mhlw-koyou-josei",
@@ -398,6 +399,200 @@
       "desc": "",
       "source": "厚生労働省 新着情報",
       "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "第45回「肢体不自由児・者の美術展／デジタル写真展」の開催",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77691.html",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "薬事審議会 医療機器・体外診断薬部会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77674.html",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "第229回労働政策審議会職業安定分科会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_021225156_00116.html",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "最近の調剤医療費（電算処理分）の動向 令和8年度7月号",
+      "link": "https://www.mhlw.go.jp/topics/medias/c-med/2026/07/",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "最近の歯科医療費（電算処理分）の動向 令和8年度7月号",
+      "link": "https://www.mhlw.go.jp/topics/medias/shika_iryou/2026/07/",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "最近の医科医療費（電算処理分）の動向 令和8年度7月号",
+      "link": "https://www.mhlw.go.jp/topics/medias/ika_iryou/2026/07/",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "医療"
+      ],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "最近の医療費の動向-MEDIAS-令和8年度7月号",
+      "link": "https://www.mhlw.go.jp/topics/medias/month/26/07.html",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "第43回労働政策審議会労働政策基本部会を開催します",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77588.html",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "労務・社保"
+      ],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "第94回労働政策審議会勤労者生活分科会中小企業退職金共済部会議事録",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77463.html",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [
+        "労務"
+      ],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "中司大臣記者会見（令和8年11月27日）",
+      "link": "https://www.cfa.go.jp/speech/735de80e",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "第45回「肢体不自由児・者の美術展／デジタル写真展」が行われます",
+      "link": "https://www.cfa.go.jp/press/da40b646-4b73-4d9e-b748-c0210f0870cc",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "令和8年度 第4回「未来をつくる こどもまんなかアワード」表彰式を開催しました",
+      "link": "https://www.cfa.go.jp/policies/youth/kodomo-award/r08",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "令和8年度 第4回 未来をつくる こどもまんなかアワード 受賞者決定しました",
+      "link": "https://www.cfa.go.jp/press/c343f77d-ded2-4da6-8e9f-65cef8c7302a",
+      "date": "2026-11-27",
+      "desc": "",
+      "source": "こども家庭庁 新着・更新",
+      "sourceId": "cfa",
       "region": "国",
       "pref": null,
       "bureau": null,
@@ -643,6 +838,24 @@
       "systems": [
         "介護",
         "補助金"
+      ],
+      "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "「介護保険資格確認等WEBサービスとの連携におけるAPI仕様書（第1.01版）」について",
+      "link": "https://www.wam.go.jp/gyoseiShiryou/detail?gno=23073&ct=020050030&from=rss",
+      "date": "2026-11-26",
+      "desc": "事務連絡厚生労働省事務連絡正誤表介護保険資格確認等サービスとの連携における仕様書正誤表版対応版ダウンロード本書介護保険資...全文を読む",
+      "source": "WAM NET 行政情報",
+      "sourceId": "wamnet",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問介護"
+      ],
+      "systems": [
+        "介護"
       ],
       "firstSeen": "2026-11-27"
     },
@@ -2472,6 +2685,20 @@
       "firstSeen": "2026-11-25"
     },
     {
+      "title": "令和８年度第２回医道審議会医師分科会医師臨床研修部会",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77529.html",
+      "date": "2026-11-19",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-27"
+    },
+    {
       "title": "人事労務マガジン 特集第250号 12月は「職場のハラスメント撲滅月間」他",
       "link": "https://www.mhlw.go.jp/stf/newpage_77416.html",
       "date": "2026-11-18",
@@ -3430,6 +3657,26 @@
       "tags": [],
       "systems": [],
       "firstSeen": "2026-11-26"
+    },
+    {
+      "title": "中央社会保険医療協議会診療報酬調査専門組織（入院・外来医療等の調査・評価分科会）の開催について",
+      "link": "https://www.mhlw.go.jp/stf/newpage_77459.html",
+      "date": "2026-11-16",
+      "desc": "",
+      "source": "厚生労働省 新着情報",
+      "sourceId": "mhlw",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [
+        "訪問看護",
+        "労務・社保"
+      ],
+      "systems": [
+        "医療",
+        "労務"
+      ],
+      "firstSeen": "2026-11-27"
     },
     {
       "title": "第275回 社会保障審議会 介護給付費分科会（令和8年11月16日開催）",
