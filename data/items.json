@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T17:19:51.993Z",
+  "updated": "2026-11-28T03:42:14.505Z",
   "sources": [
     {
       "id": "wamnet",
@@ -10,7 +10,7 @@
       "url": "https://www.wam.go.jp/gyoseiShiryou/new_rss",
       "type": "rss",
       "count": 200,
-      "added": 1,
+      "added": 0,
       "ok": true
     },
     {
@@ -22,7 +22,7 @@
       "url": "https://www.mhlw.go.jp/stf/news.rdf",
       "type": "rss",
       "count": 134,
-      "added": 11,
+      "added": 0,
       "ok": true
     },
     {
@@ -45,8 +45,8 @@
       "bureau": null,
       "url": "https://public-comment.e-gov.go.jp/rss/pcm_list.xml",
       "type": "rss",
-      "count": 11,
-      "added": 0,
+      "count": 6,
+      "added": 2,
       "ok": true
     },
     {
@@ -286,7 +286,7 @@
       "url": "https://www.cfa.go.jp/news",
       "type": "page-list",
       "count": 10,
-      "added": 4,
+      "added": 0,
       "ok": true
     },
     {
@@ -601,6 +601,20 @@
       "firstSeen": "2026-11-27"
     },
     {
+      "title": "無線局の免許等関連手続の電子申請義務化に係る制度改正案に対する意見募集（電波法施行規則の一部を改正する省令案）",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=145210803&Mode=0",
+      "date": "2026-11-27",
+      "desc": "案の公示日：2026/11/28受付締切日時：2026/12/28 00:00カテゴリー：電気通信問合せ先（所管省庁・部局名等）：総務省総合通信基盤局 電波部電波政策課 電話：03-5253-5874",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-28"
+    },
+    {
       "title": "「第８回 ハローワーク業務改善コンクール」の授賞を決定しました",
       "link": "https://www.mhlw.go.jp/stf/newpage_77683.html",
       "date": "2026-11-26",
@@ -858,6 +872,20 @@
         "介護"
       ],
       "firstSeen": "2026-11-27"
+    },
+    {
+      "title": "「金融庁関係国家戦略特別区域法第二十六条に規定する政令等規制事業に係る内閣府令の特例に関する措置を定める内閣府令の一部を改正する内閣府令（案）」に対するパブリックコメントの実施について",
+      "link": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=225026072&Mode=0",
+      "date": "2026-11-26",
+      "desc": "案の公示日：2026/11/27受付締切日時：2026/12/27 17:00カテゴリー：金融、保険問合せ先（所管省庁・部局名等）：電話受付 受付時間：平日10時00分～17時00分 電話番号：０５７０－０１６８１１（ＩＰ電話からは０３－５２５１－６８１１） 企画市場局市場課（庁内用：3609、2639）",
+      "source": "e-Gov パブコメ",
+      "sourceId": "egov-pc",
+      "region": "国",
+      "pref": null,
+      "bureau": null,
+      "tags": [],
+      "systems": [],
+      "firstSeen": "2026-11-28"
     },
     {
       "title": "採用情報（任期付職員（調査分析専門官又は主査）募集情報）",
